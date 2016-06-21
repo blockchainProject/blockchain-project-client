@@ -340,6 +340,7 @@ module.exports = baseVw.extend({
     //load userProfile data into model
     this.model.set('guid', this.userProfile.get('profile').guid);
     this.model.set('avatar_hash', this.userProfile.get('profile').avatar_hash);
+    this.model.set('name', this.userProfile.get('profile').name);
 
     loadTemplate('./js/templates/pageNav.html', function(loadedTemplate) {
       var connectedServer = app.serverConnectModal.getConnectedServer();
