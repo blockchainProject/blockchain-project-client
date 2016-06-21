@@ -565,8 +565,6 @@ h6, .h6 {
 }
 
 .ctrlGroup .btn {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .ctrlGroup:first-child {
@@ -1055,7 +1053,6 @@ label.fieldItem {
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
    -webkit-user-select: none;
 }
 
@@ -2111,7 +2108,7 @@ margin: auto;
   min-width: 0;
   height: 12px;
   background-color: #fff;
-  margin: 0 3px;
+  margin: 0 4px;
   padding: 0;
 }
 
@@ -2124,8 +2121,9 @@ margin: auto;
 }
 
 .btn.btn-win.btn-winClose {
-  background-color: #E45A5A;
+  background-color: #FA6058;
   position: relative;
+  border: 1px solid #E14540;
 }
 
 .btn.btn-win.btn-winClose .btn-win-icon,
@@ -2148,14 +2146,15 @@ margin: auto;
 }
 
 .btn.btn-win.btn-winMin {
-  background-color: #F8E71C;
+  background-color: #FCBD2E;
   position: relative;
-
+  border: 1px solid #E0A027;
 }
 
 .btn.btn-win.btn-winMax {
-  background-color: #B8E986;
+  background-color: #30CA41;
   position: relative;
+  border: 1px solid #2EAD31;
 }
 
 #appBar.style-win .btn.btn-win {
