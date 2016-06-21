@@ -109,7 +109,7 @@
   </div>
 
   <div class="ctrlGroup nav-profile">
-    <div class="btn btn-profile js-navProfile tooltip" data-tooltip="<%= polyglot.t('Menu') %>" data-popmenu=".popMenu-navBar"
+    <div class="btn btn-profile js-navProfile" data-popmenu=".popMenu-navBar"
     <% if(ob.avatar_hash != "") { %>
     style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.avatar_hash %>), url(imgs/defaultUser.png);"
     <% }else{ %>
