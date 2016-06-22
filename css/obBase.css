@@ -383,7 +383,7 @@ h6, .h6 {
 }
 
 #appBar {
-  background-color: #327EB8;
+  background-color: #D5DCD8;
   padding: 7px 8px 6px;
   box-sizing: border-box;
   -webkit-app-region: drag;
@@ -568,7 +568,20 @@ h6, .h6 {
 }
 
 .ctrlGroup:first-child {
+  color: #030303;
   padding-left: 0;
+}
+
+.ctrlGroup:nth-child(2) {
+  color: #030303;
+}
+
+.ctrlGroup:nth-child(5) {
+  color: #9B9B9B;
+}
+
+.ctrlGroup.nav-username {
+  color: #030303;
 }
 
 .flexContainer {
@@ -1512,7 +1525,7 @@ label.fieldItem {
 }
 
 .navBar {
-  background-color: #327EB8;
+  background-color: #D5DCD8;
 }
 
 .navBar.statusBar,
@@ -1760,7 +1773,6 @@ removed because I don't think we're using the trick to hide the borders any more
 
 .txtField {
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   font-size: 12px;
   height: 32px;
   opacity: .85;
@@ -1901,10 +1913,7 @@ input[type="text"].txtField-bar {
   height: 32px;
   min-width: 32px;
   line-height: 32px;
-  background-color: #086A9E; /* default color */
   padding:0;
-  border-radius: 3px;
-  opacity: .80;
   box-sizing: border-box;
 }
 
@@ -5043,7 +5052,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .borderRadius3 {
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 #ov1 .borderRadiusBottom0 {
@@ -5982,6 +5991,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .disabled-icon {
+  color: #9B9B9B;
   pointer-events: none;
 }
 
