@@ -5,8 +5,6 @@ var loadTemplate = require('../utils/loadTemplate'),
     BaseVw = require('./baseVw');
 
 module.exports = BaseVw.extend({
-  titlePrefix: 'OpenBazaar',
-
   events: {
     'click .js-navClose': 'navCloseClick',
     'click .js-navMin': 'navMinClick',
@@ -18,7 +16,6 @@ module.exports = BaseVw.extend({
 
     this.options = options || {};
     this.currentWindow = remote.getCurrentWindow();
-    this.title = this.titlePrefix;
     
     if (!style || ['mac', 'win'].indexOf(style) === -1) {
       style = remote.process.platform === 'darwin' ? 'mac' : 'win';
@@ -64,27 +61,10 @@ module.exports = BaseVw.extend({
     }
   },
 
-  setTitle: function(text) {
-    var curTitle = this.title;
-
-    if (!text) {
-      this.title = this.titlePrefix;
-    }
-
-    this.title = text ?
-      `${this.titlePrefix} &mdash; ${text}` :
-      this.titlePrefix;
-
-    if (curTitle !== this.title) {
-      this.render();
-    }
-  },
-
   render: function() {
     loadTemplate('./js/templates/appBar.html', (t) => {
       this.$el.html(t({
         style: this.getStyle(),
-        title: this.title
       }));
     });
 
