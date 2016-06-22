@@ -365,7 +365,6 @@ module.exports = Backbone.Router.extend({
     this.$discoverHolder = this.$discoverHolder || $('.js-OnboardingIntroDiscoverHolder');
     this.$discoverHolder.addClass('hide');
 
-    app.appBar.setTitle(window.polyglot.t('Discover'));
   },
 
   userPage: function(userID, state, itemHash, skipNSFWmodal, handle){
@@ -391,7 +390,6 @@ module.exports = Backbone.Router.extend({
       bodyClass: 'onPage'
     });
 
-    app.appBar.setTitle(handle ? handle : options.userId || this.userModel.get('guid'));
   },
 
   userPageViaHandle: function(handle, subPath) {
@@ -438,7 +436,6 @@ module.exports = Backbone.Router.extend({
       bodyID: 'userPage'
     });
 
-    app.appBar.setTitle(window.polyglot.t('Transactions'));
   },
 
   settings: function(state){
@@ -452,6 +449,5 @@ module.exports = Backbone.Router.extend({
       bodyID: 'userPage'
     });
 
-    app.appBar.setTitle(window.polyglot.t('Settings'));
   }
 });

@@ -81,6 +81,17 @@
 
 <div id="pageNavBar" class="bar navBar custCol-secondary">
   <div class="ctrlGroup">
+    <a class="btn btn-win btn-winClose js-navClose">   
+      <div class="btn-win-icon ion-ios-close-empty"></div>    
+    </a>    
+    <a class="btn btn-win btn-winMin js-navMin">   
+      <div class="btn-win-icon ion-ios-minus-empty"></div>    
+    </a>    
+    <a class="btn btn-win btn-winMax js-navMax">   
+      <div class="btn-win-icon ion-ios-plus-empty"></div>   
+    </a>    
+  </div>
+  <div class="ctrlGroup">
     <a class="btn btn-togLeft btn-back ion-ios-arrow-left js-navBack custCol-primary custCol-text fontSize16"></a>
     <a class="btn btn-togRight btn-fwd ion-ios-arrow-right js-navFwd custCol-primary custCol-text fontSize16"></a>
   </div>
@@ -95,8 +106,7 @@
         <span class="ion-alert-circled fontSize9"></span>
         <%= polyglot.t('nav.testMode') %>
       </div>
-      <% } %>
-      
+      <% } %>      
     </div>
   </div>
   <div class="ctrlGroup">
@@ -120,6 +130,7 @@
   <div class="ctrlGroup nav-username">
     <%= ob.name %>
   </div>
+</div>
 
   <div class="statusBar navBar navBar-main fadeOut js-navStatusBar">
     <div class="pad20 js-statusBarMessage"></div>
@@ -129,7 +140,6 @@
   </div>
 
   <div id="adminPanel"></div>
-</div>
 
 <div class="onboardingIntroDiscover js-OnboardingIntroDiscoverHolder hide">
   <a href="#home" class="js-OnboardingIntroDiscover">

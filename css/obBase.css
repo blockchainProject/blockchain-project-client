@@ -329,6 +329,10 @@ h6, .h6 {
   position: relative;
 }
 
+#navArea{
+  height: 46px;  
+}
+
 #pageNav {
   position: relative;
   -webkit-app-region: no-drag;
@@ -382,27 +386,12 @@ h6, .h6 {
   width: calc(100% - 230px);
 }
 
-#appBar {
-  background-color: #D5DCD8;
-  padding: 7px 8px 6px;
-  box-sizing: border-box;
-  -webkit-app-region: drag;
-}
-
-#appBar .windowControls {
+#pageNav{
   position: absolute;
-  left: 8px;
-  top: 6px;  
-}
-
-#appBar.style-win .windowControls {
-  left: auto;
-  right: 8px;
-  top: 5px;
-}
-
-#appBar .btn {
-  -webkit-app-region: no-drag;
+  left: 0;
+  top: 0;
+  -webkit-app-region:drag;
+  width: 100%;
 }
 
 #pageNav .btn {
@@ -430,7 +419,7 @@ h6, .h6 {
 #sideBar {
   position: fixed;
   right: -183px;
-  top: 75px;
+  top: 50px;
   width:230px;
   background-color: #252525;
   border-left: 0;
@@ -568,7 +557,6 @@ h6, .h6 {
 }
 
 .ctrlGroup:first-child {
-  color: #030303;
   padding-left: 0;
 }
 
@@ -576,8 +564,21 @@ h6, .h6 {
   color: #030303;
 }
 
+.ctrlGroup:nth-child(3) {
+  color: #030303;
+}
+
 .ctrlGroup:nth-child(5) {
   color: #9B9B9B;
+}
+
+.ctrlGroup:nth-child(6) {
+  color: #9B9B9B;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .ctrlGroup.nav-username {
@@ -2112,10 +2113,10 @@ margin: auto;
 }
 
 .btn.btn-win {
-  border-radius: 6px;
-  width: 12px;
+  border-radius: 7px;
+  width: 14px;
   min-width: 0;
-  height: 12px;
+  height: 14px;
   background-color: #fff;
   margin: 0 4px;
   padding: 0;
@@ -2140,8 +2141,8 @@ margin: auto;
 .btn.btn-win.btn-winMax .btn-win-icon {
   position: absolute;
   display: none;
-  top: -2px;
-  left: 0;
+  top: -1.5px;
+  left: 0.5px;
   width: 100%;
   height: 100%;
   font-size: 13px;
@@ -2164,40 +2165,6 @@ margin: auto;
   background-color: #30CA41;
   position: relative;
   border: 1px solid #2EAD31;
-}
-
-#appBar.style-win .btn.btn-win {
-  background-color: transparent;
-  border-radius: 0;
-  width: 19px;
-  height: 19px;
-  box-shadow: none;
-}
-
-#appBar.style-win .btn.btn-winClose {
-  float: right;
-  margin-left: 6px;
-}
-
-#appBar.style-win .btn.btn-win .btn-win-icon {
-  display: block;
-  top: -3px;
-  font-size: 21px;
-  color: #fff;  
-}
-
-#appBar.style-win .btn.btn-winMax {
-  float: right;
-  margin-left: 6px;
-  border: 1px solid #fff;
-  width: 13px;
-  height: 13px;
-  top: 3px;  
-}
-
-#appBar.style-win .btn.btn-winMax .btn-win-icon,
-#appBar.style-win .btn.btn-win.btn-winMax:hover .btn-win-icon {
-  display: none;
 }
 
 .btn.btn-bar {
