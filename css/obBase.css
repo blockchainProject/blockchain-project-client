@@ -416,6 +416,25 @@ h6, .h6 {
   top: 41px;
 }
 
+#leftSidebar{
+  position: fixed;
+  left: 0px;
+  top: 46px;
+  width: 168px;
+  background-color: #1F2129;
+  border-right: 0;
+  height: calc(100% - 46px);
+  z-index: 0;
+  transition: right 0.5s ease;
+  color: #FFF;
+  -webkit-app-region: no-drag;
+  box-sizing: border-box;  
+}
+
+#leftSidebar a{
+  display: block;
+}
+
 #sideBar {
   position: fixed;
   right: -183px;
@@ -569,10 +588,6 @@ h6, .h6 {
 }
 
 .ctrlGroup:nth-child(5) {
-  color: #9B9B9B;
-}
-
-.ctrlGroup:nth-child(6) {
   color: #9B9B9B;
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -1783,7 +1798,7 @@ removed because I don't think we're using the trick to hide the borders any more
 
 .txtFieldWrapper {
   position: relative;
-  width: 100%;
+  width: 80%;
 }
 
 .txtFieldWrapper:before,

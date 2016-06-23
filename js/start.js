@@ -37,6 +37,7 @@ var Polyglot = require('node-polyglot'),
     mCustomScrollbar = require('./utils/jquery.mCustomScrollbar.js'),
     setTheme = require('./utils/setTheme.js'),
     pageNavView = require('./views/pageNavVw'),
+    leftSidebarView = require('./views/leftSidebarVw'),
     ChatVw = require('./views/chatVw'),
     StatusBarView = require('./views/statusBarVw'),
     user = new userModel(),
@@ -61,6 +62,7 @@ var Polyglot = require('node-polyglot'),
     removeStartupRetry,
     onActiveServerSync,
     extendPolyglot,
+    newleftSidebarView,
     newPageNavView,
     newSocketView,
     startUpLoadingModal,
@@ -409,6 +411,15 @@ var loadProfile = function(landingRoute, onboarded) {
               });
               
               newPageNavView.render();
+
+              app.leftSidebar = newleftSidebarView = new leftSidebarView({
+                model: user,
+                socketView: newSocketView,
+                userProfile: userProfile,
+                showDiscIntro: onboarded
+              });
+              
+              newleftSidebarView.render();
 
               app.chatVw = new ChatVw({
                 model: user,
