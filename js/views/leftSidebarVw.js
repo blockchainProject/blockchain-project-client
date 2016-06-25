@@ -1,8 +1,7 @@
 'use strict';
 
 var __ = require('underscore'),
-    $ = require('jquery'),
-    loadTemplate = require('../utils/loadTemplate'),
+     loadTemplate = require('../utils/loadTemplate'),
     app = require('../App.js').getApp(),
     baseVw = require('./baseVw')
 

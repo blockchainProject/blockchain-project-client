@@ -462,6 +462,7 @@ module.exports = baseVw.extend({
     if (count == 0) {
       this.$navNotif.find('.badge')
           .removeAttr('data-count', count);
+      this.$navNotif.find('.badge').addClass('no-badge');          
     } else {
       this.$navNotif.find('.badge')
           .attr('data-count', count);
