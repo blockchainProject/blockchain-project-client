@@ -80,42 +80,59 @@
 </div>
 
 <div id="pageNavBar" class="bar navBar custCol-secondary">
-  <div class="ctrlGroup">
-    <a class="btn btn-togLeft btn-back ion-chevron-left js-navBack custCol-primary custCol-text fontSize13 tooltip" data-tooltip="<%= polyglot.t('nav.Back') %>"></a>
-    <a class="btn btn-togRight btn-fwd ion-chevron-right js-navFwd custCol-primary custCol-text fontSize13 tooltip" data-tooltip="<%= polyglot.t('nav.Forward') %>"></a>
-  </div>
-  <div class="ctrlGroup">
-    <a class="btn btn-home ion-refresh custCol-primary custCol-text js-navRefresh tooltip" data-tooltip="<%= polyglot.t('Reload') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.refresh.toUpperCase() %>)"> </a>
-  </div>
-  <div class="ctrlGroup flexExpand">
-    <div class="txtFieldWrapper searchWrapper mainSearchWrapper js-mainSearchWrapper">
-      <input type="text" class="txtField js-navAddressBar borderRadius3" id="addressBar" placeholder="<%= polyglot.t('nav.searchPlaceholder') %>" />
-      <% if(config.testnet) { %>
-      <div class="testnetBadge">
-        <span class="ion-alert-circled fontSize9"></span>
-        <%= polyglot.t('nav.testMode') %>
+    <div class="header-alignleft">
+      <div class="ctrlGroup">
+        <a class="btn btn-win btn-winClose js-navClose">   
+          <div class="btn-win-icon ion-ios-close-empty"></div>    
+        </a>    
+        <a class="btn btn-win btn-winMin js-navMin">   
+          <div class="btn-win-icon ion-ios-minus-empty"></div>    
+        </a>    
+        <a class="btn btn-win btn-winMax js-navMax">   
+          <div class="btn-win-icon ion-ios-plus-empty"></div>   
+        </a>    
       </div>
-      <% } %>
-      
+      <div class="ctrlGroup">
+        <a class="btn btn-togLeft btn-back ion-ios-arrow-left js-navBack custCol-primary custCol-text fontSize24"></a>
+        <a class="btn btn-togRight btn-fwd ion-ios-arrow-right js-navFwd custCol-primary custCol-text fontSize24"></a>
+      </div>
+      <div class="ctrlGroup">
+        <a class="btn btn-home ion-ios-refresh-empty custCol-primary custCol-text js-navRefresh fontsize24"></a>
+      </div>
+    </div>    
+    <div class="header-alignright">
+      <div class="ctrlGroup">
+        <div class="txtFieldWrapper searchWrapper mainSearchWrapper js-mainSearchWrapper">
+          <input type="text" class="txtField js-navAddressBar borderRadius3" id="addressBar" placeholder="<%= polyglot.t('nav.searchPlaceholder') %>" />
+          <% if(config.testnet) { %>
+          <div class="testnetBadge">
+            <span class="ion-alert-circled fontSize9"></span>
+            <%= polyglot.t('nav.testMode') %>
+          </div>
+          <% } %>      
+        </div>
+      </div>
+      <div class="ctrlGroup">
+        <div class="btn btn-notifications ion-android-notifications-none custCol-primary custCol-text fontSize20 js-navNotifications" data-popmenu=".popMenu-notifications">
+          <div class="badge"></div>
+        </div>
+      </div>
+      <div class="ctrlGroup nav-profile">
+        <div class="btn btn-profile js-navProfile" data-popmenu=".popMenu-navBar"
+        <% if(ob.avatar_hash != "") { %>
+        style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.avatar_hash %>), url(imgs/defaultUser.png);"
+        <% }else{ %>
+        style="background-image: url(imgs/defaultUser.png)"
+        <% } %>> 
+        </div>
+      </div>    
+      <div class="ctrlGroup nav-username fontsize16">
+        <%= ob.name %>
+      </div>
     </div>
   </div>
-  <div class="ctrlGroup">
-    <a class="btn btn-home ion-eye custCol-primary custCol-text fontSize15 tooltip" href="#home" data-tooltip="<%= polyglot.t('Discover') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.discover.toUpperCase() %>)"></a>
-  </div>
-  <div class="ctrlGroup">
-    <div class="btn btn-notifications ion-android-notifications custCol-primary  custCol-text fontSize14 js-navNotifications tooltip" data-tooltip="<%= polyglot.t('nav.notifications') %>" data-popmenu=".popMenu-notifications">
-      <div class="badge"></div>
-    </div>
-  </div>
-
-  <div class="ctrlGroup nav-profile">
-    <div class="btn btn-profile js-navProfile tooltip" data-tooltip="<%= polyglot.t('Menu') %>" data-popmenu=".popMenu-navBar"
-    <% if(ob.avatar_hash != "") { %>
-    style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.avatar_hash %>), url(imgs/defaultUser.png);"
-    <% }else{ %>
-    style="background-image: url(imgs/defaultUser.png)"
-    <% } %>></div>
-  </div>
+    <div style="clear: both;"></div>
+</div>
 
   <div class="statusBar navBar navBar-main fadeOut js-navStatusBar">
     <div class="pad20 js-statusBarMessage"></div>
@@ -125,7 +142,6 @@
   </div>
 
   <div id="adminPanel"></div>
-</div>
 
 <div class="onboardingIntroDiscover js-OnboardingIntroDiscoverHolder hide">
   <a href="#home" class="js-OnboardingIntroDiscover">
@@ -145,5 +161,6 @@
   <div class="marginLeft30 marginTop2">
     <div class="btn btn-txt js-navInstallUpdate"><%= polyglot.t('softwareUpdate.installUpdate') %></div>
     <div class="fontSize11 textOpacity75 marginTop8 marginLeft7 floatLeft js-navDismisslUpdate clickable"><%= polyglot.t('softwareUpdate.dismiss') %></div>
+  </div>    
   </div>
 </div>

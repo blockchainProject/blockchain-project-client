@@ -58,7 +58,6 @@ module.exports = pageVw.extend({
     'keyup #moderatorFeeInput': 'keypressFeeInput',
     'click #advancedForm input[name="minEffects"]': 'toggleFancyStyles',
     'click #advancedForm input[name="useTestnet"]': 'toggleTestnet',
-    'change #advancedForm input[name="appBarStyle"]': 'changeAppBarStyle',
     'blur input': 'validateInput',
     'blur textarea': 'validateInput',
     'change #handle': 'handleChange',
@@ -444,8 +443,6 @@ module.exports = pageVw.extend({
         currency = this.$('#currency_code'),
         timezone = this.$('#time_zone'),
         language = this.$('#language'),
-        generalForm = this.$('#generalForm'),
-        advancedForm = this.$('#advancedForm'),
         user = this.model.get('user'),
         ship_country_str = "",
         country_str = "",
@@ -459,15 +456,13 @@ module.exports = pageVw.extend({
         fancyStatus = window.localStorage.getItem('minEffects'),
         smtp_notifications = user.smtp_notifications == 1;
 
-    this.$("#pageForm").find("input[name=nsfw]").val([String(pageNSFW)]);
-    generalForm.find("input[name=nsfw][value=" + localStorage.getItem('NSFWFilter') + "]").prop('checked', true);
-    generalForm.find("input[name=notifications][value=" + notifications + "]").prop('checked', true);
-    this.$("#storeForm").find("input[name=vendor][value=" + vendorStatus + "]").prop('checked', true);
-    advancedForm.find("input[name=minEffects][value=" + fancyStatus + "]").prop('checked', true);
-    advancedForm.find("input[name=additionalPaymentData][value=" + localStorage.getItem('AdditionalPaymentData') + "]").prop('checked', true);
-    advancedForm.find("input[name=smtp_notifications][value=" + smtp_notifications + "]").prop('checked', true);
-    advancedForm.find("input[name=smtp_notifications][value=" + smtp_notifications + "]").prop('checked', true);
-    advancedForm.find("input[name=appBarStyle][value=" + app.appBar.getStyle() + "]").prop('checked', true);
+        this.$('#pageForm input[name=nsfw]').val([String(pageNSFW)]);
+        this.$("#generalForm input[name=nsfw][value=" + localStorage.getItem('NSFWFilter') + "]").prop('checked', true);
+        this.$("#generalForm input[name=notifications][value=" + notifications + "]").prop('checked', true);
+        this.$("#storeForm input[name=vendor][value=" + vendorStatus + "]").prop('checked', true);
+        this.$("#advancedForm input[name=notFancy][value=" + fancyStatus + "]").prop('checked', true);
+        this.$("#advancedForm input[name=additionalPaymentData][value=" + localStorage.getItem('AdditionalPaymentData') + "]").prop('checked', true);
+        this.$("#advancedForm input[name=smtp_notifications][value=" + smtp_notifications + "]").prop('checked', true);
 
     currencyList = __.uniq(currencyList, function(item){
       return item.code;
@@ -535,8 +530,8 @@ module.exports = pageVw.extend({
 
     //set moderator status
     this.$('#moderatorForm').find('input[name=moderator]').val([String(moderatorStatus)]);
-    advancedForm.find('input[name=smtp_mo]').val([String(moderatorStatus)]);
-  },
+this.$('#advancedForm').find('input[name=smtp_mo]').val([String(moderatorStatus)]);
+},
 
   showModeratorFeeHolder: function(){
     this.$moderatorFeeHolder.removeClass('hide');
@@ -1158,13 +1153,12 @@ module.exports = pageVw.extend({
   },
 
   toggleFancyStyles: function(){
-    var $html = $('html');
     
     if ($('#advancedForm').find('input[name="minEffects"]').prop('checked')){
-      $html.addClass('minEffects');
+      $('html').addClass('notFancy');
       localStorage.setItem('minEffects', "true");
     } else {
-      $html.removeClass('minEffects');
+      $('html').removeClass('notFancy');
       localStorage.setItem('minEffects', "false");
     }
   },
@@ -1172,10 +1166,6 @@ module.exports = pageVw.extend({
   toggleTestnet: function(){
     window.config.setTestnet($('#advancedForm').find('input[name="useTestnet"]').prop('checked'));
     window.location.reload();
-  },
-
-  changeAppBarStyle: function(e) {
-    app.appBar.setStyle($(e.target).val());
   },
 
   remove: function() {

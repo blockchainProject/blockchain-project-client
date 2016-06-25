@@ -1,8 +1,7 @@
 'use strict';
 
 var app = require('../App').getApp(),
-    moment = require('moment'),
-    remote = require('electron').remote;
+    moment = require('moment');
 
 function cssImageUrl(hash, guid, fallback) {
   var base = app.serverConfigs.getActive().getServerBaseUrl() + '/',
@@ -27,9 +26,12 @@ function cssImageUrl(hash, guid, fallback) {
   return url;
 }
 
+function intlNumFormat(numberToFormat, maxDigits){
+  return app.intlNumFormat(numberToFormat, maxDigits);    
+}   
+
 module.exports = {
   cssImageUrl: cssImageUrl,
-  intlNumFormat: app.intlNumFormat,
-  moment: moment,
-  launchedFromInstaller: remote.getGlobal('launched_from_installer')
+  intlNumFormat: intlNumFormat,
+  moment: moment
 };

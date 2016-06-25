@@ -37,9 +37,9 @@ var Polyglot = require('node-polyglot'),
     mCustomScrollbar = require('./utils/jquery.mCustomScrollbar.js'),
     setTheme = require('./utils/setTheme.js'),
     pageNavView = require('./views/pageNavVw'),
+    leftSidebarView = require('./views/leftSidebarVw'),
     ChatVw = require('./views/chatVw'),
     StatusBarView = require('./views/statusBarVw'),
-    AppBarVw = require('./views/appBarVw'),
     user = new userModel(),
     userProfile = new userProfileModel(),
     languages = new languagesModel(),
@@ -62,6 +62,7 @@ var Polyglot = require('node-polyglot'),
     removeStartupRetry,
     onActiveServerSync,
     extendPolyglot,
+    newleftSidebarView,
     newPageNavView,
     newSocketView,
     startUpLoadingModal,
@@ -70,20 +71,7 @@ var Polyglot = require('node-polyglot'),
     launchOnboarding,
     setServerUrl,
     guidCreating,
-    platformClass,
     updatePolyglot;
-
-if (process.platform === 'darwin') {
-  platformClass = 'platform-mac';
-} else if (process.platform === 'win32') {
-  platformClass = 'platform-win';
-} else {
-  // http://stackoverflow.com/a/8684009
-  // could be linux, sunos or freebsd
-  platformClass = `platform-${process.platform}`;
-}
-
-$html.addClass(platformClass);
 
 //put language in the window so all templates and models can reach it. It's especially important in formatting currency.
 //retrieve the stored value, since user is a blank model at this point
@@ -123,11 +111,6 @@ startUpLoadingModal = new LoadingModal({
   showLoadIndexButton: false
 });
 startUpLoadingModal.render().open();
-
-// add in our app bar
-app.appBar = new AppBarVw({
-  el: '#appBar'
-}).render();
 
 window.addEventListener('contextmenu', (e) => {
   e.preventDefault();
@@ -428,6 +411,15 @@ var loadProfile = function(landingRoute, onboarded) {
               });
               
               newPageNavView.render();
+
+              app.leftSidebar = newleftSidebarView = new leftSidebarView({
+                model: user,
+                socketView: newSocketView,
+                userProfile: userProfile,
+                showDiscIntro: onboarded
+              });
+              
+              newleftSidebarView.render();
 
               app.chatVw = new ChatVw({
                 model: user,
