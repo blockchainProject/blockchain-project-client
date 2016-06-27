@@ -593,7 +593,7 @@ h6, .h6 {
 }
 
 .header-alignright .ctrlGroup:nth-child(2) {
-  color: #9B9B9B;
+  color: #030303;
   padding-left: 16px;
   position: relative;
   top: 11px;
@@ -6335,6 +6335,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   display: none; /* hide in production */
 }
 
+/*========== header ==========*/
+
 .header-alignleft{
   float: left;
   height: 100%;
@@ -6345,4 +6347,78 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: 100%;
   text-align: right;
   width: 100%;
+}
+
+/*========== left sidebar ==========*/
+
+.leftSidebar-browse{
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.leftSidebar-browse a{
+  padding-bottom: 16px;
+}
+
+.leftSidebar-browse a:hover, .leftSidebar-create a:hover{
+  color: #009DC4;
+  text-decoration: none;
+}
+
+.leftSidebar-create{
+  margin-left: 16px;
+  margin-top: 40px;
+}
+
+.leftSidebar-create a{
+  padding-bottom: 16px;
+}
+
+.leftSidebar-browse-business{
+  background-image: url('../imgs/businessCategoryIcon.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+}
+
+.leftSidebar-browse-design{
+  background-image: url('../imgs/designCategoryIcon.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+}
+
+.leftSidebar-browse-programming{
+  background-image: url('../imgs/programmingCategoryIcon.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+}
+
+.leftSidebar-browse-translation{
+  background-image: url('../imgs/translationCategoryIcon.svg');
+  background-repeat: no-repeat;
+  background-size: 12px;
+  padding-left: 20px;
+}
+
+.leftSidebar-browse-other{
+  background-image: url('../imgs/icon.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+}
+
+.leftSidebar-create-create{
+  background-image: url('../imgs/createIcon.svg');
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 20px;
+}
+
+.leftSidebar-create-edit{
+  background-image: url('../imgs/editIcon.svg');
+  background-repeat: no-repeat;
+  background-size: 13px;
+  padding-left: 20px;
 }

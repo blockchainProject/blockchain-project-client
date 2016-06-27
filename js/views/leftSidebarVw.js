@@ -10,7 +10,7 @@ module.exports = baseVw.extend({
   el: '#leftSidebar',
 
   events:{
-  'click .leftSidebar-browse': 'navRefreshClick'
+  'click .leftSidebar-browse-title': 'navRefreshClick'
   },
 
   initialize: function(options){
