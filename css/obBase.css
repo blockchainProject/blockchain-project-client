@@ -53,8 +53,7 @@ body {
   /*fonts*/
   color: rgb(255, 255, 255);
   font-family: 'Lato', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   /*-webkit-font-smoothing: subpixel-antialiased;*/
   letter-spacing: 0.4px;
@@ -71,10 +70,14 @@ a {
   -webkit-user-drag: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
   opacity: 1;
-  text-decoration: underline;
+  color: #009DC4;
+}
+
+a:focus {
+  background-color: rgba(216, 216, 216, 0.2);
+  color: #009DC4;
 }
 
 a:active {
@@ -196,13 +199,11 @@ h1,h2,h3,h4,h5,h6,
 
 h1,h2,h3,
 .h1,.h2,.h3 {
-  margin-bottom: 20px;
   line-height: 1.2;
 }
 
 h4,h5,h6,
 .h4,.h5,.h6 {
-  margin-bottom: 10px;
   line-height: 1;
 }
 
@@ -6357,7 +6358,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .leftSidebar-browse a{
-  padding-bottom: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .leftSidebar-browse a:hover, .leftSidebar-create a:hover{
@@ -6371,54 +6373,62 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .leftSidebar-create a{
-  padding-bottom: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .leftSidebar-browse-business{
   background-image: url('../imgs/businessCategoryIcon.svg');
+  background-position: 4px 11px;
   background-repeat: no-repeat;
   background-size: 15px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
 
 .leftSidebar-browse-design{
   background-image: url('../imgs/designCategoryIcon.svg');
+  background-position: 4px 12px;
   background-repeat: no-repeat;
   background-size: 15px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
 
 .leftSidebar-browse-programming{
   background-image: url('../imgs/programmingCategoryIcon.svg');
+  background-position: 4px 12px;
   background-repeat: no-repeat;
   background-size: 15px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
 
 .leftSidebar-browse-translation{
   background-image: url('../imgs/translationCategoryIcon.svg');
+  background-position: 6px 11px;
   background-repeat: no-repeat;
   background-size: 12px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
 
 .leftSidebar-browse-other{
   background-image: url('../imgs/icon.svg');
+  background-position: 4px 11px;
   background-repeat: no-repeat;
   background-size: 15px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
 
 .leftSidebar-create-create{
   background-image: url('../imgs/createIcon.svg');
+  background-position: 4px 12px;
   background-repeat: no-repeat;
   background-size: 15px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
 
 .leftSidebar-create-edit{
   background-image: url('../imgs/editIcon.svg');
+  background-position: 6px 11px;
   background-repeat: no-repeat;
   background-size: 13px;
-  padding-left: 20px;
+  padding-left: 28px;
 }
