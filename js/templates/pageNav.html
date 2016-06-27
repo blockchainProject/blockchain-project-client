@@ -16,11 +16,6 @@
   	<span class="pull-right txt-muted marginLeft10"><%= config.keyShortcutPrefix + config.keyShortcuts.customizePage.toUpperCase() %></span>
     </a>
     <% if(ob.vendor) { %>
-      <a href="#userPage/<%= ob.guid %>/listingNew" >
-        <span class="ion-ios-pricetag fontSize10 marginRight2 textOpacity1"></span>
-        <%= polyglot.t('nav.createListing') %>
-  	  <span class="pull-right txt-muted marginLeft10"><%= config.keyShortcutPrefix + config.keyShortcuts.create.toUpperCase() %></span>
-      </a>
     <% }else{ %>
       <a href="#userPage/<%= ob.guid %>/createStore">
         <span class="ion-ios-cart fontSize11 marginRight2 textOpacity1"></span>
