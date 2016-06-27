@@ -12,7 +12,8 @@ module.exports = baseVw.extend({
 
   events:{
   'click .leftSidebar-browse-title': 'navRefreshClick',
-  'click .leftSidebar-create .leftSidebar-create-create': 'createListing'
+  'click .leftSidebar-create .leftSidebar-create-create': 'createListing',
+  'click .leftSidebar-create .leftSidebar-create-edit': 'editListing'
   },
 
   initialize: function(options){
@@ -29,6 +30,10 @@ module.exports = baseVw.extend({
 
   createListing: function(){
     Backbone.history.navigate('#userPage/'+this.userModel.get('guid')+'/listingNew', {trigger: true});
+  },
+
+  editListing: function(){
+    Backbone.history.navigate('#userPage/'+this.userModel.get('guid')+'/store', {trigger: true});
   },
 
   render: function(){
