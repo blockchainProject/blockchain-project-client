@@ -4,8 +4,8 @@
 }
 
 #obContainer::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background: #44697E;
+  border-radius: 8px;
+  background: #9B9B9B;
 }
 
 .popMenu-notificationsContent::-webkit-scrollbar,
@@ -48,7 +48,7 @@
 
 /*========== base styles ==========*/
 body {
-  background-color: rgb(6,55,83);
+  background-color: #FAFAFA;
   overflow: hidden;
   /*fonts*/
   color: rgb(255, 255, 255);
@@ -377,7 +377,7 @@ h6, .h6 {
 }
 
 .contentWrapper {
-  margin: auto;
+  margin: 0 15%;
   width: 950px;
 }
 
@@ -474,13 +474,13 @@ h6, .h6 {
 }
 
 .mainContainer {
-  background-color: #063753;
+  background-color: #FFF;
+  color: #030303;
   position: relative;
   min-height: 740px;
   margin-bottom: 50px;
   border-radius: 0;
   z-index: 0;
-  box-shadow: 0 10px 20px #05283C;
 }
 
 .img-rsp {
@@ -753,59 +753,27 @@ h6, .h6 {
   flex-grow: 1;
 }
 
-.listingType,
-.listingType.tooltip {
-  background-color: #252525;
-  color: #ffffff;
-  position: absolute;
-  padding: 6px;
-  top: 40px;
-  right: 40px;
-  font-size: 11px;
-  font-weight: 500;
-  transition: top .3s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.listingDoesNotShipToYou,
-.listingDoesNotShipToYou.tooltip {
-  background: #252525;
-  height: 18px; 
-  width: 18px;
-  right: 39px;
-  padding: 10px; 
-  position: absolute; 
-  text-align: center; 
-  top: 217px;
-  transition: top .3s cubic-bezier(0, 0, 0.2, 1);
-  border-radius: 32px;
-  opacity: 1;
-}
-
-.listingsDoesNotShipToYouSlash {
-  position: absolute; 
-  top: 3px; 
-  color: #DE2A14; 
-  font-size: 26px; 
-  left: 14px; 
-  font-weight: 700;
-}
-
 .noPointerEvents {
   pointer-events: none;
 }
 
 .gridItemControls {
-  background: #106DA3;
-  position: absolute;
-  opacity: 0;
+  position: relative;
+  opacity: 1;
   bottom: 0;
-  left: 1px;
-  height: 40px;
-  line-height: 38px;
-  border-top: solid 1px #327EB8;
+  left: 0px;
+  height: 80px;
   padding: 0;
   box-sizing: border-box;
   transition: opacity .5s cubic-bezier(0, 0, 0.2, 1);
+  width: 443px;
+  background: #FFF;
+  margin: 0px 16px; 
+}
+
+.gridItemControls ul li {
+  float: left;
+  width: 50%;
 }
 
 .gridItemControls .btn-gridItemControl {
@@ -850,58 +818,44 @@ h6, .h6 {
   margin-top: -7px;
 }
 
-.gridItemControls .btn-gridItemControl:hover {
-  opacity: 1;
-}
-
 .gridItem {
   box-sizing: border-box;
-  padding: 34px 32px;
   cursor: pointer;
-  height: 340px;
+  margin: 16px 16px 0px 16px;
   position: relative;
 }
 
 .userPage-subViews .gridItem,
 .homeView .gridItem {
-  border-bottom: 1px solid #327EB8;
-  border-right: 1px solid #327EB8;
   opacity: .9;
-  transition: opacity .3s cubic-bezier(0, 0, 0.2, 1), padding-top .3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.userPage-subViews .gridItem:hover,
-.homeView .gridItem:hover {
+.userPage-subViews .gridItem:hover {
   box-shadow: 0 0 37px -17px rgb(0, 0, 0);
   opacity: 1;
   padding-top: 20px;
 }
 
-.userPage-subViews .gridItem:hover > .listingType,
-.homeView .gridItem:hover > .listingType {
+.userPage-subViews .gridItem:hover > .listingType {
   opacity: 1;
   top: 26px;
 }
 
-.userPage-subViews .gridItem:hover > .listingDoesNotShipToYou,
-.homeView .gridItem:hover > .listingDoesNotShipToYou {
+.userPage-subViews .gridItem:hover > .listingDoesNotShipToYou {
   top: 203px;
   opacity: 1;
 }
 
-.userPage-subViews .gridItem:hover .gridItemControls,
-.homeView .gridItem:hover .gridItemControls{
+.userPage-subViews .gridItem:hover .gridItemControls {
   opacity: 1;
 }
 
-.userPage-subViews .gridItem:hover .itemImg,
-.homeView .gridItem:hover .itemImg {
+.userPage-subViews .gridItem:hover .itemImg {
     box-shadow: 0 0 37px -10px rgb(0, 0, 0);
 }
 
 /* if itemImg is nested, do not show box shadow */
-.userPage-subViews .gridItem:hover .itemImg .itemImg,
-.homeView .gridItem:hover .itemImg .itemImg {
+.userPage-subViews .gridItem:hover .itemImg .itemImg {
   box-shadow: none;
 }
 
@@ -909,6 +863,10 @@ h6, .h6 {
 .homeView .gridItem .itemImg:active {
     box-shadow: 0 0 67px -10px rgb(0, 0, 0);
     opacity: .75;
+}
+
+.homeGridItems{
+  background-color: #FAFAFA;
 }
 
 .pageGridItems .flexCol-4:nth-child(3n) .gridItem,
@@ -934,8 +892,7 @@ h6, .h6 {
   z-index: 4;
 }
 
-.userPageAboutSection:hover .userPageEditBtn,
-.userPageSocialAccounts:hover .userPageEditBtn {
+.userPageAboutSection:hover .userPageEditBtn, .userPageSocialAccounts:hover .userPageEditBtn {
   display: block;
 }
 
@@ -945,8 +902,19 @@ h6, .h6 {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2px;
-  height: 230px;
-  width: 250px;
+  color: #FFF;
+  height: 276px;
+  width: 100%;
+}
+
+.itemPrice{
+}
+
+.itemPrice span{
+  background-color: rgba(3, 3, 3, 0.8);
+  padding: 6px 8px 6px 12px;
+  position: relative;
+  bottom: 16px;
 }
 
 .itemImg.itemImg-large {
@@ -1070,6 +1038,7 @@ label.fieldItem {
   display: table;
   table-layout: fixed;
   width: 100%;
+  height: 100%;
 }
 
 .table > div {
@@ -1078,7 +1047,7 @@ label.fieldItem {
 
 .table > div > div {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .table.tablePadCell5 > div > div {
@@ -1164,13 +1133,71 @@ label.fieldItem {
   top: 23px;
 }
 
+.chatButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+  background-color:#ededed;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#777777;
+  font-family:Arial;
+  font-size:16px;
+  padding:6px 24px;
+  text-decoration:none;
+}
+
+.chatButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+  background-color:#dfdfdf;
+}
+
+.chatButton:active {
+  position:relative;
+  top:1px;
+}
+
 .thumbnail-small {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  border-radius: 0px;
   height: 30px;
-  width: 30px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 2px;
   position: relative;
+  width: 30px;
+}
+
+.thumbnail-small:after {
+   content: "";
+   position: absolute;
+   top: 18px;
+   right: -8px;
+   font-size: .7em;
+   background: #12BB4F;
+   color: white;
+   width: 16px;
+   height: 16px;
+   text-align: center;
+   line-height: 18px;
+   border-radius: 50%;
+   box-shadow: 0 0 1px #333;
 }
 
 .thumbnail {
@@ -1590,27 +1617,14 @@ label.fieldItem {
   z-index: 2;
 }
 
-.welcomeBar:before {
-  background: url('../imgs/openbazaar-icon-no-border.png');
-  background-size: cover;
-  bottom: 0;
-  content: " ";
-  height: 58px;
-  left: 30px;
-  position: absolute;
-  width: 58px;
-  z-index: 2;
-}
-
 .welcomeBar .welcomeBar-inner,
 .userBar .title-section {
-  background-color: #215175;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  height: 50px;
-  padding-left: 102px;
+  background-color: #FFFFFF;
+  height: 48px;
+  padding-left: 16px;
   position: relative;
   z-index: 1;
+  color: #030303;
 }
 
 .userBar .title-section {
@@ -1635,7 +1649,7 @@ label.fieldItem {
 }
 
 .mainContainer {
-  background-color: #086A9E;
+  background-color: ##FAFAFA;
 }
 
 .user-customize-cover-photo {
@@ -1928,7 +1942,7 @@ input[type="text"].txtField-bar {
   background: none;
   border-radius: 0;
   box-shadow: none;
-  color: #fff;
+  color: #030303;
   height: 53px;
   line-height:53px;
   font-size: 14px;
@@ -2101,7 +2115,6 @@ margin: auto;
 
 .btn.btn-discoverToggle:active,
 .btn.btn-discoverToggle.active {
-  border-bottom: solid 2px #106DA3;
   box-shadow: none;
   opacity: 1;
 }
@@ -2215,7 +2228,7 @@ margin: auto;
   min-width: 115px;
   text-align: center;
   box-shadow: none;
-  background-color: #327EB8;
+  background-color: #FFF;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   height: 47px;
@@ -2693,7 +2706,6 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .btn.btn-bar.active {
-  background-color: #086A9E;
   opacity: 1;
 }
 
@@ -2702,7 +2714,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .btn.btn-bar.btn-tab {
-  background: #327EB8;
+  background: #FFF;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom-right-radius: 0;
@@ -2718,7 +2730,6 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .btn.btn-bar.active {
-  background-color: #106DA3;
   opacity: 1;
 }
 
@@ -2827,15 +2838,11 @@ div.chatSearchOut .chatSearchIcon {
 
 .btn-toWrapper-discoverToggle .btn.btn-togLeft {
   border-radius: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
   border-right: 0;
 }
 
 .btn-toWrapper-discoverToggle .btn.btn-togRight {
   border-radius: 0;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 
 .btn.btn-flushTop {
@@ -4602,24 +4609,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   transform: rotate(45deg);
 }
 
-.listingTypeDIGITAL_GOOD:before {
-  color: #EFEF4C;
-  content: "\f137";
-  font-size: 12px;
-}
-
-.listingTypePHYSICAL_GOOD:before {
-  color: #805C17;
-  content: "\f318";
-  font-size: 12px;
-}
-
-.listingTypeSERVICE:before {
-  color: #DEDEDE;
-  content: "\f2ad";
-  font-size: 12px;
-}
-
   /* protect customize controls from custom page styles */
 #ov1 #customizeControls .labelWrap {
   height: 40px;
@@ -4779,9 +4768,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .backToTop {
   position: fixed;
   bottom: 15px;
+  color: #FFF;
   right: 73px;
   padding: 10px;
-  background-color: #252525;
+  background-color: #009DC4;
   transform: translateY(100%);
   opacity: 0;
   border-radius: 4px;
@@ -6431,4 +6421,23 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   background-repeat: no-repeat;
   background-size: 13px;
   padding-left: 28px;
+}
+
+/*========== home feed ==========*/
+.homeFeedServiceTitle {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+}
+
+.homeFeedProfileIcon {
+  position: absolute;
+  right: 52px;
+  top: 6px;
+}
+
+.homeFeedChatButton {
+  position: absolute;
+  right: 24px;
+  top: 42px;
 }
