@@ -21,10 +21,8 @@ module.exports = pageVw.extend({
     'click .js-feedTab': function(){this.setState("feed");},
     'click .js-vendorsTab': function(){this.setState("vendors");},
     'click .js-homeCreateStore': 'createStore',
-    'click .js-homeCreateListing': 'createListing',
     'click .js-homeSearchItemsClear': 'onSearchItemsClear',
     'keyup .js-homeSearchItems': 'searchItemsKeyup',
-    'focus .js-homeSearchItems': 'searchItemsFocus',
     'blur .js-homeSearchItems': 'searchItemsBlur',
     'click .js-homeListingsFollowed': 'clickListingsFollowed',
     'click .js-homeListingsAll': 'clickListingsAll',
@@ -206,10 +204,8 @@ module.exports = pageVw.extend({
         if(self.model.get('page').profile.vendor == true) {
           self.$el.find('.js-homeCreateStore').addClass('hide');
           self.$el.find('.js-homeMyPage').addClass('show');
-          self.$el.find('.js-homeCreateListing').addClass('show');
         }else{
           self.$el.find('.js-homeCreateStore').addClass('show');
-          self.$el.find('.js-homeCreateListing').addClass('hide');
         }
 
         //get vendors and items
@@ -368,10 +364,6 @@ module.exports = pageVw.extend({
     Backbone.history.navigate('#userPage/'+this.userModel.get('guid')+'/createStore', {trigger: true});
   },
 
-  createListing: function(){
-    Backbone.history.navigate('#userPage/'+this.userModel.get('guid')+'/listingNew', {trigger: true});
-  },
-
   addFollower: function(guid) {
     if (guid && this.ownFollowing.indexOf(guid) == -1) {
       this.ownFollowing.push(guid);
@@ -493,10 +485,6 @@ module.exports = pageVw.extend({
     });
 
     this.userViews = [];
-  },
-
-  searchItemsFocus: function(){
-    this.listingToggle.addClass('hide');
   },
 
   searchItemsBlur: function(){
