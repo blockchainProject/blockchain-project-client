@@ -7,7 +7,7 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
 
 
 <div class="gridItem clearfix custCol-border">
-  <div class="itemImg color-secondary custCol-secondary overflowHidden js-item" data-id="<%= ob.contract_hash %>">
+  <div class="itemImg custCol-secondary overflowHidden js-item" data-id="<%= ob.contract_hash %>">
     <div class="itemImg <% if(ob.cloak){ %> nsfw <% } %>" style="background-image: url(<%= ob.imageURL %>), url(imgs/defaultItem.png);">
       <div class="table">
         <div>
@@ -26,9 +26,9 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
 <div class="gridItemControls custCol-border custCol-primary">
   <ul>
     <li>
-    <div class="homeFeedServiceTitle js-item <% if(ob.title.length >= 30) { %>tooltip<% } %>"
-    <% if(ob.title.length >= 30) { %>data-tooltip="<%= ob.title %>"<% } %> data-id="<%= ob.contract_hash %>">
-    <div class="textSize14px noOverflow textOpacity1 js-searchTitle">
+    <div class="homeFeedServiceTitle js-item <% if(ob.title.length >= 30) { %><% } %>"
+    <% if(ob.title.length >= 30) { %> <% } %> data-id="<%= ob.contract_hash %>">
+    <div class="textSize14px textOpacity1 js-searchTitle">
       <%= ob.title %>
     </div>
     </li>

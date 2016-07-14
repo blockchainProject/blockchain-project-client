@@ -353,7 +353,6 @@ h6, .h6 {
   width: calc(100% - 47px);
   height: calc(100% - 50px);
   overflow-y: scroll;
-  padding-top: 20px;
   -webkit-app-region: no-drag;
   position: relative;
   z-index: 0;
@@ -377,7 +376,7 @@ h6, .h6 {
 }
 
 .contentWrapper {
-  margin: 0 15%;
+  margin: 0 13.5%;
   width: 950px;
 }
 
@@ -762,7 +761,7 @@ h6, .h6 {
   opacity: 1;
   bottom: 0;
   left: 0px;
-  height: 80px;
+  height: 104px;
   padding: 0;
   box-sizing: border-box;
   transition: opacity .5s cubic-bezier(0, 0, 0.2, 1);
@@ -911,7 +910,7 @@ h6, .h6 {
 }
 
 .itemPrice span{
-  background-color: rgba(3, 3, 3, 0.8);
+  background-color: rgba(3, 3, 3, 0.9);
   padding: 6px 8px 6px 12px;
   position: relative;
   bottom: 16px;
@@ -1142,13 +1141,13 @@ label.fieldItem {
   background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
   background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
   background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+  background:linear-gradient(to bottom, #FFFFFF 5%, #FAFAFA 100%);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
   background-color:#ededed;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
   border-radius:6px;
-  border:1px solid #dcdcdc;
+  border:1px solid #EDEDED;
   display:inline-block;
   cursor:pointer;
   color:#777777;
@@ -1156,17 +1155,11 @@ label.fieldItem {
   font-size:16px;
   padding:6px 24px;
   text-decoration:none;
+  box-shadow: 0px 2px 0px 0px #EDEDED;
 }
 
 .chatButton:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
-  background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-  background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-  background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-  background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
-  background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
-  background-color:#dfdfdf;
+  color: #009DC4;
 }
 
 .chatButton:active {
@@ -1854,7 +1847,7 @@ removed because I don't think we're using the trick to hide the borders any more
 }
 
 .searchWrapper:before {
-  content: "\f4a5"
+  content: "\f4a4";
 }
 
 .searchWrapper .txtField {
@@ -1876,7 +1869,7 @@ removed because I don't think we're using the trick to hide the borders any more
 .mainSearchWrapper:before {
   color: #000;
   left: 8px;
-  content: "\f4a5"
+  content: "\f4a4"
 }
 
 .mainSearchWrapper.onPage:before {
@@ -2097,7 +2090,6 @@ margin: auto;
 .btn.btn-discoverToggle {
   box-shadow: none;
   border-radius: 0;
-  border: solid 1px #2378AA;
   opacity: 1;
   font-weight: 500;
   font-size: 15px;
@@ -3772,7 +3764,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .homeView {
-  margin-top: 8px;
 }
 
 .home-page-navigation {
@@ -6425,19 +6416,21 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 /*========== home feed ==========*/
 .homeFeedServiceTitle {
+  font-weight: bold;
   position: absolute;
   left: 8px;
   top: 12px;
+  width: 70%;
 }
 
 .homeFeedProfileIcon {
   position: absolute;
   right: 52px;
-  top: 6px;
+  top: 16px;
 }
 
 .homeFeedChatButton {
   position: absolute;
   right: 24px;
-  top: 42px;
+  top: 60px;
 }
