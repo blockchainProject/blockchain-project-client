@@ -1,7 +1,7 @@
 <div class="mainContainer custCol-background">
 
   <div class="userBar">
-    <div class="title-section custCol-primary-darken shadow-inner1-ultra-light">
+    <div class="title-section custCol-primary-darken">
       <div class="thumbnail pull-left"
         <% if(ob.page.profile.avatar_hash) { %>
         style="background-image: url(<%= ob.user.serverUrl %>get_image?hash=<%= ob.page.profile.avatar_hash %>), url(imgs/defaultUser.png);">
@@ -52,7 +52,7 @@
     </a>
   </div>
 
-  <div class="flexContainer flex-border color-primary custCol-primary">
+  <div class="flexContainer flex-border custCol-primary">
     <div class="flexRow border0 minHeight650">
       <div class="flexRow flexExpand">
         <form class="width100" name="generalForm" id="generalForm">
@@ -466,125 +466,6 @@
               </div>
             </div>
 
-            <div class="flexRow borderBottom custCol-border marginTop20">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('Theme') %></h3>
-            </div>
-
-            <div class="flexRow">
-              <div class="flexCol-3 borderRight custCol-border">
-                <div class="fieldItem">
-                  <label><%= polyglot.t('StandardThemes') %></label>
-                </div>
-              </div>
-
-              <div class="flexCol-9 borderRight0 custCol-border">
-                <div class="flexRow">
-                 <div class="theme-container clearfix custCol-border borderRight borderBottom">
-                    <input type="radio" name="settings-theme-selection" class="js-settingsThemeSelection fieldItem marginBottom20"
-                           id="settings-theme-1"
-                           data-primary-color="#ba4a3f"
-                           data-secondary-color="#cc504b"
-                           data-background-color="#5E3E36"
-                           data-text-color="#ffffff"
-                           data-cover-photo="imgs/themes/1/header.png" />
-                    <label for="settings-theme-1" class="radioLabel">
-                      <div class="theme-background" style="background: #5E3E36">
-                        <div class="theme-global-header" style="background: #cc504b"></div>
-                        <div class="theme-header" style="background: url(imgs/themes/1/header-thumbnail.png); background-size: cover"></div> 
-                        <div class="theme-nav" style="background: #cc504b">
-                          <div class="theme-tab" style="background: #ba4a3f"></div>
-                        </div>
-                        <div class="theme-body" style="background: #ba4a3f"></div> 
-                      </div>
-                    </label>
-                  </div>
-
-                  <div class="theme-container clearfix custCol-border borderRight borderBottom">
-                    <input type="radio" name="settings-theme-selection" class="js-settingsThemeSelection fieldItem marginBottom20"
-                           id="settings-theme-2"
-                           data-primary-color="#ffffff"
-                           data-secondary-color="#E6E6E6"
-                           data-background-color="#B2B2B2"
-                           data-text-color="#545454"
-                           data-cover-photo="imgs/themes/2/header.png" />
-                    <label for="settings-theme-2" class="radioLabel">
-                      <div class="theme-background" style="background: #B2B2B2">
-                        <div class="theme-global-header" style="background: #E6E6E6"></div>
-                        <div class="theme-header" style="background: url(imgs/themes/2/header-thumbnail.png); background-size: cover"></div> 
-                        <div class="theme-nav" style="background: #E6E6E6">
-                          <div class="theme-tab" style="background: #ffffff"></div>                      
-                        </div>
-                        <div class="theme-body" style="background: #ffffff"></div> 
-                      </div>
-                    </label>
-                  </div>
-
-                  <div class="theme-container clearfix custCol-border borderBottom">
-                    <input type="radio" name="settings-theme-selection" class="js-settingsThemeSelection fieldItem marginBottom20"
-                           id="settings-theme-3"
-                           data-primary-color="#474559"
-                           data-secondary-color="#353443"
-                           data-background-color="#1d1d25"
-                           data-text-color="#ffffff"
-                           data-cover-photo="imgs/themes/3/header.png" />
-                    <label for="settings-theme-3" class="radioLabel">
-                      <div class="theme-background" style="background: #1d1d25">
-                        <div class="theme-global-header" style="background: #353443"></div>
-                        <div class="theme-header" style="background: url(imgs/themes/3/header-thumbnail.png); background-size: cover"></div> 
-                        <div class="theme-nav" style="background: #353443">
-                          <div class="theme-tab" style="background: #474559"></div>
-                        </div>
-                        <div class="theme-body" style="background: #474559"></div> 
-                      </div>
-                    </label>
-                  </div>
-
-                  <div class="theme-container clearfix custCol-border borderRight">
-                    <input type="radio" name="settings-theme-selection" class="js-settingsThemeSelection fieldItem marginBottom20" id="settings-theme-4" data-primary-color="#929e8e" data-secondary-color="#6e776b" data-background-color="#3d413b" data-text-color="#ffffff" data-cover-photo="imgs/themes/4/header.png" />
-                    <label for="settings-theme-4" class="radioLabel">
-                      <div class="theme-background" style="background: #3d413b">
-                        <div class="theme-global-header" style="background: #6e776b"></div>
-                        <div class="theme-header" style="background: url(imgs/themes/4/header-thumbnail.png); background-size: cover"></div> 
-                        <div class="theme-nav" style="background: #6e776b">
-                          <div class="theme-tab" style="background: #929e8e"></div>
-                        </div>
-                        <div class="theme-body" style="background: #929e8e"></div> 
-                      </div>
-                    </label>
-                  </div>
-
-                  <div class="theme-container clearfix custCol-border borderRight">
-                    <input type="radio" name="settings-theme-selection" class="js-settingsThemeSelection fieldItem marginBottom20" id="settings-theme-5" data-primary-color="#41658a" data-secondary-color="#334e6a" data-background-color="#1c2b3a" data-text-color="#ffffff" data-cover-photo="imgs/themes/5/header.png" />
-                    <label for="settings-theme-5" class="radioLabel">
-                      <div class="theme-background" style="background: #1c2b3a">
-                        <div class="theme-global-header" style="background: #334e6a"></div>
-                        <div class="theme-header" style="background: url(imgs/themes/5/header-thumbnail.png); background-size: cover"></div> 
-                        <div class="theme-nav" style="background: #334e6a">
-                          <div class="theme-tab" style="background: #41658a"></div>
-                        </div>
-                        <div class="theme-body" style="background: #41658a"></div> 
-                      </div>
-                    </label>
-                  </div>
-
-                  <div class="theme-container clearfix custCol-border">
-                    <input type="radio" name="settings-theme-selection" class="js-settingsThemeSelection fieldItem marginBottom20" id="settings-theme-6"  data-primary-color="#252525" data-secondary-color="#1B1B1B" data-background-color="#141414" data-text-color="#ffffff" data-cover-photo="imgs/themes/6/header.png" />
-                    <label for="settings-theme-6" class="radioLabel">
-                      <div class="theme-background" style="background: #141414">
-                        <div class="theme-global-header" style="background: #1B1B1B"></div>
-                        <div class="theme-header" style="background: url(imgs/themes/6/header-thumbnail.png); background-size: cover"></div> 
-                        <div class="theme-nav" style="background: #1B1B1B">
-                          <div class="theme-tab" style="background: #252525"></div>
-                        </div>
-                        <div class="theme-body" style="background: #252525"></div> 
-                      </div>
-                    </label>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
             <div class="flexRow">
               <div class="flexCol-3 borderRight custCol-border">
                 <div class="fieldItem">
@@ -604,75 +485,6 @@
                   <input type="file" id="settingsBannerInput" class="cropit-image-input hide" />
                   <label for="settingsBannerInput" class="btn btn-txt positionBottom hCentered row20 color-secondary custCol-secondary"><%= polyglot.t('NewCoverImage') %></label>
                 </div>
-              </div>
-            </div>
-
-            <div class="flexRow">
-              <div class="flexCol-3 borderRight custCol-border">
-                <div class="fieldItem">
-                  <label for="primaryColor"><%= polyglot.t('PrimaryColor') %></label>
-                </div>
-              </div>
-
-              <div class="flexCol-9 borderRight0 custCol-border">
-                <input name="primary_color"
-                       type="text"
-                       id="primaryColor"
-                       class="fieldItem"
-                       pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                       value="<%= ob.page.profile.primary_color %>">
-              </div>
-            </div>
-
-            <div class="flexRow">
-              <div class="flexCol-3 borderRight custCol-border">
-                <div class="fieldItem">
-                  <label for="secondaryColor"><%= polyglot.t('SecondaryColor') %></label>
-                </div>
-              </div>
-
-              <div class="flexCol-9 borderRight0 custCol-border">
-                <input name="secondary_color"
-                       type="text"
-                       id="secondaryColor"
-                       class="fieldItem"
-                       pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                       value="<%= ob.page.profile.secondary_color %>">
-              </div>
-            </div>
-
-
-            <div class="flexRow">
-              <div class="flexCol-3 borderRight custCol-border">
-                <div class="fieldItem">
-                  <label for="backgroundColor"><%= polyglot.t('BackgroundColor') %></label>
-                </div>
-              </div>
-
-              <div class="flexCol-9 borderRight0 custCol-border">
-                <input name="background_color"
-                       type="text"
-                       id="backgroundColor"
-                       class="fieldItem"
-                       pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                       value="<%= ob.page.profile.background_color %>">
-              </div>
-            </div>
-
-            <div class="flexRow">
-              <div class="flexCol-3 borderRight custCol-border">
-                <div class="fieldItem">
-                  <label for="textColor"><%= polyglot.t('TextColor') %></label>
-                </div>
-              </div>
-
-              <div class="flexCol-9 borderRight0 custCol-border">
-                <input name="text_color"
-                       type="text"
-                       id="textColor"
-                       class="fieldItem"
-                       pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$"
-                       value="<%= ob.page.profile.text_color %>">
               </div>
             </div>
 
@@ -1417,5 +1229,4 @@
 
     </div>
   </div>
-  <div class="navBar custCol-secondary" style="padding: 4px 0"></div>
 </div>

@@ -35,7 +35,6 @@ var Polyglot = require('node-polyglot'),
     languagesModel = require('./models/languagesMd'),
     mouseWheel = require('jquery-mousewheel'),
     mCustomScrollbar = require('./utils/jquery.mCustomScrollbar.js'),
-    setTheme = require('./utils/setTheme.js'),
     pageNavView = require('./views/pageNavVw'),
     leftSidebarView = require('./views/leftSidebarVw'),
     ChatVw = require('./views/chatVw'),
@@ -386,7 +385,6 @@ var loadProfile = function(landingRoute, onboarded) {
     success: function (model, response) {
       //make sure profile is not blank
       if (response.profile){
-        setTheme(model.get('profile').primary_color, model.get('profile').secondary_color, model.get('profile').background_color, model.get('profile').text_color);
         //get the user
         user.fetch({
           success: function (model) {

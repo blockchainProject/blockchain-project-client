@@ -1650,7 +1650,6 @@ label.fieldItem {
 }
 
 #userPage .mainContainer {
-  background-color: #4a4848;
 }
 
 .modal-opaque {
@@ -1835,6 +1834,7 @@ removed because I don't think we're using the trick to hide the borders any more
 
 .txtFieldWrapper:before,
 .searchWrapper:before {
+  font-family: "Ionicons";
   font-size: 18px;
   left: 15px;
   opacity: 0.75;
@@ -2690,7 +2690,6 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 #userPage .btn.btn-bar {
-  background-color: #575757;
 }
 
 .btn.btn-bar:hover {
@@ -2702,7 +2701,6 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 #userPage .btn.btn-bar.active {
-  background-color: #4a4848;
 }
 
 .btn.btn-bar.btn-tab {
@@ -2946,7 +2944,6 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .btn-secondary {
-  background-color: #327EB8;
 }
 
 #ov1 .confirm.btn,
@@ -3170,6 +3167,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
 
 .fieldItem .fieldItem-selectWrapper .chosen-container-single div b:after {
   content: "\f104";
+  font-family: "Ionicons";
   position: absolute;
   line-height: 50px;
   top: 0;
@@ -4372,8 +4370,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .cropit-image-zoom-input {
-  margin-left: 0;
-  margin-right: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 .cropit-image-preview.cropit-avatar {
@@ -4541,7 +4539,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .selectPill select {
-  background-color: #327EB8;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   border-radius: 3px;
   color: #fff;
@@ -4559,6 +4556,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .selectPill:before {
   content: "\f104";
+  font-family: "Ionicons";
   position: absolute;
   line-height: 31px;
   opacity: .5;
@@ -6120,6 +6118,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #ov1 #userPage .loading:after {
   /* load a loading image on top */
   content: "\f3b3";
+  font-family: "Ionicons";
   font-size: 1.5em;
   color: rgba(255,255,255,0);
   pointer-events: none;

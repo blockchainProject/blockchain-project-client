@@ -16,7 +16,6 @@ var __ = require('underscore'),
     countriesModel = require('../models/countriesMd'),
     cropit = require('../utils/jquery.cropit'),
     chosen = require('../utils/chosen.jquery.min.js'),
-    setTheme = require('../utils/setTheme.js'),
     saveToAPI = require('../utils/saveToAPI'),
     SMTPConnection = require('smtp-connection'),
     MediumEditor = require('medium-editor'),
@@ -49,7 +48,6 @@ module.exports = pageVw.extend({
     'click .js-saveAdvanced': 'saveAdvancedClick',
     'click .js-testSMTP': 'testSMTPClick',
     'click .js-changeServerSettings': 'launchServerConfig',
-    'change .js-settingsThemeSelection': 'themeClick',
     'click .js-settingsAddressDelete': 'addressDelete',
     'click .js-settingsAddressUnDelete': 'addressUnDelete',
     'click #moderatorYes': 'showModeratorFeeHolder',
@@ -145,7 +143,6 @@ module.exports = pageVw.extend({
       this.$obContainer.on('scroll', this.blockedUsersScrollHandler);
 
     if (this.cachedScrollPositions[state]) this.$obContainer[0].scrollTop = this.cachedScrollPositions[state];
-    this.setTheme();
     this.setState(state);
   },
 
@@ -164,20 +161,11 @@ module.exports = pageVw.extend({
       this.$obContainer.off('scroll', this.blockedUsersScrollHandler);
   },
 
-  setTheme: function() {
-    var profile = this.userProfile.get('profile');
-
-    if (profile) {
-      setTheme(profile.primary_color, profile.secondary_color, profile.background_color, profile.text_color);
-    }
-  },  
-
   fetchModel: function(){
     var self = this;
     this.firstLoadModerators = true;
     this.userProfile.fetch({
       success: function(model) {
-        self.setTheme();
         self.model.set({page: model.toJSON()});
         self.userModel.fetch({
           success: function(model){
@@ -670,19 +658,6 @@ this.$('#advancedForm').find('input[name=smtp_mo]').val([String(moderatorStatus)
 
   cancelView: function(){
     app.router.refresh();
-  },
-
-  themeClick: function(e) {
-    var theme = $(e.currentTarget).data();
-
-    // Populate the color inputs on theme change
-    $('#primaryColor').val(theme["primaryColor"]);
-    $('#secondaryColor').val(theme["secondaryColor"]);
-    $('#backgroundColor').val(theme["backgroundColor"]);
-    $('#textColor').val(theme["textColor"]);
-    //$('.js-settingsCoverPhoto').css('background', 'url(' + theme["coverPhoto"] + ') 50% 50% / cover no-repeat');
-    $('#settings-image-cropperBanner').cropit('imageSrc', theme["coverPhoto"]);
-    this.newBanner = true;
   },
 
   scrollToFirstError: function($container) {

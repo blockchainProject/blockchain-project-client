@@ -19,7 +19,6 @@ var __ = require('underscore'),
     reviewsView = require('./reviewsVw'),
     itemVw = require('./itemVw'),
     itemEditVw = require('./itemEditVw'),
-    setTheme = require('../utils/setTheme.js'),
     storeWizardVw = require('./storeWizardVw'),
     saveToAPI = require('../utils/saveToAPI'),
     ModeratorSettingsModal = require('./moderatorSettingsModal'),
@@ -375,7 +374,6 @@ UserPageVw = pageVw.extend({
 
     loadTemplate('./js/templates/backToTop.html', function(backToTopTmpl) {
       loadTemplate('./js/templates/userPage.html', function(loadedTemplate) {
-        self.setCustomStyles();
         self.$el.html(loadedTemplate(
           __.extend(self.model.toJSON(), {
             backToTopTmpl: backToTopTmpl
@@ -392,7 +390,6 @@ UserPageVw = pageVw.extend({
         self.undoCustomAttributes.secondary_color = self.model.get('page').profile.secondary_color;
         self.undoCustomAttributes.text_color = self.model.get('page').profile.text_color;
         */
-        self.setCustomStyles();
         self.setState(self.state, self.currentItemHash, { replaceHistory: true });
         self.$backToTop = self.$('.backToTop');
 
@@ -471,22 +468,6 @@ UserPageVw = pageVw.extend({
       }
     });
   },  
-
-  setCustomStyles: function() {
-    var self = this,
-        profile = this.model.get('page').profile;
-    //only do the following if page has been set in the model
-    if (profile){
-      setTheme(profile.primary_color, profile.secondary_color, profile.background_color, profile.text_color);
-
-      //set custom color input values
-      self.$el.find('.js-customizeColorInput').each(function(){
-        var newColor = self.model.get('page').profile[$(this).attr('id')];
-        $(this).val(newColor);
-        $(this).closest('.positionWrapper').find('.js-customizeColor').css('background-color', newColor);
-      });
-    }
-  },
 
   setState: function(state, hash, options) {
     var currentAddress,
@@ -1372,7 +1353,6 @@ UserPageVw = pageVw.extend({
     var tempPage = __.clone(this.model.get('page'));
     tempPage.profile[colorKey] = '#'+newColor;
     this.model.set('page', tempPage);
-    this.setCustomStyles();
   },
 
   uploadUserPageImage: function() {
@@ -1482,7 +1462,6 @@ UserPageVw = pageVw.extend({
 
         if (data.success === true){
           if (!self.isRemoved()) {
-            self.setCustomStyles();
             self.setState(self.lastTab);
           }
 

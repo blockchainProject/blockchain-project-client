@@ -5,7 +5,6 @@ var __ = require('underscore'),
     $ = require('jquery'),
     loadTemplate = require('../utils/loadTemplate'),
     app = require('../App.js').getApp(),
-    setTheme = require('../utils/setTheme.js'),
     Papa = require('papaparse'),
     transactionsCl = require('../collections/transactionsCl'),
     pageVw = require('./pageVw'),
@@ -53,7 +52,6 @@ module.exports = pageVw.extend({
     this.model.set("user", options.userModel.toJSON());
     this.model.set("page", profile);
     this.socketView = options.socketView;
-    setTheme(profile.primary_color, profile.secondary_color, profile.background_color, profile.text_color);
     this.serverUrl = options.userModel.get('serverUrl');
     this.cCode = options.userModel.get('currency_code');
     this.listenTo(window.obEventBus, "openOrderModal", function(options){
