@@ -397,26 +397,6 @@
                 <%}%>
               </div>
             </div>
-            <div class="flexRow custCol-border">
-              <div class="rowItem positionWrapper noOverflow">
-              <% if(ob.ownPage) { %>
-                <a href="#settings/page" class="userPageEditBtn">
-                  <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
-                    <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
-                    <%= polyglot.t('Edit') %>
-                  </div>
-                </a>
-              <%}%>
-              <div class="textOpacity75 fontSize14"><%= polyglot.t('Snapchat') %></div>
-                <% if(ob.page.profile.social_accounts.snapchat && ob.page.profile.social_accounts.snapchat.username) { %>
-                  <a href="https://snapchat.com/add/<%= ob.page.profile.social_accounts.snapchat.username %>">
-                    <%= ob.page.profile.social_accounts.snapchat.username %>
-                  </a> <i class="ion-android-open fontSize10"></i>
-                <%}else{%>
-                  <%= polyglot.t('NotProvided') %>
-                <%}%>
-              </div>
-            </div>
             <div class="flexRow borderBottom custCol-border TODO">
               <div class="rowItem positionWrapper noOverflow">
               <% if(ob.ownPage) { %>
