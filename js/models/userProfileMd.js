@@ -31,10 +31,6 @@ module.exports = Backbone.Model.extend({
         instagram: {
           username: "",
           proof_url: ""
-        },
-        snapchat: {
-          username: "",
-          proof_url: ""
         }
       },
       contracts: ["ID1", "ID2", "ID3"],
@@ -79,7 +75,6 @@ module.exports = Backbone.Model.extend({
       response.profile.social_accounts.facebook = response.profile.social_accounts.facebook || {username: "", proof_url: ""};
       response.profile.social_accounts.twitter = response.profile.social_accounts.twitter || {username: "", proof_url: ""};
       response.profile.social_accounts.instagram = response.profile.social_accounts.instagram || {username: "", proof_url: ""};
-      response.profile.social_accounts.snapchat = response.profile.social_accounts.snapchat || {username: "", proof_url: ""};
 
       //check to make sure avatar hash is valid
       if (response.profile.avatar_hash === "b472a266d0bd89c13706a4132ccfb16f7c3b9fcb" || response.profile.avatar_hash.length !== 40) {

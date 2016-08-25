@@ -49,9 +49,11 @@ module.exports = Backbone.View.extend({
     var self = this;
 
     if (this.usersShort.models.length > 0) {
-      this.listWrapper = $('<div class="list flexRow flexExpand border0 custCol-border"></div>');
+      this.modalCloseArea = $('<div class="modal-close-area js-modalClose"></div>');
+      this.listWrapper = $('<div class="list flexRow flexExpand border0 custCol-border"><button type="button" class="overlay-close js-modalClose"><img src="./imgs/close-button.png"></button></div>');
       this.renderUserSet(this.nextUserToShow, this.showPerScroll);
       this.$el.html(this.listWrapper);
+      this.$el.prepend(this.modalCloseArea)
     } else {
       self.renderNoneFound();
     }

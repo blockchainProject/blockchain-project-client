@@ -69,8 +69,7 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
 
   <% if(!ob.ownPage && ob.discover === undefined){ %>
     <div class="btn-gridItemControl borderRight custCol-border js-item" data-id="<%= ob.contract_hash %>">
-      <span class="ion-ios-pricetag fontSize10 marginRight2 txt-fade"></span>
-      <span class="txt-fade"><%= polyglot.t('ViewListing') %></span>
+      <a href="#" class="detailButton">Detail</a>
     </div>          
   <% } %>
   </div>
