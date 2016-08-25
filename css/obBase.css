@@ -291,6 +291,7 @@ h6, .h6 {
 
 .clamp2 {
   /* adds an ellipses to the end of wrapped text after 2 lines */
+  color: #9B9B9B;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -776,7 +777,10 @@ h6, .h6 {
 }
 
 .gridItemControls .btn-gridItemControl {
-  text-align: center;
+  text-align: right;
+  position: absolute;
+  top: 12px;
+  right: 24px;
   padding: 0;
   font-weight: 400;
   font-size: 12px;
@@ -830,9 +834,7 @@ h6, .h6 {
 }
 
 .userPage-subViews .gridItem:hover {
-  box-shadow: 0 0 37px -17px rgb(0, 0, 0);
   opacity: 1;
-  padding-top: 20px;
 }
 
 .userPage-subViews .gridItem:hover > .listingType {
@@ -850,7 +852,6 @@ h6, .h6 {
 }
 
 .userPage-subViews .gridItem:hover .itemImg {
-    box-shadow: 0 0 37px -10px rgb(0, 0, 0);
 }
 
 /* if itemImg is nested, do not show box shadow */
@@ -860,8 +861,12 @@ h6, .h6 {
 
 .userPage-subViews .gridItem .itemImg:active,
 .homeView .gridItem .itemImg:active {
-    box-shadow: 0 0 67px -10px rgb(0, 0, 0);
-    opacity: .75;
+  box-shadow: 0 0 67px -10px rgb(0, 0, 0);
+  opacity: .75;
+}
+
+.flexRow.js-list2.overlay.overlay-scale a:hover {
+  color: #009DC4;
 }
 
 .homeGridItems{
@@ -1046,7 +1051,7 @@ label.fieldItem {
 
 .table > div > div {
   display: table-cell;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
 .table.tablePadCell5 > div > div {
@@ -1207,8 +1212,8 @@ label.fieldItem {
 
 .thumbnail-large {
   border-radius: 40px;
-  height: 80px;
-  width: 80px;
+  height: 64px;
+  width: 64px;
   transition: all .1s cubic-bezier(0, 0, 0.5, 1);
 }
 
@@ -3780,14 +3785,20 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .user-page-navigation {
   width: 950px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .user-page-header {
   position: relative;
   height: 400px;
-  z-index: 2;
 }
+
+.user-page-header .thumbnail{
+  position: relative;
+  top: 32px;
+  z-index: 1;
+}
+
 
 .user-page-header-slim {
   position: absolute;
@@ -3839,6 +3850,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .userPage-subViews img {
   width: 100%;
   height: auto;
+  position: relative;
+  right: 56px;
 }
 
 .icon-huge {
@@ -5737,6 +5750,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   padding: 20px 20px;
 }
 
+#ov1  .padding8056 {
+  padding: 80px 56px;
+}
+
 #ov1  .padding17px {
   padding: 17px;
 }
@@ -6430,4 +6447,49 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: absolute;
   right: 24px;
   top: 60px;
+}
+
+.detailButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+  background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+  background:linear-gradient(to bottom, #FFFFFF 5%, #FAFAFA 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+  background-color:#ededed;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #EDEDED;
+  display:inline-block;
+  cursor:pointer;
+  color:#777777;
+  font-family:Arial;
+  font-size:16px;
+  padding:6px 24px;
+  text-decoration:none;
+  box-shadow: 0px 2px 0px 0px #EDEDED;
+}
+
+.detailButton:hover {
+  color: #009DC4;
+}
+
+.detailButton:active {
+  position:relative;
+  top:1px;
+}
+
+/*========== profile page ==========*/
+
+.modal-close-area{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
 }

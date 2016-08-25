@@ -1,0 +1,107 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+    width: 70%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.95);
+    height: 100vh;
+    overflow-y: auto;
+    margin-left: 168px;
+    margin-top: 56px;
+    z-index: 1;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	background: transparent;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 20px;
+	top: -60px;
+	overflow: hidden;
+	border: none;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+.overlay .overlay-close:hover {
+    opacity: 0.8;
+}
+
+/* Menu style */
+.overlay .list {
+	text-align: left;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	max-width: 80%;
+	margin: 0 auto;
+    z-index: 100;
+}
+
+.overlay .js-userShortView {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 60%;
+	position: relative;
+}
+
+.overlay .js-userShortView .rowItem {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.overlay .js-userShortView .rowItem .js-userShort {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #030303;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay .js-userShortView .rowItem .js-userShort:hover,
+.overlay .js-userShortView .rowItem .js-userShort:focus {
+	color: #f0f0f0;
+}
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay .list {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay .js-userShortView .rowItem {
+		min-height: 34px;
+	}
+}

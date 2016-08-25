@@ -23,6 +23,8 @@ var __ = require('underscore'),
     saveToAPI = require('../utils/saveToAPI'),
     ModeratorSettingsModal = require('./moderatorSettingsModal'),
     HiddenWarningModal = require('./hiddenWarningModal'),
+    classie = require('../utils/classie.js'),
+    Modernizr = require('../utils/modernizr.custom.js'),
     UserPageVw;
 
 var defaultItem = {
@@ -126,6 +128,8 @@ UserPageVw = pageVw.extend({
     'click .js-reviewsTab': 'reviewsClick',
     'click .js-followersTab': 'followersClick',
     'click .js-followingTab': 'followingClick',
+    'click .js-followers .js-modalClose': 'followersClick',
+    'click .js-following .js-modalClose': 'followingClick',
     'click .js-storeTab': 'storeTabClick',
     'click .js-returnToStore': 'storeClick',
     'click .js-returnToStoreCategory': 'storeCatClick',
@@ -1116,14 +1120,18 @@ UserPageVw = pageVw.extend({
   },
 
   followersClick: function(e){
+    this.toggleOverlay('.js-followers');
     this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-followers'));
+    this.listHeight();
     this.addTabToHistory('followers');
     this.setState('followers');
     // $('#inputFollowers').focus();
   },
 
   followingClick: function(e){
+    this.toggleOverlay('.js-following');
     this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-following'));
+    this.listHeight();
     this.addTabToHistory('following');
     this.setState('following');
     // $('#inputFollowing').focus();
@@ -1158,6 +1166,45 @@ UserPageVw = pageVw.extend({
 
     this.customizing = false;
     this.editing = false;
+  },
+
+  toggleOverlay: function(className) {
+    var overlay = document.querySelector( className + ' .overlay' ),
+      transEndEventNames = {
+        'WebkitTransition': 'webkitTransitionEnd',
+        'MozTransition': 'transitionend',
+        'OTransition': 'oTransitionEnd',
+        'msTransition': 'MSTransitionEnd',
+        'transition': 'transitionend'
+      },
+      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+      support = { transitions : Modernizr.csstransitions };
+
+    if( classie.has( overlay, 'open' ) ) {
+      classie.remove( overlay, 'open' );
+      classie.add( overlay, 'close' );
+      var onEndTransitionFn = function( ev ) {
+        if( support.transitions ) {
+          if( ev.propertyName !== 'visibility' ) return;
+          this.removeEventListener( transEndEventName, onEndTransitionFn );
+        }
+        classie.remove( overlay, 'close' );
+      };
+      if( support.transitions ) {
+        overlay.addEventListener( transEndEventName, onEndTransitionFn );
+      }
+      else {
+        onEndTransitionFn();
+      }
+    }
+    else if( !classie.hasClass( overlay, 'close' ) || classie.hasClass( overlay, 'close' )) {
+      classie.add( overlay, 'open' );
+    }
+  },
+
+  listHeight: function(){
+    var listHeight = $('.overlay .js-userShortView').length * 200;
+    $(".modal-close-area").css("height", listHeight);
   },
 
   addTabToHistory: function(state){
