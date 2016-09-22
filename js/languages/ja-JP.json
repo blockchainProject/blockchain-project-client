@@ -73,7 +73,7 @@
     "DontDelete": "削除しない",
     "ConfirmDelete": "削除する",
     "Website": "ウェブサイト",
-    "Guid": "OpenBazaar ID",
+    "Guid": "ID",
     "Welcome": "こんにちは",
     "CreateStore": "出品する",
     "GoToMyPage": "マイページ",
@@ -402,7 +402,7 @@
     "transactions": {
         "Order": "注文",
         "OrderDetails": "注文の詳細",
-        "ViewOnBlockchain": "詳細を表示",
+        "ViewOnBlockchain": "取引詳細を表示",
         "BuyerPayout": "購入者の支払:",
         "SellerPayout": "販売者の支払:",
         "BuyerAmount": "購入者の金額:",

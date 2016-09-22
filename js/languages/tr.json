@@ -73,7 +73,7 @@
     "DontDelete": "Silme",
     "ConfirmDelete": "Silmeyi Onayla",
     "Website": "Websitesi",
-    "Guid": "OpenBazaar ID",
+    "Guid": "ID",
     "Welcome": "Hoşgeldiniz",
     "CreateStore": "Mağaza Oluşturun",
     "GoToMyPage": "Sayfam",
@@ -402,7 +402,7 @@
     "transactions": {
         "Order": "Order",
         "OrderDetails": "Order Details",
-        "ViewOnBlockchain": "View Details",
+        "ViewOnBlockchain": "Transaction Details",
         "BuyerPayout": "Buyer Payout:",
         "SellerPayout": "Seller Payout:",
         "BuyerAmount": "Buyer Amount:",

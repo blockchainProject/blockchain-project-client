@@ -73,7 +73,7 @@
     "DontDelete": "Wej HoH",
     "ConfirmDelete": "Qapla' HoH",
     "Website": "'ej bebvo' Juh",
-    "Guid": "OpenBazaar ID",
+    "Guid": "ID",
     "Welcome": "YI'el",
     "CreateStore": "NgevwI' qach",
     "GoToMyPage": "JuHwIj",
@@ -402,7 +402,7 @@
     "transactions": {
         "Order": "Order",
         "OrderDetails": "Order Details",
-        "ViewOnBlockchain": "View Details",
+        "ViewOnBlockchain": "Transaction Details",
         "BuyerPayout": "Buyer Payout:",
         "SellerPayout": "Seller Payout:",
         "BuyerAmount": "Buyer Amount:",

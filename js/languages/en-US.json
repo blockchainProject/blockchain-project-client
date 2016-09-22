@@ -75,7 +75,7 @@
   "ConfirmDelete": "Confirm Delete",
   "YesDelete": "Yes, delete",
   "Website": "Website",
-  "Guid": "OpenBazaar ID",
+  "Guid": "ID",
   "Welcome": "Welcome",
   "CreateStore": "Become a Store",
   "GoToMyPage": "My Page",
@@ -409,7 +409,7 @@
   "transactions": {
     "Order": "Order",
     "OrderDetails": "Order Details",
-    "ViewOnBlockchain": "View Details",
+    "ViewOnBlockchain": "Transaction Details",
     "BuyerPayout": "Buyer Payout:",
     "SellerPayout": "Vendor Payout:",
     "BuyerAmount": "Buyer Amount:",
