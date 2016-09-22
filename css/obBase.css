@@ -64,19 +64,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  opacity: .85;
   transition: opacity .15s cubic-bezier(0, 0, 0.2, 1);
   cursor: pointer;
   -webkit-user-drag: none;
 }
 
 a:hover {
-  opacity: 1;
-  color: #009DC4;
+  opacity: 1.0;
 }
 
 a:focus {
-  background-color: rgba(216, 216, 216, 0.2);
   color: #009DC4;
 }
 
@@ -98,8 +95,15 @@ p:last-child {
 }
 
 hr {
-  border: solid 1px rgba(255,255,255,0.08);
-  width: 100%;
+  border: solid 1px rgb(155,155,155);
+  width: 70%;
+}
+
+.vertical-line {
+  border-left: 1px solid rgb(155,155,155);
+  height: 32px;
+  position: absolute;
+  top: 32px;
 }
 
 ul {
@@ -119,7 +123,7 @@ textarea::-webkit-input-placeholder,
 .txt-placeholder,
 .fieldItem .txt-placeholder {
   opacity: .5;
-  color: #fff;
+  color: #FFF;
   font-size: 14px;
   font-weight: 400;
 }
@@ -180,7 +184,7 @@ textarea {
 }
 
 textarea:focus {
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
   outline: none;
 }
 
@@ -195,6 +199,7 @@ h1,h2,h3,h4,h5,h6,
   margin: 0;
   -webkit-user-select: none;
   cursor: default;
+  font-size: 24px;
 }
 
 h1,h2,h3,
@@ -269,6 +274,10 @@ h6, .h6 {
 .txt-unleaded {
   line-height: 1;
   margin-bottom: 0;
+}
+
+#ov1 .bold {
+  font-weight: bold;
 }
 
 #ov1 .unbold {
@@ -362,7 +371,7 @@ h6, .h6 {
 
 #obContainer.customizeUserPage {
   overflow: hidden;
-  border: 5px dashed #fff;
+  border: 5px dashed #FFF;
   height: calc(100% - 76px);
   animation: borderDashedFade .35s normal linear;
 }
@@ -458,11 +467,11 @@ h6, .h6 {
 }
 
 #sideBar input::-webkit-input-placeholder {
-  color: #fff;
+  color: #FFF;
 }
 
 #sideBar.btn {
-  color: #fff;
+  color: #FFF;
 }
 
 .chatSearch {
@@ -474,7 +483,7 @@ h6, .h6 {
 }
 
 .mainContainer {
-  background-color: #FFF;
+  background-color: #FAFAFA;
   color: #030303;
   position: relative;
   min-height: 740px;
@@ -758,6 +767,7 @@ h6, .h6 {
 }
 
 .gridItemControls {
+  background-color: #FFF;
   position: relative;
   opacity: 1;
   bottom: 0;
@@ -830,7 +840,6 @@ h6, .h6 {
 
 .userPage-subViews .gridItem,
 .homeView .gridItem {
-  opacity: .9;
 }
 
 .userPage-subViews .gridItem:hover {
@@ -900,6 +909,12 @@ h6, .h6 {
   display: block;
 }
 
+.userPageSocialAccounts{
+  background-color: #FAFAFA;
+  z-index: 0;
+  margin-top: 80px;
+}
+
 .itemImg {
   position: relative;
   background-position: center;
@@ -918,7 +933,7 @@ h6, .h6 {
   background-color: rgba(3, 3, 3, 0.9);
   padding: 6px 8px 6px 12px;
   position: relative;
-  bottom: 16px;
+  top: 240px;
 }
 
 .itemImg.itemImg-large {
@@ -1042,7 +1057,7 @@ label.fieldItem {
   display: table;
   table-layout: fixed;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .table > div {
@@ -1138,36 +1153,69 @@ label.fieldItem {
 }
 
 .chatButton {
-  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
-  background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:linear-gradient(to bottom, #FFFFFF 5%, #FAFAFA 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
-  background-color:#ededed;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  border:1px solid #EDEDED;
-  display:inline-block;
-  cursor:pointer;
-  color:#777777;
-  font-family:Arial;
-  font-size:16px;
-  padding:6px 24px;
-  text-decoration:none;
-  box-shadow: 0px 2px 0px 0px #EDEDED;
+  background-color: #FFF;
+  border:1px solid #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #12BB4F;
+  font-size: 24px;
+  padding: 6px 32px;
+  text-decoration: none;
 }
 
 .chatButton:hover {
-  color: #009DC4;
+  border:1px solid #FF3346;
+  color: #FF3346;
 }
 
 .chatButton:active {
+  position:relative;
+  top:1px;
+}
+
+.followButton{
+  background-color: #FFF;
+  border:1px solid #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #009DC4;
+  font-size: 18px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.followButton:hover {
+  opacity: 0.8;
+}
+
+.followButton:active {
+  position:relative;
+  top:1px;
+}
+
+.followingButton{
+  background-color: #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.followingButton:hover {
+  opacity: 0.8;
+}
+
+.followingButton:active {
   position:relative;
   top:1px;
 }
@@ -1204,16 +1252,16 @@ label.fieldItem {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 2px;
+  border-radius: 27px;
   position: relative;
   flex-basis: auto;
   flex-shrink: 0;
 }
 
 .thumbnail-large {
-  border-radius: 40px;
-  height: 64px;
-  width: 64px;
+  border-radius: 60px;
+  height: 120px;
+  width: 120px;
   transition: all .1s cubic-bezier(0, 0, 0.5, 1);
 }
 
@@ -1590,6 +1638,7 @@ label.fieldItem {
 
 .navBar {
   background-color: #D5DCD8;
+  color: #FFF;
 }
 
 .navBar.statusBar,
@@ -1615,7 +1664,7 @@ label.fieldItem {
 
 .welcomeBar .welcomeBar-inner,
 .userBar .title-section {
-  background-color: #FFFFFF;
+  background-color: #FFF;
   height: 48px;
   padding-left: 16px;
   position: relative;
@@ -1644,10 +1693,6 @@ label.fieldItem {
   width: 950px;
 }
 
-.mainContainer {
-  background-color: ##FAFAFA;
-}
-
 .user-customize-cover-photo {
   width: 950px;
 }
@@ -1673,7 +1718,7 @@ label.fieldItem {
 
 .modal-childMain {
   border-radius: 3px;
-  background-color: #327eb8;
+  background-color: #009DC4;
 }
 
 .modal-hero {
@@ -1767,7 +1812,6 @@ removed because I don't think we're using the trick to hide the borders any more
 }
 
 .flex-border > .flexRow > [class |= "flexCol"] {
-  border-right: 1px solid rgba(255,255,255,0.08);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -1909,7 +1953,7 @@ removed because I don't think we're using the trick to hide the borders any more
   position: absolute;
   width: 100%;
   max-height: 155px;
-  background: #fff;
+  background: #FFF;
   margin-top: 7px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -1953,7 +1997,7 @@ input[type="text"].txtField-bar {
 }
 
 .txtFieldWrapper-bar:before {
-  color: #fff;
+  color: #FFF;
   top: 27px;
   left: 15px;
   opacity: 1;
@@ -2127,7 +2171,7 @@ margin: auto;
 }
 
 .btn:hover {
-  color: #009DC4;
+  opacity: 1;
 }
 
 .btn:active,
@@ -2168,7 +2212,7 @@ margin: auto;
   width: 14px;
   min-width: 0;
   height: 14px;
-  background-color: #fff;
+  background-color: #FFF;
   margin: 0 6px;
   padding: 0;
 }
@@ -2197,7 +2241,7 @@ margin: auto;
   width: 100%;
   height: 100%;
   font-size: 13px;
-  color: #000000;
+  color: #000;
 }
 
 .btn.btn-win.btn-winClose:hover .btn-win-icon,
@@ -2387,7 +2431,7 @@ div.chatSearchOut .chatSearchIcon {
     height: 45px;
     line-height: 45px;
     padding-left: 10px;
-    color: #fff;
+    color: #FFF;
     border-top-left-radius: 4px;
     margin-left: 2px;
 }
@@ -2562,7 +2606,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .chatHeadSelected {
   opacity: 1;
-  outline: solid 1px #FFFFFF;
+  outline: solid 1px #FFF;
   background: #565656;
   z-index:3;
 }
@@ -2603,7 +2647,7 @@ div.chatSearchOut .chatSearchIcon {
   text-overflow: ellipsis;
   width: 170px;
   white-space: nowrap;
-  color: #fff;
+  color: #FFF;
   opacity: .75;
   font-size: 12px;
   margin-left: 2px;
@@ -2628,7 +2672,7 @@ div.chatSearchOut .chatSearchIcon {
 
 #inputConversationMessage::-webkit-input-placeholder  {
   font-size: 12px;
-  color: #fff !important; /* i'm using important here because the custom theme styles should never override this color */
+  color: #FFF !important; /* i'm using important here because the custom theme styles should never override this color */
 }
 
 .chatConversationMessageAvatar {
@@ -2672,7 +2716,7 @@ div.chatSearchOut .chatSearchIcon {
   background: #252525;
   border-left: 4px solid #FFA41C;
   z-index: 1;
-  color: #ffffff;
+  color: #FFF;
   opacity: .95;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.40);
   transition: left .25s cubic-bezier(0, 0, 0.2, 1);
@@ -2684,7 +2728,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .softwareUpdate .btn-txt {
   background: transparent;
-  border: solid 1px #fff;
+  border: solid 1px #FFF;
   opacity: 1;
   font-size: 12px;
 }
@@ -2696,7 +2740,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .btn.btn-bar:hover {
-  opacity: .75;
+  opacity: 1.0;
 }
 
 .btn.btn-bar.active {
@@ -2716,7 +2760,7 @@ div.chatSearchOut .chatSearchIcon {
   border: none;
   height:48px;
   font-weight: 500;
-  line-height: 46px;
+  line-height: 16px;
   padding: 0 25px;
   margin-top: 6px;
   font-size: 14px;
@@ -2921,6 +2965,7 @@ div.chatSearchOut .chatSearchIcon {
 .btn .preConfirm {
   max-width: 200px;
   transition: 1s opacity;
+  margin-left: 4px;
 }
 
 .btn .postConfirm {
@@ -3006,7 +3051,7 @@ input[type="password"].fieldItem,
 input[type="datetime-local"].fieldItem {
   background: none;
   border: 2px solid transparent;
-  color: #fff;
+  color: #FFF;
   width: 100%;
 }
 
@@ -3056,7 +3101,7 @@ input[type="email"].fieldItem:focus,
 input[type="url"].fieldItem:focus,
 input[type="password"].fieldItem:focus,
 input[type="datetime-local"].fieldItem:focus {
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
   transition: border 0.3s;
 }
 
@@ -3079,7 +3124,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
   position: absolute;
   right: 0;
   box-sizing: border-box;
-  color: #fff;
+  color: #FFF;
   font-size: 14px;
   text-align: center;
   line-height: 20px;
@@ -3122,7 +3167,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
   outline: none;
   box-sizing: border-box;
   -webkit-appearance: none;
-  color: #fff;
+  color: #000;
 }
 
 .fieldItem .fieldItem-selectWrapper select:focus {
@@ -3158,7 +3203,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
   border-radius: 0;
   box-shadow: none;
   line-height: 50px;
-  color: #fff;
+  color: #000;
   opacity: 1;
 }
 
@@ -3188,7 +3233,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
   border-radius: 0;
   box-shadow: none;
   line-height: 50px;
-  color: #fff;
+  color: #FFF;
 }
 
 .fieldItem .fieldItem-selectWrapper.chosen-relative .chosen-with-drop .chosen-drop {
@@ -3196,7 +3241,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
 }
 
 .fieldItem .fieldItem-selectWrapper .chosen-drop .chosen-results li {
-  color: #fff;
+  color: #FFF;
 }
 
 .fieldItem .fieldItem-selectWrapper .chosen-drop .chosen-results li.highlighted {
@@ -3220,13 +3265,13 @@ input[type="number"].fieldItem.fieldItem-withButton {
 .fieldItem-textarea {
   padding: 15px;
   border: 2px solid transparent;
-  color: #fff;
+  color: #FFF;
   overflow: auto; /* use customThemeScrollbar to add a scrolbar */
   word-break: break-word; /* prevent urls from making the text area grow */
 }
 
 .fieldItem-textarea:focus {
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
   transition: border 0.3s;
   outline: none;
 }
@@ -3239,7 +3284,7 @@ select {
 }
 
 select:focus {
-  border: 2px solid #fff;
+  border: 2px solid #FFF;
 }
 
 input[type="radio"].fieldItem {
@@ -3261,7 +3306,7 @@ input[type="radio"].fieldItem + label:before {
   height: 16px;
   width: 16px;
   border-radius: 12px;
-  border: solid 1px #fff;
+  border: solid 1px #FFF;
   box-shadow: none;
   opacity: 1;
   transform: translateY(-50%) translateZ(0);
@@ -3270,7 +3315,7 @@ input[type="radio"].fieldItem + label:before {
 }
 
 input[type="radio"].fieldItem:checked + label:before {
-  background: #fff;
+  background: #FFF;
   box-shadow: inset 0 0 0 4px #086A9E;
 }
 
@@ -3290,13 +3335,13 @@ input[type="radio"].fieldItem:checked + label:before {
   left: 50%;
   margin-left: -8px;
   border-radius: 12px;
-  border: solid 1px #fff;
+  border: solid 1px #FFF;
   box-shadow: none;
   opacity: 1;
 }
 
 .theme-container input[type="radio"].fieldItem:checked + label:before {
-  background: #fff;
+  background: #FFF;
   box-shadow: inset 0 0 0 4px #086A9E;
 }
 
@@ -3306,7 +3351,7 @@ input[type="radio"].fieldItem.starRating + label {
 
 input[type="radio"].fieldItem.starRating + label:before {
   content: "\f2fc";
-  color: #fff;
+  color: #FFF;
   line-height: 24px;
   font-size: 18px;
   text-align: center;
@@ -3348,7 +3393,7 @@ input[type="radio"].fieldItem.starRating:checked + label + input + label + input
 .starRating:before {
   /* use when displaying stars that are not part of an input */
   content: "\f2fc";
-  color: #fff;
+  color: #FFF;
   line-height: 24px;
   font-size: 18px;
 }
@@ -3666,7 +3711,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .banner-large {
   border-radius: 0;
   background: 50% 50% / cover no-repeat;
-  height: 400px;
+  height: 320px;
   position: absolute;
   top: 0;
   width: 950px;
@@ -3678,12 +3723,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .banner-settings {
   height: 300px;
   width: 712px;
-}
-
-.user-page-content {
-  position: fixed;
-  width: 950px;
-  z-index: 2;
 }
 
 #noNotifications {
@@ -3790,61 +3829,22 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .user-page-header {
   position: relative;
-  height: 400px;
+  height: 320px;
+  z-index: 0;
 }
 
 .user-page-header .thumbnail{
   position: relative;
-  top: 32px;
+  top: 56px;
   z-index: 1;
-}
-
-
-.user-page-header-slim {
-  position: absolute;
-  top: 0;
-  border-top-left-radius: 1px;
-  border-top-right-radius: 1px;
-  height: 50px;
-  opacity: 0;
-  overflow: hidden;
-  width: 950px;
-  background: transparent;
-  z-index: 5;
-  padding: 0;
-  transition: opacity .4s cubic-bezier(0, 0, 0.2, 1), transform .4s cubic-bezier(0, 0, 0.2, 1);
-  transform: translateY(-110%);
-}
-
-.user-page-header-slim.scrolledIntoView {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.user-page-header-slim-bg {
-  position: absolute;
-  top: -10px;
-  width: 950px;
-  height: 80px;
-  -webkit-filter: blur(10px);
-}
-
-.user-page-header-slim-avatar {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  height: 48px;
-  transition: all .1s cubic-bezier(0, 0, 0.5, 1);
-  width: 52px;
-  z-index: 5;
-}
-
-.user-page-header-slim-tint {
-  box-shadow: inset 0 -160px 112px -52px rgba(25,25,25,.9);
+  left: 72px;
 }
 
 .userPage-subViews {
   position: relative;
-  z-index: 1;
+  z-index: 0;
+  border-right: solid 1px rgb(155,155,155);
+  top: 0px;
 }
 
 .userPage-subViews img {
@@ -3879,7 +3879,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .icon-circle-background1 {
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #FFF;
   text-align: center;
   display: inline-block;
 }
@@ -3943,8 +3943,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   background: url('../imgs/icon-with-opening.png') 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 215px;
-  height: 215px;
+  width: 100%;
+  height: 100vh;
   position: relative;
   transition: left 0.5s ease;
 }
@@ -3987,7 +3987,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: absolute;
   bottom: 0;
   top: 200px;
-  color: #fff;
+  color: #FFF;
   font-size: 20px;
   line-height: 22px;
   width: 70%;
@@ -4115,7 +4115,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .fancy-heading {
-  font-weight: 200;
+  font-weight: bold;
   font-size: 34px;
   opacity: .8;
   letter-spacing: 1.5px;
@@ -4154,7 +4154,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-bottom: 0;
   width: 40px;
   height: 40px;
-  border: solid 2px #fff;
+  border: solid 2px #FFF;
   border-radius: 0;
   border-bottom: 0;
 }
@@ -4190,7 +4190,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .customColorChoice {
-  background: #fff;
+  background: #FFF;
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -4234,7 +4234,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   max-width: 300px;
   background: rgba(37,37,37,.95);
   border-radius: 3px;
-  color: #fff;
+  color: #FFF;
   padding: 8px 10px;
   position: absolute;
   z-index: 10;
@@ -4268,7 +4268,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   background: rgba(37,37,37,.95);
   border-radius: 3px;
   bottom: -32px;
-  color: #fff;
+  color: #FFF;
   content: attr(data-tooltip);
   padding: 8px 10px;
   position: absolute;
@@ -4348,7 +4348,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   display: inline-block;
   padding: 4px 10px;
   background: #252525;
-  color: #fff;
+  color: #FFF;
   position: absolute;
   left: 37px;
   border-radius: 4px;
@@ -4367,7 +4367,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .headerCropper.banner-large,
 .headerCropperPreview.banner-large {
   width: 950px;
-  height: 400px;
+  height: 320px;
 }
 
 .headerCropper.banner-large {
@@ -4377,7 +4377,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .headerCropper .cropit-image-zoom-input {
   position: absolute;
   top: 240px;
-  width: 400px;
+  width: 320px;
 }
 
 .cropit-image-zoom-input {
@@ -4457,7 +4457,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .page-connect-modal .spinner-with-logo {
-  margin-top: -45px;
 }
 
 .loadingModal .loadingModalContent {
@@ -4526,7 +4525,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-radius: 2px;
   padding: 5px 7px;
   min-width: 100px;
-  color: #009DC4;
+  font-weight: bold;
+  opacity: 0.75;
+}
+
+.pill:hover {
+  opacity: 1;
 }
 
 .pill.tabPill {
@@ -4552,7 +4556,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .selectPill select {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
   border-radius: 3px;
-  color: #fff;
+  color: #FFF;
   cursor: pointer;
   font-size: 12px;
   margin-left: 10px;
@@ -4600,7 +4604,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   width: 50px;
   height: 50px;
   background: #215175; /* this should be overridden with a color class */
-  color: #fff;
+  color: #FFF;
 }
 
 .violatorTxt{
@@ -4673,7 +4677,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .qrCode {
-  background-color: #fff;
+  background-color: #FFF;
   padding: 15px;
 }
 
@@ -4707,7 +4711,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   box-sizing: border-box;
   padding: 0 10px;
   line-height: 30px;
-  color: #fff;
+  color: #FFF;
   font-size: 12px;
   font-style: italic;
   background: #000;
@@ -4995,10 +4999,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-bottom: dashed 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .borderBottom2 {
-  border-bottom: solid 2px rgba(255,255,255,0.08);
-}
-
 #ov1  .borderTop {
   border-top: solid 1px rgba(255,255,255,0.08);
 }
@@ -5028,7 +5028,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1  .outline2 {
-  outline: 2px solid #fff;
+  outline: 2px solid #FFF;
 }
 
 #ov1  .borderRadiusTop {
@@ -5226,6 +5226,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #ov1 .fontSize20 {
   font-size: 20px;
 }
+
 #ov1 .fontSize24 {
   font-size: 24px;
 }
@@ -5239,7 +5240,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .txt-bright {
-  color: #fff;
+  color: #FFF;
 }
 
 #ov1 .txt-darkest {
@@ -5271,6 +5272,14 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1  .alignRight {
   text-align: right;
+}
+
+#ov1 .holizontalAlign {
+  display: inline-block;
+}
+
+#ov1 .displayBlock{
+  display: block;
 }
 
 #ov1  .floatLeft {
@@ -5396,6 +5405,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: -8px;
 }
 
+#ov1  .marginTop-8 {
+  margin-top: -8px;
+}
+
 #ov1  .marginTop0 {
   margin-top: 0px;
 }
@@ -5515,9 +5528,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-bottom: 50px;
 }
 
-
 #ov1  .marginAuto {
   margin: auto;
+}
+
+#ov1  .margin0Auto {
+  margin: 0 auto;
 }
 
 #ov1  .left0 {
@@ -5746,6 +5762,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   padding: 20px 15px;
 }
 
+#ov1  .padding2032 {
+  padding: 20px 32px;
+}
+
 #ov1  .padding2520 {
   padding: 20px 20px;
 }
@@ -5793,6 +5813,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #ov1  .paddingLeft20 {
   padding-left: 20px;
 }
+
+#ov1  .paddingLeft25 {
+  padding-left: 25px;
+}
+
 #ov1  .paddingLeft40 {
   padding-left: 40px;
 }
@@ -5811,6 +5836,14 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1  .paddingTop20 {
   padding-top: 20px;
+}
+
+#ov1  .paddingTop25 {
+  padding-top: 25px;
+}
+
+#ov1  .paddingTop80 {
+  padding-top: 80px;
 }
 
 #ov1  .positionTop68 {
@@ -5961,7 +5994,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .colorWhiteForce {
-  color: #fff !important; /* This text must always remain white */
+  color: #FFF !important; /* This text must always remain white */
 }
 
 #ov1 .colorBlack {
@@ -6048,10 +6081,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   z-index: 1; /*use on absolutely positioned elemenets that need to stack above other elements with no z-index */
 }
 
-#ov1 .zIndex4 {
-  z-index: 4;
-}
-
 .badge:after{
   content: attr(data-count);
   position: relative;
@@ -6080,6 +6109,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .alignCenter {
+  width: 100%;
   text-align: center;
 }
 
@@ -6225,7 +6255,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #ov1.minEffects #sideBar .chatConversation textarea::-webkit-input-placeholder,
 #ov1.minEffects #sideBar .chatConversation input,
 #ov1.minEffects #sideBar .chatConversation input::-webkit-input-placeholder {
-  color: #fff;
+  color: #FFF;
 }
 
 #ov1.minEffects .gridItemControls {
@@ -6275,14 +6305,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1.minEffects .addressFormOpened .buyWizardMap .blurMore {
   display: none;
-}
-
-#ov1.minEffects .user-page-header-slim {
-  display: none;
-}
-
-#ov1.minEffects .user-page-header-slim.scrolledIntoView {
-  display: block;
 }
 
 #ov1.minEffects .disabled,
@@ -6347,6 +6369,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 /*========== left sidebar ==========*/
 
+.leftSidebar-browse-title:hover{
+  color: #009DC4;
+  text-decoration: none;  
+}
+
 .leftSidebar-browse{
   margin-left: 16px;
   margin-top: 20px;
@@ -6365,6 +6392,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .leftSidebar-create{
   margin-left: 16px;
   margin-top: 40px;
+}
+
+.leftSidebar-create h1{
+  padding-bottom: 8px;
+  padding-top: 8px;
 }
 
 .leftSidebar-create a{
@@ -6449,47 +6481,124 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   top: 60px;
 }
 
-.detailButton {
-  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
-  background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
-  background:linear-gradient(to bottom, #FFFFFF 5%, #FAFAFA 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
-  background-color:#ededed;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
-  border-radius:6px;
-  border:1px solid #EDEDED;
-  display:inline-block;
-  cursor:pointer;
-  color:#777777;
-  font-family:Arial;
-  font-size:16px;
-  padding:6px 24px;
-  text-decoration:none;
-  box-shadow: 0px 2px 0px 0px #EDEDED;
-}
-
-.detailButton:hover {
-  color: #009DC4;
-}
-
-.detailButton:active {
-  position:relative;
-  top:1px;
-}
-
 /*========== profile page ==========*/
 
 .modal-close-area{
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    z-index: 10;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.profileChatButton{  
+  position: absolute;
+  top: 16px;
+  right: 40px;
+}
+
+.storeReviewTab{
+  border-top: solid 1px rgb(155,155,155);
+  border-bottom: solid 1px rgb(155,155,155);
+  background-color: #FAFAFA;
+  border-left: solid 1px rgb(155,155,155);
+  position: relative;
+}
+
+.storeReviewTab .active{
+  background-color: #FFF;
+  opacity: 1 !important;
+}
+
+.storeReviewTab a{
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+}
+
+.storeReviewTab a:hover{
+  opacity: 1 !important;
+}
+
+.storeReviewTab a:nth-child(1){
+  padding: 20px 0 20px 15px;
+}
+
+.storeReviewTab a:nth-child(3){
+  margin-left: 3px;
+  padding: 20px 15px 20px 0;
+}
+
+.ion-person{
+  position: relative;
+  top: 1px;
+}
+
+.ion-ios-email{
+  position: relative;
+  top: 1px;
+}
+
+.ion-social-facebook{
+  position: relative;
+  top: 1px;
+}
+
+.ion-social-twitter{
+  position: relative;
+  top: 1px;
+}
+
+.ion-social-instagram{
+  position: relative;
+  top: 2px;
+}
+
+.userPageRight{
+  margin-top: 16px;
+  z-index: 0;
+}
+
+.storeReviewContent{
+  background-color: #FAFAFA;
+}
+
+.reviewStar{
+  color: #FEA306;
+}
+
+.reviewFeedLeft{
+  width: 70%;
+}
+
+.reviewFeedRight{
+  width: 30%;  
+}
+
+.rating-detail{
+}
+
+.rating-detail-overlay{
+  height: 32px;
+  width: 340px;
+  border: 1px solid #030303;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 8px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: -webkit-transform .35s ease-out;
+  transition: transform .35s ease-out;
+}
+
+.profilePageIcon {
+  z-index: 0;
+  margin-left: 96px;
+  top: -60px;
+  position: absolute;  
+  display: inline-block;
 }

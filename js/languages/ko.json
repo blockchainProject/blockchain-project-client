@@ -73,7 +73,7 @@
     "DontDelete": "삭제 안 함",
     "ConfirmDelete": "삭제 확인",
     "Website": "웹사이트",
-    "Guid": "오픈바자 ID",
+    "Guid": "ID",
     "Welcome": "환영합니다!",
     "CreateStore": "스토어 열기",
     "GoToMyPage": "내 페이지",
@@ -402,7 +402,7 @@
     "transactions": {
         "Order": "Order",
         "OrderDetails": "Order Details",
-        "ViewOnBlockchain": "View Details",
+        "ViewOnBlockchain": "Transaction Details",
         "BuyerPayout": "Buyer Payout:",
         "SellerPayout": "Seller Payout:",
         "BuyerAmount": "Buyer Amount:",

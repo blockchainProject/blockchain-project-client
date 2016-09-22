@@ -9,6 +9,8 @@ module.exports = baseVw.extend({
   className: "flexRow borderBottom",
 
   events: {
+    'mouseover .js-rating-detail': 'mouseoverRatingDetail',
+    'mouseout .js-rating-detail': 'mouseoutRatingDetail'    
   },
 
   initialize: function(options){
@@ -31,5 +33,13 @@ module.exports = baseVw.extend({
     });
 
     return this;
-  }
+  },
+
+  mouseoverRatingDetail:function(){
+    this.$('.rating-detail').removeClass('hide').addClass('rating-detail-overlay');
+  },
+
+  mouseoutRatingDetail:function(){
+    this.$('.rating-detail').removeClass('rating-detail-overlay').addClass('hide');
+  }  
 });

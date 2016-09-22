@@ -576,8 +576,6 @@ app.on('ready', function() {
 
   // Create the browser window.
   mainWindow = new browserWindow({
-    "width": 1200,
-    "height": 760,
     "minWidth": 1024,
     "minHeight": 700,
     "center": true,
@@ -586,7 +584,9 @@ app.on('ready', function() {
     "icon": "imgs/openbazaar-icon.png",
     "titleBarStyle": "hidden"
   });
-
+  
+  mainWindow.maximize()
+  
   // and load the index.html of the app.
   if(open_url) {
     mainWindow.loadURL('file://' + __dirname + '/index.html' + open_url);

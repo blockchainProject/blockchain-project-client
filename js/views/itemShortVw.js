@@ -7,7 +7,7 @@ var Backbone = require('backbone'),
 
 module.exports = baseVw.extend({
 
-  className: "flexCol-6 border0",
+  className: "flexCol-6 borderBottom",
 
   events: {
     'click .js-item': 'itemClick',
@@ -68,6 +68,12 @@ module.exports = baseVw.extend({
 
       //append the view to the passed in parent
       self.parentEl.append(self.$el);
+
+      if($(".js-list3").closest(".js-store").length ) {
+          $(".js-store .js-list3 .flexCol-6").toggleClass('flexCol-6 flexCol-12');
+          $(".js-store .js-list3 .homeFeedChatButton").css("display", "none");
+          $(".js-store .js-list3 .gridItemControls").css("width", "600px");
+      }
     });
     return this;
   },

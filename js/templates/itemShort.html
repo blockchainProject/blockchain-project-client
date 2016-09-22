@@ -66,12 +66,6 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
       </div>
     </div>
   <% } %>
-
-  <% if(!ob.ownPage && ob.discover === undefined){ %>
-    <div class="btn-gridItemControl borderRight custCol-border js-item" data-id="<%= ob.contract_hash %>">
-      <a href="#" class="detailButton">Detail</a>
-    </div>          
-  <% } %>
   </div>
 </div>
 
