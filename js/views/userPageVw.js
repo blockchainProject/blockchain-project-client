@@ -125,12 +125,12 @@ UserPageVw = pageVw.extend({
 
   events: {
     'click .js-aboutTab': 'aboutClick',
-    'click .js-reviewsTab': 'reviewsClick',
     'click .js-followersTab': 'followersClick',
     'click .js-followingTab': 'followingClick',
-    'click .js-followers .js-modalClose': 'followersClick',
-    'click .js-following .js-modalClose': 'followingClick',
+    'click .js-followers .js-modalClose': 'followersCloseModal',
+    'click .js-following .js-modalClose': 'followingCloseModal',
     'click .js-storeTab': 'storeTabClick',
+    'click .js-reviewsTab': 'reviewsClick',
     'click .js-returnToStore': 'storeClick',
     'click .js-returnToStoreCategory': 'storeCatClick',
     'click .js-sellItem': 'sellItem',
@@ -290,6 +290,8 @@ UserPageVw = pageVw.extend({
       this.userProfileFetchParameters = $.param({'guid': this.pageID});
     }
 
+
+
     this.userProfileFetch = this.userProfile.fetch({
       data: self.userProfileFetchParameters,
       processData: true,
@@ -446,18 +448,14 @@ UserPageVw = pageVw.extend({
   onScroll: function() {
     if (this.$obContainer.scrollTop() > 400 && this.slimVisible === false ) {
       this.slimVisible = true;
-      this.$('.user-page-header-slim').addClass('scrolledIntoView');
       this.$('.user-page-header').removeClass('shadow-inner1')
-        .addClass('zIndex4')
         .find('.rowItem')
         .hide();
       this.$('.user-page-navigation-buttons').addClass('positionFixed positionTop68');
       this.$backToTop.addClass('slideUp');
     } else if (this.$obContainer.scrollTop() < 400 && this.slimVisible === true ) {
       this.slimVisible = false;
-      this.$('.user-page-header-slim').removeClass('scrolledIntoView');
       this.$('.user-page-header').addClass('shadow-inner1')
-        .removeClass('zIndex4')
         .find('.rowItem')
         .show();
       this.$('.user-page-navigation-buttons').removeClass('positionFixed positionTop68');
@@ -496,15 +494,12 @@ UserPageVw = pageVw.extend({
       this.addTabToHistory('listingNew', options.replaceHistory);
       this.sellItem();
     } else if (state === "createStore") {
-      this.tabClick(this.$el.find(".js-aboutTab"), this.$el.find(".js-about"));
       this.addTabToHistory('about', options.replaceHistory);
       this.createStore();
     } else if (state === "becomeModerator"){
-      this.tabClick(this.$el.find(".js-aboutTab"), this.$el.find(".js-about"));
       this.addTabToHistory('about', options.replaceHistory);
       this.showModeratorModal();
     } else if (state === "customize"){
-      this.tabClick(this.$el.find(".js-aboutTab"), this.$el.find(".js-about"));
       this.addTabToHistory('about', options.replaceHistory);
       this.customizePage();
     } else if (state == "store"){
@@ -514,7 +509,6 @@ UserPageVw = pageVw.extend({
       } else {
         state="about";
       }
-      this.tabClick(this.$el.find(".js-" + state + "Tab"), this.$el.find(".js-" + state));
       this.addTabToHistory(state, options.replaceHistory);
     } else if (state){
       this.tabClick(this.$el.find(".js-" + state + "Tab"), this.$el.find(".js-" + state));
@@ -525,7 +519,6 @@ UserPageVw = pageVw.extend({
       } else {
         state="about";
       }
-      this.tabClick(this.$el.find(".js-" + state + "Tab"), this.$el.find(".js-" + state));
     }
     this.setControls(state);
     if (state != "customize" && state != this.state && state != "listingNew" && this.state != "listingNew"){
@@ -935,6 +928,7 @@ UserPageVw = pageVw.extend({
         followerCount: followerCount
       });
       this.registerChild(this.followerList);
+      $(".js-followers .js-list1 .rowItem").addClass("js-modalClose")
     } else if (model.length) {
       this.followerList.addUsers(model);
     }
@@ -972,6 +966,7 @@ UserPageVw = pageVw.extend({
       reverse: true
     });
     this.registerChild(this.followingList);
+    $(".js-following .js-list2 .rowItem").addClass("js-modalClose")
 
     this.$('.js-userFollowingCount').html(model.length);
 
@@ -1107,41 +1102,57 @@ UserPageVw = pageVw.extend({
     this.editing = true;
   },
 
-  aboutClick: function(e){
-    this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-about'));
+  aboutClick: function(){
     this.addTabToHistory('about');
     this.setState('about');
   },
 
-  reviewsClick: function(e){
-    this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-reviews'));
-    this.addTabToHistory('reviews');
-    this.setState('reviews');
-  },
-
-  followersClick: function(e){
+  followersClick: function(){
     this.toggleOverlay('.js-followers');
-    this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-followers'));
     this.listHeight();
     this.addTabToHistory('followers');
     this.setState('followers');
     // $('#inputFollowers').focus();
   },
 
-  followingClick: function(e){
+  followingClick: function(){
     this.toggleOverlay('.js-following');
-    this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-following'));
     this.listHeight();
     this.addTabToHistory('following');
     this.setState('following');
     // $('#inputFollowing').focus();
   },
 
+  followersCloseModal: function(){
+    this.toggleOverlay('.js-followers');
+    this.listHeight();
+    this.addTabToHistory('followers');
+    this.setState('followers');
+    // $('#inputFollowers').focus();
+    this.$('.js-about').removeClass('hide');
+    this.$('.js-about').addClass('active');
+  },
+
+  followingCloseModal: function(){
+    this.toggleOverlay('.js-following');
+    this.listHeight();
+    this.addTabToHistory('following');
+    this.setState('following');
+    // $('#inputFollowing').focus();
+    this.$('.js-about').removeClass('hide');
+    this.$('.js-about').addClass('active');
+  },
+
   storeClick: function(e){
-    this.tabClick($(e.target).closest('.js-tab'), this.$el.find('.js-store'));
+    this.customizing = false;
+    this.editing = false;
+
     this.addTabToHistory('store');
     this.setState('store');
     // $('#inputStore').focus();
+
+    this.tabClick($(e.target).closest('.js-storeTab'), this.$el.find('.js-store'));
+
   },
 
   storeTabClick: function(e) {
@@ -1158,9 +1169,20 @@ UserPageVw = pageVw.extend({
     this.storeClick(e);
   },
 
+  reviewsClick: function(e){
+    this.customizing = false;
+    this.editing = false;
+
+    this.addTabToHistory('reviews');
+    this.setState('reviews');
+
+    this.tabClick($(e.target).closest('.js-reviewsTab'), this.$el.find('.js-reviews'));
+
+  },
+
   tabClick: function(activeTab, showContent){
-    this.$('.js-userPageTabs > .js-tab').removeClass('active');
-    this.$('.js-userPageSubViews > .js-tabTarg').addClass('hide');
+    this.$('.storeReviewTab > .js-tab').removeClass('active');
+    this.$('.storeReviewContent > .js-tabTarg').addClass('hide');
     activeTab.addClass('active');
     showContent.removeClass('hide');
 
@@ -1220,7 +1242,6 @@ UserPageVw = pageVw.extend({
   customizePage: function(){
     this.customizing = true;
     this.setControls('customize');
-    $('.user-page-content').addClass('pull-up4');
     $('.user-page-header').addClass('shadow-inner1-strong');
     this.$obContainer.animate({ scrollTop: "0" });
   },
@@ -1718,19 +1739,21 @@ UserPageVw = pageVw.extend({
   moreButtonsOwnPageClick: function(){
     if ($('.js-extraButtonsOwnPage').hasClass('hide')){
       $('.js-extraButtonsOwnPage').removeClass('hide');
-      $('.js-moreButtonsOwnPage').html('x');
+      $('.js-moreButtonsOwnPage').removeClass('ion-more');
+      $('.js-moreButtonsOwnPage').addClass('ion-android-close');
     } else {
       $('.js-extraButtonsOwnPage').addClass('hide');
-      $('.js-moreButtonsOwnPage').html('...');
+      $('.js-moreButtonsOwnPage').addClass('ion-more ');
     }
   },
   moreButtonsNotOwnPageClick: function(){
     if ($('.js-extraButtonsNotOwnPage').hasClass('hide')){
       $('.js-extraButtonsNotOwnPage').removeClass('hide');
-      $('.js-moreButtonsNotOwnPage').html('x');
+      $('.js-moreButtonsNotOwnPage').removeClass('ion-more');
+      $('.js-moreButtonsNotOwnPage').addClass('ion-android-close');
     } else {
       $('.js-extraButtonsNotOwnPage').addClass('hide');
-      $('.js-moreButtonsNotOwnPage').html('...');
+      $('.js-moreButtonsNotOwnPage').addClass('ion-more ');
     }
   },
 
