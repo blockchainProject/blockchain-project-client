@@ -40,6 +40,7 @@
     "smtp-connection": "^2.5.0",
     "sortablejs": "^1.4.2",
     "taggle": "1.6.1",
+    "tooltipster": "^4.1.5",
     "underscore": "1.8.3",
     "winreg": "^1.1.1",
     "yargs": "^4.1.0"

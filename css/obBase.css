@@ -913,6 +913,7 @@ h6, .h6 {
   background-color: #FAFAFA;
   z-index: 0;
   margin-top: 80px;
+  width: 100%;
 }
 
 .itemImg {
@@ -3803,6 +3804,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   background: #215175;
 }
 
+.greenColor{
+  color: #12BB4F;
+}
+
 .homeView {
 }
 
@@ -4260,15 +4265,15 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   right: 48px;
 }
 
-.tooltip {
+/* .tooltip {
   position: relative;
 }
 
 .tooltip:hover:after{
-  background: rgba(37,37,37,.95);
-  border-radius: 3px;
+  background: rgba(155,155,155,.9);
+  border-radius: 4px;
   bottom: -32px;
-  color: #FFF;
+  color: #000;
   content: attr(data-tooltip);
   padding: 8px 10px;
   position: absolute;
@@ -4276,11 +4281,30 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: 16px;
   font-size: 11px;
   left: 0;
-  line-height: 16px;
+  line-height: 4px;
   opacity: 1;
   white-space: nowrap;
   pointer-events: none;
   margin-top: 2px;
+  width: 400px;
+} */
+
+.tooltipster-sidetip.tooltipster-light .tooltipster-box {
+  border-radius: 4px;
+  background: #9B9B9B;
+  padding: 2px 4px;
+  left: 120px !important;
+  position: relative;
+  top: 4px;
+}
+
+.tooltipster-sidetip.tooltipster-light .tooltipster-content {
+  color: #FFF;
+}
+
+.tooltipster-base{
+  position: fixed;
+  left: 100px !important;
 }
 
 .tooltip.tooltip-left:hover:after{
@@ -5397,6 +5421,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-left: 30px;
 }
 
+#ov1  .marginLeft32 {
+  margin-left: 32px;
+}
+
 #ov1  .marginLeft82 {
   margin-left: 82px;
 }
@@ -5470,6 +5498,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 22px;
 }
 
+#ov1  .marginTop24 {
+  margin-top: 24px;
+}
+
 #ov1  .marginTop25 {
   margin-top: 25px;
 }
@@ -5516,6 +5548,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-bottom: 12px;
 }
 
+#ov1  .marginBottom16 {
+  margin-bottom: 16px;
+}
+
 #ov1  .marginBottom20 {
   margin-bottom: 20px;
 }
@@ -5542,6 +5578,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1  .top0 {
   top: 0;
+}
+
+#ov1  .top2 {
+  position: relative;
+  top: 2px;
 }
 
 #ov1  .top11 {
@@ -5748,6 +5789,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 #ov1  .padding515 {
   padding: 5px 15px;
+}
+
+#ov1  .padding0832{
+  padding: 8px 32px;
 }
 
 #ov1  .padding1020{

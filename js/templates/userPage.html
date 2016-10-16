@@ -195,19 +195,16 @@
                 </li>
               </ul>  
             </div>     
-            <hr>      
-            <div class="flexRow custCol-border">
-              <div class="padding2032 positionWrapper noOverflow">
-                <div class="textOpacity75 fontSize14"><%= polyglot.t('Guid') %></div>
-                <div class="textSize11px">
-                  <%= ob.page.profile.guid %>
+            <hr>
+            <div class="width100">
+              <div class="marginTop24 marginLeft32 marginBottom16 fontSize24">Contact</div>
+              <div class="flexRow custCol-border width100">
+                <div class="padding0832 positionWrapper noOverflow width100">
+                  <div class="tooltip marginBottom16 width100" title="<%= ob.page.profile.guid %>"><span class="greenColor ion-ios-checkmark-outline marginRight8 textOpacity1 top2"></span><%= polyglot.t('Guid') %></div>
                 </div>
               </div>
-            </div>
-            <div class="flexRow custCol-border">
-              <div class="padding2032 positionWrapper noOverflow">
-                <div class="textOpacity75 fontSize14"><span class="ion-person marginRight8 textOpacity1"></span><%= polyglot.t('Website') %>
-                  </div>
+              <div class="flexRow custCol-border width100">
+                <div class="padding0832 positionWrapper noOverflow width100 marginBottom16">
                 <% if(ob.ownPage) { %>
                   <a href="#settings/page" class="userPageEditBtn">
                     <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
@@ -217,15 +214,31 @@
                   </a>
                 <%}%>
                 <% if(ob.page.profile.website) { %>
-                <a href="<%= ob.page.profile.website %>" class="js-externalLink"><%= ob.page.profile.website %></a> <span class="ion-android-open fontSize10"></span>
-                <%}else{%>
-                <%= polyglot.t('NotProvided') %>
-                <%}%>
+                  <span class="js-websiteVerified ion-ios-checkmark-outline marginRight8 top2"></span><a href="<%= ob.page.profile.website %>" class="js-websiteExternalLink tooltip width100" title="<%= ob.page.profile.website %>"><%= polyglot.t('Website') %></a>
+                  <%}else{%>
+                  <span class="ion-ios-circle-outline js-websiteVerified marginRight8 top2"></span><a class="js-websiteExternalLink"><%= polyglot.t('Website') %></a>
+                  <%}%>
+                </div>
               </div>
-            </div>
-            <div class="flexRow custCol-border">
-              <div class="padding2032 positionWrapper noOverflow">
-                <div class="textOpacity75 fontSize14"><span class="ion-ios-email marginRight8 textOpacity1"></span><%= polyglot.t('Email') %></div>
+              <div class="flexRow custCol-border width100">
+                <div class="padding0832 positionWrapper noOverflow width100 marginBottom16">
+                  <% if(ob.ownPage) { %>
+                    <a href="#settings/page" class="userPageEditBtn">
+                      <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
+                        <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
+                        <%= polyglot.t('Edit') %>
+                      </div>
+                    </a>
+                  <%}%>
+                  <% if(ob.page.profile.email) { %>
+                  <span class="js-emailVerified ion-ios-checkmark-outline marginRight8 top2"></span><span class="js-emailExternalLink tooltip" title="<%= ob.page.profile.email %>"><%= polyglot.t('Email') %></span>
+                  <%}else{%>
+                  <span class="js-emailVerified ion-ios-circle-outline marginRight8 top2"></span><a class="js-emailExternalLink"><%= polyglot.t('Email') %></a>
+                  <%}%>
+                </div>
+              </div>
+              <div class="flexRow custCol-border width100">
+                <div class="padding0832 positionWrapper noOverflow width100 marginBottom16">
                 <% if(ob.ownPage) { %>
                   <a href="#settings/page" class="userPageEditBtn">
                     <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
@@ -234,84 +247,59 @@
                     </div>
                   </a>
                 <%}%>
-                <% if(ob.page.profile.email) { %>
-                <a href="mailto:<%= ob.page.profile.email %>"><%= ob.page.profile.email %></a> <span class="ion-android-open fontSize10"></span>
-                <%}else{%>
-                <%= polyglot.t('NotProvided') %>
+                  <% if(ob.page.profile.social_accounts.facebook && ob.page.profile.social_accounts.facebook.username) { %>
+                  <span class="js-facebookVerified ion-ios-checkmark-outline marginRight8 top2"></span><a href="https://facebook.com/<%= ob.page.profile.social_accounts.facebook.username %>" class="js-facebookExternalLink tooltip" title="<%= ob.page.profile.email %>"><%= polyglot.t('Facebook') %></a>
+                  <%}else{%>
+                    <span class="js-facebookVerified ion-ios-circle-outline marginRight8 top2"></span><a class="js-facebookExternalLink"><%= polyglot.t('Facebook') %></a>
+                  <%}%>
+                </div>
+              </div>
+              <div class="flexRow custCol-border width100">
+                <div class="padding0832 positionWrapper noOverflow width100 marginBottom16">
+                <% if(ob.ownPage) { %>
+                  <a href="#settings/page" class="userPageEditBtn">
+                    <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
+                      <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
+                      <%= polyglot.t('Edit') %>
+                    </div>
+                  </a>
                 <%}%>
-              </div>
-            </div>
-            <div class="flexRow custCol-border">
-              <div class="padding2032 positionWrapper noOverflow">
-              <% if(ob.ownPage) { %>
-                <a href="#settings/page" class="userPageEditBtn">
-                  <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
-                    <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
-                    <%= polyglot.t('Edit') %>
-                  </div>
-                </a>
-              <%}%>
-                <div class="textOpacity75 fontSize14"><span class="ion-social-facebook marginRight8 textOpacity1"></span><%= polyglot.t('Facebook') %></div>
-                <% if(ob.page.profile.social_accounts.facebook && ob.page.profile.social_accounts.facebook.username) { %>
-                  <a href="https://facebook.com/<%= ob.page.profile.social_accounts.facebook.username %>">
-                    <%= ob.page.profile.social_accounts.facebook.username %>
-                  </a> <i class="ion-android-open fontSize10"></i>
+                  <% if(ob.page.profile.social_accounts.twitter && ob.page.profile.social_accounts.twitter.username) { %>
+                  <span class="js-twitterVerified ion-ios-checkmark-outline marginRight8 top2"></span><a href="https://twitter.com/<%= ob.page.profile.social_accounts.twitter.username %>" class="js-twitterExternalLink  tooltip" title="<%= ob.page.profile.social_accounts.twitter.username %>"><%= polyglot.t('Twitter') %></a>
                 <%}else{%>
-                  <%= polyglot.t('NotProvided') %>
+                  <span class="js-twitterVerified ion-ios-circle-outline marginRight8 top2"></span><a class="js-twitterExternalLink"><%= polyglot.t('Twitter') %></a>
                 <%}%>
+                </div>
               </div>
-            </div>
-            <div class="flexRow custCol-border">
-              <div class="padding2032 positionWrapper noOverflow">
-              <% if(ob.ownPage) { %>
-                <a href="#settings/page" class="userPageEditBtn">
-                  <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
-                    <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
-                    <%= polyglot.t('Edit') %>
-                  </div>
-                </a>
-              <%}%>
-              <div class="textOpacity75 fontSize14"><span class="ion-social-twitter marginRight8 textOpacity1"></span><%= polyglot.t('Twitter') %></div>
-              <% if(ob.page.profile.social_accounts.twitter && ob.page.profile.social_accounts.twitter.username) { %>
-                <a href="https://twitter.com/<%= ob.page.profile.social_accounts.twitter.username %>">
-                  <%= ob.page.profile.social_accounts.twitter.username %>
-                </a> <i class="ion-android-open fontSize10"></i>
-              <%}else{%>
-              <%= polyglot.t('NotProvided') %>
-              <%}%>
-              </div>
-            </div>
-            <div class="flexRow custCol-border">
-              <div class="padding2032 positionWrapper noOverflow">
-              <% if(ob.ownPage) { %>
-                <a href="#settings/page" class="userPageEditBtn">
-                  <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
-                    <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
-                    <%= polyglot.t('Edit') %>
-                  </div>
-                </a>
-              <%}%>
-              <div class="textOpacity75 fontSize14"><span class="ion-social-instagram marginRight8 textOpacity1"></span><%= polyglot.t('Instagram') %></div>
-                <% if(ob.page.profile.social_accounts.instagram && ob.page.profile.social_accounts.instagram.username) { %>
-                  <a href="https://instagram.com/<%= ob.page.profile.social_accounts.instagram.username %>">
-                    <%= ob.page.profile.social_accounts.instagram.username %>
-                  </a> <i class="ion-android-open fontSize10"></i>
-                <%}else{%>
-                  <%= polyglot.t('NotProvided') %>
+              <div class="flexRow custCol-border width100">
+                <div class="padding0832 positionWrapper noOverflow width100 marginBottom16">
+                <% if(ob.ownPage) { %>
+                  <a href="#settings/page" class="userPageEditBtn">
+                    <div class="btn btn-txt custCol-secondary fontSize12 js-editPage">
+                      <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
+                      <%= polyglot.t('Edit') %>
+                    </div>
+                  </a>
                 <%}%>
+                  <% if(ob.page.profile.social_accounts.instagram && ob.page.profile.social_accounts.instagram.username) { %>
+                  <span class="js-instaVerified ion-ios-checkmark-outline marginRight8 top2"></span><a href="https://instagram.com/<%= ob.page.profile.social_accounts.instagram.username %>" class="js-instaExternalLink tooltip" title="<%= ob.page.profile.social_accounts.instagram.username %>"><%= polyglot.t('Instagram') %></a>
+                  <%}else{%>
+                    <span class="js-instaVerified ion-ios-circle-outline marginRight8 top2"></span><a class="js-instaExternalLink"><%= polyglot.t('Instagram') %></a>
+                  <%}%>
+                </div>
               </div>
-            </div>
-            <div class="flexRow borderBottom custCol-border TODO">
-              <div class="rowItem positionWrapper noOverflow">
-              <% if(ob.ownPage) { %>
-                <a href="#settings/page" class="userPageEditBtn">
-                  <div class="btn btn-txt custCol-secondary">
-                    <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
-                    <%= polyglot.t('Edit') %>
-                  </div>
-                </a>
-              <%}%>
-                <div class="textOpacity75 fontSize14"><%= polyglot.t('PGPKey') %></div>
+              <div class="flexRow borderBottom custCol-border">
+                <div class="rowItem positionWrapper noOverflow">
+                <% if(ob.ownPage) { %>
+                  <a href="#settings/page" class="userPageEditBtn">
+                    <div class="btn btn-txt custCol-secondary">
+                      <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
+                      <%= polyglot.t('Edit') %>
+                    </div>
+                  </a>
+                <%}%>
+                  <div class="textOpacity75 fontSize14"><%= polyglot.t('PGPKey') %></div>
+                </div>
               </div>
             </div>
           </div>

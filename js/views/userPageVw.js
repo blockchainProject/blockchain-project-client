@@ -164,7 +164,7 @@ UserPageVw = pageVw.extend({
     'click .js-block': 'blockUserClick',
     'click .js-unblock': 'unblockUserClick',
     'change .js-categories': 'categoryChanged',
-    'click .backToTop': 'clickBackToTop'
+    'click .backToTop': 'clickBackToTop',
   },
 
   initialize: function (options) {
@@ -442,7 +442,10 @@ UserPageVw = pageVw.extend({
       });
     });
 
+    this.verifiedIconToggle();
+    this.verifiedIDHover();
     return this;
+
   },
 
   onScroll: function() {
@@ -470,6 +473,54 @@ UserPageVw = pageVw.extend({
       }
     });
   },  
+
+  verifiedIconToggle: function(){
+    if ((typeof $('.positionWrapper .js-websiteExternalLink').attr('href')) !== "undefined") {
+      $('.js-websiteVerified').css("color", "#12BB4F");
+    }else {
+      $('.js-websiteVerified').css("color", "#030303");
+      $('.js-websiteExternalLink').css("cursor", "default");
+    }
+
+    if ((typeof $('.positionWrapper .js-emailExternalLink').attr('title')) !== "undefined") {
+      $('.js-emailVerified').css("color", "#12BB4F");
+    }else {
+      $('.js-emailVerified').css("color", "#030303");
+      $('.js-emailExternalLink').css("cursor", "default");
+    }
+
+    if ((typeof $('.positionWrapper .js-facebookExternalLink').attr('href')) !== "undefined") {
+      $('.js-facebookVerified').css("color", "#12BB4F");
+    }else {
+      $('.js-facebookVerified').css("color", "#030303");
+      $('.js-facebookExternalLink').css("cursor", "default");
+    }
+
+    if ((typeof $('.positionWrapper .js-twitterExternalLink').attr('href')) !== "undefined") {
+      $('.js-twitterVerified').css("color", "#12BB4F");
+    }else {
+      $('.js-twitterVerified').css("color", "#030303");
+      $('.js-twitterExternalLink').css("cursor", "default");
+    }
+
+    if ((typeof $('.positionWrapper .js-instaExternalLink').attr('href')) !== "undefined") {
+      $('.js-instaVerified').css("color", "#12BB4F");
+    }else {
+      $('.js-instaVerified').css("color", "#030303");
+      $('.js-instaExternalLink').css("cursor", "default");
+    }
+  },
+
+  verifiedIDHover: function(){
+    require('tooltipster');
+     $('.tooltip').tooltipster({
+       animation: 'fade',
+       delay: 200,
+       interactive: 'true',
+       trigger: 'hover',
+       theme: 'tooltipster-light'
+     });
+  },
 
   setState: function(state, hash, options) {
     var currentAddress,
