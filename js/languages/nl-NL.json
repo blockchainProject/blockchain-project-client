@@ -555,7 +555,7 @@
     },
     "pageConnectingMessages": {
         "listingConnect": "Connecting to listing ${listing}",
-        "listingFail": "The listing you're trying to view is currently offline",
+        "listingFail": "Looks like the listing is currently offline",
         "handleConnect": "Connecting to ${handle}",
         "handleFail": "The page you're trying to view is currently offline",
         "userConnect": "Connecting to ${guid}",

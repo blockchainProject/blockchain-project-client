@@ -1176,7 +1176,7 @@ label.fieldItem {
   top:1px;
 }
 
-.followButton{
+.blueOnWhiteButton{
   background-color: #FFF;
   border:1px solid #009DC4;
   -moz-border-radius: 6px;
@@ -1190,16 +1190,16 @@ label.fieldItem {
   text-decoration: none;
 }
 
-.followButton:hover {
+.blueOnWhiteButton:hover {
   opacity: 0.8;
 }
 
-.followButton:active {
+.blueOnWhiteButton:active {
   position:relative;
   top:1px;
 }
 
-.followingButton{
+.whiteOnBlueButton{
   background-color: #009DC4;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1212,11 +1212,11 @@ label.fieldItem {
   text-decoration: none;
 }
 
-.followingButton:hover {
+.whiteOnBlueButton:hover {
   opacity: 0.8;
 }
 
-.followingButton:active {
+.whiteOnBlueButton:active {
   position:relative;
   top:1px;
 }
@@ -4948,17 +4948,24 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .page-connect-modal .mode-connecting .btn-retry,
 .page-connect-modal .mode-connecting .btn-back,
-.page-connect-modal .mode-connecting .icon-no-connection {
+.page-connect-modal .mode-connecting .whoopsText {
   display: none;
 }
 
 .page-connect-modal .mode-failed-connect .btn-cancel,
-.page-connect-modal .mode-failed-connect .spinner {
+.page-connect-modal .mode-failed-connect .loadingAnimationModal,
+.page-connect-modal .mode-failed-connect #inTurnFadingTextG {
   display: none;
 }
 
 .mode-failed-connect{
   color: #030303;
+}
+
+.page-connect-modal .mode-failed-connect .whoopsText{
+  color: #009DC4;
+  position: relative;
+  top: 50%;
 }
 
 .buyWizardMap .mapWrap {
@@ -5436,6 +5443,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   font-size: 34px;
 }
 
+#ov1 .fontSize40 {
+  font-size: 40px;
+}
+
 #ov1 .txt-bright {
   color: #FFF;
 }
@@ -5727,6 +5738,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1  .marginBottom20 {
   margin-bottom: 20px;
+}
+
+#ov1  .marginBottom24 {
+  margin-bottom: 24px;
 }
 
 #ov1  .marginBottom40 {
