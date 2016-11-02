@@ -179,17 +179,17 @@
               <ul class="positionWrapper noOverflow alignCenter padding0">
                 <li class="borderBottom custCol-border holizontalAlign">
                   <div class="positionWrapper noOverflow holizontalAlign">
-                    <a class="fontSize14 js-followingTab js-tab">
+                    <a class="fontSize18 js-followingTab js-tab">
                       <%= polyglot.t('Following') %>
-                      <span class="pill fontSize16 marginLeft2 js-userFollowingCount displayBlock">...</span>
+                      <span class="pill fontSize18 marginLeft2 js-userFollowingCount displayBlock">...</span>
                     </a>
                   </div>
                 </li>
                 <li class="borderBottom custCol-border holizontalAlign">
                   <div class="positionWrapper noOverflow holizontalAlign">
-                    <a class="fontSize14 js-followersTab js-tab">
+                    <a class="fontSize18 js-followersTab js-tab">
                       <%= polyglot.t('Followers') %>
-                      <span class="pill fontSize16 marginLeft2 js-userFollowerCount displayBlock">...</span>
+                      <span class="pill fontSize18 marginLeft2 js-userFollowerCount displayBlock">...</span>
                     </a>
                   </div>
                 </li>
@@ -305,38 +305,40 @@
           </div>
         </div>
         <div class="flexCol-8 custCol-border userPageRight">
-          <div class="paddingLeft25">
-            <div class="holizontalAlign">
-              <div>
-                <span class="h1 page-userNameLarge fancy-heading">
-                  <%= ob.page.profile.name %>
-                </span>
-              </div>
-            </div>
-            <div class="hide js-notOwnPageButtons js-userPageControls holizontalAlign profileChatButton">
-              <a class="chatButton js-message">Chat</a>
-            </div>
-          </div> 
-          <div class="rowItem userPageAboutSection js-userPageAboutSection">
-            <% if(ob.ownPage) { %>
-              <a href="#settings/page">
-                <div class="btn btn-txt userPageEditBtn custCol-secondary fontSize12 js-editPage">
-                  <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
-                  <%= polyglot.t('Edit') %>
+          <div class="profileTop">
+            <div class="paddingLeft15">
+              <div class="holizontalAlign">
+                <div>
+                  <span class="h1 page-userNameLarge fancy-heading">
+                    <%= ob.page.profile.name %>
+                  </span>
                 </div>
-              </a>
-            <%}%>
-            <% if(ob.page.profile.about) { %>
-             <div class="js-userAbout margin0 editableContent fontSize14"><%= ob.page.profile.displayAbout %></div>
-            <%}else{%>
-              <span class="textOpacity75"><%= polyglot.t('AboutEmpty') %></span>
-            <%}%>
+              </div>
+              <div class="hide js-notOwnPageButtons js-userPageControls holizontalAlign profileChatButton">
+                <a class="chatButton js-message">Chat</a>
+              </div>
+            </div> 
+            <div class="rowItem userPageAboutSection js-userPageAboutSection">
+              <% if(ob.ownPage) { %>
+                <a href="#settings/page">
+                  <div class="btn btn-txt userPageEditBtn custCol-secondary fontSize12 js-editPage">
+                    <span class="ion-edit fontSize10 marginRight2 textOpacity1"></span>
+                    <%= polyglot.t('Edit') %>
+                  </div>
+                </a>
+              <%}%>
+              <% if(ob.page.profile.about) { %>
+               <div class="js-userAbout margin0 editableContent fontSize14"><%= ob.page.profile.displayAbout %></div>
+              <%}else{%>
+                <span class="textOpacity75"><%= polyglot.t('AboutEmpty') %></span>
+              <%}%>
+            </div>
           </div>
           <div class="storeReviewTab textOpacity75">
             <% if(ob.page.profile.vendor) { %>
             <a class="custCol-secondary js-storeTab js-tab textOpacity75">
               <span class="ion-ios-cart fontSize30 marginRight8 textOpacity1 displayBlock"></span>
-              <%= polyglot.t('Store') %>
+              <%= polyglot.t('Service') %>
               <span class="pill fontSize12 textOpacity75 js-listingCount">...</span>
             </a>
             <span class="vertical-line"></span>

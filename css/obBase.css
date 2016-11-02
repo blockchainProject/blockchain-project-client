@@ -248,6 +248,10 @@ h6, .h6 {
   pointer-events: none;
 }
 
+.ion-ios-checkmark-outline:before{
+  font-weight: bold !important;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -6737,9 +6741,16 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   z-index: 10;
 }
 
+.profileTop{
+  background-color: #FAFAFA;
+  border-left: solid 1px rgb(155,155,155);
+  padding-top: 16px;
+  position: relative;
+}
+
 .profileChatButton{  
   position: absolute;
-  top: 16px;
+  top: 24px;
   right: 40px;
 }
 
@@ -6801,7 +6812,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .userPageRight{
-  margin-top: 16px;
   z-index: 0;
 }
 
