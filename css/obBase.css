@@ -1153,9 +1153,9 @@ label.fieldItem {
   top: 23px;
 }
 
-.chatButton {
+.profileChatButton .chatButton {
   background-color: #FFF;
-  border:1px solid #12BB4F;
+  border: 1px solid #12BB4F;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
@@ -1163,6 +1163,19 @@ label.fieldItem {
   color: #12BB4F;
   font-size: 24px;
   padding: 6px 32px;
+  text-decoration: none;
+}
+
+.homeFeedChatButton .chatButton {
+  background-color: #FFF;
+  border: 1px solid #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #12BB4F;
+  font-size: 16px;
+  padding: 4px 16px;
   text-decoration: none;
 }
 
@@ -6710,8 +6723,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .homeFeedChatButton {
   position: absolute;
-  right: 24px;
-  top: 60px;
+  right: 32px;
+  top: 64px;
 }
 
 /*========== profile page ==========*/
