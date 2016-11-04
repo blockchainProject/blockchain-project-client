@@ -15,9 +15,7 @@ module.exports = baseVw.extend({
   class: 'chatView',
 
   events: {
-    'click .js-chatOpen': 'slideOut',
     'click .js-chatSearch': 'onSearchClick',
-    'click .js-closeChat': 'close',
     'keyup #chatSearchField': 'onKeyupSearch'
   },
 

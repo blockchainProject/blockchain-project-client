@@ -59,6 +59,7 @@ body {
   letter-spacing: 0.4px;
   line-height: 1.2;
   margin: 0;
+  width: 100%;
 }
 
 a {
@@ -364,8 +365,9 @@ h6, .h6 {
 
 #obContainer {
   transition: width 0.5s ease;
-  width: calc(100% - 47px);
+  width: 70%;
   height: calc(100% - 50px);
+  margin: 0 15%;
   overflow-y: scroll;
   -webkit-app-region: no-drag;
   position: relative;
@@ -387,11 +389,11 @@ h6, .h6 {
 #content {
   position: relative;
   z-index: 0;
+  width: 100%;
 }
 
 .contentWrapper {
-  margin: 0 13.5%;
-  width: 950px;
+  width: 100%;
 }
 
 .userView {
@@ -399,7 +401,7 @@ h6, .h6 {
 }
 
 #ov1.chatOpen #obContainer {
-  width: calc(100% - 230px);
+  width: 70%;
 }
 
 #pageNav{
@@ -436,7 +438,7 @@ h6, .h6 {
   position: fixed;
   left: 0px;
   top: 56px;
-  width: 168px;
+  width: 15%;
   background-color: #1F2129;
   border-right: 0;
   height: calc(100% - 56px);
@@ -453,12 +455,12 @@ h6, .h6 {
 
 #sideBar {
   position: fixed;
-  right: -183px;
-  top: 50px;
-  width:230px;
-  background-color: #252525;
+  right: 0px;
+  top: 56px;
+  width: 15%;
+  background-color: #FFF;
   border-left: 0;
-  height: calc(100% - 71px);
+  height: calc(100% - 96px);
   z-index: 0;
   transition: right 0.5s ease;
   color: #DDD;
@@ -780,7 +782,7 @@ h6, .h6 {
   padding: 0;
   box-sizing: border-box;
   transition: opacity .5s cubic-bezier(0, 0, 0.2, 1);
-  width: 443px;
+  width: 93%;
   background: #FFF;
   margin: 0px 16px; 
 }
@@ -1241,7 +1243,7 @@ label.fieldItem {
 .thumbnail-small {
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: 30px 30px;
+  background-size: 45px 45px;
   border-radius: 0px;
   height: 30px;
   position: relative;
@@ -1458,7 +1460,7 @@ label.fieldItem {
 }
 
 #ov1.chatOpen .modal.insideApp {
-  width: calc(100% - 230px);
+  width: calc(100% - 168px);
 }
 
 /*
@@ -2316,17 +2318,6 @@ margin: auto;
   font-size: 13px;
 }
 
-.btn-closeChat {
-  right: 0;
-  float: right;
-  background-color: unset;
-  margin-right: 5px;
-
-}
-.btn-closeChat:hover {
-  outline: solid 1px #363636;
-  border-radius: 0;
-}
 .btn-chatSearch {
   background-color: unset;
   text-align: center;
@@ -2406,33 +2397,33 @@ div.chatSearchOut .chatSearchIcon {
 .chatConversationContainer {
   width: calc(100% - 1px);
   height: 360px;
-  bottom: 0;
+  bottom: -40px;
   position: absolute;
   transition: bottom 0.35s ease;
   background-color: #2B2B2B;
 }
 
 .chatConversationContainerHide {
-  bottom: -362px;
+  bottom: -355px;
 }
 
 .chatMessagesLabel {
   float:left;
-  color: white;
+  color: #030303;
   font-size: 15px;
   height: 43px;
   line-height: 43px;
   padding-left: 10px;
   -webkit-user-select: none;
   cursor: default;
-}
+  }
 
 .chatConversationHeads {
   clear: both;
-  border-top: solid 1px #363636;
   height: calc(100% - 45px); /* this will have to be changed if the search is unhidden*/
   overflow-y: auto;
   overflow-x: hidden;
+  padding-top: 8px;
 }
 
 .chatConversationHeadsCompressed {
@@ -2444,14 +2435,13 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .chatConversationHeader {
-    padding: 0;
-    background-color: #565656;
-    height: 45px;
-    line-height: 45px;
-    padding-left: 10px;
-    color: #FFF;
-    border-top-left-radius: 4px;
-    margin-left: 2px;
+  padding: 0;
+  background-color: #FFF;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 10px;
+  color: #030303;
+  border-top-left-radius: 4px;
 }
 
 .chatConversationLabel {
@@ -2485,12 +2475,13 @@ div.chatSearchOut .chatSearchIcon {
 
 .chatConversationContent {
   height: calc(100% - 138px);
+  background-color: #FFF;
   border: 1px solid #565656;
   border-top: 0;
   overflow: auto;
   padding: 6px 2px;
   margin-left: 2px;
-  width: 222px;
+  width: 100%;
 }
 
 .chatConversationTo {
@@ -2517,11 +2508,15 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .chatConversationMessage {
-  height: 75px;
+  background-color: #FFF;
+  height: 78px;
   padding: 0;
   border: 1px solid #565656;
   border-top: 0;
   margin-left: 2px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 .chatConversationMessageBody img,
@@ -2537,6 +2532,7 @@ div.chatSearchOut .chatSearchIcon {
 .chatConversationMessage  .txtAreaField {
   height: 75px;
   padding: 10px 10px;
+  color: #030303;
 }
 
 .chatConversationMessage  .txtAreaField:focus {
@@ -2653,7 +2649,7 @@ div.chatSearchOut .chatSearchIcon {
 .chatPreviewSender {
   font-size:13px;
   font-weight:500;
-  color: white;
+  color: #030303;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100px;
@@ -2663,17 +2659,18 @@ div.chatSearchOut .chatSearchIcon {
 .chatPreviewLastMessage {
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 170px;
+  width: 110px;
   white-space: nowrap;
-  color: #FFF;
+  color: #030303;
   opacity: .75;
   font-size: 12px;
   margin-left: 2px;
 }
 
 .chatConversationMessageBody > .inner {
-  background-color: #333333;
+  background-color: #EEEEEE;
   border-radius: 3px;
+  color: #030303;
   font-size: 12px;
   padding: 6px 8px;
   display: inline-block;
@@ -3732,7 +3729,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: 320px;
   position: absolute;
   top: 0;
-  width: 950px;
+  width: 100%;
   padding: 0;
   z-index: 0;
   -webkit-backface-visibility: hidden;
@@ -3829,7 +3826,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .home-page-navigation {
-  width: 950px;
 }
 
 .home-page-header-slim {
@@ -5013,7 +5009,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1.chatOpen .backToTop {
-  right: 303px;
+  right: 208px;
 }
 
 /*========== utility classes ==========*/
@@ -6769,7 +6765,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .storeReviewTab a{
   display: inline-block;
-  width: 47%;
+  width: 46%;
   text-align: center;
 }
 
