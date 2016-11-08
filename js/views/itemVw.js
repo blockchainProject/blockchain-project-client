@@ -13,11 +13,7 @@ var __ = require('underscore'),
 module.exports = baseVw.extend({
 
   events: {
-    'click .js-descriptionTab': 'descriptionClick',
-    'click .js-itemReviewsTab': 'reviewsClick',
-    'click .js-shippingTab': 'shippingClick',
     'click .js-buyButton': 'buyClick',
-    'click .js-photoGallery': 'photoGalleryClick',
     'click .js-itemRating': 'clickItemRating'
   },
 
@@ -123,43 +119,6 @@ module.exports = baseVw.extend({
     });
 
     return this;
-  },
-
-  photoGalleryClick: function(){
-    $('.js-photoGallery').colorbox({
-      'transition': 'fade',
-      'rel': 'js-photoGallery', 
-      'photo': true,
-      'fadeOut': 0,
-      'previous': '<span class="arrowIcon ion-ios-arrow-back"></span>',
-      'next': '<span class="arrowIcon ion-ios-arrow-forward"></span>',
-      'current': '{current} ' + window.polyglot.t('of') + ' {total}',
-      'close': window.polyglot.t('Close'),
-      'maxHeight': '620px',
-      'opacity': '.95',
-      'speed': 50,
-      onOpen: function(){
-        // we need to append colorbox to obContainer to prevent it from covering the header
-        $("#colorbox").appendTo("#obContainer");
-        $("#cboxOverlay").appendTo("#obContainer");
-        $('#obContainer').addClass('modalOpen').scrollTop(0);
-      },
-      onClosed: function(){
-        $('#obContainer').removeClass('modalOpen');
-      }
-    });
-  },
-
-  descriptionClick: function(){
-    this.setTab('description');
-  },
-
-  reviewsClick: function(){
-    this.setTab('itemReviews');
-  },
-
-  shippingClick: function(){
-    this.setTab('shipping');
   },
 
   setTab: function(activeTab) {

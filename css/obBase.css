@@ -946,7 +946,7 @@ h6, .h6 {
 .itemImg.itemImg-large {
   /* flex row collapses unless a specific height is set */
   height: 472px;
-  width: 514px;
+  width: 521px;
   border-radius: 0;
 }
 
@@ -988,45 +988,18 @@ h6, .h6 {
 }
 
 .itemMeta {
-  padding: 0 15px 2px 15px;
+  padding: 0 0 2px 0px;
   margin: 0;
   list-style-type: none;
 }
 
 .itemMeta li {
   box-sizing: border-box;
-  font-size: 15px;
-  padding: 15px;
   width: 100%;
 }
 
 .itemMeta .itemPrice {
-  padding: 0 15px 2px 15px;
-}
-
-.itemMetaCircle {
-  height: 38px;
-  line-height: 38px;
-  width: 38px;
-  text-align: center;
-  border-radius: 25px;
-  font-size: 15px;
-  opacity: .85;
-}
-
-.itemMetaCircle:before {
-  margin-top: 9px;
-}
-
-.itemMetaValue {
-  max-width: 130px;
-  float: left;
-  font-size: 15px;
-  opacity: .75;
-  height: 38px;
-  line-height: 38px;
-  font-weight: 500;
-  text-transform: capitalize;
+  padding: 0 15px 2px 0px;
 }
 
 .rowItem {
@@ -1185,6 +1158,19 @@ label.fieldItem {
   text-decoration: none;
 }
 
+.chatButton {
+  background-color: #FFF;
+  border: 1px solid #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #12BB4F;
+  font-size: 16px;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
 .chatButton:hover {
   border:1px solid #FF3346;
   color: #FF3346;
@@ -1193,6 +1179,24 @@ label.fieldItem {
 .chatButton:active {
   position:relative;
   top:1px;
+}
+
+.tagButton {
+  background-color: #EEEEEE;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #9B9B9B;
+  font-size: 14px;
+  padding: 2px 14px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.tagButton:hover {
+  opacity: 0.8;
 }
 
 .blueOnWhiteButton{
@@ -1236,6 +1240,28 @@ label.fieldItem {
 }
 
 .whiteOnBlueButton:active {
+  position:relative;
+  top:1px;
+}
+
+.whiteOnGreenButton{
+  background-color: #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 8px 40px;
+  text-decoration: none;
+}
+
+.whiteOnGreenButton:hover {
+  opacity: 0.8;
+}
+
+.whiteOnGreenButton:active {
   position:relative;
   top:1px;
 }
@@ -2095,26 +2121,6 @@ input[type="text"].txtField-bar {
 .btn.btn-txtHalf {
   /* button with text */
   padding: 0 16px;
-}
-
-.btn.btn-buyNow {
-margin: auto;
-    width: 280px;
-    height: 52px;
-    line-height: 52px;
-    padding: 0;
-    opacity: 1;
-    font-size: 17px;
-    border-radius: 5px;
-    float: none;
-    font-weight: 500;
-    transition: opacity .25s cubic-bezier(0, 0, 0.2, 1);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.btn.btn-buyNow:hover {
-  opacity: .75;
 }
 
 #userPage .btn.inactive {
@@ -3818,6 +3824,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   background: #215175;
 }
 
+.color-tertiary {
+  background: #FFF;
+}
+
 .greenColor{
   color: #12BB4F;
 }
@@ -4309,8 +4319,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .page-contractTitle {
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 18px;
   letter-spacing: .8px;
   margin-bottom: 0;
   margin-top: 10px;
@@ -5559,6 +5568,14 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-right: 20px;
 }
 
+#ov1  .marginRight30 {
+  margin-right: 30px;
+}
+
+#ov1  .marginRight40 {
+  margin-right: 40px;
+}
+
 #ov1  .marginLeftNeg115 {
   margin-left: -115px;
 }
@@ -5967,6 +5984,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   padding: 15px;
 }
 
+#ov1  .padding16 {
+  padding: 16px;
+}
+
 #ov1  .padding20 {
   padding: 20px;
 }
@@ -6056,6 +6077,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   padding-left: 15px;
 }
 
+#ov1  .paddingLeft16 {
+  padding-left: 16px;
+}
+
 #ov1  .paddingLeft20 {
   padding-left: 20px;
 }
@@ -6086,6 +6111,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1  .paddingTop25 {
   padding-top: 25px;
+}
+
+#ov1  .paddingTop30 {
+  padding-top: 30px;
 }
 
 #ov1  .paddingTop80 {
