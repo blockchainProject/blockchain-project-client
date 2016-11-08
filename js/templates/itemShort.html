@@ -11,7 +11,7 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
     <div class="itemImg <% if(ob.cloak){ %> nsfw <% } %>" style="background-image: url(<%= ob.imageURL %>), url(imgs/defaultItem.png);">
       <div class="table">
         <div>
-          <div class="itemPrice textSize13px txt-fade"><span>
+          <div class="itemPrice textSize13px txt-fade"><span class="itemPriceTag">
             <%= ob.intlNumFormat(ob.vendorBTCPrice, 4) %> BTC
             <% if(ob.userCurrencyCode != 'BTC'){ %>
              (<%= ob.displayPrice %>)
