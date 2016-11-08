@@ -4326,102 +4326,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   opacity: 1;
 }
 
-#customizeControls {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  z-index: 1;
-}
-
-#customizeControls .js-customizePrimaryColor .btn-square {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-#customizeControls .js-customizeTextColor .btn-square {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-#customizeControls .btn-square {
-  box-shadow: 0 1px 2px #898989;
-  margin-bottom: 0;
-  width: 40px;
-  height: 40px;
-  border: solid 2px #FFF;
-  border-radius: 0;
-  border-bottom: 0;
-}
-
-.customizePrimaryColorRecommendations,
-.customizeSecondaryColorRecommendations,
-.customizeBackgroundColorRecommendations,
-.customizeTextColorRecommendations {
-  position: absolute;
-  left: 36px;
-  background: #252525;
-  width: 0;
-  top: 0;
-  height: 38px;
-  line-height: 38px;
-  padding: 2px;
-  border-radius: 0;
-  overflow: hidden;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  transition: width .35s cubic-bezier(0, 0, 0.2, 1);
-  box-sizing: border-box;
-}
-
-.customizePrimaryColorRecommendations.show,
-.customizeSecondaryColorRecommendations.show,
-.customizeBackgroundColorRecommendations.show  {
-  width: 273px;
-}
-
-.customizeTextColorRecommendations.show {
-  width: 121px;
-}
-
-.customColorChoice {
-  background: #FFF;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  margin-right: 2px;
-  margin-top: 3px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  z-index: 5;
-  border-radius: 1px;
-  transition: background .5s cubic-bezier(0, 0, 0.2, 1);
-}
-
-.customColorChoice:hover {
-  outline: 2px solid #ccc;
-}
-
-.customColorChoiceControl {
-  width: 32px;
-  opacity: .5;
-  text-align: center;
-  transition: opacity .25s cubic-bezier(0, 0, 0.2, 1);
-
-}
-
-
-.customColorChoice:hover:hover {
-  outline: 2px solid #ccc;
-  opacity: 1;
-}
-
-.customColorPicker {
-  top: 10px;
-  margin-left: -8px;
-  font-size: 18px;
-  position: absolute;
-}
-
 .discoverToggleHelper {
   top: -40px;
   width: auto;
@@ -4554,27 +4458,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.interactiveTooltip {
-  height: 20px;
-  display: inline-block;
-  padding: 4px 10px;
-  background: #252525;
-  color: #FFF;
-  position: absolute;
-  left: 37px;
-  border-radius: 4px;
-  font-size: 11px;
-  text-align: center;
-  line-height: 20px;
-  top: 8px;
-  opacity: .9;
-}
-
-.interactiveTooltip div {
-  position: relative;
-  display: inline-block;
 }
 
 .headerCropper.banner-large,
@@ -4827,15 +4710,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
   /* protect customize controls from custom page styles */
-#ov1 #customizeControls .labelWrap {
-  height: 40px;
-  border-radius: 0;
-}
-
-#ov1 #customizeControls .labelWrap input {
-  color: rgba(255,255,255,0.6);
-}
-
 .colpick {
   z-index: 10;
   border-radius: 0;

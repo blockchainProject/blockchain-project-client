@@ -6,7 +6,6 @@ var __ = require('underscore'),
     is = require('is_js'),
     app = require('../App.js').getApp(),
     loadTemplate = require('../utils/loadTemplate'),
-    colpicker = require('../utils/colpick.js'),
     cropit = require('../utils/jquery.cropit'),
     ratingCl = require('../collections/ratingCl'),
     userProfileModel = require('../models/userProfileMd'),
@@ -104,21 +103,6 @@ var defaultItem = {
   }
 };
 
-var recommendedPrimaryColors = ['#4c877c', '#dc6c7d', '#ce738b', '#3a4352', '#80bbad', '#106c88', '#58a6ad', '#90545d', '#b53b4d', '#6c9052', '#89a4b3', '#ffffff', '#827341', '#74b69e', '#716e86', '#935456', '#929e8e', '#9aa1a5', '#d9d8c6'];
-
-function shadeColor2(color, percent) {
-  var f=parseInt(color.slice(1), 16), t=percent<0?0:255, p=percent<0?percent*-1:percent, R=f>>16, G=f>>8&0x00FF, B=f&0x0000FF;
-  return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
-}
-
-function rgb2hex(rgb) {
-  rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
-  function hex(x) {
-    return ("0" + parseInt(x).toString(16)).slice(-2);
-  }
-  return hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-}
-
 UserPageVw = pageVw.extend({
 
   className: "userView contentWrapper",
@@ -151,16 +135,6 @@ UserPageVw = pageVw.extend({
     'click .js-moreButtonsNotOwnPage': 'moreButtonsNotOwnPageClick',
     'click .js-message': 'sendMessage',
     'click .js-moderatorSettings': 'showModeratorModal',
-    'click .js-customColorChoicePicker': 'customizeColorClick',
-    'mouseenter .js-customColorChoice': 'clickCustomColorChoice',
-    'click .js-customizePrimaryColor .js-customizeColor': 'displayCustomizePrimaryColor',
-    'click .js-customizeSecondaryColor .js-customizeColor': 'displayCustomizeSecondaryColor',
-    'click .js-customizeBackgroundColor .js-customizeColor': 'displayCustomizeBackgroundColor',
-    'click .js-customizeTextColor .js-customizeColor': 'displayCustomizeTextColor',
-    'click .js-customizePrimaryColor .js-customColorChoice': 'customizeSelectColor',
-    'click .js-customizeSecondaryColor .js-customColorChoice': 'customizeSelectColor',
-    'click .js-customizeBackgroundColor .js-customColorChoice': 'customizeSelectColor',
-    'click .js-customizeTextColor .js-customColorChoice': 'customizeSelectColor',
     'click .js-block': 'blockUserClick',
     'click .js-unblock': 'unblockUserClick',
     'change .js-categories': 'categoryChanged',
@@ -601,7 +575,7 @@ UserPageVw = pageVw.extend({
 
   setControls: function(state){
     //hide all the state controls
-    this.$el.find('.js-userPageControls, #customizeControls, .js-itemCustomizationButtons, .js-pageCustomizationButtons').addClass('hide');
+    this.$el.find('.js-userPageControls, .js-itemCustomizationButtons, .js-pageCustomizationButtons').addClass('hide');
     this.$el.find('.js-deleteItem').removeClass('confirm');
     this.$el.find('.js-unfollow').removeClass('confirm');
     this.$el.find('.js-removemoderator').removeClass('confirm');
@@ -615,7 +589,6 @@ UserPageVw = pageVw.extend({
         this.$el.find('.js-itemEditButtons').removeClass('hide');
       } else if (state === "customize") {
         this.$el.find('.js-pageCustomizationButtons').removeClass('hide');
-        this.$el.find('#customizeControls').removeClass('hide');
         this.$el.find('.user-page-header-slim-bg-cover').addClass('user-page-header-slim-bg-cover-customize');
         this.$obContainer.addClass("customizeUserPage", "noScrollBar", "overflowHidden");
       } else {
@@ -1295,183 +1268,6 @@ UserPageVw = pageVw.extend({
     this.setControls('customize');
     $('.user-page-header').addClass('shadow-inner1-strong');
     this.$obContainer.animate({ scrollTop: "0" });
-  },
-
-  hideColorRecommendations: function() {
-    $('.js-customizeColorRecommendations').removeClass('show');
-  },
-
-  clickCustomColorChoice: function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    var colorKey = $(e.currentTarget).data('colorKey');
-
-    if (colorKey){
-      $('.js-customColorChoice').removeClass('outline2');
-      $(e.currentTarget).addClass('outline2');
-
-      this.setCustomColor(rgb2hex($(e.currentTarget).css('background-color')), colorKey);
-    }
-  },
-
-  customizeSelectColor: function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    if ( !$(e.currentTarget).hasClass('js-customColorChoicePicker') ){
-      this.hideColorRecommendations();
-      $('.colpick').removeClass('show');
-    }
-  },
-
-
-  displayCustomizePrimaryColor: function() {
-    var $customizePrimaryColorRecommendations = this.$el.find('.customizePrimaryColorRecommendations'),
-        $customColorChoice = $customizePrimaryColorRecommendations.find('.customColorChoice');
-
-    $('#primary_color').colpickHide();
-
-    if ($customizePrimaryColorRecommendations.hasClass('show')){
-      $customizePrimaryColorRecommendations.removeClass('show');
-    } else {
-      $('.seeTooltip').hide();
-
-      // set recommendations
-      $customColorChoice.css('background', '#fff'); // reset to white to give a cool transition
-      $customColorChoice.first().css('background', 'transparent'); // set to transparent
-      
-      for (var i = 2; i <= 6; i++) {
-        $customColorChoice.eq(i).css('background', recommendedPrimaryColors[Math.floor(Math.random() * recommendedPrimaryColors.length)]); // random colors to start
-      }
-
-      // slide background_color recommendations out + hide others
-      $customizePrimaryColorRecommendations.addClass('show');
-      this.$el.find('.customizeSecondaryColorRecommendations').removeClass('show');
-      this.$el.find('.customizeBackgroundColorRecommendations').removeClass('show');
-      this.$el.find('.customizeTextColorRecommendations').removeClass('show');
-    }
-  },
-
-  displayCustomizeSecondaryColor: function() {
-    var $customizeSecondaryColorRecommendations = this.$el.find('.customizeSecondaryColorRecommendations'),
-        $customColorChoice = $customizeSecondaryColorRecommendations.find('.customColorChoice'),
-        primaryColor = this.model.get('page').profile.primary_color,
-        shades = [-0.25, -0.15, -0.1, 0.1, 0.15];
-
-    $('#secondary_color').colpickHide();
-
-    if ($customizeSecondaryColorRecommendations.hasClass('show')){
-      $customizeSecondaryColorRecommendations.removeClass('show');
-    } else {
-      // set recommendations
-      $customColorChoice.css('background', '#fff');  // reset to white to give a cool transition
-      $customColorChoice.first().css('background', 'transparent'); // set to transparent
-
-      for (var i = 2; i <= 6; i++) {
-        $customColorChoice.eq(i).css('background', shadeColor2(primaryColor, shades[i-2]));
-      }
-
-      // slide secondary_color recommendations out + hide others
-      this.$el.find('.customizePrimaryColorRecommendations').removeClass('show');
-      $customizeSecondaryColorRecommendations.addClass('show');
-      this.$el.find('.customizeBackgroundColorRecommendations').removeClass('show');
-      this.$el.find('.customizeTextColorRecommendations').removeClass('show');
-    }
-
-  },
-
-  displayCustomizeBackgroundColor: function() {
-    var $customizeBackgroundColorRecommendations = this.$el.find('.customizeBackgroundColorRecommendations'),
-        $customColorChoice = $customizeBackgroundColorRecommendations.find('.customColorChoice'),
-        secondaryColor = this.model.get('page').profile.secondary_color,
-        shades = [-0.70, -0.65, -0.55, -0.45, -0.35];
-
-    $('#background_color').colpickHide();
-
-    if ($customizeBackgroundColorRecommendations.hasClass('show')){
-      $customizeBackgroundColorRecommendations.removeClass('show');
-    } else {
-      // set recommendations
-      $customColorChoice.css('background', '#fff'); // reset to white to give a cool transition
-      $customColorChoice.first().css('background', 'transparent'); // set to transparent
-      
-      for (var i = 2; i <= 6; i++) {
-        $customColorChoice.eq(i).css('background', shadeColor2(secondaryColor, shades[i-2])); // 70% darker than primary_color
-      }
-
-      // slide background_color recommendations out + hide others
-      this.$el.find('.customizePrimaryColorRecommendations').removeClass('show');
-      this.$el.find('.customizeSecondaryColorRecommendations').removeClass('show');
-      $customizeBackgroundColorRecommendations.addClass('show');
-      this.$el.find('.customizeTextColorRecommendations').removeClass('show');
-    }
-  },
-
-  displayCustomizeTextColor: function() {
-    
-    var $customizeTextColorRecommendations = this.$el.find('.customizeTextColorRecommendations'),
-        $customColorChoice = $customizeTextColorRecommendations.find('.customColorChoice');
-
-    $('#text_color').colpickHide();
-
-    if ($customizeTextColorRecommendations.hasClass('show')){
-      $customizeTextColorRecommendations.removeClass('show');
-    } else {
-      // set recommendations
-      $customColorChoice.css('background', '#fff');  // reset to white to give a cool transition
-      $customColorChoice.first().css('background', 'transparent'); // set to transparent
-      $customColorChoice.eq(2).css('background', '#ffffff');
-      $customColorChoice.last().css('background', '#000000');
-
-      // slide background_color recommendations out + hide others
-      this.$el.find('.customizePrimaryColorRecommendations').removeClass('show');
-      this.$el.find('.customizeSecondaryColorRecommendations').removeClass('show');
-      this.$el.find('.customizeBackgroundColorRecommendations').removeClass('show');
-      $customizeTextColorRecommendations.addClass('show');
-    }
-  },
-
-  customizeColorClick: function(e) {
-    var self = this,
-        colorInput = $(e.target).closest('.positionWrapper').find('.js-customizeColorInput'),
-        colorKey = colorInput.attr('id'),
-        newColor = this.model.get('page').profile[colorKey].slice(1),
-        parent = $('.js-customizeColorRecommendations.show'),
-        parentHeight = parent.height(),
-        topPosition = parent.offset().top + parentHeight + 2;
-
-    colorInput.colpick({
-      layout: "rgbhex", //can also be full, or hex
-      colorScheme: "dark", //can also be light
-      submitText: "Submit",
-      onShow: function() {
-        var colorKey = $(this).attr('id');
-        $(this).colpickSetColor(self.model.get('page').profile[colorKey].slice(1), true);
-        $('.colpick').addClass('colpick-customizeColor show').css('top', topPosition);
-      },
-      onSubmit: function(hsb, hex, rgb, el, visible) {
-        self.setCustomColor(hex, $(el).attr('id'));
-        $(el).closest('.positionWrapper').find('.js-customizeColor').css('background-color', '#' + hex);
-        if (visible) {
-          $(el).colpickHide();
-        }
-      }
-      /*
-      onHide: function(){
-         $('.customizeSecondaryColorRecommendations').hide();
-         $('.colpick').removeClass('colpick-customizeColor');
-      }
-      */
-    });
-    colorInput.colpickSetColor(newColor, true);
-    colorInput.colpickShow();
-  },
-
-  setCustomColor: function(newColor, colorKey) {
-    var tempPage = __.clone(this.model.get('page'));
-    tempPage.profile[colorKey] = '#'+newColor;
-    this.model.set('page', tempPage);
   },
 
   uploadUserPageImage: function() {
