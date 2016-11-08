@@ -1481,12 +1481,12 @@ label.fieldItem {
 */
 .modal.insideApp {
   top: 56px;
-  width: calc(100% - 47px);
+  width: 100%;
   z-index: 0;
 }
 
 #ov1.chatOpen .modal.insideApp {
-  width: calc(100% - 168px);
+  width: 100%;
 }
 
 /*
@@ -1739,15 +1739,11 @@ label.fieldItem {
   width: 950px;
 }
 
-.user-customize-cover-photo {
-  width: 950px;
-}
-
 #userPage .mainContainer {
 }
 
 .modal-opaque {
-  background-color: rgba(6, 55, 83, 0.80);
+  background-color: rgba(0, 0, 0, 0.20);
   box-shadow: inset 0 -70px 112px -62px rgba(37,37,37,.9);
 }
 
