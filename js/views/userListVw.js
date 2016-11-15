@@ -52,8 +52,17 @@ module.exports = Backbone.View.extend({
       this.modalCloseArea = $('<div class="modal-close-area js-modalClose"></div>');
       this.listWrapper = $('<div class="list flexRow flexExpand border0 custCol-border"><button type="button" class="overlay-close js-modalClose"><img src="./imgs/close-button.png"></button></div>');
       this.renderUserSet(this.nextUserToShow, this.showPerScroll);
-      this.$el.html(this.listWrapper);
-      this.$el.prepend(this.modalCloseArea)
+      this.$el.prepend(this.modalCloseArea);
+
+      if (this.$el.hasClass('js-list2')) {
+          $(".js-list2").append(this.listWrapper);
+          $(".js-list2 .js-loadingMsg").addClass('hide');
+      } else if (this.$el.hasClass('js-list1')){
+          $(".js-list1").append(this.listWrapper);
+          $(".js-list1 .js-loadingMsg").addClass('hide');
+      } else {
+        console.log('none')
+      }
     } else {
       self.renderNoneFound();
     }

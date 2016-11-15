@@ -9,7 +9,7 @@ var loadTemplate = require('../utils/loadTemplate'),
 
 module.exports = baseVw.extend({
 
-  className: "flexRow borderBottom custCol-border js-userShortView",
+  className: "flexRow custCol-border js-userShortView",
 
   events: {
     'click .js-userShort': 'userClick',

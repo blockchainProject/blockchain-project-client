@@ -7,7 +7,7 @@
     background: rgba(255,255,255,0.95);
     height: 100vh;
     overflow-y: auto;
-    margin-left: 168px;
+    margin-left: 192px;
     margin-top: 56px;
     z-index: 1;
 }
@@ -36,7 +36,7 @@
 .overlay .list {
 	text-align: left;
 	position: relative;
-	top: 50%;
+	top: 40%;
 	height: 60%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
