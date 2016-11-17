@@ -3828,6 +3828,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   color: #12BB4F;
 }
 
+.blackColor{
+  color: #030303;
+}
+
 .homeView {
 }
 
@@ -4026,6 +4030,13 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: relative;
 }
 
+#inTurnFadingTextG2{
+  color: #FFF;
+  left: 46.5%;
+  margin-top: 24px;
+  position: relative;
+}
+
 .inTurnFadingTextG{
   font-size:16px;
   float:left;
@@ -4171,6 +4182,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   100%{
     color:rgb(0,157,196);
   }
+}
+
+.reloadButton {
+  margin-top: 40px;
+  position: relative;
+  right: 43px;
 }
 
 /*========== one-off classes ==========*/
