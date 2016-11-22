@@ -2292,6 +2292,14 @@ input[type="text"].txtField-bar {
   border: 1px solid #2EAD31;
 }
 
+.ion-ios-minus-empty:before {
+  font-weight: 800;
+}
+
+.ion-ios-close-empty:before {
+  font-weight: 800;
+}
+
 .btn.btn-bar {
   border-radius: 0;
   min-width: 115px;
