@@ -1,7 +1,7 @@
 <div class="mainContainer custCol-background">
 
-  <div class="userBar">
-    <div class="title-section custCol-primary-darken shadow-inner1-ultra-light">
+  <div class="userBar marginTop16">
+    <div class="title-section custCol-primary-darken">
       <div class="thumbnail pull-left"
       <% if(ob.page.avatar_hash) { %>
       style="background-image: url(<%= ob.user.serverUrl %>get_image?hash=<%= ob.page.avatar_hash %>), url(imgs/defaultUser.png);">
@@ -9,7 +9,7 @@
       style="background-image: url(imgs/defaultUser.png);">
       <% } %>
     </div>
-    <h1 class="fancy-heading fontSize20 vCentered colorWhiteForce textShadow"><%= polyglot.t('Transactions') %></h1>
+    <h1 class="fancy-heading fontSize20 vCentered"><%= polyglot.t('Transactions') %></h1>
     <a href="#userPage" class="btn btn-txt custCol-primary positionWrapper pull-right right10 marginTop9 marginLeft6">
       <span class="ion-document-text fontSize11 marginRight2 textOpacity1"></span>
       <%= polyglot.t('GoToMyPage') %>
@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="bar navBar barFlush custCol-secondary clearFix height55">
+<div class="bar barFlush custCol-secondary clearFix height55">
   <a class="btn btn-bar btn-tab custCol-secondary js-tab js-purchasesTab paddingRight18 active" data-tab="purchases">
     <span class="ion-log-out fontSize11 marginRight2 textOpacity1"></span>
     <%= polyglot.t('Purchases') %>
@@ -158,6 +158,5 @@
       </div>
 
 </div>
-<div class="navBar custCol-secondary" style="padding: 4px 0"></div>
 </div>
 
