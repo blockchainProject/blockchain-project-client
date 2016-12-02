@@ -1225,6 +1225,25 @@ label.fieldItem {
   top:1px;
 }
 
+.smallBlueOnWhiteButton {
+  background-color: #FFF;
+  border: 1px solid #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #009DC4;
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.smallBlueOnWhiteButton:hover {
+  opacity: 0.8;
+}
+
 .whiteOnBlueButton{
   background-color: #009DC4;
   -moz-border-radius: 6px;
@@ -1245,6 +1264,25 @@ label.fieldItem {
 .whiteOnBlueButton:active {
   position:relative;
   top:1px;
+}
+
+.smallWhiteOnBlueButton {
+  background-color: #FFF;
+  border: 1px solid #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #009DC4;
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.smallWhiteOnBlueButton:hover {
+  opacity: 0.8;
 }
 
 .whiteOnGreenButton{
@@ -1747,12 +1785,12 @@ label.fieldItem {
 
 .welcomeBar .welcomeBar-inner,
 .userBar .title-section {
-  background-color: #FFF;
   height: 48px;
   padding-left: 16px;
   position: relative;
   z-index: 1;
   color: #030303;
+  border-bottom: 2px solid #EEEEEE;
 }
 
 .userBar .title-section {
