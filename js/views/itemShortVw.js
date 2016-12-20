@@ -73,7 +73,9 @@ module.exports = baseVw.extend({
           $(".js-store .js-list3 .flexCol-6").toggleClass('flexCol-6 flexCol-12');
           $(".js-store .js-list3 .homeFeedChatButton").css("display", "none");
           $(".js-store .js-list3 .gridItemControls").css("width", "600px");
-          $(".gridItemControls").prepend( $(".js-store .js-list3 .itemPrice .itemPriceTag") );
+          $(".js-store .js-list3 .flexCol-12 .gridItemControls").each(function() {
+            $(this).prepend( $(this).siblings().find(".itemPrice .itemPriceTag") );
+          });
           $(".itemPriceTag").css({"color": "#030303", "background-color": "#FFF", "position": "relative", "top": "72px", "margin-left": "8px" });
       }
     });
