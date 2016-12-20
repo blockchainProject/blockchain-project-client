@@ -2,4 +2,3 @@ node_modules/
 **/*.min.js
 **/colpick.js
 **/jquery.*.js
-modernizr.custom.js

@@ -22,8 +22,6 @@ var __ = require('underscore'),
     saveToAPI = require('../utils/saveToAPI'),
     ModeratorSettingsModal = require('./moderatorSettingsModal'),
     HiddenWarningModal = require('./hiddenWarningModal'),
-    classie = require('../utils/classie.js'),
-    Modernizr = require('../utils/modernizr.custom.js'),
     UserPageVw;
 
 var defaultItem = {
@@ -1215,36 +1213,15 @@ UserPageVw = pageVw.extend({
   },
 
   toggleOverlay: function(className) {
-    var overlay = document.querySelector( className + ' .overlay' ),
-      transEndEventNames = {
-        'WebkitTransition': 'webkitTransitionEnd',
-        'MozTransition': 'transitionend',
-        'OTransition': 'oTransitionEnd',
-        'msTransition': 'MSTransitionEnd',
-        'transition': 'transitionend'
-      },
-      transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-      support = { transitions : Modernizr.csstransitions };
+    var overlay = document.querySelector( className + ' .overlay' )
 
-    if( classie.has( overlay, 'open' ) ) {
-      classie.remove( overlay, 'open' );
-      classie.add( overlay, 'close' );
-      var onEndTransitionFn = function( ev ) {
-        if( support.transitions ) {
-          if( ev.propertyName !== 'visibility' ) return;
-          this.removeEventListener( transEndEventName, onEndTransitionFn );
-        }
-        classie.remove( overlay, 'close' );
-      };
-      if( support.transitions ) {
-        overlay.addEventListener( transEndEventName, onEndTransitionFn );
-      }
-      else {
-        onEndTransitionFn();
-      }
+    if( overlay.classList.contains( 'open' ) ) {
+      overlay.classList.remove( 'open' );
+      overlay.classList.add( 'close' );
+      overlay.classList.remove( 'close' );
     }
-    else if( !classie.hasClass( overlay, 'close' ) || classie.hasClass( overlay, 'close' )) {
-      classie.add( overlay, 'open' );
+    else if( !overlay.classList.contains( 'close' ) || overlay.classList.contains( 'close' )) {
+      overlay.classList.add( 'open' );
     }
   },
 
