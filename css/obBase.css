@@ -6167,8 +6167,9 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .width30 {
-  width: 30px;
+  width: 30%;
 }
+
 #ov1 .width34 {
   width: 34px;
 }
@@ -6190,6 +6191,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #ov1 .width65px {
   width: 65px;
+}
+
+#ov1  .width70 {
+  width: 70%;
 }
 
 #ov1 .width80 {
