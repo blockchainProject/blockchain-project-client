@@ -21,9 +21,6 @@ module.exports = pageVw.extend({
     'click .js-feedTab': function(){this.setState("feed");},
     'click .js-vendorsTab': function(){this.setState("vendors");},
     'click .js-homeCreateStore': 'createStore',
-    'click .js-homeSearchItemsClear': 'onSearchItemsClear',
-    'keyup .js-homeSearchItems': 'searchItemsKeyup',
-    'blur .js-homeSearchItems': 'searchItemsBlur',
     'click .js-homeListingsFollowed': 'clickListingsFollowed',
     'click .js-homeListingsAll': 'clickListingsAll',
     'click .backToTop': 'clickBackToTop'
@@ -226,13 +223,6 @@ module.exports = pageVw.extend({
           self
         );
         self.obContainer.on('scroll', self.scrollHandler);
-
-        //populate search field
-        if (self.searchItemsText){
-          self.$el.find('.js-homeSearchItems').val("#" + self.searchItemsText);
-          self.listingToggle.addClass('hide');
-          $('#obContainer').scrollTop(0);
-        }
 
         self.$backToTop = self.$('.backToTop');
       });
@@ -487,33 +477,6 @@ module.exports = pageVw.extend({
     this.userViews = [];
   },
 
-  searchItemsBlur: function(){
-    if (!this.searchItemsText){
-      this.listingToggle.removeClass('hide');
-    }
-  },
-
-  searchItemsKeyup: function(e){
-    var target = $(e.target),
-        targetText = target.val().replace("#", '').replace(/ /g, ""),
-        addressText = targetText;
-
-    if (e.keyCode == 13){
-      this.searchItems(targetText);
-      addressText = addressText ? "#" + addressText.replace(/\s+/g, '') : "";
-      target.val(addressText);
-      window.obEventBus.trigger("setAddressBar", {'addressText': addressText});
-    } else if (e.keyCode == 8 || e.keyCode == 46) {
-      if (target.val() == "") {
-        this.searchItemsClear();
-      }
-    }
-  },
-
-  onSearchItemsClear: function() {
-    this.searchItemsClear();
-  },
-
   searchItemsClear: function(state){
     this.searchItemsText = '';
     this.setState(state || 'products');
@@ -549,8 +512,6 @@ module.exports = pageVw.extend({
           .data('searchingText')
           .replace('%{tag}', `<span class="btn-pill color-secondary">${hashedItem}</span>`)
       );
-      this.$el.find('.js-homeSearchItemsClear').removeClass('hide');
-      this.$el.find('.js-homeSearchItems').val("#" + searchItemsText);
       this.setState('products', searchItemsText);
     } else {
       this.searchItemsClear();
@@ -564,8 +525,6 @@ module.exports = pageVw.extend({
     this.socketView.getItems(this.socketItemsID, this.onlyFollowing);
     this.setSocketTimeout();
     this.searchItemsText = "";
-    this.$el.find('.js-homeSearchItems').val("");
-    this.$el.find('.js-homeSearchItemsClear').addClass('hide');
   },
 
   setListingsBlockedCount: function(count) {
