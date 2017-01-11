@@ -20,6 +20,7 @@ module.exports = pageVw.extend({
     'click .js-productsTab': function(){this.setState("products");},
     'click .js-feedTab': function(){this.setState("feed");},
     'click .js-vendorsTab': function(){this.setState("vendors");},
+    'click .js-homeSearchItemsClear': 'onSearchItemsClear',
     'click .js-homeCreateStore': 'createStore',
     'click .js-homeListingsFollowed': 'clickListingsFollowed',
     'click .js-homeListingsAll': 'clickListingsAll',
@@ -147,7 +148,7 @@ module.exports = pageVw.extend({
         if (self.searchItemsText) {
           self.$el.find('.js-loadingText').html(
             window.polyglot.t('discover.noTaggedResults')
-              .replace('%{tag}', `<span class="btn-pill color-secondary">#${self.searchItemsText}</span>`)
+              .replace('%{tag}', `<span class="tagButton">#${self.searchItemsText}</span>`)
           );
         } else {
           self.$el.find('.js-loadingText')
@@ -477,6 +478,10 @@ module.exports = pageVw.extend({
     this.userViews = [];
   },
 
+  onSearchItemsClear: function() {
+    this.searchItemsClear();
+  },
+
   searchItemsClear: function(state){
     this.searchItemsText = '';
     this.setState(state || 'products');
@@ -485,7 +490,8 @@ module.exports = pageVw.extend({
     //clear address bar
     window.obEventBus.trigger("setAddressBar", {'addressText': ""});
 
-    this.$el.find('.js-discoverHeading').html(window.polyglot.t('Discover'));
+    this.$el.find('.js-discoverHeading').html(' ');
+    this.$el.find('.js-discoverHeading').removeClass('homeTagButton');
     this.listingToggle.removeClass('hide');
 
     // change loading text copy
@@ -505,13 +511,15 @@ module.exports = pageVw.extend({
       this.socketItemsID = "";
       this.socketSearchID = Math.random().toString(36).slice(2);
       this.socketView.search(this.socketSearchID, searchItemsText);
-      this.setSocketTimeout();      
+      this.setSocketTimeout();
+      this.$el.find('.js-discoverHeading').addClass('homeTagButton');
       this.$el.find('.js-discoverHeading').html(hashedItem);
       this.$el.find('.js-loadingText').html(
         this.$el.find('.js-loadingText')
           .data('searchingText')
-          .replace('%{tag}', `<span class="btn-pill color-secondary">${hashedItem}</span>`)
+          .replace('%{tag}', `<span class="tagButton">${hashedItem}</span>`)
       );
+      this.$el.find('.js-homeSearchItemsClear').removeClass('hide');
       this.setState('products', searchItemsText);
     } else {
       this.searchItemsClear();
@@ -525,6 +533,7 @@ module.exports = pageVw.extend({
     this.socketView.getItems(this.socketItemsID, this.onlyFollowing);
     this.setSocketTimeout();
     this.searchItemsText = "";
+    this.$el.find('.js-homeSearchItemsClear').addClass('hide');
   },
 
   setListingsBlockedCount: function(count) {
