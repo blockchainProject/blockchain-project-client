@@ -13,7 +13,7 @@ module.exports = baseModal.extend({
 
   initialize: function(options) {
     this.options = __.extend({
-      initialTab: 'about'
+      initialTab: 'support'
     }, options || {});
 
     if (!this.options.version) {
