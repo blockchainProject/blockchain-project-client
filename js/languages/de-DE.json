@@ -311,7 +311,6 @@
     "StoreModeratorsOptional": "Shop Moderatoren (Optional)",
     "Searchformoderators": "Nach Moderatoren suchen",
     "Support": "Support",
-    "Licensing": "Genehmigung",
     "On": "On",
     "Off": "Off",
     "ClickToChange": "Zum &auml;ndern hier klicken",
@@ -561,7 +560,6 @@
     },
     "aboutSection": {
         "support": "<p>Sie können OpenBazaar auf verschiedener Art und Weise bei unserer Mission helfen, den Handel frei zu machen.</p><p>Das Kaufen und Verkaufen von Waren und Dienstleistungen im Netzwerk hilft, unserer Gemeinschaft zu wachsen und die Plattform attraktiver für neue Benutzer zu machen. Höfliche Anfragen an Unternehmen, die Bitcoin akzeptieren, auf der Plattform zu verkaufen, hilft die Bitcoin Idee weiter zu verbreiten und zeigt die Nachfrage nach Peer-to-Peer-Handel.</p> <p>Wenn Sie ein Entwickler sind, besuchen Sie <a href=\\\"https://github.com/OpenBazaar/\\\" target=\\\"_blank\\\">unser GitHub</a> und schauen Sie, wo Sie uns helfen können. Abgesehen von Hilfe bei der Entwicklung des Core Codes, hoffen wir, dass der permissionless und Open-Source-Charakter des Projekts Sie dazu motivieren wird, neue Dienste auf dem bestehenden Netzwerk aufzubauen.</p><p>Sie können auch <a href=\\\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\\\" target=\\\"_blank\\\">Bitcoin spenden</a>, die bei diesem Projekt verwendet werden, um Kosten zu decken, wie den Besuch von Konferenzen, Bounties für die Entwicklung und die Förderung von OpenBazaar.</p><p> Bitte <a href=\\\"https://slack.openbazaar.org/\\\" target=\\\"_blank\\\"> treten Sie unserem Slack bei</a>, wenn Sie neue Ideen für OpenBazaar haben oder Fragen an die Core Devs haben.</p>",
-        "licensing": "<ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },
     "saveMessages": {
         "Saved": "Gespeichert",

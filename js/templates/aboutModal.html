@@ -10,16 +10,10 @@
             <span class="ion-android-favorite fontSize11 marginRight2 textOpacity1"></span>
             <%= polyglot.t('Support') %>
           </a>
-          <a class="btn btn-bar btn-tab custCol-secondary js-tab <% ob.tab === 'licensing' && print('active') %>" data-tab="licensing">
-            <span class="ion-clipboard fontSize11 marginRight2 textOpacity1"></span>
-            <%= polyglot.t('Licensing') %>
-          </a>
         </div>
 
-        <% if (ob.tab === 'licensing') { %>
+        <% if (ob.tab === 'support') { %>
         <div class="custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20">
-          <%= polyglot.t('aboutSection.licensing') %>
-        </div>
         <% } else if (ob.tab === 'support') { %>
         <div class="modal-section custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20">
           <div class="width100 alignCenter marginBottom12">
