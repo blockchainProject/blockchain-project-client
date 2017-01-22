@@ -563,7 +563,7 @@
     },
     "aboutSection": {
         "about": "<p>OpenBazaar является сетью пользователей, покупающих и продающих товары и услуги напрямую друг с другом, с помощью Биткойн. Эта сеть децентрализована и не контроллируется какой-либо организацией.</p><p>Вся программа доступна в Open Source по лицензии MIT. Вы можете изучить код на <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">GitHub</a>.</p><p>OpenBazaar это проект созданный сообществом, и мы всегда рады вашему участию на нашем канале в <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">Slack</a>-чате или на нашем <a href=\"https://www.reddit.com/r/eubazaar\" target=\"_blank\">сабреддите</a>.</p><p>Если вам нужна помощь, прочтите ознакомительный пост об OpenBazaar версии 1.0 <a href=\"https://blog.openbazaar.org/tag/tutorial/\" target=\"_blank\">Учебные материалы</a>.</p><p>Если у вас всё ещё имеются вопросы, создайте тикет в нашем разделе <a href=\"https://openbazaar.zendesk.com/hc/en-us/articles/203219995-Question-not-answered-Read-this-post\" target=\"_blank\">техподдержки</a>.</p>",
-        "contributors": "<ul><li>Giannis Adamopoulos</li><li>Ariadni-Karolina Alexiou</li><li>Tikhon Bernstam</li><li>Brad Burnham</li><li>George Chatzisofroniou</li><li>Patrick Connolly</li><li>Chris Dixon</li><li>Simon de la Rouviere</li><li>Braden Glasgow</li><li>Brian Hoffman</li><li>Ben Holden-Crowther</li><li>Joshua Jeffryes</li><li>Nikolas Korasidis</li><li>Regan Lawton</li><li>Sami Lehtinen</li><li>Angel Leon</li><li>Joye Lin</li><li>Joel Monegro</li><li>William Mougayar</li><li>Jonas David Nick</li><li>Onename</li><li>Chris Pacia</li><li>Sam Patterson</li><li>Chara Podimata</li><li>Samuel Reed</li><li>Washington Sanchez</li><li>Aeron Paul Sioson</li><li>Adrian Smith</li><li>Adam Snodgrass</li><li>Thomas Stilwell</li><li>Amir Taaki</li><li>Mike Wolf</li><li>Dionysis Zindros</li><li>secret-bitcoin-login</li><li>Rav3nPL</li><li>El--Presidente</li><li>Tinytin</li><li>ULRichard</li></ul>",
+        "contributors": "<p>GrabJob is made possible by an international community of developers and volunteers contributing their time to help make trade free. This is a partial list of people who have contributed to the project, either through code or other assistance.</p><ul><li>Taisuke Mino</li><li>Badr Jaidi</li></ul>",
         "support": "<p>Вы можете помочь в миссии OpenBazaar о создании платформы для свободной торговли следующими способами.</p><p>Покупая и продавая товары и услуги в этой сети вы поощряете сообщество в целом и способствуете усовершенствованию платформы для новых пользователей. Если вы попросите уже принимающие Bitcoin-компании разместиться на платформе, это поспособствует распространению информации о вашей потребности в peer to peer торговле.</p><p>Если вы являетесь разработчиком, посетите <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">наш GitHub</a> чтобы узнать, каким образом вы можете нам помочь. Кроме поддержки основного кода, мы также надеемся что наши платформы безразрешительных инноваций помогут вам построить ваши новые сервисы на базе существующей сети протокола.</p><p>Вы также можете <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">пожертвовать ваши Биткойны</a> проекту, это помогло бы покрыть расходы на проведение конференций, назначение вознаграждений для разработчиков, и распространению OpenBazaar.</p><p>Пожалуйста <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">посетите наш Slack</a> если у вас есть новые идеи для OpenBazaar, или вопросы разработчикам.</p>",
         "licensing": "<ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },
@@ -600,23 +600,23 @@
         "settings": "Настройки",
         "refresh": "Обновить",
         "restart": "Restart Application",
-        "about": "Об OpenBazaar",
-        "support": "Поддержка OpenBazaar",
+        "about": "Об GrabJob",
+        "support": "Поддержка GrabJob",
         "Forward": "Вперед",
         "Back": "Назад",
         "newServer": "Новый сервер",
         "manageServers": "Сетевые настройки"
     },
     "onboarding": {
-        "intro": "Конфигурация OpenBazaar",
+        "intro": "Конфигурация GrabJob",
         "Introduction": "Ознакомление",
-        "IntroductionBody": "OpenBazaar это рынок peer-to-peer. Это почти то же самое, как представить eBay, Twitter и Bittorrent в одном продукте. Но только без комиссий и каких-либо ограничений и с открытым исходным кодом.\n\n Просим вас заметить, что возможно Вам потребуется время, для того, чтобы привыкнуть к лучшему, поэтому дайте себе немного времени и у вас всё получится.",
+        "IntroductionBody": "GrabJob это рынок peer-to-peer. Это почти то же самое, как представить eBay, Twitter и Bittorrent в одном продукте. Но только без комиссий и каких-либо ограничений и с открытым исходным кодом.\n\n Просим вас заметить, что возможно Вам потребуется время, для того, чтобы привыкнуть к лучшему, поэтому дайте себе немного времени и у вас всё получится.",
         "theme": "Выберите тему для своей страницы",
         "chooseLanguage": "Выберите ваш язык",
         "contributors": "%{smart_count} вкладчик |||| %{smart_count} вкладчиков",
         "configure": "Настройте рабочее место",
         "disclaimer_title": "Отказ от ответственности",
-        "disclaimer_body": "OpenBazaar является открытой сетью для прямой торговли с использованием сети Биткойна - без какого-либо центрального органа или компании контроллирующего платформу. Это значит что вы ответственны за ваши собственные действия.\n\nПользователи OpenBazaar не являются анонимными по умолчанию. Большинство коммуникаций между сторонами шифруются, но IP адреса публичны, поэтому могут быть ассоциированны с запросами поступающими с них в сеть. Злоумышленники могут использовать эту информацию против вас; защита приватности - в ваших руках.\n\nПользователи OpenBazaar должны соблюдать законы в непосредственной юрисдикции их местонахождения. Разработчики OpenBazaar не могут контроллировать каждое использование - и не несут ответственности за любое использование платформы в незаконных целях.\n\nСообщество OpenBazaar приложило огромное количество усилий по созданию свободной платформы для международной торговли. Как и в любом программном обеспечении, наши программы тоже содержат ошибки. Разработчики не несут ответственности за любые потери связанные с использованием этого программного продукта.\n\nИспользуя OpenBazaar вы несёте полную ответственность за любые действия совершаемые вами в сети OpenBazaar.",
+        "disclaimer_body": "GrabJob является открытой сетью для прямой торговли с использованием сети Биткойна - без какого-либо центрального органа или компании контроллирующего платформу. Это значит что вы ответственны за ваши собственные действия.\n\nПользователи GrabJob не являются анонимными по умолчанию. Большинство коммуникаций между сторонами шифруются, но IP адреса публичны, поэтому могут быть ассоциированны с запросами поступающими с них в сеть. Злоумышленники могут использовать эту информацию против вас; защита приватности - в ваших руках.\n\nПользователи GrabJob должны соблюдать законы в непосредственной юрисдикции их местонахождения. Разработчики GrabJob не могут контроллировать каждое использование - и не несут ответственности за любое использование платформы в незаконных целях.\n\nСообщество GrabJob приложило огромное количество усилий по созданию свободной платформы для международной торговли. Как и в любом программном обеспечении, наши программы тоже содержат ошибки. Разработчики не несут ответственности за любые потери связанные с использованием этого программного продукта.\n\nИспользуя GrabJob вы несёте полную ответственность за любые действия совершаемые вами в сети GrabJob.",
         "yourCountry": "Выберите вашу страну",
         "localCurrency": "Выберите вашу валюту",
         "LanguagePlaceholder": "Поиск по языку",
@@ -635,12 +635,12 @@
         "recommended": "Подпишитесь на популярные магазины",
         "avatar": "Поставить аватарку",
         "chooseAvatar": "Выбрать аватарку",
-        "discoverCallOut": "Найти объявления и страницы на OpenBazaar",
+        "discoverCallOut": "Найти объявления и страницы на GrabJob",
         "Finished": "Завершено"
     },
     "guidStillCreating": {
         "HangTight": "Подождите немного...",
-        "YourPersonal": "Ваши личные ключи и OpenBazaar ID генерируются и это не должно занять более 30 секунд.\n\nВы автоматически подключитесь к сети, как только процесс будет завершён, поэтому пожалуйста, не отключайтесь.",
+        "YourPersonal": "Ваши личные ключи и GrabJob ID генерируются и это не должно занять более 30 секунд.\n\nВы автоматически подключитесь к сети, как только процесс будет завершён, поэтому пожалуйста, не отключайтесь.",
         "LookingFor": "Хотите узнать что-нибудь полезное, пока ждёте? Прочтите наш <a class=\"js-externalLink\" href=\"https://blog.openbazaar.org/\">блог OpenBazaar</a>."
     },
     "walletProviders": {
@@ -658,7 +658,7 @@
         "BitGoTagline": "Самый безопасный в мире Биткойн кошелек. Доверие от ведущей Биткойн индустрии."
     },
     "softwareUpdate": {
-        "updateAvailable": "Доступно обновление OpenBazaar",
+        "updateAvailable": "Доступно обновление GrabJob",
         "installUpdate": "Установить обновление",
         "dismiss": "Отказаться"
     },
@@ -707,7 +707,7 @@
         "connected": "Подключено",
         "connecting": "Подключение",
         "serverConfiguration": "Конфигурация сервера",
-        "intro": "OpenBazaar спроектирован, чтобы помочь вам держать сервер и клиент на разных компьютерах. По-умолчанию сервер запускается с клиентом на одном и том же компьютере, но вы также можете изменить это здесь.",
+        "intro": "GrabJob спроектирован, чтобы помочь вам держать сервер и клиент на разных компьютерах. По-умолчанию сервер запускается с клиентом на одном и том же компьютере, но вы также можете изменить это здесь.",
         "serverIP": "Сервер IP",
         "restApiPort": "Порт Rest API",
         "websocketApiPort": "Порт Websocket API",

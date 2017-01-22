@@ -563,9 +563,9 @@
     },
     "aboutSection": {
         "about": "<p>OpenBazaar is a network of users who buy and sell goods and services directly with each other, using Bitcoin. This network is decentralized and isn't controlled by any organization.</p><p>The software is open source and MIT licensed. You can view the code on <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">GitHub</a>.</p><p>OpenBazaar is a community project, and we welcome participation in our <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">Slack</a> channel or on our <a href=\"https://www.reddit.com/r/openbazaar\" target=\"_blank\">subreddit</a>.</p><p>If you need help, read the OpenBazaar version 1.0 <a href=\"https://blog.openbazaar.org/tag/tutorial/\" target=\"_blank\">Tutorial</a>.</p><p>If you still have questions, open an issue at our <a href=\"https://openbazaar.zendesk.com/hc/en-us/articles/203219995-Question-not-answered-Read-this-post\" target=\"_blank\">support desk</a>.</p>",
-        "contributors": "<ul><li>Giannis Adamopoulos</li><li>Ariadni-Karolina Alexiou</li><li>Tikhon Bernstam</li><li>Brad Burnham</li><li>George Chatzisofroniou</li><li>Patrick Connolly</li><li>Chris Dixon</li><li>Simon de la Rouviere</li><li>Braden Glasgow</li><li>Brian Hoffman</li><li>Ben Holden-Crowther</li><li>Joshua Jeffryes</li><li>Nikolas Korasidis</li><li>Regan Lawton</li><li>Sami Lehtinen</li><li>Angel Leon</li><li>Joye Lin</li><li>Joel Monegro</li><li>William Mougayar</li><li>Jonas David Nick</li><li>Onename</li><li>Chris Pacia</li><li>Sam Patterson</li><li>Chara Podimata</li><li>Samuel Reed</li><li>Washington Sanchez</li><li>Aeron Paul Sioson</li><li>Adrian Smith</li><li>Adam Snodgrass</li><li>Thomas Stilwell</li><li>Amir Taaki</li><li>Mike Wolf</li><li>Dionysis Zindros</li><li>secret-bitcoin-login</li><li>Rav3nPL</li><li>El--Presidente</li><li>Tinytin</li><li>ULRichard</li></ul>",
+        "contributors": "<p>GrabJob is made possible by an international community of developers and volunteers contributing their time to help make trade free. This is a partial list of people who have contributed to the project, either through code or other assistance.</p><ul><li>Taisuke Mino</li><li>Badr Jaidi</li></ul>",
         "support": "<p>You can help OpenBazaar in several ways on our mission to make trade free.</p><p>Buying and selling goods and services on the network helps grow our community and make the platform more attractive to new users. Politely asking Bitcoin-accepting businesses to sell on the platform helps spread the word and shows demand for peer to peer trade.</p><p>If you're a developer, check out <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">our GitHub</a> and see where you can help us. Beyond helping with the core code, we hope the permissionless and open source nature of the project means you will build new services on top of the existing network.</p><p>You can also <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">donate Bitcoin</a> to the project, which will be used to defray costs for visiting conferences, offering bounties for development, and promoting OpenBazaar.</p><p>Please <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">join our Slack</a> if you have new ideas for OpenBazaar, or have questions for the core devs.</p>",
-        "licensing": "<p>OpenBazaar es software de código abierto bajo licencia MIT. Esta licencia es permisiva y diseñada para favorecer la reutilización libre del código para otros proyectos de código abierto o de software propietario. El texto completo de la licencia se encuentra abajo.</p><h4>The MIT License (MIT)</h4><h5>Copyright &#169 2016 OpenBazaar Developers</h5><p>El permiso por tanto está garantizado, libre de cargos, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociada (el \"Software\"), para compartir sin restricción, incluyendo la no limitación de los derechos de uso, copia, modificación, fusión, publicación, distribución, sublicencia y/o venta de copias del Software, y permitir a aquéllos a quienes el Software se adecúe a hacerlo, sujeto a las siguientes condiciones:</p><p>El siguiente aviso de copyright y este aviso de permiso debe estar incluído en todas las copias o porciones substanciales de el Software.</p><p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p><h4>Librerías</h4><p>Las siguientes librerías son usadas en OpenBazaar:</p><ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
+        "licensing": "<p>GrabJob es software de código abierto bajo licencia MIT. Esta licencia es permisiva y diseñada para favorecer la reutilización libre del código para otros proyectos de código abierto o de software propietario. El texto completo de la licencia se encuentra abajo.</p><h4>The MIT License (MIT)</h4><h5>Copyright &#169 2017 GrabJob Developers</h5><p>El permiso por tanto está garantizado, libre de cargos, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociada (el \"Software\"), para compartir sin restricción, incluyendo la no limitación de los derechos de uso, copia, modificación, fusión, publicación, distribución, sublicencia y/o venta de copias del Software, y permitir a aquéllos a quienes el Software se adecúe a hacerlo, sujeto a las siguientes condiciones:</p><p>El siguiente aviso de copyright y este aviso de permiso debe estar incluído en todas las copias o porciones substanciales de el Software.</p><p>THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p><h4>Librerías</h4><p>Las siguientes librerías son usadas en GrabJob:</p><ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },
     "saveMessages": {
         "Saved": "Guardado",
@@ -600,23 +600,23 @@
         "settings": "Ajustes",
         "refresh": "Refresh Page",
         "restart": "Reiniciar aplicación",
-        "about": "Acerca de OpenBazaar",
-        "support": "Soporte OpenBazaar",
+        "about": "Acerca de GrabJob",
+        "support": "Soporte GrabJob",
         "Forward": "Adelante",
         "Back": "Atr&aacute;s",
         "newServer": "New Server",
         "manageServers": "Manage Servers"
     },
     "onboarding": {
-        "intro": "Personalice Su OpenBazaar",
+        "intro": "Personalice Su GrabJob",
         "Introduction": "Introducci&oacute;n",
-        "IntroductionBody": "OpenBazaar is a peer-to-peer social market. It's like combining eBay&trade;, Twitter&trade; and BitTorrent into one. Only, there are no fees or restrictions and OpenBazaar is open-source. \n\n Please note that it may look and feel a bit different than what you're used to, so please be patient as you adjust.",
+        "IntroductionBody": "GrabJob is a peer-to-peer social market. It's like combining eBay&trade;, Twitter&trade; and BitTorrent into one. Only, there are no fees or restrictions and GrabJob is open-source. \n\n Please note that it may look and feel a bit different than what you're used to, so please be patient as you adjust.",
         "theme": "Seleccione un Tema para su P&aacute;gina",
         "chooseLanguage": "Seleccione idioma",
         "contributors": "%{smart_count} Colaboradores |||| %{smart_count} Colaboradores",
         "configure": "Configure su Experiencia",
         "disclaimer_title": "Nota Legal",
-        "disclaimer_body": "OpenBazaar es una red para el intercambio de bienes y servicios directamente entre la gente - utilizando Bitcoin - sin ninguna organizaci&oacute;n central que controle la plataforma. Esto quiere decir que usted es responsable por sus propias actividades dentro de la red.\n\nLa plataforma de OpenBazaar NO HACE ANONIMOS a sus usuarios en forma predeterminada. La mayor&iacute;a de las comunicaciones entre las partes son encriptadas, pero las direcciones IP son p&uacute;blicas y pueden ser asociadas con la actividad en la red. Entes maliciosos pudieran utilizar esta informaci&oacute;n en su contra; el proteger su privacidad es su propia responsabilidad.\n\nLos usuarios de OpenBazaar deben apegarse tanto a las leyes de su propia jurisdicci&oacute;n legal, as&iacute; como a su conciencia. Los desarrolladores de OpenBazaar no condonan - y no son responsables de - ning&uacute;n uso de la plataforma para actividades ilegales.\n\nLa comunidad de desarrolladores de OpenBazaar ha trabajado duro en entregar una plataforma libre para el comercio internacional. Pero como en todo software, podr&iacute;a encontrar errores. Los desarrolladores no son responsables por ninguna p&eacute;rdida monetaria asociada a problemas con el software.\n\nAl utilizar OpenBazaar Ud. es responsable de sus propias acciones en la red OpenBazaar.",
+        "disclaimer_body": "GrabJob es una red para el intercambio de bienes y servicios directamente entre la gente - utilizando Bitcoin - sin ninguna organizaci&oacute;n central que controle la plataforma. Esto quiere decir que usted es responsable por sus propias actividades dentro de la red.\n\nLa plataforma de GrabJob NO HACE ANONIMOS a sus usuarios en forma predeterminada. La mayor&iacute;a de las comunicaciones entre las partes son encriptadas, pero las direcciones IP son p&uacute;blicas y pueden ser asociadas con la actividad en la red. Entes maliciosos pudieran utilizar esta informaci&oacute;n en su contra; el proteger su privacidad es su propia responsabilidad.\n\nLos usuarios de GrabJob deben apegarse tanto a las leyes de su propia jurisdicci&oacute;n legal, as&iacute; como a su conciencia. Los desarrolladores de GrabJob no condonan - y no son responsables de - ning&uacute;n uso de la plataforma para actividades ilegales.\n\nLa comunidad de desarrolladores de GrabJob ha trabajado duro en entregar una plataforma libre para el comercio internacional. Pero como en todo software, podr&iacute;a encontrar errores. Los desarrolladores no son responsables por ninguna p&eacute;rdida monetaria asociada a problemas con el software.\n\nAl utilizar GrabJob Ud. es responsable de sus propias acciones en la red GrabJob.",
         "yourCountry": "Seleccione su pa&iacute;s",
         "localCurrency": "Moneda Local",
         "LanguagePlaceholder": "Buscar por idioma",
@@ -635,12 +635,12 @@
         "recommended": "P&aacute;ginas Recomendadas a Seguir",
         "avatar": "Establecer un Avatar",
         "chooseAvatar": "Seleccione avatar",
-        "discoverCallOut": "Explore Listados y P&aacute;ginas OpenBazaar",
+        "discoverCallOut": "Explore Listados y P&aacute;ginas GrabJob",
         "Finished": "Finalizado"
     },
     "guidStillCreating": {
         "HangTight": "Espere un momentito...",
-        "YourPersonal": "Estamos generando sus llaves personales y su ID de OpenBazaar y nos tomar&aacute; tan s&oacute;lo unos 30 segundos para tenerlo listo.\n\nSe le conectar&aacute; autom&aacute;ticamente a la red una vez culmine el proceso, as&iacute; que, agradecemos su paciencia",
+        "YourPersonal": "Estamos generando sus llaves personales y su ID de GrabJob y nos tomar&aacute; tan s&oacute;lo unos 30 segundos para tenerlo listo.\n\nSe le conectar&aacute; autom&aacute;ticamente a la red una vez culmine el proceso, as&iacute; que, agradecemos su paciencia",
         "LookingFor": "Desea ver algo interesante mientras espera? Lea el <a class=\"js-externalLink\" href=\"https://blog.openbazaar.org/\">Blog de OpenBazaar</a>."
     },
     "walletProviders": {
@@ -658,7 +658,7 @@
         "BitGoTagline": "El monedero de Bitcoin m&aacute;s seguro del mundo en el cual conf&aacute;an los negocios m&aacute;s importantes de Bitcoin."
     },
     "softwareUpdate": {
-        "updateAvailable": "Hay una nueva actualizaci&oacute;n de OpenBazaar disponible",
+        "updateAvailable": "Hay una nueva actualizaci&oacute;n de GrabJob disponible",
         "installUpdate": "Instalar Actualizaci&oacute;n",
         "dismiss": "Ignorar"
     },
@@ -707,7 +707,7 @@
         "connected": "Connected",
         "connecting": "Connecting",
         "serverConfiguration": "Configuraci&oacute;n del servidor",
-        "intro": "OpenBazaar ha sido dise&ntilde;ado para permitirle hospedar su servidor separado del cliente. Su servidor ha sido pre-configurado para correr localmente, pero puede cambiar esas configuraciones abajo.",
+        "intro": "GrabJob ha sido dise&ntilde;ado para permitirle hospedar su servidor separado del cliente. Su servidor ha sido pre-configurado para correr localmente, pero puede cambiar esas configuraciones abajo.",
         "serverIP": "IP del servidor",
         "restApiPort": "Puerto del Rest API",
         "websocketApiPort": "Puerto del Websocket API",

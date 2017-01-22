@@ -563,7 +563,7 @@
     },
     "aboutSection": {
         "about": "<p>OpenBazaar ist ein Netzwerk von Benutzern, die Waren und Dienstleistungen direkt miteinander mit Bitcoin kaufen und verkaufen. Dieses Netz ist dezentral organisiert und wird von keiner Organisation kontrolliert.</p><p>Die Software ist Open-Source und MIT lizenziert. Sie können den Code auf <a href=\\\"https://github.com/OpenBazaar/\\\" target=\\\"_blank\\\">GitHub</a> ansehen.</p><p>OpenBazaar ist ein Community-Projekt und wir begrüßen die Teilnahme an unserem <a href=\\\"https://slack.openbazaar.org/\\\" target=\\\"_blank\\\">Slack </a>Kanal oder auf unserer <a href =\\\"https://www.reddit.com/r/openbazaar\\\" target=\\\"_blank\\\">subreddit</a>.</p><p>Wenn Sie Hilfe benötigen, lesen Sie das OpenBazaar Version 1.0 <a href=\\\"https://blog.openbazaar.org/tag/tutorial/\\\" target=\\\"_blank\\\">Tutorial</a>.</p><p>Wenn Sie noch Fragen haben, stellen Sie diese auf unserem <a href=\\\"https://openbazaar.zendesk.com/hc/en-us/articles/203219995-Question-not-answered-Read-this-post\\\" target=\\\"_blank\\\">Support Desk</a>.</p>",
-        "contributors": "<ul><li>Giannis Adamopoulos</li><li>Ariadni-Karolina Alexiou</li><li>Tikhon Bernstam</li><li>Brad Burnham</li><li>George Chatzisofroniou</li><li>Patrick Connolly</li><li>Chris Dixon</li><li>Simon de la Rouviere</li><li>Braden Glasgow</li><li>Brian Hoffman</li><li>Ben Holden-Crowther</li><li>Joshua Jeffryes</li><li>Nikolas Korasidis</li><li>Regan Lawton</li><li>Sami Lehtinen</li><li>Angel Leon</li><li>Joye Lin</li><li>Joel Monegro</li><li>William Mougayar</li><li>Jonas David Nick</li><li>Onename</li><li>Chris Pacia</li><li>Sam Patterson</li><li>Chara Podimata</li><li>Samuel Reed</li><li>Washington Sanchez</li><li>Aeron Paul Sioson</li><li>Adrian Smith</li><li>Adam Snodgrass</li><li>Thomas Stilwell</li><li>Amir Taaki</li><li>Mike Wolf</li><li>Dionysis Zindros</li><li>secret-bitcoin-login</li><li>Rav3nPL</li><li>El--Presidente</li><li>Tinytin</li><li>ULRichard</li></ul>",
+        "contributors": "<p>GrabJob is made possible by an international community of developers and volunteers contributing their time to help make trade free. This is a partial list of people who have contributed to the project, either through code or other assistance.</p><ul><li>Taisuke Mino</li><li>Badr Jaidi</li></ul>",
         "support": "<p>Sie können OpenBazaar auf verschiedener Art und Weise bei unserer Mission helfen, den Handel frei zu machen.</p><p>Das Kaufen und Verkaufen von Waren und Dienstleistungen im Netzwerk hilft, unserer Gemeinschaft zu wachsen und die Plattform attraktiver für neue Benutzer zu machen. Höfliche Anfragen an Unternehmen, die Bitcoin akzeptieren, auf der Plattform zu verkaufen, hilft die Bitcoin Idee weiter zu verbreiten und zeigt die Nachfrage nach Peer-to-Peer-Handel.</p> <p>Wenn Sie ein Entwickler sind, besuchen Sie <a href=\\\"https://github.com/OpenBazaar/\\\" target=\\\"_blank\\\">unser GitHub</a> und schauen Sie, wo Sie uns helfen können. Abgesehen von Hilfe bei der Entwicklung des Core Codes, hoffen wir, dass der permissionless und Open-Source-Charakter des Projekts Sie dazu motivieren wird, neue Dienste auf dem bestehenden Netzwerk aufzubauen.</p><p>Sie können auch <a href=\\\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\\\" target=\\\"_blank\\\">Bitcoin spenden</a>, die bei diesem Projekt verwendet werden, um Kosten zu decken, wie den Besuch von Konferenzen, Bounties für die Entwicklung und die Förderung von OpenBazaar.</p><p> Bitte <a href=\\\"https://slack.openbazaar.org/\\\" target=\\\"_blank\\\"> treten Sie unserem Slack bei</a>, wenn Sie neue Ideen für OpenBazaar haben oder Fragen an die Core Devs haben.</p>",
         "licensing": "<ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },
@@ -600,23 +600,23 @@
         "settings": "Einstellungen",
         "refresh": "Seite neu laden",
         "restart": "Anwendung neu starten",
-        "about": "&Uuml;ber OpenBazaar",
-        "support": "OpenBazaar unterst&uuml;tzen",
+        "about": "&Uuml;ber GrabJob",
+        "support": "GrabJob unterst&uuml;tzen",
         "Forward": "Vor",
         "Back": "Zur&uuml;ck",
         "newServer": "Neuer Server",
         "manageServers": "Server verwalten"
     },
     "onboarding": {
-        "intro": "OpenBazaar Konfiguration",
+        "intro": "GrabJob Konfiguration",
         "Introduction": "Einf&uuml;hrung",
-        "IntroductionBody": "OpenBazaar ist ein sozialer Markt mit Peer-to-Peer-Netzwerk. Es ist wie die Kombination aus eBay&trade;, Twitter&trade; und BitTorrent in einem. Nur gibt es keine Gebühren oder Beschränkungen und OpenBazaar ist Open-Source.\n\nBitte beachten Sie, dass es ein wenig anders aussehen und sich anfühlen kann, als das was Sie gewohnt sind, also seien Sie am Anfang bitte geduldig.",
+        "IntroductionBody": "GrabJob ist ein sozialer Markt mit Peer-to-Peer-Netzwerk. Es ist wie die Kombination aus eBay&trade;, Twitter&trade; und BitTorrent in einem. Nur gibt es keine Gebühren oder Beschränkungen und GrabJob ist Open-Source.\n\nBitte beachten Sie, dass es ein wenig anders aussehen und sich anfühlen kann, als das was Sie gewohnt sind, also seien Sie am Anfang bitte geduldig.",
         "theme": "W&auml;hle ein Farbschema f&uuml;r deine Seite",
         "chooseLanguage": "W&auml;hle deine Sprache",
         "contributors": "%{smart_count} Mitwirkeder |||| %{smart_count} Mitwirkende",
         "configure": "Konfiguriere dein Erlebnis",
         "disclaimer_title": "Ausschlussklausel",
-        "disclaimer_body": "OpenBazaar ist ein Netzwerk f&uuml;r den direkten Handel von G&uuml;tern und Dienstleistungen. OpenBazaar verwendet Bitcoin und kommt ohne die Kontrolle einer zentralen Organisation aus. Das bedeutet, dass du selbst f&uuml;r die deine eigenen Handlung in dem Netzwerk verantworlich bist.\n\n Benutzer von OpenBazaar sind nicht automatisch anonym. Kommunikation zwischen Teilnehmern sind in der Regel verschl&uuml;sselt, aber IP addressen sind &ouml;ffentlich einsehbar und k&ouml;nnen mit Aktivit&auml;ten im Netzwerk in Verbindung gebracht werden. Dritte k&ouml;nnten diese Informationen gegend dich verwenden. Der Schutz deiner Privatsphere unterliegt deiner eigenen Verantwortung.\n\n OpenBazaar Benutzer m&uuml;ssen sich an die Regeln der Gebietsk&ouml;rperschaft in der sie leben halten und sind ihrem eigenen Gewissen verpflichtet. Die Entwickler von OpenBazaar billigen nicht die Nutzung der Plattform f&uuml;r illegale Zwecke und sind auch nicht daf&uuml;r verantwortlich.\n\n Die Gemeinde von OpenBazaar Entwicklern hat hart daran gearbeitet der Welt eine kostenlose Handelsplatform zur Verf&uuml;gung zu stellen. Die Entwickler sind f&uuml;r keinerlei finanzielle Verluste im Zusammenhang mit der Verwendung der Software verantwortlich.\n\n Wenn du OpenBazaar verwendest bist du f&uuml;r deine eigenen Handlungen im Netzwerk verantwortlich.",
+        "disclaimer_body": "GrabJob ist ein Netzwerk f&uuml;r den direkten Handel von G&uuml;tern und Dienstleistungen. GrabJob verwendet Bitcoin und kommt ohne die Kontrolle einer zentralen Organisation aus. Das bedeutet, dass du selbst f&uuml;r die deine eigenen Handlung in dem Netzwerk verantworlich bist.\n\n Benutzer von GrabJob sind nicht automatisch anonym. Kommunikation zwischen Teilnehmern sind in der Regel verschl&uuml;sselt, aber IP addressen sind &ouml;ffentlich einsehbar und k&ouml;nnen mit Aktivit&auml;ten im Netzwerk in Verbindung gebracht werden. Dritte k&ouml;nnten diese Informationen gegend dich verwenden. Der Schutz deiner Privatsphere unterliegt deiner eigenen Verantwortung.\n\n GrabJob Benutzer m&uuml;ssen sich an die Regeln der Gebietsk&ouml;rperschaft in der sie leben halten und sind ihrem eigenen Gewissen verpflichtet. Die Entwickler von GrabJob billigen nicht die Nutzung der Plattform f&uuml;r illegale Zwecke und sind auch nicht daf&uuml;r verantwortlich.\n\n Die Gemeinde von GrabJob Entwicklern hat hart daran gearbeitet der Welt eine kostenlose Handelsplatform zur Verf&uuml;gung zu stellen. Die Entwickler sind f&uuml;r keinerlei finanzielle Verluste im Zusammenhang mit der Verwendung der Software verantwortlich.\n\n Wenn du GrabJob verwendest bist du f&uuml;r deine eigenen Handlungen im Netzwerk verantwortlich.",
         "yourCountry": "W&auml;hle dein Land",
         "localCurrency": "W&auml;hle deine W&auml;hrung",
         "LanguagePlaceholder": "Suche nach Sprache",
@@ -635,12 +635,12 @@
         "recommended": "Empfohlene Seiten",
         "avatar": "Setze einen Avatar",
         "chooseAvatar": "W&auml;hle einen Avatar",
-        "discoverCallOut": "St&ouml;bere durch Angebote und Seiten auf OpenBazaar",
+        "discoverCallOut": "St&ouml;bere durch Angebote und Seiten auf GrabJob",
         "Finished": "Abgeschlossen"
     },
     "guidStillCreating": {
         "HangTight": "Bitte hab einen kleinen Moment Geduld...",
-        "YourPersonal": "Deine pers&ouml;nlichen Keys und deine OpenBazaar-ID wird generiert. Dieser Vorgang wird h&ouml;chstens 30 Sekunden dauern.\n\n Du wirst automatisch mit dem Netzwerk verbunden sobald dieser Prozess abgeschlossen ist. Bitte habe noch etwas Geduld.",
+        "YourPersonal": "Deine pers&ouml;nlichen Keys und deine GrabJob-ID wird generiert. Dieser Vorgang wird h&ouml;chstens 30 Sekunden dauern.\n\n Du wirst automatisch mit dem Netzwerk verbunden sobald dieser Prozess abgeschlossen ist. Bitte habe noch etwas Geduld.",
         "LookingFor": "Warum besuchst du nicht in der Zwischenzeit unseren <a class=\"js-externalLink\" href=\"https://blog.openbazaar.org/\">OpenBazaar Blog</a>?"
     },
     "walletProviders": {
@@ -658,7 +658,7 @@
         "BitGoTagline": "Die weltweit sicherste Bitcoin Wallet Software der führende Bitcoin Unternehmen vertrauen."
     },
     "softwareUpdate": {
-        "updateAvailable": "Ein OpenBazaar Update ist verf&uuml;gbar",
+        "updateAvailable": "Ein GrabJob Update ist verf&uuml;gbar",
         "installUpdate": "Update installieren",
         "dismiss": "Schlie&szlig;en"
     },
@@ -707,7 +707,7 @@
         "connected": "Verbunden",
         "connecting": "Verbindungsaufbau",
         "serverConfiguration": "Server Konfiguration",
-        "intro": "OpenBazaar erlaubt es den eigenen Server getrennt vom Client-Programm zu betreiben. Standardm&auml;&szlig;ig wird dein Server lokal laufen, aber du kannst diese Einstellung unten &auml;ndern.",
+        "intro": "GrabJob erlaubt es den eigenen Server getrennt vom Client-Programm zu betreiben. Standardm&auml;&szlig;ig wird dein Server lokal laufen, aber du kannst diese Einstellung unten &auml;ndern.",
         "serverIP": "Server IP",
         "restApiPort": "Rest API Port",
         "websocketApiPort": "Websocket API Port",

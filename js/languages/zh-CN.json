@@ -563,7 +563,7 @@
     },
     "aboutSection": {
         "about": "<p>OpenBazaar is a network of users who buy and sell goods and services directly with each other, using Bitcoin. This network is decentralized and isn't controlled by any organization.</p><p>The software is open source and MIT licensed. You can view the code on <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">GitHub</a>.</p><p>OpenBazaar is a community project, and we welcome participation in our <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">Slack</a> channel or on our <a href=\"https://www.reddit.com/r/openbazaar\" target=\"_blank\">subreddit</a>.</p><p>If you need help, read the OpenBazaar version 1.0 <a href=\"https://blog.openbazaar.org/tag/tutorial/\" target=\"_blank\">tutorial</a>.</p><p>If you still have questions, open an issue at our <a href=\"https://openbazaar.zendesk.com/hc/en-us/articles/203219995-Question-not-answered-Read-this-post\" target=\"_blank\">support desk</a>.</p>",
-        "contributors": "<ul><li>Giannis Adamopoulos</li><li>Ariadni-Karolina Alexiou</li><li>Tikhon Bernstam</li><li>Brad Burnham</li><li>George Chatzisofroniou</li><li>Patrick Connolly</li><li>Chris Dixon</li><li>Simon de la Rouviere</li><li>Braden Glasgow</li><li>Brian Hoffman</li><li>Ben Holden-Crowther</li><li>Joshua Jeffryes</li><li>Nikolas Korasidis</li><li>Regan Lawton</li><li>Sami Lehtinen</li><li>Angel Leon</li><li>Joye Lin</li><li>Joel Monegro</li><li>William Mougayar</li><li>Jonas David Nick</li><li>Onename</li><li>Chris Pacia</li><li>Sam Patterson</li><li>Chara Podimata</li><li>Samuel Reed</li><li>Washington Sanchez</li><li>Aeron Paul Sioson</li><li>Adrian Smith</li><li>Adam Snodgrass</li><li>Thomas Stilwell</li><li>Amir Taaki</li><li>Mike Wolf</li><li>Dionysis Zindros</li><li>secret-bitcoin-login</li><li>Rav3nPL</li><li>El--Presidente</li><li>Tinytin</li><li>ULRichard</li></ul>",
+        "contributors": "<p>GrabJob is made possible by an international community of developers and volunteers contributing their time to help make trade free. This is a partial list of people who have contributed to the project, either through code or other assistance.</p><ul><li>Taisuke Mino</li><li>Badr Jaidi</li></ul>",
         "support": "<p>You can help OpenBazaar in several ways on our mission to make trade free.</p><p>Buying and selling goods and services on the network helps grow our community and make the platform more attractive to new users. Politely asking Bitcoin-accepting businesses to sell on the platform helps spread the word and shows demand for peer to peer trade.</p><p>If you're a developer, check out <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">our GitHub</a> and see where you can help us. Beyond helping with the core code, we hope the permissionless and open source nature of the project means you will build new services on top of the existing network.</p><p>You can also <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">donate Bitcoin</a> to the project, which will be used to defray costs for visiting conferences, offering bounties for development, and promoting OpenBazaar.</p><p>Please <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">join our Slack</a> if you have new ideas for OpenBazaar, or have questions for the core devs.</p>",
         "licensing": "<ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },
@@ -600,23 +600,23 @@
         "settings": "设置",
         "refresh": "Refresh Page",
         "restart": "Restart Application",
-        "about": "关于 OpenBazaar",
-        "support": "支持 OpenBazaar",
+        "about": "关于 GrabJob",
+        "support": "支持 GrabJob",
         "Forward": "前进",
         "Back": "后退",
         "newServer": "New Server",
         "manageServers": "Manage Servers"
     },
     "onboarding": {
-        "intro": "OpenBazaar 布局",
+        "intro": "GrabJob 布局",
         "Introduction": "简介",
-        "IntroductionBody": "OpenBazaar is a peer-to-peer social market. It's like combining eBay&trade;, Twitter&trade; and BitTorrent into one. Only, there are no fees or restrictions and OpenBazaar is open-source. \n\n Please note that it may look and feel a bit different than what you're used to, so please be patient as you adjust.",
+        "IntroductionBody": "GrabJob is a peer-to-peer social market. It's like combining eBay&trade;, Twitter&trade; and BitTorrent into one. Only, there are no fees or restrictions and GrabJob is open-source. \n\n Please note that it may look and feel a bit different than what you're used to, so please be patient as you adjust.",
         "theme": "选择主页主题",
         "chooseLanguage": "选择语言",
         "contributors": "%{smart_count} Contributor |||| %{smart_count} Contributors",
         "configure": "设定体验内容",
         "disclaimer_title": "免责声明",
-        "disclaimer_body": "OpenBazaar 是一个没有任何集中体控制的网络平台，通过本网人们可以使用比特币自由直接的交换货物与互相提供服务。这意味着您将为您在本网的活动负全部责任。\n\nOpenBazaar 的使用者默认身份不为匿名的。大多数用户通讯信息是加密的，但是用户IP地址是公开的并且可以被追踪到本网。有人可以恶意使用您的信息损害您的利益；保护您的隐私是您本人的责任\n\nOpenBazaar 用户必须遵守他们所在地区管辖内的法律和道德标准。OpenBazaar 的创建者们不但不宽容并且不为任何利用本网进行非法活动分子负责。\n\nOpenBazaar 创建者们尽心尽力为用户提供了一个免费的贸易交流平台，但是就像所有的软件一样，避免不了程序错误。创建者们不为因软件问题而造成的经济损失。\n\n在使用 OpenBazaar 时，敬请对您本人的行为负责。",
+        "disclaimer_body": "GrabJob 是一个没有任何集中体控制的网络平台，通过本网人们可以使用比特币自由直接的交换货物与互相提供服务。这意味着您将为您在本网的活动负全部责任。\n\nGrabJob 的使用者默认身份不为匿名的。大多数用户通讯信息是加密的，但是用户IP地址是公开的并且可以被追踪到本网。有人可以恶意使用您的信息损害您的利益；保护您的隐私是您本人的责任\n\nGrabJob 用户必须遵守他们所在地区管辖内的法律和道德标准。GrabJob 的创建者们不但不宽容并且不为任何利用本网进行非法活动分子负责。\n\nGrabJob 创建者们尽心尽力为用户提供了一个免费的贸易交流平台，但是就像所有的软件一样，避免不了程序错误。创建者们不为因软件问题而造成的经济损失。\n\n在使用 GrabJob 时，敬请对您本人的行为负责。",
         "yourCountry": "选择您的国家",
         "localCurrency": "选择您的币种",
         "LanguagePlaceholder": "选择语言",
@@ -635,12 +635,12 @@
         "recommended": "建议关注此网页",
         "avatar": "设置一个头像",
         "chooseAvatar": "选择头像",
-        "discoverCallOut": "在OpenBazaar中查找商品和主页",
+        "discoverCallOut": "在GrabJob中查找商品和主页",
         "Finished": "已完成"
     },
     "guidStillCreating": {
         "HangTight": "Hang tight for a few...",
-        "YourPersonal": "Your personal keys and OpenBazaar ID are generating and should only take about 30 seconds to finish.\n\nYou'll be automatically connected to the network once the process is finished, so please hang tight.",
+        "YourPersonal": "Your personal keys and GrabJob ID are generating and should only take about 30 seconds to finish.\n\nYou'll be automatically connected to the network once the process is finished, so please hang tight.",
         "LookingFor": "Looking for something to do in the meantime? Read the <a class=\"js-externalLink\" href=\"https://blog.openbazaar.org/\">OpenBazaar blog</a>."
     },
     "walletProviders": {
@@ -658,7 +658,7 @@
         "BitGoTagline": "The world's most secure bitcoin wallet. Trusted by leading Bitcoin businesses."
     },
     "softwareUpdate": {
-        "updateAvailable": "OpenBazaar有新版本",
+        "updateAvailable": "GrabJob有新版本",
         "installUpdate": "安装更新",
         "dismiss": "Dismiss"
     },
@@ -707,7 +707,7 @@
         "connected": "Connected",
         "connecting": "Connecting",
         "serverConfiguration": "服务器配置",
-        "intro": "OpenBazaar被设计为服务器与客户端是可分离的。默认情况下，服务器在本地运行，但你可以在这里修改配置。",
+        "intro": "GrabJob被设计为服务器与客户端是可分离的。默认情况下，服务器在本地运行，但你可以在这里修改配置。",
         "serverIP": "服务器IP地址",
         "restApiPort": "Rest API端口号",
         "websocketApiPort": "Websocket API端口号",
