@@ -55,7 +55,6 @@
     "AddModerator": "Add as Moderator",
     "RemoveModerator": "Remove as Moderator",
     "About": "정보",
-    "Version": "버전 %{version}",
     "NoDescriptionAdded": "추가 설명 없음",
     "NoListings": "목록 없음",
     "CoverPhoto": "표지 사진",
