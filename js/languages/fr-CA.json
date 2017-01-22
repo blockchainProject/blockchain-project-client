@@ -310,7 +310,6 @@
     "maxLength200": "200 caractères maximum",
     "StoreModeratorsOptional": "Modérateurs de boutique (Optionnel)",
     "Searchformoderators": "Rechercher des modérateurs",
-    "Contributors": "Contributeurs",
     "Support": "Soutenir",
     "Licensing": "Licences",
     "On": "Activé",
@@ -561,7 +560,6 @@
         "userFail": "La page que vous essayez de voir est actuellement déconnectée"
     },
     "aboutSection": {
-        "contributors": "<p>GrabJob is made possible by an international community of developers and volunteers contributing their time to help make trade free. This is a partial list of people who have contributed to the project, either through code or other assistance.</p><ul><li>Taisuke Mino</li><li>Badr Jaidi</li></ul>",
         "support": "<p>Vous pouvez aider OpenBazaar de plusieurs manières afin de faciliter les échanges commerciaux libres et gratuits.</p><p>Acheter et vendre des biens et services sur le réseau aide la communauté à s’agrandir et rend la plateforme plus attractive pour de nouveaux utilisateurs. Demandez poliment à des commerces qui acceptent Bitcoin de vendre sur la plateforme afin de faire passer le mot et démontrez la demande pour des échanges pair à pair.</p><p>Si vous êtes un développeur, allez sur <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">notre Github</a> et voyez où vous pouvez nous aider. En plus d’aider à coder, nous espérons que la nature open-source et sans permissions du projet vous donnera l’envie de construire de nouveaux services sur le réseau existant.</p><p>Vous pouvez également <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">donner des Bitcoins</a> au projet, qui seront utilisés pour couvrir les frais des conférences, offrir des récompenses pour le développement, et promouvoir OpenBazaar.</p><p>Vous pouvez <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">rejoindre notre Slack</a> si vous avez de nouvelles idées pour OpenBazaar, ou si vous avez des questions sur le développement du logiciel.</p>",
         "licensing": "<ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },

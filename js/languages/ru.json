@@ -310,7 +310,6 @@
     "maxLength200": "макс. длина 200 знаков",
     "StoreModeratorsOptional": "Модераторы магазинов (необязательно)",
     "Searchformoderators": "Поиск модераторов",
-    "Contributors": "Команда",
     "Support": "Поддержка",
     "Licensing": "Компоненты",
     "On": "Вкл.",
@@ -561,7 +560,6 @@
         "userFail": "Страница которую вы пытаетесь просмотреть более не доступна в сети"
     },
     "aboutSection": {
-        "contributors": "<p>GrabJob is made possible by an international community of developers and volunteers contributing their time to help make trade free. This is a partial list of people who have contributed to the project, either through code or other assistance.</p><ul><li>Taisuke Mino</li><li>Badr Jaidi</li></ul>",
         "support": "<p>Вы можете помочь в миссии OpenBazaar о создании платформы для свободной торговли следующими способами.</p><p>Покупая и продавая товары и услуги в этой сети вы поощряете сообщество в целом и способствуете усовершенствованию платформы для новых пользователей. Если вы попросите уже принимающие Bitcoin-компании разместиться на платформе, это поспособствует распространению информации о вашей потребности в peer to peer торговле.</p><p>Если вы являетесь разработчиком, посетите <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">наш GitHub</a> чтобы узнать, каким образом вы можете нам помочь. Кроме поддержки основного кода, мы также надеемся что наши платформы безразрешительных инноваций помогут вам построить ваши новые сервисы на базе существующей сети протокола.</p><p>Вы также можете <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">пожертвовать ваши Биткойны</a> проекту, это помогло бы покрыть расходы на проведение конференций, назначение вознаграждений для разработчиков, и распространению OpenBazaar.</p><p>Пожалуйста <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">посетите наш Slack</a> если у вас есть новые идеи для OpenBazaar, или вопросы разработчикам.</p>",
         "licensing": "<ul><li>protobuf</li><li>Twisted</li><li>txJSON-RPC</li><li>txrudp</li><li>pyelliptic</li><li>pystun</li><li>bitcoin</li><li>gnupg</li><li>pynacl</li><li>txrestapi</li><li>txws</li><li>python-libbitcoin client</li><li>requests</li><li>backbone</li><li>underscore</li><li>moment.js</li><li>jquery</li><li>electron.js</li><li>backbone.linear</li><li>list.js</li><li>polyglot.js</li><li>taggle.js</li><li>safestart</li><li>python-bitcoinlib</li></ul>"
     },
