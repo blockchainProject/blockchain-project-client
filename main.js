@@ -581,7 +581,7 @@ app.on('ready', function() {
     "center": true,
     "title": "OpenBazaar",
     "frame": false,
-    "icon": "imgs/openbazaar-icon.png",
+    "icon": "imgs/grabjob-logo.png",
     "titleBarStyle": "hidden"
   });
   
