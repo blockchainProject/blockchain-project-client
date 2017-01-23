@@ -1,6 +1,11 @@
 <div class="modal-child modal-childMain custCol-primary">
-  <div class="about-hero modal-hero-about color-secondary-darken custCol-secondary-darken">
+  <div class="about-hero modal-hero-about custCol-secondary-darken">
     <div class="modal-hero-icon"></div>
+    <div class="alignCenter">
+      <img class="width40px" src="./imgs/playful-cat.png" alt="">
+      <p class="colorBlack marginTop8">crafted with playful mind</p>
+      <!-- Created by Denis Sazhin from the Noun Project-->
+    </div>
   </div>
   <div class="aboutModal-accordion accordion">
     <div class="accordion-window">
@@ -15,11 +20,11 @@
         <% if (ob.tab === 'support') { %>
         <div class="custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20">
         <% } else if (ob.tab === 'support') { %>
-        <div class="modal-section custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20">
-          <div class="width100 alignCenter marginBottom12">
-            <img src="./imgs/donations.png" />
+        <div class="custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20 alignCenter">
+          <div class="width100 alignCenter">
+            <img class="width40" src="./imgs/donations.png" />
           </div>
-          <%= polyglot.t('aboutSection.support') %>
+          <div class="margin0auto width"><%= polyglot.t('aboutSection.support') %></div>
         </div>
         <% } %>
 

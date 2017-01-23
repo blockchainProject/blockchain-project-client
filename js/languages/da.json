@@ -559,7 +559,7 @@
         "userFail": "Den side, du prøver at se, er p.t. offline"
     },
     "aboutSection": {
-        "support": "<p>Du kan hjælpe OpenBazaar på flere forskellige måder med vores mission om at gøre samhandel fri.</p><p>Køb og salg af varer og serviceydelser på netværket hjælper til at fællesskabet bliver større og gør platformen mere attraktiv for nye brugere. En venlig forespørgsel til eksisterende visksomheder, der modtager Bitcoin, om at sælge på platformen hjælper med at sprede kendskabet og viser efterspørgsel efter peer-to-peer-samhandel.</p><p>Hvis du er udvikler, kan du tjekke <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">vores Github</a> og se, hvor du kan hjælpe os. Ud over at hjælpe med den centrale kode håber vi, at projektets tilladelsesfri og open-source-tilgang betyder, at du vil udvikle nye tjenester oven på det eksisterende netværk.</p><p>Du kan også <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">donere Bitcoin</a> til projektet, hvilket vil blive brugt til at afholde omkostninger til besøg på konferencer, at tilbyde belønninger for udvikling og promovering af OpenBazaar.</p><p><a href=\"https://slack.openbazaar.org/\" target=\"_blank\">Tilmeld dig venligst vores Slack</a>, hvis du har nye idéer til OpenBazaar eller har spørgsmål til kerneudviklerne.</p>"
+        "support": "<p>Donation will be used to defray costs for visiting conferences, offering bounties for development, and promoting GrabJob.</p>"
     },
     "saveMessages": {
         "Saved": "Gemt",

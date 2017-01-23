@@ -559,7 +559,7 @@
         "userFail": "Strona jest obecnie niedostępna"
     },
     "aboutSection": {
-        "support": "<p>Możesz wesprzeć OpenBazaar na wiele sposobów.</p><p>Kupowanie i sprzedawanie dóbr i usług przyczynia się do powiększenia naszej społeczności, a to z kolei zwiększa atrakcyjność platformy w oczach potencjalnych użytkowników. Uprzejme zapytania kierowane do sprzedawców o akceptację płatności w BTC za pośrednictwem naszej platformy pomagają docierać do kolejnych osób i pokazują, że jest zapotrzebowanie na handel P2P.</p><p>Jeśli jesteś programistą, możesz odwiedzić naszego <a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">GitHuba</a> i sprawdzić, czy może nie ma czegoś, w czym mógłbyś nam pomóc. Oprócz pomocy z kodem źródłowym mamy nadzieję, że liberalna natura projektu zachęci was do tworzenia nowych usług bazujących na istniejącej sieci.</p><p>Możesz również <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">wesprzeć nas finansowo.</a> Środki zostaną wykorzystane na pokrycie kosztów związanych z konferencjami, programem Bug Bounty i promocją OpenBazaar.</p><p>Dołącz do naszego <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">Slacka</a>, jeśli masz jakieś pomysły związane z projektem lub chciałbyś o coś zapytać deweloperów."
+        "support": "<p>Donation will be used to defray costs for visiting conferences, offering bounties for development, and promoting GrabJob.</p>"
     },
     "saveMessages": {
         "Saved": "Zapisano",

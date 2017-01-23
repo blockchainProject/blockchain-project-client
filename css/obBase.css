@@ -1617,7 +1617,7 @@ label.fieldItem {
 }
 
 .modal-opaque .modal-child {
-  height: 574px;
+  height: 500px;
 }
 
 .accordion {
@@ -1907,19 +1907,17 @@ label.fieldItem {
 .modal-hero-about {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  height: 250px;
+  height: 160px;
   position: relative;
   width: 525px;
 }
 
 .modal-hero-icon {
-  background: url(../imgs/openbazaar-icon-no-border.png);
+  background: url(../imgs/grabjob-logo.png);
   background-size: cover;
-  height: 135px;
-  margin: auto;
-  top: 40px;
-  position: relative;
-  width: 135px;
+  margin: 16px auto;
+  width: 35%;
+  height: 62px;
 }
 
 .modal-hero.modal-heroFullHeight {
@@ -1928,14 +1926,14 @@ label.fieldItem {
 }
 
 .modal-hero.modal-heroFullHeightNoButtons {
-  height: 624px;
+  height: 650px;
   z-index: 1;
   overflow: hidden;
   border-radius: 3px;
 }
 
 .background1 {
-  background: linear-gradient(to bottom, rgba(72,78,93,1), rgba(23,24,31,1) 75%, rgba(0,0,0,1) 100%);
+  background: #FFF;
 }
 
 /*
@@ -6201,6 +6199,14 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   width: auto;
 }
 
+#ov1  .width40 {
+  width: 40%;
+}
+
+#ov1  .width50 {
+  width: 50%;
+}
+
 #ov1  .width100 {
   width: 100%;
   max-width: 100%;
@@ -6218,7 +6224,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #ov1 .width34 {
   width: 34px;
 }
-#ov1 .width40 {
+
+#ov1 .width40px {
   width: 40px;
 }
 
@@ -6242,14 +6249,19 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   width: 70%;
 }
 
-#ov1 .width80 {
+#ov1 .width80px {
   width: 80px;
 }
+
+#ov1 .width80 {
+  width: 80%;
+}
+
 #ov1 .width91 {
   width: 91px;
 }
 #ov1 .width95 {
-  width: 95px;
+  width: 95%;
 }
 #ov1 .width105 {
   width: 105px;

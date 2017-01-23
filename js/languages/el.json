@@ -559,7 +559,7 @@
         "userFail": "Η σελίδα που προσπαθείτε να δείτε είναι εκτός σύνδεσης"
     },
     "aboutSection": {
-        "support": "<p>Μπορείτε να βοηθήσετε το OpenBazaar και την αποστολή του για ελεύθερες εμπορικές συναλλαγές με αρκετούς τρόπους.</p><p>Η αγορά και πώληση αγαθών και υπηρεσιών στο δίκτυο βοηθά να αυξηθεί η κοινότητά μας και να καταστεί η πλατφόρμα πιο ελκυστική για τους νέους χρήστες.Η ευγενική ερώτηση στις επιχειρήσεις που πουλούν με Bitcoin να πωλούν στην πλατφόρμα βοηθά να εξαπλωθεί η λέξη OpenBazaar και η ζήτηση για το peer to peer εμπόριο</p><p>Εάν είστε προγραμματιστής δείτε<a href=\"https://github.com/OpenBazaar/\" target=\"_blank\">στο GitHub</a> που μπορείτε να βοηθήσετε. Εκτός από την βοήθεια με τον κώδικα του πυρήνα, ο ανοιχτός κώδικας του έργου σημαίνει ότι μπορείτε να κατασκευάσετε νέες υπηρεσίες πάνω από το υπάρχον δίκτυο.</p><p>Επίσης μπορείτε να <a href=\"https://blockchain.info/address/3MXYUBLWNETa5HTewZp1xMTt7AW9kbFNqs\" target=\"_blank\">δωρίσετε Bitcoin</a> στο project, τα οποία θα χρησιμοποιηθούν ώστε να καλυφθούν τα έξοδα για επισκέψεις σε συνέδρια, για χρηματοδότηση του προγραμματισμού, καθώς και για προώθηση του OpenBazaar.</p><p>Παρακαλώ <a href=\"https://slack.openbazaar.org/\" target=\"_blank\">συμμετέχετε στο Slack</a> αν έχετε νέες ιδέες για το OpenBazaar, η αν έχετε ερωτήσεις προς τους core devs.</p>"
+        "support": "<p>Donation will be used to defray costs for visiting conferences, offering bounties for development, and promoting GrabJob.</p>"
     },
     "saveMessages": {
         "Saved": "Αποθηκεύτηκε",
