@@ -10,16 +10,16 @@
   <div id="image-cropper" class="headerCropper banner-large js-pageCustomizationButtons js-headerCropper">
     <div class="headerCropperPreview banner-large cropit-image-preview js-pageCustomizationButtons"></div>
     <div class="statusBar navBar fadeOut positionAbsolute js-headerLoading">
-      <div class="pad20 rowTop20 width100"><h2 class="txt-center"><% polyglot.t('LoadingImage') %></h2></div>
+      <div class="padding24px marginTop24 width100"><h2 class="txt-center"><% polyglot.t('LoadingImage') %></h2></div>
     </div>
-    <input type="range" class="cropit-image-zoom-input hCentered rowTop20 js-bannerRangeInput hide" />
-    <label for="headerImageInput" class="btn btn-c1 btn-txt rowTop20 fullCentered js-pageCustomizationButtons btn-upload-cover-photo custCol-primary">
+    <input type="range" class="cropit-image-zoom-input hCentered marginTop24 js-bannerRangeInput hide" />
+    <label for="headerImageInput" class="btn btn-c1 btn-txt marginTop24 fullCentered js-pageCustomizationButtons btn-upload-cover-photo custCol-primary">
       <span class="ion-qr-scanner fontSize11 marginRight2 textOpacity1"></span>
       <%= polyglot.t('UploadCoverPhoto') %> (866px x 320px)
     </label>
     <input id="headerImageInput" type="file" class="cropit-image-input hide" />
     <div class="bar navBar barFlush user-page-navigation positionBottom">
-      <div class="navEnd pad10">
+      <div class="navEnd pad8px">
         <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls hide">
           <a class="btn btn-txt custCol-primary js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
         </div>
@@ -34,13 +34,13 @@
   </div>
 
   <div class="shadow-inner1 user-page-header js-userPageHeader">
-    <div class="rowItem positionBottom width100 padding0 paddingLeft20 minEffectsDarkBackground">
+    <div class="rowItem positionBottom width100 padding0 paddingLeft24px minEffectsDarkBackground">
       <div class="table">
         <div class="hide js-followsMe allCaps fontSize12 padding10">
           <div class="pull-right">Follows You</div>
         </div>
         <div class="widthAuto bar navBar barFlush user-page-navigation-buttons positionBottomRight backgroundTransparent">
-          <div class="navEnd pad10">
+          <div class="navEnd pad8px">
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
               <a class="btn btn-txt custCol-primary js-sellItem">
                 <span class="ion-ios-pricetag fontSize11 marginRight2 textOpacity1"></span>
@@ -109,10 +109,10 @@
               </a>
             </div>
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="ion-more btn btn-txt custCol-primary js-moreButtonsOwnPage width34 lineHeight32 padding0 fontSize18"></a>
+              <a class="ion-more btn btn-txt custCol-primary js-moreButtonsOwnPage width32px lineHeight32 padding0 fontSize18"></a>
             </div>
             <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls">
-              <a class="ion-more btn btn-txt custCol-primary js-moreButtonsNotOwnPage width34 lineHeight32 padding0 fontSize18"></a>
+              <a class="ion-more btn custCol-primary js-moreButtonsNotOwnPage width32px lineHeight32 padding0 fontSize18"></a>
             </div>
             <div class="ctrlGroup hide js-itemButtons js-userPageControls hide">
               <a class="btn btn-txt custCol-primary confirmable js-deleteItem">
@@ -200,7 +200,7 @@
               <div class="marginTop24 marginLeft32 marginBottom16 fontSize24">Contact</div>
               <div class="flexRow custCol-border width100">
                 <div class="padding0832 positionWrapper noOverflow width100">
-                  <div class="tooltip marginBottom16 width100" title="<%= ob.page.profile.guid %>"><span class="greenColor ion-ios-checkmark-outline marginRight8 textOpacity1 top2"></span><%= polyglot.t('Guid') %></div>
+                  <div class="tooltip marginBottom16 width100" title="<%= ob.page.profile.guid %>"><span class="green-color ion-ios-checkmark-outline marginRight8 textOpacity1 top2"></span><%= polyglot.t('Guid') %></div>
                 </div>
               </div>
               <div class="flexRow custCol-border width100">
@@ -306,7 +306,7 @@
         </div>
         <div class="flexCol-8 custCol-border userPageRight">
           <div class="profileTop">
-            <div class="paddingLeft15 width100">
+            <div class="paddingLeft16px width100">
               <div class="holizontalAlign width70">
                 <div>
                   <span class="h1 page-userNameLarge fancy-heading">

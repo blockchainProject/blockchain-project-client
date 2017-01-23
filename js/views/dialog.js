@@ -49,7 +49,7 @@ Dialog = baseModal.extend({
     var events = {};
 
     options = __.extend({
-      innerWrapperClass: 'modal-child modal-childMain custCol-primary custCol-text padding20'
+      innerWrapperClass: 'modal-child modal-childMain custCol-primary custCol-text padding24'
     }, options || {});
 
     if (options.buttons && options.buttons.length) {

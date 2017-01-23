@@ -74,7 +74,7 @@ module.exports = baseVw.extend({
 
   checkIfEmpty: function() {
     if (this.collection.length == 0) {
-      var noBlockSnippet = $('<div class="padding20 txt-center js-noblocked">' + window.polyglot.t('NoBlockedList') + '</div>');
+      var noBlockSnippet = $('<div class="padding24 txt-center js-noblocked">' + window.polyglot.t('NoBlockedList') + '</div>');
       this.$el.html(noBlockSnippet);
     }
   },

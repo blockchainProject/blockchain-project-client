@@ -1,4 +1,4 @@
-<div class="rowItem padding2015
+<div class="rowItem padding2416
       <% if(ob.isBlank) { %>
       js-blankMod
        <% } %>"
@@ -61,7 +61,7 @@
             <% }else{ %>
               <div class="pull-left lineHeight21
               <% if(ob.micro){ %>
-              width110 noOverflow
+              width110px noOverflow
               <% } %>
               ">
                 <a class="<% if(ob.micro){ %>textSize10<% }else{ %>textSize14px<% } %> txt-fade js-userShort"><%= ob.guid %></a>
@@ -78,7 +78,7 @@
         </div>
         <div style="width: 105px;">
           <% if(ob.isModerator){ %>
-          <div class="pull-right rowTop10 fontSize12 txt-fade">
+          <div class="pull-right marginTop8 fontSize12 txt-fade">
             <%= polyglot.t('ModeratorFee') %> <%= ob.intlNumFormat(ob.fee, 2) %>%
           </div>
           <% } %>

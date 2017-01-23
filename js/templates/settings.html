@@ -58,7 +58,7 @@
         <form class="width100" name="generalForm" id="generalForm">
           <div class="flexCol-12 flex-border js-tabTarg js-general">
             <div class="flexRow borderBottom custCol-border">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('General') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('General') %></h3>
             </div>
 
             <div class="flexRow overflowVisible">
@@ -189,7 +189,7 @@
 
           <div class="flexCol-12 flex-border js-tabTarg js-page hide">
             <div class="flexRow borderBottom custCol-border">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('Basic') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('Basic') %></h3>
             </div>
 
             <div class="flexRow">
@@ -284,20 +284,20 @@
               <div class="flexCol-9 borderRight0 custCol-border">
                 <div id="settings-image-cropper" class="positionWrapper">
                   <div class="statusBar navBar fadeOut positionAbsolute js-avatarLoading">
-                    <div class="pad20 rowTop20 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
+                    <div class="padding24px marginTop24 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
                   </div>
-                  <div class="cropit-image-preview cropit-avatar js-settingsAvatarPreview rowTop20 thumbnail thumbnail-huge box-border pull-left row20 marginLeft12"></div>
+                  <div class="cropit-image-preview cropit-avatar js-settingsAvatarPreview marginTop24 thumbnail thumbnail-huge box-border pull-left marginBottom24 marginLeft12"></div>
                   <div>
-                    <input type="range" class="cropit-image-zoom-input rowTop20 row20  marginLeft12 hide" />
+                    <input type="range" class="cropit-image-zoom-input marginTop24 marginBottom24  marginLeft12 hide" />
                   </div>
                   <input type="file" id="settingsAvatarInput" class="cropit-image-input hide" />
-                  <label for="settingsAvatarInput" class="btn btn-txt rowTop20 marginLeft12 row20 color-secondary custCol-secondary"><%= polyglot.t('NewAvatar') %></label>
+                  <label for="settingsAvatarInput" class="btn btn-txt marginTop24 marginLeft12 marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewAvatar') %></label>
                 </div>
               </div>
             </div>
 
             <div class="flexRow borderBottom custCol-border marginTop20">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('Social') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('Social') %></h3>
             </div>
 
 
@@ -426,7 +426,7 @@
             -->
 
             <div class="flexRow borderBottom custCol-border marginTop20">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('About') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('About') %></h3>
             </div>
 
             <div class="flexRow">
@@ -459,14 +459,14 @@
               <div class="flexCol-9 borderRight0 custCol-border js-settingsCoverPhoto">
                 <div id="settings-image-cropperBanner" class="banner-settings positionWrapper">
                   <div class="statusBar navBar fadeOut positionAbsolute js-bannerLoading">
-                    <div class="pad20 rowTop20 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
+                    <div class="padding24px marginTop24 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
                   </div>
                   <div class="cropit-image-preview banner-settings positionTop js-settingsBannerPreview"></div>
-                  <div class="positionBottom hCentered row100">
+                  <div class="positionBottom hCentered marginBottom96px">
                     <input type="range" class="cropit-image-zoom-input" />
                   </div>
                   <input type="file" id="settingsBannerInput" class="cropit-image-input hide" />
-                  <label for="settingsBannerInput" class="btn btn-txt positionBottom hCentered row20 color-secondary custCol-secondary"><%= polyglot.t('NewCoverImage') %></label>
+                  <label for="settingsBannerInput" class="btn btn-txt positionBottom hCentered marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewCoverImage') %></label>
                 </div>
               </div>
             </div>
@@ -482,7 +482,7 @@
         <form class="width100" name="storeForm" id="storeForm">
           <div class="flexCol-12 flex-border hide js-tabTarg js-store">
             <div class="flexRow borderBottom custCol-border">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('Basic') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('Basic') %></h3>
             </div>
 
             <div class="flexRow">
@@ -515,7 +515,7 @@
                   <label> <!--for="moderators"-->
                     <%= polyglot.t('CurrentModerators') %>
                   </label>
-                  <div class="row20">
+                  <div class="marginBottom24">
                     <label class="textSize11px txt-unleaded textOpacity50 marginTop2"><%= polyglot.t('DeselectToRemoveModerator') %></label>
                   </div>
                 </div>
@@ -536,7 +536,7 @@
                   <label> <!--for="moderators"-->
                     <%= polyglot.t('AddModerators') %>
                   </label>
-                  <div class="row20">
+                  <div class="marginBottom24">
                     <label class="textSize11px txt-unleaded textOpacity50 marginTop2"><%= polyglot.t('SelectToAddModerator') %></label>
                   </div>
                 </div>
@@ -589,7 +589,7 @@
             </div>
 
             <div class="flexRow borderBottom custCol-border marginTop20 TODO">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('Content') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('Content') %></h3>
             </div>
 
             <div class="flexRow TODO">
@@ -646,11 +646,11 @@
             <% if(ob.user.shipping_addresses && ob.user.shipping_addresses.length > 0) { %>
             <div class="flexRow marginBottom20">
               <div class="flexRow">
-                <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('CurrentAddress') %></h3>
+                <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('CurrentAddress') %></h3>
               </div>
-              <div class="flexRow pad5 rowTop15">
+              <div class="flexRow pad4px marginTop16">
                 <% _.each(ob.user.shipping_addresses, function(address, i){ %>
-                <div class="flexCol-4 pad10 row15">
+                <div class="flexCol-4 pad8px marginBottom16">
                   <div class="padding10 custCol-secondary borderRadius3 fontSize15 clearfix js-address">
                     <div class="textOpacity1">
                       <div><%= address.name %></div>
@@ -679,7 +679,7 @@
             <div class="flexRow">
 
               <div class="flexRow custCol-border">
-                <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('NewAddress') %></h3>
+                <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('NewAddress') %></h3>
               </div>
 
               <div class="flexCol-3 borderRight custCol-border">
@@ -816,7 +816,7 @@
         <form class="width100 positionWrapper" name="moderatorForm" id="moderatorForm">
           <div class="flexCol-12 flex-border js-tabTarg js-moderator hide">
             <div class="flexRow borderBottom custCol-border">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('moderatorSettings.DisputeResolution') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('moderatorSettings.DisputeResolution') %></h3>
             </div>
             <div class="flexRow">
               <div class="flexCol-3 borderRight custCol-border">
@@ -859,7 +859,7 @@
                        max="25"
                        step="0.01"
                        name="moderation_fee"
-                       class="fieldItem custCol-text width70px floatLeft"
+                       class="fieldItem custCol-text width72px floatLeft"
                        id="moderatorFeeInput"
                        value="<%= ob.page.profile.moderation_fee.toFixed(2) %>" required/><div class="floatLeft marginLeft5 lineHeight51 fontWeight500 textOpacity75">%</div>
               </div>
@@ -875,7 +875,7 @@
         <form class="width100" name="advancedForm" id="advancedForm">
           <div class="flexCol-12 flex-border hide js-tabTarg js-advanced">
             <div class="flexRow borderBottom custCol-border">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('Advanced') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('Advanced') %></h3>
             </div>
 
             <div class="flexRow">
@@ -1071,7 +1071,7 @@
             </div>
 
             <div class="flexRow borderBottom custCol-border marginTop20">
-              <h3 class="padding15 margin0 fontWeight500"><%= polyglot.t('SMTPNotifications') %></h3>
+              <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('SMTPNotifications') %></h3>
             </div>
 
             <div class="flexRow">
@@ -1091,7 +1091,7 @@
                       <input type="radio" class="fieldItem" id="smtpNotificationsYes" name="smtp_notifications" value="true" /><label for="smtpNotificationsYes" class="radioLabel"><%= polyglot.t('Yes') %></label>
                       <input type="radio" class="fieldItem" id="smtpNotificationsNo" name="smtp_notifications" value="false" checked/><label for="smtpNotificationsNo" class="radioLabel"><%= polyglot.t('No') %></label>
                     </div>
-                    <div class="positionTopRight paddingright5">
+                    <div class="positionTopRight paddingRight4">
                       <a id="testSMTPButton" class="btn btn-txt js-testSMTP custCol-secondary">
                         <%= polyglot.t('TestSMTPButton') %>
                       </a>

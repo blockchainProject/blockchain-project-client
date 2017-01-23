@@ -1,5 +1,5 @@
 <div class="flexRow border0">
-  <div class="flexRow bar pad20 height30 marginTop9 noFlexWrap">
+  <div class="flexRow bar padding24px height30 marginTop9 noFlexWrap">
     <a class="js-returnToStore textOpacity50 underline fontSize13 noWrap"><%= polyglot.t('AllListings') %></a>
     <% if(ob.vendor_offer.listing.item.category) { %>
       <span class="ion-ios-arrow-forward breadCrumbArrow"></span>
@@ -25,8 +25,8 @@
     </div>
     <% if(ob.vendor_offer.listing.item.keywords != "") { %>
       <div class="flexRow">
-        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 color-tertiary marginRight40 paddingLeft16 width100 paddingTop15">
-          <div class="marginBottom20 row10">
+        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background marginRight40 paddingLeft16px width100 paddingTop16px">
+          <div class="marginBottom20 marginBottom8">
             <% _.each(ob.vendor_offer.listing.item.keywords, function(data, i) {
               if(data.length < 100 && i < 11) {
             %>
@@ -42,7 +42,7 @@
     <% } %>
     <div class="flexContainer flex-border custCol-primary textOpacity1">
       <div class="flexRow">
-        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 color-tertiary marginRight40 padding16 width100">
+        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background marginRight40 padding16 width100">
           <h2 class="item-description marginBottom8">Description</h2>
           <%= ob.vendor_offer.listing.item.displayDescription %>
         </div>
@@ -50,7 +50,7 @@
     </div>
     <div class="flexContainer flex-border custCol-primary textOpacity1 minHeight300">
       <div class="flexRow">
-        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 color-tertiary width100 marginRight40 padding16">
+        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background width100 marginRight40 padding16">
           <h2 class="item-description marginBottom8">Delivery</h2>
             <div class="flexContainer flex-border custCol-primary minHeight300 textOpacity75 js-shipping js-tabTarg">
               <div class="flexRow">
@@ -72,7 +72,7 @@
               <% } else { %>
                 <div class="flexCol-12 flex-border">
                   <div class="rowItem">
-                    <h4 class="txt-center row20 fontSize14 textOpacity75"><%= polyglot.t('NoDetailsSpecified') %></h4>
+                    <h4 class="txt-center marginBottom24 fontSize14 textOpacity75"><%= polyglot.t('NoDetailsSpecified') %></h4>
                   </div>
                 </div>
               <% } %>
@@ -83,14 +83,14 @@
     </div>
     <div class="flexContainer flex-border custCol-primary textOpacity1 minHeight300">
       <div class="flexRow">
-        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 color-tertiary width100 marginRight40 padding16">
+        <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background width100 marginRight40 padding16">
           <h2 class="item-description">Extra Options</h2>
         </div>
       </div>
     </div>    
   </div>
-  <div class="flexCol-4 pad20right">
-    <div class="marginBottom12 clearfix custCol-primary borderBottom custCol-border color-tertiary padding515">
+  <div class="flexCol-4 pad24pxRight">
+    <div class="marginBottom12 clearfix custCol-primary borderBottom custCol-border white-background padding0816">
       <h2 class="page-contractTitle noOverflow textOpacity1 marginBottom8" title="<%= ob.vendor_offer.listing.item.title %>"><%= ob.vendor_offer.listing.item.title %></h2>
       <ul class="itemMeta">
         <li class="alignLeft">
@@ -114,7 +114,7 @@
       </ul>
     </div>
 
-    <div class="width100 custCol-text borderBottom paddingBottom12 paddingLeft6 custCol-border color-tertiary">
+    <div class="width100 custCol-text borderBottom paddingBottom16px paddingLeft6 custCol-border white-background">
       <div class="alignRight marginRight15">
         <a href="#" class="chatButton js-message">Chat</a>
       </div>

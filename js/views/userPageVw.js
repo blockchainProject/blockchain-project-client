@@ -426,14 +426,14 @@ UserPageVw = pageVw.extend({
       this.$('.user-page-header').removeClass('shadow-inner1')
         .find('.rowItem')
         .hide();
-      this.$('.user-page-navigation-buttons').addClass('positionFixed positionTop68');
+      this.$('.user-page-navigation-buttons').addClass('positionFixed positionTop72px');
       this.$backToTop.addClass('slideUp');
     } else if (this.$obContainer.scrollTop() < 400 && this.slimVisible === true ) {
       this.slimVisible = false;
       this.$('.user-page-header').addClass('shadow-inner1')
         .find('.rowItem')
         .show();
-      this.$('.user-page-navigation-buttons').removeClass('positionFixed positionTop68');
+      this.$('.user-page-navigation-buttons').removeClass('positionFixed positionTop72px');
       this.$backToTop.removeClass('slideUp');
     }    
   },

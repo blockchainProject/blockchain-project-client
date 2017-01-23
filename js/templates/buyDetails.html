@@ -1,7 +1,7 @@
 <!-- item -->
 <div class="flexRow">
   <div class="flexRow custCol-border borderBottom hide js-buyWizardOrderSummary">
-    <div class="rowItem padding2015">
+    <div class="rowItem padding2416">
       <% ob.purchasesPageLink = '<a class="js-goToPurchases">' + polyglot.t('buyFlow.purchasesPage') + '</a>' %>
       <%= polyglot.t('buyFlow.summaryMsg1', { recipient: ob.recipient }) %>.
       <%= polyglot.t('buyFlow.summaryMsg2', { time: ob.vendor_offer.listing.item.process_time }) %>. <% print(polyglot.t('buyFlow.summaryMsg3', { purchasesPageLink: ob.purchasesPageLink })) %>.
@@ -21,7 +21,7 @@
                   <% } %>
               </div>
             </div>
-            <div class="pad10left">
+            <div class="padding8pxLeft">
               <div class="marginTop12 marginBottom4 fontSize13 noOverflow"><strong><%= ob.vendor_offer.listing.item.title %></strong></div>
               <div class="noOverflow fontSize13 txt-fade"><%= polyglot.t('transactions.Vendor2') %> <% if(ob.page.profile.handle){ %><%= ob.page.profile.handle %><% } else { %><%= ob.page.profile.guid %><% } %></div>
             </div>
@@ -54,7 +54,7 @@
   <% if( ob.vendor_offer.listing.metadata.category === "physical good" ) { %>  
   <div class="flexRow custCol-border borderBottom">
     <div class="flexCol-8">
-      <div class="rowItem padding2015">
+      <div class="rowItem padding2416">
         <div class="table">
           <div>
             <div class="thumbnail-large-slim">
@@ -63,7 +63,7 @@
                 <span class="fontSize10 textOpacity1 positionAbsolute width100 alignCenter left0 bottom8px"><%= polyglot.t('ShipTo') %></span>
               </div>
             </div>
-            <div class="pad10left txt-unleaded fontSize13 textOpacity1">
+            <div class="padding8pxLeft txt-unleaded fontSize13 textOpacity1">
               <% if(ob.selectedAddress) { %>
               <div class="marginBottom2"><%= ob.selectedAddress.name %></div>
               <div class="marginBottom2"><%= ob.selectedAddress.street %></div>
@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="flexCol-4">
-      <div class="rowItem padding2015 marginTop20 alignRight">
+      <div class="rowItem padding2416 marginTop20 alignRight">
         <% if(ob.vendor_offer.listing.shipping.free){ %>
           <%= polyglot.t('Free') %>
         <% } else { %>
@@ -113,7 +113,7 @@
                   <% } %>
               </div>
             </div>
-            <div class="pad10left">
+            <div class="padding8pxLeft">
               <div class="marginTop6 marginBottom4 fontSize13 noOverflow marginBottom4">
                 <%= polyglot.t('Moderator2') %>
                 <% if(ob.selectedModerator.blockchain_id){ %>
@@ -134,7 +134,7 @@
                     <% } %>
                 </div>
               </div>
-              <div class="pad10left">
+              <div class="padding8pxLeft">
                 <div class="marginTop6 marginBottom4 fontSize13 noOverflow"><%= polyglot.t('buyFlow.DirectPayment') %> <%= ob.handle %></div>
                 <div class="textOpacity75 lineHeight15">
                   (<%= polyglot.t('buyFlow.directPaymentDisclaimer') %>)
@@ -146,7 +146,7 @@
       </div>
     </div>
     <div class="flexCol-4">
-      <div class="rowItem padding2015 alignRight marginTop20">
+      <div class="rowItem padding2416 alignRight marginTop20">
         <% if(ob.selectedModerator){ %>
           <span class="noOverflow fontSize13 tooltip tooltip-left js-buyWizardModeratorPrice">
             <%= ob.selectedModerator.fee %>

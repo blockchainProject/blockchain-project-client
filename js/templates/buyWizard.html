@@ -4,10 +4,10 @@
     <div class="js-mapSpinner txt-col1 ion-android-sync spinner spinner-slow icon-large icon-circle-background1 zIndex1 fullCentered" style="border: 1px solid #aaa;"></div>
     <div class="flexContainer mapWrap"></div>
   </div>
-  <div class="modal-hero modal-heroFullHeightNoButtons js-buyWizardSpinner hide background1 custCol-primary">
+  <div class="modal-hero modal-heroFullHeightNoButtons js-buyWizardSpinner hide white-background custCol-primary">
     <div class="width100 txt-center vCentered">
-      <div class="txt-col1 ion-android-sync spinner spinner-slow icon-gigantic icon-circle-background1 rowTop50 row20"></div>
-      <h3 class="custCol-text padding30"><%= polyglot.t('CheckExchanges') %> </h3>
+      <div class="txt-col1 ion-android-sync spinner spinner-slow icon-gigantic icon-circle-background1 marginTop48px marginBottom24"></div>
+      <h3 class="custCol-text padding32"><%= polyglot.t('CheckExchanges') %> </h3>
     </div>
   </div>
   <div class="modal-hero modal-heroFullHeightNoButtons padding30 js-buyWizardPay hide background1 custCol-primary">
@@ -34,30 +34,29 @@
         <%= polyglot.t('buyFlow.paymentNote') %>
       </div>
     </div>
-    <div class="positionBottom width100 padding20 custCol-background borderTop custCol-border txt-center js-partialPaymentMsg opacity0">
+    <div class="positionBottom width100 padding24 custCol-background borderTop custCol-border txt-center js-partialPaymentMsg opacity0">
       <div class="h4 width100">
         <i class="ion-alert-circled"></i>
         <span class="js-partialPaymentTxt"></span>
       </div>
-      <div class="txt-fade fontSize12 rowTop10">
+      <div class="txt-fade fontSize12 marginTop8">
         <%= polyglot.t('transactions.BuyerPaidMessageHelp') %>
       </div>
       <div class="btn btn-corner btn-cornerTR btn-txtOnly ion-close btn-small textOpacity50 js-partialPaymentClose">
       </div>
     </div>
   </div>
-  <div class="modal-hero js-buyWizardOrderSummary background1 hide">
+  <div class="modal-hero js-buyWizardOrderSummary white-background hide">
     <div class="width100 txt-center">
-      <div class="txt-col3 ion-checkmark icon-huge icon-circle-background1 rowtop30 row20"></div>
+      <div class="txt-col3 ion-checkmark icon-huge icon-circle-background1 marginTop32px marginBottom24"></div>
       <h3 class="txt-bright"><%= polyglot.t('buyFlow.paymentSent') %> </h3>
     </div>
   </div>
-</div>
 <div class="homeModal-accordion accordion js-buyWizardAccordion">
   <div class="accordion-window">
     <% if(ob.user.refund_address === ""){ %>
       <div class="accordion-child" id="BuyWizardBitcoinWallet">
-        <div class="bar barTxt h6 paddingLeft15 custCol-secondary">
+        <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
           <%= polyglot.t('buyFlow.BitcoinWallet') %>
         </div>
         <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary alignCenter">
@@ -75,20 +74,20 @@
       </div>
 
       <div class="accordion-child" id="BuyWizardCreateWallet">
-        <div class="bar barTxt h6 paddingLeft15 custCol-secondary">
+        <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
           <%= polyglot.t('buyFlow.CreateWallet') %>
         </div>
         <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
           <div class="flexRow custCol-border js-BuyWizardWallets">
           
             <!-- Airbitz -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://airbitz.co/bitcoin-wallet/" target="_blank"> 
                   <img src="imgs/wallet-providers/airbitz.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://airbitz.co/bitcoin-wallet/" class="js-externalLink textOpacity1">Airbitz <span class="ion-android-open fontSize10"></span></a>
@@ -100,13 +99,13 @@
             </div>
 
             <!-- Coinbase -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://www.coinbase.com/signup" target="_blank"> 
                   <img src="imgs/wallet-providers/coinbase.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://www.coinbase.com/signup" class="js-externalLink textOpacity1">Coinbase <span class="ion-android-open fontSize10"></span></a>
@@ -118,13 +117,13 @@
             </div>      
                   
             <!-- Samourai Wallet -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="http://samouraiwallet.com/" target="_blank"> 
                   <img src="imgs/wallet-providers/samourai-wallet.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="http://samouraiwallet.com/" class="js-externalLink textOpacity1">Samourai Wallet <span class="ion-android-open fontSize10"></span></a>
@@ -136,13 +135,13 @@
             </div> 
 
             <!-- RushWallet -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://rushwallet.com/" target="_blank"> 
                   <img src="imgs/wallet-providers/rush-wallet.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://rushwallet.com/" class="js-externalLink textOpacity1">RushWallet <span class="ion-android-open fontSize10"></span></a>
@@ -154,13 +153,13 @@
             </div>
                   
             <!-- Breadwallet -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="http://breadwallet.com/" target="_blank"> 
                   <img src="imgs/wallet-providers/bread-wallet.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="http://breadwallet.com/" class="js-externalLink textOpacity1">Breadwallet <span class="ion-android-open fontSize10"></span></a>
@@ -172,13 +171,13 @@
             </div>    
 
             <!-- Mycelium -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://mycelium.com/mycelium-wallet.html" target="_blank"> 
                   <img src="imgs/wallet-providers/mycelium.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://mycelium.com/mycelium-wallet.html" class="js-externalLink textOpacity1">Mycelium <span class="ion-android-open fontSize10"></span></a>
@@ -191,13 +190,13 @@
             </div>
 
             <!-- Blockchain.info -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://blockchain.info/wallet" target="_blank"> 
                   <img src="imgs/wallet-providers/blockchaininfo.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://blockchain.info/wallet" class="js-externalLink textOpacity1">Blockchain.info <span class="ion-android-open fontSize10"></span></a>
@@ -209,13 +208,13 @@
             </div>
 
             <!-- Coinkite -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://coinkite.com/promo/nwt1" target="_blank"> 
                   <img src="imgs/wallet-providers/coinkite.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://coinkite.com/promo/nwt1" class="js-externalLink textOpacity1">Coinkite <span class="ion-android-open fontSize10"></span></a>
@@ -227,13 +226,13 @@
             </div>
 
             <!-- BitGo -->
-            <div class="width100 table padding15 borderBottom1 custCol-border js-bitcoinWalletProvider">
+            <div class="width100 table padding16 borderBottom1 custCol-border js-bitcoinWalletProvider">
               <div class="floatLeft marginRight8">
                 <a href="https://www.bitgo.com/wallet" target="_blank">
                   <img src="imgs/wallet-providers/bitgo.png" class="thumbnail thumbnail-large-slim " />
                 </a>
               </div>
-              <div class="floatLeft width420 marginTop4">
+              <div class="floatLeft width424px marginTop4">
                 <div class="clearfix">
                   <div class="marginBottom2 marginRight5 lineHeight21 textOpacity1 fontSize15">
                     <a href="https://www.bitgo.com/wallet" class="js-externalLink textOpacity1">BitGo <span class="ion-android-open fontSize10"></span></a>
@@ -260,7 +259,7 @@
     <% } %>
 
     <div class="accordion-child" id="BuyWizardPaymentType">
-      <div class="bar barTxt h6 paddingLeft15 custCol-secondary">
+      <div class="bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
         <%= polyglot.t('PaymentType') %>
       </div>
       <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
@@ -272,7 +271,7 @@
                 <div class="floatLeft marginRight10">
                   <input type="radio" name="radioPaymentType" class="marginTop4" id="buyWizardPaymentTypeModerated" />
                 </div>
-                <div class="width450 floatLeft">
+                <div class="width448px floatLeft">
                   <label for="buyWizardPaymentTypeModerated" class="clickable">
                     <div class="fontSize15">
                       <%= polyglot.t('buyFlow.ModeratedPayment') %>
@@ -306,12 +305,12 @@
                                        style="background-image: url(imgs/defaultUser.png); width: 32px; height: 32px;">
                                        <% } %>
                                   </div>
-                                  <div class="txt-unleaded width380 floatLeft">
+                                  <div class="txt-unleaded width384px floatLeft">
                                     <div class="clearFix">
-                                      <div class="noOverflow width260 floatLeft marginLeft7  marginTop2 fontSize13"
+                                      <div class="noOverflow width260px floatLeft marginLeft7  marginTop2 fontSize13"
                                            title="<% if(moderator.handle){ %><%= moderator.handle %><% } else { %><%= moderator.guid %><% } %>">
                                         <%= moderator.name %>
-                                        <div class="marginTop2 textOpacity75 noOverflow width260">
+                                        <div class="marginTop2 textOpacity75 noOverflow width260px">
                                         <% if(moderator.handle){ %><%= moderator.handle %><% } else { %><%= moderator.guid %><% } %>
                                         </div>
                                       </div>
@@ -336,7 +335,7 @@
               <div class="floatLeft marginRight10">
                 <input type="radio" name="radioPaymentType" class="marginTop4" id="buyWizardPaymentTypeDirect" />
               </div>
-              <div class="width450 floatLeft">
+              <div class="width448px floatLeft">
                 <label for="buyWizardPaymentTypeDirect" class="clickable">
                   <div class="fontSize15"><%= window.polyglot.t('buyFlow.DirectPayment') %></div>
                   <div class="textOpacity75 fontSize14 marginTop4">
@@ -370,7 +369,7 @@
         <%= polyglot.t('BitcoinReturnAddress') %>
       </div>
       <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
-        <p class="padding15 textOpacity75 margin0"><%= polyglot.t('BitcoinReturnAddressInfo') %></p>
+        <p class="padding16 textOpacity75 margin0 width80 margin0auto"><%= polyglot.t('RefundAddressInfo') %></p>
         <div class="flexRow">
           <form class="flexRow custCol-border borderTop" id="buyWizardBitcoinReturnForm">
             <div class="flexCol-12 custCol-border positionWrapper">
@@ -410,10 +409,10 @@
     </div>
 
     <div class="accordion-child" id="BuyWizardShipTo">
-      <div class="bar barTxt h6 paddingLeft15 custCol-secondary">
+      <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
         <div class="js-buyWizardAddress">
           <%= polyglot.t('ShipTo') %>
-          <a class="btn btn-txt custCol-primary rowTop10 pull-right js-buyWizardNewAddressBtn"><%= polyglot.t('NewAddress') %></a>
+          <a class="btn btn-txt custCol-primary marginTop8 pull-right js-buyWizardNewAddressBtn"><%= polyglot.t('NewAddress') %></a>
         </div>
         <div class="js-buyWizardNewAddress hide">
           <%= polyglot.t('ShipTo') %>

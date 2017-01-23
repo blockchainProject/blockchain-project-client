@@ -14,7 +14,7 @@
                         </div>
                         <div class="textSize11px floatLeft txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "dispute_close") { %>
-                        <div class="textSize12px row5">
+                        <div class="textSize12px marginBottom4">
                             <% if(ob.handle) { %>
                             <%= polyglot.t('NotificationDisputeClosed',{name: ob.handle}) %>
                             <% }else{ %>
@@ -25,7 +25,7 @@
                         </div>
                         <div class="textSize11px floatLeft txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "dispute_open") { %>
-                    <div class="textSize12px row5">
+                    <div class="textSize12px marginBottom4">
                         <% if(ob.handle) { %>
                             <%= polyglot.t('NotificationDispute',{name:ob.handle}) %>
                         <% }else{ %>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="textSize11px floatLeft txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "ORDER") { %>
-                    <div class="textSize12px row5">
+                    <div class="textSize12px marginBottom4">
                         <% if(ob.username) { %>
                         <%= polyglot.t('NotificationNewTransactionMessage',{name:ob.username}) %>
                         <% }else{ %>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="textSize11px floatLeft txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "payment received") { %>
-                        <div class="textSize12px row5">
+                        <div class="textSize12px marginBottom4">
                             <% if(ob.handle) { %>
                                 <%= polyglot.t('NotificationPaymentSent',{name: ob.handle}) %>
                             <% }else{ %>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="textSize11px  txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "rating received") { %>
-                    <div class="textSize12px row5">
+                    <div class="textSize12px marginBottom4">
                         <% if(ob.handle) { %>
                             <%= polyglot.t('NotificationRatingRecieved',{name: ob.handle}) %>
                         <% }else{ %>
@@ -69,7 +69,7 @@
                     </div>
                     <div class="textSize11px  txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "new order") { %>
-                        <div class="textSize12px row5">
+                        <div class="textSize12px marginBottom4">
                             <% if(ob.handle) { %>
                                 <%= polyglot.t('NotificationOrderFor',{name: ob.handle, title: ob.title}) %>
                             <% }else{ %>
@@ -80,7 +80,7 @@
                         </div>
                         <div class="textSize11px clearFix txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "follow") { %>
-                        <div class="textSize12px row5">
+                        <div class="textSize12px marginBottom4">
                             <% if(ob.handle) { %>
                                 <%= polyglot.t('NotificationFollow',{name: ob.handle}) %>
                             <% }else{ %>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="textSize11px txt-fade"><%= ob.moment(new Date(ob.timestamp*1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
                     <% } else if(ob.type == "refund") { %>
-                    <div class="textSize12px row5">
+                    <div class="textSize12px marginBottom4">
                             <% if(ob.handle) { %>
                                 <%= polyglot.t('NotificationRefund',{name: ob.handle}) %>
                             <% }else{ %>

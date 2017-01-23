@@ -15,7 +15,6 @@
   width: 6px;
 }
 
-
 .popMenu-notificationsContent::-webkit-scrollbar-thumb,
 .chatConversationHeads::-webkit-scrollbar-thumb,
 .chatConversationContent::-webkit-scrollbar-thumb,
@@ -193,6 +192,31 @@ form {
   margin: 0;
 }
 
+/*========== color ==========*/
+.blue-color{
+  color: #009DC4;
+}
+
+.red-color{
+  color: #FF3346;
+}
+
+.green-color{
+  color: #12BB4F;
+}
+
+.black-color{
+  color: #030303;
+}
+
+.white-background {
+  background: #FFF;
+}
+
+.blue-background {
+  background: #009DC4;
+}
+
 /*========== typography ==========*/
 
 h1,h2,h3,h4,h5,h6,
@@ -249,7 +273,7 @@ h6, .h6 {
   pointer-events: none;
 }
 
-.ion-ios-checkmark-outline:before{
+.ion-ios-checkmark-outline:before {
   font-weight: bold !important;
 }
 
@@ -257,39 +281,40 @@ h6, .h6 {
   text-align: center;
 }
 
-#ov1 .txt-fade {
+#gj .txt-fade {
   opacity: 0.75;
 }
 
-#ov1 .unfilled {
+#gj .unfilled {
   opacity: 0.35;
 }
 
-#ov1 .div-fade {
+#gj .div-fade {
   opacity: 0.50;
 }
 
-#ov1 .div-fadeExtra {
+#gj .div-fadeExtra {
   opacity: 0.3;
 }
 
 .txt-lowleading {
   line-height: 1.2;
 }
+
 .txt-unleaded {
   line-height: 1;
   margin-bottom: 0;
 }
 
-#ov1 .bold {
+#gj .bold {
   font-weight: bold;
 }
 
-#ov1 .unbold {
+#gj .unbold {
   font-weight: 400;
 }
 
-#ov1 .allCaps {
+#gj .allCaps {
   text-transform: uppercase;
 }
 
@@ -400,7 +425,7 @@ h6, .h6 {
   margin-top: -20px; /*negate the 20px padding in obContainer */
 }
 
-#ov1.chatOpen #obContainer {
+#gj.chatOpen #obContainer {
   width: 70%;
 }
 
@@ -847,10 +872,6 @@ h6, .h6 {
   position: relative;
 }
 
-.userPage-subViews .gridItem,
-.homeView .gridItem {
-}
-
 .userPage-subViews .gridItem:hover {
   opacity: 1;
 }
@@ -867,9 +888,6 @@ h6, .h6 {
 
 .userPage-subViews .gridItem:hover .gridItemControls {
   opacity: 1;
-}
-
-.userPage-subViews .gridItem:hover .itemImg {
 }
 
 /* if itemImg is nested, do not show box shadow */
@@ -936,9 +954,6 @@ h6, .h6 {
   width: 100%;
 }
 
-.itemPrice{
-}
-
 .itemPrice span{
   background-color: rgba(3, 3, 3, 0.9);
   padding: 6px 8px 6px 12px;
@@ -963,6 +978,7 @@ h6, .h6 {
 .itemImg.itemImg-small:nth-child(4):not('.js-editItemSubImage') {
   margin-right: 0;
 }
+
 .itemImg.itemImg-small:nth-child(4):before:not('.js-editItemSubImage') {
   width: 100%;
   height: 100%;
@@ -1435,122 +1451,45 @@ label.fieldItem {
   width: 162px;
 }
 
-.row5 {
-  margin-bottom: 5px;
-}
-
-.row10 {
-  margin-bottom: 10px;
-}
-
-.row15 {
-  margin-bottom: 15px;
-}
-
-.row20 {
-  margin-bottom: 20px;
-}
-
-.row30 {
-  margin-bottom: 30px;
-}
-
-.row60 {
-  margin-bottom: 60px;
-}
-
-.row100 {
-  margin-bottom: 100px;
-}
-
-.rowTop5 {
-  margin-top: 5px;
-}
-
-.rowTop10 {
-  margin-top: 10px;
-}
-
-.rowTop15 {
-  margin-top: 15px;
-}
-
-.rowTop20 {
-  margin-top: 20px;
-}
-
-.rowTop30 {
-  margin-top: 30px;
-}
-
-.rowTop40 {
-  margin-top: 40px;
-}
-
-.rowTop50 {
-  margin-top: 50px;
-}
-
 .rowTop241 {
   /* special class for the itemEdit view */
   margin-top: 241px;
 }
 
-.row320 {
-  margin-bottom: 320px;
+.pad4px {
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
-.pad5 {
-  padding-left: 5px;
-  padding-right: 5px;
+.pad8px {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-.pad5Top {
-  padding-top: 5px;
-}
-
-.pad10 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.pad8Left {
+.padding8pxLeft {
   padding-left: 8px;
 }
 
-.pad10Left {
-  padding-left: 10px;
-}
-
-.pad10Right {
-  padding-right: 10px;
-}
-
-.pad10Top {
+.padding10pxTop {
   padding-top: 10px;
 }
 
-.pad15 {
-  padding-left: 15px;
-  padding-right: 15px;
+.padding16px {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.pad20 {
-  padding-left: 20px;
-  padding-right: 20px;
+.padding24px {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.pad20Right {
-  padding-right: 20px;
+.pad24pxRight {
+  padding-right: 24px;
 }
 
-.pad20Left {
-  padding-left: 20px;
-}
-
-.pad50 {
-  padding-left: 50px;
-  padding-right: 50px;
+.pad24pxLeft {
+  padding-left: 24px;
 }
 
 .popMenu {
@@ -1588,7 +1527,7 @@ label.fieldItem {
   z-index: 0;
 }
 
-#ov1.chatOpen .modal.insideApp {
+#gj.chatOpen .modal.insideApp {
   width: 100%;
 }
 
@@ -1717,8 +1656,8 @@ label.fieldItem {
   font-size: 13px;
 }
 
-#ov1 #addressBar::-webkit-input-placeholder,
-#ov1 #userPage #addressBar::-webkit-input-placeholder {
+#gj #addressBar::-webkit-input-placeholder,
+#gj #userPage #addressBar::-webkit-input-placeholder {
   color: #000;
   font-size: 13px;
 }
@@ -1756,7 +1695,7 @@ label.fieldItem {
   position: fixed;
 }
 
-#ov1.chatOpen #colorbox {
+#gj.chatOpen #colorbox {
   margin-left: -115px;
 }
 
@@ -1768,7 +1707,7 @@ label.fieldItem {
   transition: width 0.5s ease;
 }
 
-#ov1.chatOpen #cboxOverlay {
+#gj.chatOpen #cboxOverlay {
   width: calc(100% - 230px);
 }
 
@@ -1836,9 +1775,6 @@ label.fieldItem {
 
 .user-customize-cover-photo {
   width: 950px;
-}
-
-#userPage .mainContainer {
 }
 
 .modal-opaque {
@@ -1932,10 +1868,6 @@ label.fieldItem {
   border-radius: 3px;
 }
 
-.background1 {
-  background: #FFF;
-}
-
 /*
 removed because I don't think we're using the trick to hide the borders any more
 .flex-border > .flexRow {
@@ -1950,11 +1882,11 @@ removed because I don't think we're using the trick to hide the borders any more
   margin: -1px 0 -2px 0;
 }
 
-.flex-border > .flexRow > [class |= "flexCol"].pad10 {
+.flex-border > .flexRow > [class |= "flexCol"].pad8px {
   padding: 0 11px 1px 10px;
 }
 
-.flex-border > .flexRow > [class |= "flexCol"].pad20 {
+.flex-border > .flexRow > [class |= "flexCol"].padding24px {
   padding: 0 21px 1px 20px;
 }
 
@@ -1987,7 +1919,6 @@ removed because I don't think we're using the trick to hide the borders any more
 
 .box-borderBright:hover {
   border: 1px solid rgba(255,255,255,1);
-
 }
 
 @-webkit-keyframes borderDashedFade {
@@ -3079,8 +3010,8 @@ div.chatSearchOut .chatSearchIcon {
   /* added important here because I couldn't get it to work without it */
 }
 
-#ov1 .btn.confirmable,
-#ov1 #userPage .btn.confirmable {
+#gj .btn.confirmable,
+#gj #userPage .btn.confirmable {
   transition: 2s background-color;
 }
 
@@ -3121,11 +3052,8 @@ div.chatSearchOut .chatSearchIcon {
   opacity: 1;
 }
 
-.btn-secondary {
-}
-
-#ov1 .confirm.btn,
-#ov1 #userPage .confirm.btn {
+#gj .confirm.btn,
+#gj #userPage .confirm.btn {
   background-color: rgba(200,25,25,1);
 }
 
@@ -3693,10 +3621,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   transition: all 0.3s;
 }
 
-.fieldItem .taggle .taggle_text {
-
-}
-
 .fieldItem .taggle .close {
   display: inline-block;
   position: absolute;
@@ -3954,36 +3878,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   top: 50%;
   transform: translate(-50%, -50%) translateZ(0);
   -webkit-backface-visibility: hidden;
-}
-
-.color-primary {
-  background: #106DA3;
-}
-
-.color-secondary {
-  background: #009DC4;
-}
-
-.color-secondary-darken {
-  background: #215175;
-}
-
-.color-tertiary {
-  background: #FFF;
-}
-
-.greenColor{
-  color: #12BB4F;
-}
-
-.blackColor{
-  color: #030303;
-}
-
-.homeView {
-}
-
-.home-page-navigation {
 }
 
 .home-page-header-slim {
@@ -4714,9 +4608,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: absolute;
 }
 
-.page-connect-modal .spinner-with-logo {
-}
-
 .loadingModal .loadingModalContent {
   position: absolute;
   right: 0;
@@ -4730,11 +4621,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   text-align: center;
 }
 
-#ov1 .server-connect-modal .modal-child {
+#gj .server-connect-modal .modal-child {
   height: 625px;
 }
 
-#ov1 .server-connect-modal .message-bar {
+#gj .server-connect-modal .message-bar {
   top: 59px;
   left: 25px;
   right: 25px;
@@ -4742,7 +4633,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   transition: top .2s, opacity .2s;
 }
 
-#ov1 .server-connect-modal .message-bar > div {
+#gj .server-connect-modal .message-bar > div {
   background-color: #C62D2D;
   padding: 8px 20px;
   line-height: 2.2;
@@ -4751,25 +4642,25 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-bottom-right-radius: 4px;
 }
 
-#ov1 .server-connect-modal .message-bar .message-bar-close {
+#gj .server-connect-modal .message-bar .message-bar-close {
   top: -12px;
   right: -3px;
 }
 
-#ov1 .server-connect-modal .message-bar.slide-out {
+#gj .server-connect-modal .message-bar.slide-out {
   top: -45px;
   opacity: 0;
 }
 
-#ov1 .server-config-form:not(.no-transition) {
+#gj .server-config-form:not(.no-transition) {
   transition: top 250ms;
 }
 
-#ov1 .server-config-form.slide-out {
+#gj .server-config-form.slide-out {
   top: 372px;
 }
 
-#ov1 .server-config-row .connection-failed::after {
+#gj .server-config-row .connection-failed::after {
   content: '';
   position: absolute;
   width: 6px;
@@ -4842,10 +4733,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   opacity: 1;
 }
 
-.selectPillWrapper {
-
-}
-
 .violatorTR {
   /* sets triangle to be in the top right corner */
   /* must be given equal height and width properties */
@@ -4884,7 +4771,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   left: 70px !important; /* I want to override the inline styles on the colpick element */
 }
 
-#ov1 .colpick input {
+#gj .colpick input {
   color: #616161;
 }
 
@@ -4916,11 +4803,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-color: #616161;
 }
 
-#ov1 .medium-editor-toolbar {
+#gj .medium-editor-toolbar {
   background: #353443;
 }
 
-#ov1::-webkit-scrollbar {
+#gj::-webkit-scrollbar {
   display: none;
   box-sizing: border-box;
 }
@@ -5051,13 +4938,13 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   opacity: .75;
 }
 
-#ov1.chatOpen .backToTop {
+#gj.chatOpen .backToTop {
   right: 208px;
 }
 
 /*========== utility classes ==========*/
 
-/* the #ov1 id is on the HTML tag. It is used to force specificity
+/* the #gj id is on the HTML tag. It is used to force specificity
    higher than other class combinations on the page. This is preferable
    to using an important tag. Only use it on rules that must override
    all other rules. */
@@ -5075,103 +4962,67 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   clear: both;
 }
 
-#ov1 .highlight {
+#gj .highlight {
   /* use on an element inside a block container to add a translucent hover background to it. The color is slightly
      grey so it works on light backgrounds too*/
   background: rgba(215, 215, 215, 0);
   transition: background 0.5s;
 }
 
-#ov1 .highlight:hover {
+#gj .highlight:hover {
   background: rgba(215, 215, 215, 0.2);
 }
 
-#ov1 .pull-right {
+#gj .pull-right {
   float: right;
 }
 
-#ov1 .pull-left {
+#gj .pull-left {
   float: left;
 }
 
-#ov1 .push-down5 {
-  position: relative;
-  top: 5px;
-}
-
-#ov1 .push-down22 {
-  position: relative;
-  top: 22px;
-}
-
-#ov1 .push-down25 {
-  position: relative;
-  top: 25px;
-}
-
-#ov1 .pull-up50 {
-  position: relative;
-  top: -50px;
-}
-
-#ov1 .pull-up48 {
-  position: relative;
-  top: -48px;
-}
-
-#ov1 .pull-up43 {
+#gj .pull-up43 {
   position: relative;
   top: -43px;
 }
 
-#ov1 .pull-up1 {
-  position: relative;
-  top: -1px;
-}
-
-#ov1 .pull-up4 {
-  position: relative;
-  top: -4px;
-}
-
-#ov1 .positionBottom {
+#gj .positionBottom {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-#ov1 .positionTop {
+#gj .positionTop {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-#ov1 .positionTopRight {
+#gj .positionTopRight {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-#ov1 .positionBottomRight {
+#gj .positionBottomRight {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-#ov1 .hide {
+#gj .hide {
   display: none;
 }
 
-#ov1 .hideChildren .hideableChild {
+#gj .hideChildren .hideableChild {
   display: none;
 }
 
-
-#ov1 .invisible {
+#gj .invisible {
   visibility: hidden;
 }
 
-#ov1 .visuallyHidden {
+#gj .visuallyHidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -5182,34 +5033,33 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   width: 1px;
 }
 
-#ov1 .show {
+#gj .show {
   display: block;
 }
 
-#ov1 .invisible {
+#gj .invisible {
   visibility: hidden;
 }
 
-#ov1 .scrollOverflowY {
+#gj .scrollOverflowY {
   overflow-y: scroll;
 }
 
-#ov1 .scrollOverflowYHideX {
+#gj .scrollOverflowYHideX {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-#ov1 .autoOverflowYHideX {
+#gj .autoOverflowYHideX {
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-
-#ov1 .vertAlignMid {
+#gj .vertAlignMid {
   vertical-align: middle;
 }
 
-#ov1 .vCentered {
+#gj .vCentered {
   /* must be inside a relatively positioned containing element */
   position: absolute;
   top: 50%;
@@ -5217,7 +5067,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   -webkit-backface-visibility: hidden;
 }
 
-#ov1 .hCentered {
+#gj .hCentered {
   /* must be inside a relatively positioned containing element */
   position: absolute;
   left: 50%;
@@ -5225,7 +5075,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   -webkit-backface-visibility: hidden;
 }
 
-#ov1 .fullCentered {
+#gj .fullCentered {
   /* must be inside a relatively positioned containing element */
   position: absolute;
   top: 50%;
@@ -5234,755 +5084,755 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   -webkit-backface-visibility: hidden;
 }
 
-#ov1 .btn.btn-txtOnly,
-#ov1 .btn.btn-bar.btn-txtOnly,
-#ov1 .btn.btn-bar.btn-tab.btn-txtOnly {
+#gj .btn.btn-txtOnly,
+#gj .btn.btn-bar.btn-txtOnly,
+#gj .btn.btn-bar.btn-tab.btn-txtOnly {
   background: none;
   box-shadow: none;
   border: none;
 }
 
-#ov1 .overflowHidden {
+#gj .overflowHidden {
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-#ov1  .borderRight {
+#gj  .borderRight {
   border-right: solid 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .borderBottom {
+#gj  .borderBottom {
   border-bottom: solid 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .borderBottomDashed {
+#gj  .borderBottomDashed {
   border-bottom: dashed 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .borderTop {
+#gj  .borderTop {
   border-top: solid 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .borderTopDashed {
+#gj  .borderTopDashed {
   border-top: dashed 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .border1 {
+#gj  .border1 {
   border: solid 1px rgba(255,255,255,0.08);
 }
 
-#ov1  .border2 {
+#gj  .border2 {
   border: solid 2px rgba(255,255,255,0.08);
 }
 
-#ov1  .border0 {
+#gj  .border0 {
   border: 0;
 }
 
-#ov1  .borderRight0 {
+#gj  .borderRight0 {
   border-right: 0;
 }
 
-#ov1 .top3 {
+#gj .top3 {
   top: 3px;
 }
 
-#ov1  .outline2 {
+#gj  .outline2 {
   outline: 2px solid #FFF;
 }
 
-#ov1  .borderRadiusTop {
+#gj  .borderRadiusTop {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-#ov1 .borderRadius2 {
+#gj .borderRadius2 {
   border-radius: 2px;
 }
 
-#ov1 .borderRadius3 {
+#gj .borderRadius3 {
   border-radius: 4px;
 }
 
-#ov1 .borderRadiusBottom0 {
+#gj .borderRadiusBottom0 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-#ov1  .podBorder {
+#gj  .podBorder {
   border: solid 1px rgba(255,255,255,0.08);
   border-bottom: solid 2px rgba(255,255,255,0.08);
 }
 
-#ov1  .textOpacity0,
-#ov1 .opacity0 {
+#gj  .textOpacity0,
+#gj .opacity0 {
   opacity: 0;
   pointer-events: none;
 }
 
-#ov1  .textOpacity25 {
-  opacity: .25;
-}
-
-#ov1  .textOpacity35 {
-  opacity: .35;
-}
-
-#ov1  .textOpacity50 {
+#gj  .textOpacity50 {
   opacity: .50;
 }
 
-#ov1  .textOpacity65 {
+#gj  .textOpacity65 {
   opacity: .65;
 }
 
-#ov1  .textOpacity75 {
+#gj  .textOpacity75 {
   opacity: .75;
 }
 
-#ov1  .textOpacity90 {
+#gj  .textOpacity90 {
   opacity: .90;
 }
 
-#ov1  .textOpacity1 {
+#gj  .textOpacity1 {
   opacity: 1;
 }
 
-#ov1 .textSize11px {
+#gj .textSize11px {
   font-size: 11px;
 }
 
-#ov1 .textSize12px {
+#gj .textSize12px {
   font-size: 12px;
 }
 
-#ov1  .textSize13px {
+#gj  .textSize13px {
   font-size: 13px;
 }
 
-#ov1  .textSize14px {
+#gj  .textSize14px {
   font-size: 14px;
 }
 
-#ov1  .textSize15px {
+#gj  .textSize15px {
   font-size: 15px;
 }
 
-#ov1  .textSize16px {
+#gj  .textSize16px {
   font-size: 16px;
 }
 
-#ov1  .textSize17px {
+#gj  .textSize17px {
   font-size: 17px;
 }
 
-#ov1  .textSize20px {
+#gj  .textSize20px {
   font-size: 20px;
 }
 
-#ov1  .textSize22px {
+#gj  .textSize22px {
   font-size: 22px;
 }
 
-#ov1  .textSize24px {
+#gj  .textSize24px {
   font-size: 24px;
 }
 
-#ov1  .textSize24px {
-  font-size: 24px;
-}
-
-#ov1  .textSize26px {
-  font-size: 26px;
-}
-
-#ov1  .textSize28px {
+#gj  .textSize28px {
   font-size: 28px;
 }
 
-#ov1  .textSize30px {
-  font-size: 30px;
-}
-
-#ov1  .textSize90px {
-  font-size: 90px;
-}
-
-#ov1  .textSize13px {
-  font-size: 13px;
-}
-
-#ov1  .textFirstCharUppercase {
+#gj  .textFirstCharUppercase {
   text-transform: lowercase;
 }
 
-#ov1  .textFirstCharUppercase::first-letter {
+#gj  .textFirstCharUppercase::first-letter {
   text-transform: uppercase;
 }
 
-#ov1  .textWeightLight {
+#gj  .textWeightLight {
   font-weight: 100;
 }
 
-#ov1  .textWeightNormal {
+#gj  .textWeightNormal {
   font-weight: 400;
 }
 
-#ov1  .textWeightMedium {
+#gj  .textWeightMedium {
   font-weight: 500;
 }
 
-#ov1 .textShadow {
+#gj .textShadow {
   text-shadow: 0 1px 5px #000;
 }
 
-#ov1 .textShadow2 {
+#gj .textShadow2 {
   text-shadow: 0 0 2px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,0.7);
 }
 
-#ov1 .fontSize8 {
+#gj .fontSize8 {
   font-size: 8px;
 }
-#ov1 .fontSize9 {
+#gj .fontSize9 {
   font-size: 9px;
 }
 
-#ov1 .fontSize10 {
+#gj .fontSize10 {
   font-size: 10px;
 }
 
-#ov1 .fontSize11 {
+#gj .fontSize11 {
   font-size: 11px;
 }
 
-#ov1 .fontSize12 {
+#gj .fontSize12 {
   font-size: 12px;
 }
 
-#ov1 .fontSize13 {
+#gj .fontSize13 {
   font-size: 13px;
 }
 
-#ov1 .fontSize14 {
+#gj .fontSize14 {
   font-size: 14px;
 }
 
-#ov1 .fontSize15 {
+#gj .fontSize15 {
   font-size: 15px;
 }
 
-#ov1 .fontSize16 {
+#gj .fontSize16 {
   font-size: 16px;
 }
 
-#ov1 .fontSize17 {
+#gj .fontSize17 {
   font-size: 17px;
 }
 
-#ov1 .fontSize18 {
+#gj .fontSize18 {
   font-size: 18px;
 }
 
-#ov1 .fontSize20 {
+#gj .fontSize20 {
   font-size: 20px;
 }
 
-#ov1 .fontSize24 {
+#gj .fontSize24 {
   font-size: 24px;
 }
 
-#ov1 .fontSize30 {
+#gj .fontSize30 {
   font-size: 30px;
 }
 
-#ov1 .fontSize34 {
+#gj .fontSize34 {
   font-size: 34px;
 }
 
-#ov1 .fontSize40 {
+#gj .fontSize40 {
   font-size: 40px;
 }
 
-#ov1 .txt-bright {
+#gj .txt-bright {
   color: #FFF;
 }
 
-#ov1 .txt-darkest {
+#gj .txt-darkest {
   color: #000;
 }
 
-#ov1 .txt-muted {
+#gj .txt-muted {
 }
 
-#ov1 input.placeholder-dark::-webkit-input-placeholder  {
+#gj input.placeholder-dark::-webkit-input-placeholder  {
   color: #000;
 }
 
-#ov1 .txt-col1 {
+#gj .txt-col1 {
   color: #086A9E;
 }
 
-#ov1 .txt-col2 {
+#gj .txt-col2 {
   color: #327EB8;
 }
 
-#ov1 .txt-col3 {
+#gj .txt-col3 {
   color: #428a38;
 }
 
-#ov1  .alignCenter {
+#gj  .alignCenter {
   text-align: center;
 }
 
-#ov1  .alignRight {
+#gj  .alignRight {
   text-align: right;
 }
 
-#ov1 .holizontalAlign {
+#gj .holizontalAlign {
   display: inline-block;
 }
 
-#ov1 .displayBlock{
+#gj .displayBlock{
   display: block;
 }
 
-#ov1  .floatLeft {
+#gj  .floatLeft {
   float: left;
 }
 
-#ov1  .floatRight {
+#gj  .floatRight {
   float: right;
 }
 
-#ov1  .right10 {
+#gj  .right10 {
   right: 10px;
 }
 
-#ov1  .margin0 {
+#gj  .margin0 {
   margin: 0;
 }
 
-#ov1  .margin8 {
+#gj  .margin8 {
   margin: 8px;
 }
 
-#ov1  .marginRight2 {
+#gj  .marginRight2 {
   margin-right: 2px;
 }
 
-#ov1  .marginRight3 {
+#gj  .marginRight3 {
   margin-right: 3px;
 }
 
-#ov1  .marginRight4 {
+#gj  .marginRight4 {
   margin-right: 4px;
 }
 
-#ov1  .marginRight5 {
+#gj  .marginRight5 {
   margin-right: 5px;
 }
 
-#ov1  .marginRight7 {
+#gj  .marginRight7 {
   margin-right: 7px;
 }
 
-#ov1  .marginRight8 {
+#gj  .marginRight8 {
   margin-right: 8px;
 }
 
-#ov1  .marginRight10 {
+#gj  .marginRight10 {
   margin-right: 10px;
 }
 
-#ov1  .marginRight15 {
+#gj  .marginRight15 {
   margin-right: 15px;
 }
 
-#ov1  .marginRight20 {
+#gj  .marginRight20 {
   margin-right: 20px;
 }
 
-#ov1  .marginRight30 {
+#gj  .marginRight30 {
   margin-right: 30px;
 }
 
-#ov1  .marginRight40 {
+#gj  .marginRight40 {
   margin-right: 40px;
 }
 
-#ov1  .marginLeftNeg115 {
+#gj  .marginRight80 {
+  margin-right: 80px;
+}
+
+#gj  .marginLeftNeg115 {
   margin-left: -115px;
 }
 
-#ov1  .marginLeft0 {
+#gj  .marginLeft0 {
   margin-left: 0;
 }
 
-#ov1  .marginLeft05 {
+#gj  .marginLeft05 {
   margin-left: 0.5px;
 }
 
-#ov1  .marginLeft1 {
+#gj  .marginLeft1 {
   margin-left: 1px;
 }
 
-#ov1  .marginLeft2 {
+#gj  .marginLeft2 {
   margin-left: 2px;
 }
-#ov1  .marginLeft4 {
+#gj  .marginLeft4 {
   margin-left: 4px;
 }
 
-#ov1  .marginLeft5 {
+#gj  .marginLeft5 {
   margin-left: 5px;
 }
 
-#ov1  .marginLeft6 {
+#gj  .marginLeft6 {
   margin-left: 6px;
 }
 
-#ov1  .marginLeft7 {
+#gj  .marginLeft7 {
   margin-left: 7px;
 }
 
-#ov1  .marginLeft8 {
+#gj  .marginLeft8 {
   margin-left: 8px; /* use this to match the gap on the right created by the custom scrollbar */
 }
 
-#ov1  .marginLeft10 {
+#gj  .marginLeft10 {
   margin-left: 10px;
 }
 
-#ov1  .marginLeft12 {
+#gj  .marginLeft12 {
   margin-left: 12px;
 }
 
-#ov1  .marginLeft15 {
+#gj  .marginLeft15 {
   margin-left: 15px;
 }
 
-#ov1  .marginLeft20 {
+#gj  .marginLeft20 {
   margin-left: 20px;
 }
 
-#ov1  .marginLeft30 {
+#gj  .marginLeft30 {
   margin-left: 30px;
 }
 
-#ov1  .marginLeft32 {
+#gj  .marginLeft32 {
   margin-left: 32px;
 }
 
-#ov1  .marginLeft82 {
+#gj  .marginLeft80 {
+  margin-left: 80px;
+}
+
+#gj  .marginLeft82 {
   margin-left: 82px;
 }
 
-#ov1  .marginTopNeg8 {
+#gj  .marginTopNeg8 {
   margin-top: -8px;
 }
 
-#ov1  .marginTop-8 {
+#gj  .marginTop-8 {
   margin-top: -8px;
 }
 
-#ov1  .marginTop0 {
+#gj  .marginTop0 {
   margin-top: 0px;
 }
 
-#ov1  .marginTop1 {
+#gj  .marginTop1 {
   margin-top: 1px;
 }
 
-#ov1  .marginTop2 {
+#gj  .marginTop2 {
   margin-top: 2px;
 }
-#ov1  .marginTop3 {
+#gj  .marginTop3 {
   margin-top: 3px;
 }
 
-#ov1  .marginTop4 {
+#gj  .marginTop4 {
   margin-top: 4px;
 }
 
-#ov1  .marginTop5 {
+#gj  .marginTop5 {
   margin-top: 5px;
 }
-#ov1  .marginTop6 {
+#gj  .marginTop6 {
   margin-top: 6px;
 }
 
-#ov1  .marginTop7 {
+#gj  .marginTop7 {
   margin-top: 7px;
 }
 
-#ov1  .marginTop8 {
+#gj  .marginTop8 {
   margin-top: 8px;
 }
 
-#ov1  .marginTop9 {
+#gj  .marginTop9 {
   margin-top: 9px;
 }
 
-#ov1  .marginTop12 {
+#gj  .marginTop12 {
   margin-top: 12px;
 }
 
-#ov1  .marginTop13 {
+#gj  .marginTop13 {
   margin-top: 13px;
 }
 
-#ov1  .marginTop15 {
+#gj  .marginTop15 {
   margin-top: 15px;
 }
 
-#ov1  .marginTop16 {
+#gj  .marginTop16 {
   margin-top: 16px;
 }
 
-#ov1  .marginTop18 {
+#gj  .marginTop18 {
   margin-top: 18px;
 }
 
-#ov1  .marginTop20 {
+#gj  .marginTop20 {
   margin-top: 20px;
 }
 
-#ov1  .marginTop22 {
+#gj  .marginTop22 {
   margin-top: 22px;
 }
 
-#ov1  .marginTop24 {
+#gj  .marginTop24 {
   margin-top: 24px;
 }
 
-#ov1  .marginTop25 {
+#gj  .marginTop25 {
   margin-top: 25px;
 }
 
-#ov1  .marginTop28 {
+#gj  .marginTop28 {
   margin-top: 28px;
 }
 
-#ov1  .marginTop30 {
+#gj  .marginTop30 {
   margin-top: 30px;
 }
 
-#ov1  .marginTop40 {
+#gj  .marginTop32px {
+  margin-top: 32px;
+}
+
+#gj  .marginTop40 {
   margin-top: 40px;
 }
 
-#ov1  .marginTop50 {
+#gj  .marginTop48px {
+  margin-top: 48px;
+}
+
+#gj  .marginTop50 {
   margin-top: 50px;
 }
-#ov1  .marginTop80 {
+#gj  .marginTop80 {
   margin-top: 80px;
 }
 
-#ov1  .marginBottom2 {
+#gj  .marginBottom2 {
   margin-bottom: 2px;
 }
 
-#ov1  .marginBottom4 {
+#gj  .marginBottom4 {
   margin-bottom: 4px;
 }
 
-#ov1  .marginBottom5 {
+#gj  .marginBottom5 {
   margin-bottom: 5px;
 }
-#ov1  .marginBottom6 {
+#gj  .marginBottom6 {
   margin-bottom: 6px;
 }
 
-#ov1  .marginBottom8 {
+#gj  .marginBottom8 {
   margin-bottom: 8px;
 }
 
-#ov1  .marginBottom12 {
+#gj  .marginBottom12 {
   margin-bottom: 12px;
 }
 
-#ov1  .marginBottom16 {
+#gj  .marginBottom16 {
   margin-bottom: 16px;
 }
 
-#ov1  .marginBottom20 {
+#gj  .marginBottom20 {
   margin-bottom: 20px;
 }
 
-#ov1  .marginBottom24 {
+#gj  .marginBottom24 {
   margin-bottom: 24px;
 }
 
-#ov1  .marginBottom40 {
+#gj  .marginBottom32px {
+  margin-bottom: 32px;
+}
+
+#gj  .marginBottom40 {
   margin-bottom: 40px;
 }
 
-#ov1  .marginBottom50 {
+#gj  .marginBottom50 {
   margin-bottom: 50px;
 }
 
-#ov1  .marginAuto {
+#gj  .marginBottom96px {
+  margin-bottom: 96px;
+}
+
+#gj  .marginAuto {
   margin: auto;
 }
 
-#ov1  .margin0Auto {
+#gj  .margin0Auto {
   margin: 0 auto;
 }
 
-#ov1  .left0 {
+#gj  .left0 {
   left: 0;
 }
 
-#ov1  .top0 {
+#gj  .top0 {
   top: 0;
 }
 
-#ov1  .top2 {
+#gj  .top2 {
   position: relative;
   top: 2px;
 }
 
-#ov1  .top11 {
+#gj  .top11 {
   top: 11px;
 }
 
-#ov1 .bottomNeg250 {
+#gj .bottomNeg250 {
   bottom: -250px;
 }
 
-#ov1  .height40 {
+#gj  .height40 {
   height: 40px;
   line-height: 40px;
 }
-#ov1  .height43 {
+#gj  .height43 {
   height: 43px;
   line-height: 43px;
 }
 
-#ov1  .height24 {
+#gj  .height24 {
   height: 24px;
 }
-#ov1  .height30 {
+#gj  .height30 {
   height: 30px;
 }
-#ov1  .height36 {
+#gj  .height36 {
   height: 36px;
   line-height: 36px;
 }
 
-#ov1  .height50 {
+#gj  .height50 {
   height: 50px;
 }
-#ov1  .height54 {
+#gj  .height54 {
   height: 54px;
 }
-#ov1  .height55 {
+#gj  .height55 {
   height: 55px;
 }
-#ov1  .height56 {
+#gj  .height56 {
   height: 56px;
 }
 
-#ov1  .height46 {
+#gj  .height46 {
   height: 46px;
 }
 
-#ov1  .height30 {
+#gj  .height30 {
   height: 30px;
   line-height: 30px;
 }
 
-#ov1  .height70 {
+#gj  .height70 {
   height: 70px;
 }
 
-#ov1  .height130 {
+#gj  .height130 {
   height: 130px;
 }
 
-#ov1  .height250 {
+#gj  .height250 {
   height: 250px;
 }
-#ov1  .height254 {
+#gj  .height254 {
   height: 254px;
 }
 
-#ov1  .height324 {
+#gj  .height324 {
   height: 324px;
 }
 
-#ov1  .minHeight650 {
+#gj  .minHeight650 {
   min-height: 650px;
 }
 
-#ov1  .minHeight420 {
+#gj  .minHeight420 {
   min-height: 420px;
 }
 
-#ov1  .minHeight300 {
+#gj  .minHeight300 {
   min-height: 300px;
 }
 
-#ov1  .minWidth120 {
+#gj  .minWidth80 {
+  min-width: 80px;
+}
+
+#gj  .minWidth120 {
   min-width: 120px;
 }
 
-#ov1  .lineHeight15{
+#gj  .lineHeight15{
   line-height: 15px;
 }
-#ov1  .lineHeight16{
+#gj  .lineHeight16{
   line-height: 16px;
 }
-#ov1  .lineHeight20{
+#gj  .lineHeight20{
   line-height: 20px;
 }
 
-#ov1  .lineHeight21{
+#gj  .lineHeight21{
   line-height: 21px;
 }
-#ov1  .lineHeight24{
+#gj  .lineHeight24{
   line-height: 24px;
 }
-#ov1  .lineHeight32{
+#gj  .lineHeight32{
   line-height: 32px;
 }
 
-#ov1  .lineHeight46{
+#gj  .lineHeight46{
   line-height: 46px;
 }
-#ov1  .lineHeight51{
+#gj  .lineHeight51{
   line-height: 51px;
 }
 
-#ov1  .lineHeightReset{
+#gj  .lineHeightReset{
   line-height: normal;
 }
 
-#ov1  .padding0 {
+#gj  .padding0 {
   padding: 0;
 }
 
-#ov1 .bottom0 {
+#gj .bottom0 {
   bottom: 0;
 }
 
-#ov1 .bottom8px {
+#gj .bottom8px {
   bottom: 8px;
 }
 
-#ov1 .left0 {
+#gj .left0 {
   left: 0;
 }
 
-#ov1 .positionAbsolute {
+#gj .positionAbsolute {
   position: absolute;
 }
 
-#ov1 .positionFixed {
+#gj .positionFixed {
   position: fixed;
 }
 
-#ov1 .positionWrapper {
+#gj .positionWrapper {
   /* use when you need a generic element around one or more elements where one is absolutely positioned */
   position: relative;
 }
@@ -5991,329 +5841,209 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: relative;
 }
 
-#ov1  .padding2 {
+#gj  .padding2 {
   padding: 2px;
 }
-#ov1  .padding3 {
-  padding: 3px;
-}
-#ov1  .padding4 {
-  padding: 4px;
-}
 
-#ov1  .padding5 {
-  padding: 5px;
-}
-#ov1  .padding10px6px {
-  padding: 10px 6px;
-}
-
-#ov1  .padding8 {
+#gj  .padding8 {
   padding: 8px;
 }
 
-#ov1  .padding10 {
+#gj  .padding10 {
   padding: 10px;
 }
-#ov1  .padding12 {
+
+#gj  .padding12 {
   padding: 12px;
 }
 
-#ov1  .padding15 {
-  padding: 15px;
-}
-
-#ov1  .padding16 {
+#gj  .padding16 {
   padding: 16px;
 }
 
-#ov1  .padding20 {
-  padding: 20px;
+#gj  .padding24 {
+  padding: 24px;
 }
 
-#ov1  .padding30 {
-  padding: 30px;
+#gj  .padding32 {
+  padding: 32px;
 }
 
-#ov1  .padding40 {
-  padding: 40px;
+#gj  .padding0008 {
+  padding: 0 8px;
 }
 
-#ov1  .padding010 {
-  padding: 0 10px;
-}
-#ov1  .padding015 {
-  padding: 0 15px;
-}
-#ov1  .padding025 {
-  padding: 0 25px;
-}
-#ov1  .padding515 {
-  padding: 5px 15px;
+#gj  .padding0016 {
+  padding: 0 16px;
 }
 
-#ov1  .padding0832{
+#gj  .padding0024 {
+  padding: 0 24px;
+}
+
+#gj  .padding0816 {
+  padding: 8px 16px;
+}
+
+#gj  .padding0832{
   padding: 8px 32px;
 }
 
-#ov1  .padding1020{
-  padding: 10px 20px;
+#gj  .padding2408{
+  padding: 24px 8px;
 }
 
-#ov1  .padding2010{
-  padding: 20px 10px;
+#gj  .padding0816 {
+  padding: 8px 16px;
 }
 
-#ov1  .padding2015 {
-  padding: 20px 15px;
+#gj  .padding2416 {
+  padding: 24px 16px;
 }
 
-#ov1  .padding2032 {
+#gj  .padding2032 {
   padding: 20px 32px;
 }
 
-#ov1  .padding2520 {
-  padding: 20px 20px;
-}
-
-#ov1  .padding8056 {
+#gj  .padding8056 {
   padding: 80px 56px;
 }
 
-#ov1  .padding17px {
-  padding: 17px;
+#gj  .paddingRight4px {
+  padding-right: 4px;
 }
 
-#ov1  .paddingRight0 {
-  padding-right: 0;
-}
-#ov1  .paddingRight2 {
-  padding-right: 2px;
-}
-#ov1  .paddingRight5 {
-  padding-right: 5px;
-}
-#ov1  .paddingRight16 {
+#gj  .paddingRight16px {
   padding-right: 16px;
 }
-#ov1  .paddingRight18 {
-  padding-right: 18px;
-}
-#ov1  .paddingRight40 {
-  padding-right: 40px;
-}
 
-#ov1  .paddingLeft2 {
+#gj  .paddingLeft2px {
   padding-left: 2px;
 }
 
-#ov1  .paddingLeft5 {
-  padding-left: 5px;
+#gj  .paddingLeft4px {
+  padding-left: 4px;
 }
 
-#ov1  .paddingLeft6 {
+#gj  .paddingLeft6 {
   padding-left: 6px;
 }
 
-#ov1  .paddingLeft15 {
-  padding-left: 15px;
-}
-
-#ov1  .paddingLeft16 {
+#gj  .paddingLeft16px {
   padding-left: 16px;
 }
 
-#ov1  .paddingLeft20 {
-  padding-left: 20px;
+#gj  .paddingLeft24px {
+  padding-left: 24px;
 }
 
-#ov1  .paddingLeft25 {
-  padding-left: 25px;
-}
-
-#ov1  .paddingLeft40 {
-  padding-left: 40px;
-}
-
-#ov1  .paddingTop4 {
-  padding-top: 4px;
-}
-
-#ov1  .paddingTop10 {
-  padding-top: 10px;
-}
-
-#ov1  .paddingTop15 {
-  padding-top: 15px;
-}
-
-#ov1  .paddingTop16 {
+#gj  .paddingTop16px {
   padding-top: 16px;
 }
 
-#ov1  .paddingTop20 {
-  padding-top: 20px;
+#gj  .paddingTop24px {
+  padding-top: 24px;
 }
 
-#ov1  .paddingTop25 {
-  padding-top: 25px;
+#gj  .positionTop72px {
+  top: 72px;
 }
 
-#ov1  .paddingTop30 {
-  padding-top: 30px;
-}
-
-#ov1  .paddingTop80 {
-  padding-top: 80px;
-}
-
-#ov1  .positionTop68 {
-  top: 68px;
-}
-
-#ov1  .paddingBottom4 {
+#gj  .paddingBottom4px {
   padding-bottom: 4px;
 }
 
-#ov1  .paddingBottom12 {
-  padding-bottom: 12px;
-}
-
-#ov1  .paddingBottom16 {
+#gj  .paddingBottom16px {
   padding-bottom: 16px;
 }
 
-#ov1  .paddingBottom20 {
-  padding-bottom: 20px;
+#gj  .paddingBottom24px {
+  padding-bottom: 24px;
 }
 
-#ov1  .letterSpacing0 {
+#gj  .letterSpacing0 {
   letter-spacing: 0;
 }
 
-#ov1  .letterSpacing02 {
+#gj  .letterSpacing02 {
   letter-spacing: 0.2px;
 }
 
-#ov1  .widthAuto {
+#gj  .widthAuto {
   width: auto;
 }
 
-#ov1  .width40 {
+#gj  .width40 {
   width: 40%;
 }
 
-#ov1  .width50 {
-  width: 50%;
-}
-
-#ov1  .width100 {
+#gj  .width100 {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
 }
 
-#ov1 .width360 {
+#gj .width360 {
   width: 360px;
 }
 
-#ov1 .width30 {
+#gj .width12px {
+  width: 12px;
+}
+
+#gj .width30 {
   width: 30%;
 }
 
-#ov1 .width34 {
-  width: 34px;
+#gj .width32px {
+  width: 32px;
 }
 
-#ov1 .width40px {
+#gj .width40px {
   width: 40px;
 }
 
-#ov1 .width46px {
-  width: 46px;
+#gj .width72px {
+  width: 72px;
 }
 
-#ov1 .width70px {
-  width: 70px;
-}
-
-#ov1 .width75px {
-  width: 75px;
-}
-
-#ov1 .width65px {
-  width: 65px;
-}
-
-#ov1  .width70 {
+#gj  .width70 {
   width: 70%;
 }
 
-#ov1 .width80px {
-  width: 80px;
-}
-
-#ov1 .width80 {
+#gj .width80 {
   width: 80%;
 }
 
-#ov1 .width91 {
-  width: 91px;
-}
-#ov1 .width95 {
+#gj .width95 {
   width: 95%;
 }
-#ov1 .width105 {
-  width: 105px;
-}
 
-#ov1 .width110 {
+#gj .width110px {
   width: 110px;
 }
 
-#ov1 .width120 {
-  width: 120px;
-}
-#ov1 .width160 {
-  width: 160px;
-}
-#ov1 .width200 {
-  width: 200px;
-}
-#ov1 .width260 {
+#gj .width260px {
   width: 260px;
 }
 
-#ov1 .width380 {
-  width: 380px;
-}
-#ov1 .width400 {
-  width: 400px;
+#gj .width384px {
+  width: 384px;
 }
 
-#ov1 .width420{
-  width: 420px;
+#gj .width424px{
+  width: 424px;
 }
 
-#ov1 .width450 {
-  width: 450px;
-}
-#ov1 .width600 {
-  width: 600px;
-}
-#ov1 .width740 {
-  width: 740px;
+#gj .width448px {
+  width: 448px;
 }
 
-#ov1 .width950 {
-  width: 950px;
-}
-
-#ov1  .cursorDefault {
+#gj  .cursorDefault {
   cursor: default;
 }
 
-#ov1 .backgroundTransparent {
+#gj .backgroundTransparent {
   background: transparent;
 }
 
@@ -6325,51 +6055,55 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   font-weight: 400;
 }
 
-#ov1  .borderBottom0 {
+#gj  .borderBottom0 {
   border-bottom: 0;
 }
 
-#ov1  .borderBottom1 {
+#gj  .borderBottom1 {
   border-bottom: solid 1px;
 }
 
-#ov1 .fontWeight500 {
+#gj .fontWeight500 {
   font-weight: 500;
 }
 
-#ov1  .borderBottomLeftRaidus3 {
+#gj  .borderBottomLeftRaidus3 {
   border-bottom-left-radius: 3px !important;
 }
 
-#ov1 .colorWhiteForce {
+#gj .colorWhiteForce {
   color: #FFF !important; /* This text must always remain white */
 }
 
-#ov1 .colorBlack {
-  color: #000;
+#gj .colorBlack {
+  color: #030303;
 }
 
-#ov1  .borderBottomRightRaidus3 {
+#gj .colorGrey {
+  color: #9B9B9B;
+}
+
+#gj  .borderBottomRightRaidus3 {
   border-bottom-right-radius: 3px !important;
 }
 
-#ov1 .disabled {
+#gj .disabled {
   pointer-events: none;
   opacity: 0.2;
 }
 
-#ov1 .disabled2 {
+#gj .disabled2 {
   pointer-events: none;
   opacity: 0.7;
 }
 
-#ov1 .disabled-icon {
+#gj .disabled-icon {
   color: #9B9B9B;
   pointer-events: none;
 }
 
-#ov1 .disabled-icon:before,
-#ov1 .disabled [class *= "ion-"]:before {
+#gj .disabled-icon:before,
+#gj .disabled [class *= "ion-"]:before {
   opacity: 0.2;
 }
 
@@ -6382,39 +6116,39 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   overflow: visible;
 }
 
-#ov1 .hoverUnderline:hover {
+#gj .hoverUnderline:hover {
   text-decoration: underline !important;
 }
 
-#ov1 .blur {
+#gj .blur {
   -webkit-filter: blur(1px);
 }
 
-#ov1 .blurMore {
+#gj .blurMore {
   -webkit-filter: blur(5px);
 }
 
-#ov1 .nsfw {
+#gj .nsfw {
   -webkit-filter: blur(20px) grayscale(1) contrast(0.5);
 }
 
 /* to fade out a visible element, add the fadeOut class */
 /* to fade in an element with opacity 0, add the fadeIn class */
 
-#ov1 .fadeOut {
+#gj .fadeOut {
   opacity: 0;
   pointer-events: none;
   transition: opacity .3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-#ov1 .fadeIn {
+#gj .fadeIn {
   /* use fadeOut on items that should have fadeIn added to them */
   opacity: 1;
   pointer-events: auto;
   transition: opacity .3s cubic-bezier(0, 0, 0.2, 1);
 }
 
-#ov1 .foldIn {
+#gj .foldIn {
   height: 0;
   padding: 0;
   overflow: hidden;
@@ -6422,15 +6156,15 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   pointer-events: none;
 }
 
-#ov1 .underline {
+#gj .underline {
   text-decoration: underline;
 }
 
-#ov1 .inlineBlock {
+#gj .inlineBlock {
   display: inline-block;
 }
 
-#ov1 .zIndex1 {
+#gj .zIndex1 {
   z-index: 1; /*use on absolutely positioned elemenets that need to stack above other elements with no z-index */
 }
 
@@ -6472,48 +6206,51 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   display: block;
 }
 
-#ov1 .marginCenter {
+#gj .marginCenter {
   margin-left: auto;
   margin-right: auto;
 }
 
-
-
-#ov1 .heightAuto {
+#gj .heightAuto {
   height: auto;
 }
 
-#ov1 .editableContent img {
+#gj .editableContent img {
   max-width: 100%;
   max-height: 100%;
 }
 
 /* add formChecked class after form has been checked for validity */
-#ov1 .invalid,
-#ov1 .formChecked input[type="text"].fieldItem:invalid,
-#ov1 .formChecked input[type="email"].fieldItem:invalid,
-#ov1 .formChecked input[type="url"].fieldItem:invalid,
-#ov1 .formChecked .fieldItem-textarea:invalid,
-#ov1 .formChecked input[type="number"].fieldItem:invalid,
-#ov1 .formChecked input[type="text"].fieldItem:focus:invalid,
-#ov1 .formChecked input[type="email"].fieldItem:focus:invalid,
-#ov1 .formChecked input[type="url"].fieldItem:focus:invalid,
-#ov1 .formChecked .fieldItem-textarea:focus:invalid,
-#ov1 .forvmChecked input[type="number"].fieldItem:focus:invalid,
-#ov1 .formChecked .validatable:invalid {
-  border: 2px dashed rgba(89,1,1,0.8);;
-  background-color: rgba(89,1,1,0.2);
+#gj .invalid,
+#gj .formChecked input[type="text"].fieldItem:invalid,
+#gj .formChecked input[type="email"].fieldItem:invalid,
+#gj .formChecked input[type="url"].fieldItem:invalid,
+#gj .formChecked .fieldItem-textarea:invalid,
+#gj .formChecked input[type="number"].fieldItem:invalid,
+#gj .formChecked input[type="text"].fieldItem:focus:invalid,
+#gj .formChecked input[type="email"].fieldItem:focus:invalid,
+#gj .formChecked input[type="url"].fieldItem:focus:invalid,
+#gj .formChecked .fieldItem-textarea:focus:invalid,
+#gj .forvmChecked input[type="number"].fieldItem:focus:invalid,
+#gj .formChecked .validatable:invalid {
+  border: 1px solid #FF3346;
   transition: border 0.3s, background-color 0.4s;
 }
 
-#ov1 .loading,
-#ov1 #userPage .loading {
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#gj .loading,
+#gj #userPage .loading {
   position: relative;
   pointer-events: none;
 }
 
-#ov1 .loading:after,
-#ov1 #userPage .loading:after {
+#gj .loading:after,
+#gj #userPage .loading:after {
   /* load a loading image on top */
   content: "\f3b3";
   font-family: "Ionicons";
@@ -6551,16 +6288,16 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 /* turn off animations and transitions with this style */
 
-#ov1.minEffects,
-#ov1.minEffects *,
-#ov1.minEffects #userPage,
-#ov1.minEffects #userPage *,
-#ov1.minEffects #obContainer,
-#ov1.minEffects #obContainer *,
-#ov1.minEffects #overlay,
-#ov1.minEffects #sideBar,
-#ov1.minEffects #pageNav,
-#ov1.minEffects #statusBar {
+#gj.minEffects,
+#gj.minEffects *,
+#gj.minEffects #userPage,
+#gj.minEffects #userPage *,
+#gj.minEffects #obContainer,
+#gj.minEffects #obContainer *,
+#gj.minEffects #overlay,
+#gj.minEffects #sideBar,
+#gj.minEffects #pageNav,
+#gj.minEffects #statusBar {
   transition: none !important;
   -webkit-filter: none !important;
   opacity: 1 !important;
@@ -6570,139 +6307,139 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   text-shadow: none !important;
 }
 
-#ov1.minEffects #pageNav .popMenu-navBarSubMenu {
+#gj.minEffects #pageNav .popMenu-navBarSubMenu {
   border-left: 1px solid #444;
   border-right: 1px solid #444;
   border-bottom: 1px solid #444;
 }
 
-#ov1.minEffects .fadeOut,
-#ov1.minEffects .statusBar.fadeOut,
-#ov1.minEffects #pageNav .statusBar.fadeOut,
-#ov1.minEffects #userPage .fadeOut,
-#ov1.minEffects #userPage #pageNav .fadeOut,
-#ov1.minEffects #userPage #pageNav .statusBar.fadeOut,
-#ov1.minEffects #userPage #obContainer #content .statusBar.fadeOut {
+#gj.minEffects .fadeOut,
+#gj.minEffects .statusBar.fadeOut,
+#gj.minEffects #pageNav .statusBar.fadeOut,
+#gj.minEffects #userPage .fadeOut,
+#gj.minEffects #userPage #pageNav .fadeOut,
+#gj.minEffects #userPage #pageNav .statusBar.fadeOut,
+#gj.minEffects #userPage #obContainer #content .statusBar.fadeOut {
   opacity: 0 !important;
 }
 
-#ov1.minEffects .fadeIn,
-#ov1.minEffects .statusBar.fadeIn,
-#ov1.minEffects #pageNav .statusBar.fadeIn,
-#ov1.minEffects #userPage .fadeIn,
-#ov1.minEffects #userPage #pageNav .fadeIn,
-#ov1.minEffects #userPage #pageNav .statusBar.fadeIn,
-#ov1.minEffects #userPage #obContainer #content .statusBar.fadeIn {
+#gj.minEffects .fadeIn,
+#gj.minEffects .statusBar.fadeIn,
+#gj.minEffects #pageNav .statusBar.fadeIn,
+#gj.minEffects #userPage .fadeIn,
+#gj.minEffects #userPage #pageNav .fadeIn,
+#gj.minEffects #userPage #pageNav .statusBar.fadeIn,
+#gj.minEffects #userPage #obContainer #content .statusBar.fadeIn {
   opacity: 1 !important;
 }
 
-#ov1.minEffects #sideBar .sideBarSlidShow {
+#gj.minEffects #sideBar .sideBarSlidShow {
   display: none;
 }
 
-#ov1.minEffects #sideBar.sideBarSlid .sideBarSlidShow {
+#gj.minEffects #sideBar.sideBarSlid .sideBarSlidShow {
   display: block;
 }
 
-#ov1.minEffects #sideBar .chatConversation textarea,
-#ov1.minEffects #sideBar .chatConversation textarea::-webkit-input-placeholder,
-#ov1.minEffects #sideBar .chatConversation input,
-#ov1.minEffects #sideBar .chatConversation input::-webkit-input-placeholder {
+#gj.minEffects #sideBar .chatConversation textarea,
+#gj.minEffects #sideBar .chatConversation textarea::-webkit-input-placeholder,
+#gj.minEffects #sideBar .chatConversation input,
+#gj.minEffects #sideBar .chatConversation input::-webkit-input-placeholder {
   color: #FFF;
 }
 
-#ov1.minEffects .gridItemControls {
+#gj.minEffects .gridItemControls {
   display: none;
 }
 
-#ov1.minEffects .gridItemControls .btn-gridItemControl:hover,
-#ov1.minEffects .userPage-subViews .gridItem:hover .gridItemControls,
-#ov1.minEffects .homeView .gridItem:hover .gridItemControls {
+#gj.minEffects .gridItemControls .btn-gridItemControl:hover,
+#gj.minEffects .userPage-subViews .gridItem:hover .gridItemControls,
+#gj.minEffects .homeView .gridItem:hover .gridItemControls {
   display: block;
 }
 
-#ov1.minEffects .btn .postConfirm {
+#gj.minEffects .btn .postConfirm {
   display: none;
 }
 
-#ov1.minEffects .confirm.btn .preConfirm {
+#gj.minEffects .confirm.btn .preConfirm {
   display: none;
 }
 
-#ov1.minEffects .confirm.btn .postConfirm {
+#gj.minEffects .confirm.btn .postConfirm {
   display: inline-block;
 }
 
-#ov1.minEffects #userPage #obContainer #content .labelWrap.fade {
+#gj.minEffects #userPage #obContainer #content .labelWrap.fade {
   opacity: 0 !important;
 }
 
-#ov1.minEffects #userPage #obContainer #content .labelWrap.fadeIn {
+#gj.minEffects #userPage #obContainer #content .labelWrap.fadeIn {
   opacity: 1;
 }
 
-#ov1.minEffects #obContainer .taggle_placeholder,
-#ov1.minEffects #userPage #obContainer .taggle_placeholder {
+#gj.minEffects #obContainer .taggle_placeholder,
+#gj.minEffects #userPage #obContainer .taggle_placeholder {
   display: none !important;
 }
 
-#ov1.minEffects #obContainer .unfilled,
-#ov1.minEffects #userPage .unfilled {
+#gj.minEffects #obContainer .unfilled,
+#gj.minEffects #userPage .unfilled {
   opacity: 0.35 !important;
 }
 
-#ov1.minEffects .minEffectsDarkBackground,
-#ov1.minEffects #obContainer .minEffectsDarkBackground {
+#gj.minEffects .minEffectsDarkBackground,
+#gj.minEffects #obContainer .minEffectsDarkBackground {
   background: #262626 !important;
 }
 
-#ov1.minEffects .addressFormOpened .buyWizardMap .blurMore {
+#gj.minEffects .addressFormOpened .buyWizardMap .blurMore {
   display: none;
 }
 
-#ov1.minEffects .disabled,
-#ov1.minEffects #userPage .disabled,
-#ov1.minEffects #obContainer .disabled,
-#ov1.minEffects #overlay .disabled,
-#ov1.minEffects #sideBar .disabled,
-#ov1.minEffects #pageNav .disabled,
-#ov1.minEffects #statusBar .disabled {
+#gj.minEffects .disabled,
+#gj.minEffects #userPage .disabled,
+#gj.minEffects #obContainer .disabled,
+#gj.minEffects #overlay .disabled,
+#gj.minEffects #sideBar .disabled,
+#gj.minEffects #pageNav .disabled,
+#gj.minEffects #statusBar .disabled {
   opacity: 0.2 !important;
 }
 
-#ov1.minEffects .disabled2,
-#ov1.minEffects #userPage .disabled2,
-#ov1.minEffects #obContainer .disabled2,
-#ov1.minEffects #overlay .disabled2,
-#ov1.minEffects #sideBar .disabled2,
-#ov1.minEffects #pageNav .disabled2,
-#ov1.minEffects #statusBar .disabled2 {
+#gj.minEffects .disabled2,
+#gj.minEffects #userPage .disabled2,
+#gj.minEffects #obContainer .disabled2,
+#gj.minEffects #overlay .disabled2,
+#gj.minEffects #sideBar .disabled2,
+#gj.minEffects #pageNav .disabled2,
+#gj.minEffects #statusBar .disabled2 {
   opacity: 0.7 !important;
 }
 
-#ov1.minEffects .nsfw {
+#gj.minEffects .nsfw {
   background: #000 !important;
 }
 
 /* add a shadow and a glow, so modal close buttons are still barely visible if the user picks a bad color */
-#ov1 .js-modal-close [class *= "ion-"]:before,
-#ov1 #userPage .js-modal-close [class *= "ion-"]:before,
-#ov1 #obContainer .js-modal-close [class *= "ion-"]:before,
-#ov1.minEffects .js-modal-close [class *= "ion-"]:before,
-#ov1.minEffects #userPage .js-modal-close [class *= "ion-"]:before,
-#ov1.minEffects #obContainer .js-modal-close [class *= "ion-"]:before {
-  text-shadow: 0 0 1px rgba(0,0,0,1), 0 0 2px rgba(255,255,255, 1) !important;
+#gj .js-modal-close [class *= "ion-"]:before,
+#gj #userPage .js-modal-close [class *= "ion-"]:before,
+#gj #obContainer .js-modal-close [class *= "ion-"]:before,
+#gj.minEffects .js-modal-close [class *= "ion-"]:before,
+#gj.minEffects #userPage .js-modal-close [class *= "ion-"]:before,
+#gj.minEffects #obContainer .js-modal-close [class *= "ion-"]:before {
+  color: #9B9B9B;
 }
 
 /* hide unfinished elements */
 
-#ov1 .TODO.TODO.TODO.TODO.TODO {
+#gj .TODO.TODO.TODO.TODO.TODO {
   background: #535353;
   opacity: 0.2;
   pointer-events: none;
 }
 
-#ov1 .TODO.TODO.TODO.TODO.TODO {
+#gj .TODO.TODO.TODO.TODO.TODO {
   display: none; /* hide in production */
 }
 
@@ -6932,9 +6669,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .reviewFeedRight{
   width: 30%;  
-}
-
-.rating-detail{
 }
 
 .rating-detail-overlay{

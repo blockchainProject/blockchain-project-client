@@ -2,7 +2,7 @@
 <% if (ob.message_type == "DISPUTE_OPEN" || ob.message_type == "dispute_open") { %>
 <div class="padding12 textOpacity75 borderBottom width100 borderTopDashed borderBottomDashed custCol-border alignCenter"><%= polyglot.t('transactions.StartDisputeFlag') %></div>
 <% } %>
-<div class="chatConversationMessageLine <% if(ob.message_type == "ORDER" || ob.message_type == "DISPUTE_OPEN" || ob.message_type == "dispute_open") { %>padding2015 borderBottom1 custCol-border<% } %>">
+<div class="chatConversationMessageLine <% if(ob.message_type == "ORDER" || ob.message_type == "DISPUTE_OPEN" || ob.message_type == "dispute_open") { %>padding2416 borderBottom1 custCol-border<% } %>">
     <div class="flexRow">
         <div class="chatConversationMessageTimestamp paddingLeft2 <% if (ob.outgoing) { %>width100 alignRight<% } %>">
             <div><%= ob.moment(new Date(ob.timestamp * 1000)).locale(window.lang).format('MMM D, h:mm A') %></div>
@@ -61,7 +61,7 @@
 </div>
 <% if (ob.message_type == "DISPUTE_CLOSE" || ob.message_type == "dispute_close") { %>
 <hr>
-<div class="pad10"><%= polyglot.t('transactions.CloseDisputeFlag') %></div>
+<div class="pad8px"><%= polyglot.t('transactions.CloseDisputeFlag') %></div>
 <hr>
 <% } %>
 

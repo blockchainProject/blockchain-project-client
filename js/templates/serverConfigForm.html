@@ -1,7 +1,7 @@
 <div class="accordion-child accordion-active custCol-secondary overflowHidden">
   <div class="flexContainer scrollOverflowYHideX custCol-primary customThemeScrollbar"  style="height: 275px">
     <div class="flexRow borderBottom custCol-border">
-      <p class="margin0 padding2015 textOpacity75"><%= polyglot.t('serverConnectModal.intro') %></p>
+      <p class="margin0 padding2416 textOpacity75"><%= polyglot.t('serverConnectModal.intro') %></p>
     </div>
       <form class="width100" name="serverConfigForm">
         <div class="flexCol-12 flex-border borderBottom">
@@ -10,7 +10,7 @@
                // we don't have to keep repeating it %>
             <% if (ob.errors.name) { %>
             <div class="flexCol-12 error">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.name.forEach(function(err) {
                      print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                    }); %>
@@ -32,7 +32,7 @@
           <div class="flexRow">
             <% if (ob.errors.server_ip) { %>
             <div class="flexCol-12 error">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.server_ip.forEach(function(err) {
                      print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                    }); %>
@@ -64,7 +64,7 @@
           <div class="flexRow">
             <% if (ob.errors.username) { %>
             <div class="flexCol-12">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.username.forEach(function(err) {
                   print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                 }); %>
@@ -86,7 +86,7 @@
           <div class="flexRow">
             <% if (ob.errors.password) { %>
             <div class="flexCol-12">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.password.forEach(function(err) {
                   print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                 }); %>
@@ -108,7 +108,7 @@
           <div class="flexRow">
             <% if (ob.errors.rest_api_port) { %>
             <div class="flexCol-12">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.rest_api_port.forEach(function(err) {
                      print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                    }); %>
@@ -130,7 +130,7 @@
           <div class="flexRow">
             <% if (ob.errors.api_socket_port) { %>
             <div class="flexCol-12">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.api_socket_port.forEach(function(err) {
                      print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                    }); %>
@@ -152,7 +152,7 @@
           <div class="flexRow">
             <% if (ob.errors.heartbeat_socket_port) { %>
             <div class="flexCol-12">
-              <ul class="padding2015">
+              <ul class="padding2416">
                 <% ob.errors.heartbeat_socket_port.forEach(function(err) {
                      print('<li class="list-style-none"><span class="ion-alert-circled marginRight5"></span>' + err + '</li>');
                    }); %>
@@ -175,12 +175,12 @@
       </form>
   </div>
 
-  <div class="bar barFlush borderBottomLeftRaidus3 color-secondary custCol-secondary borderBottomRightRaidus3">
-    <a class="btn btn-bar btn-half js-close color-secondary custCol-secondary custCol-border-primary custCol-text textOpacity90 borderRight" tabindex="0">
+  <div class="bar barFlush borderBottomLeftRaidus3 blue-background custCol-secondary borderBottomRightRaidus3">
+    <a class="btn btn-bar btn-half js-close blue-background custCol-secondary custCol-border-primary custCol-text textOpacity90 borderRight" tabindex="0">
       <span class="fontSize10 marginRight2"></span>
       <%= polyglot.t('Cancel') %>
     </a>
-    <a class="btn btn-bar btn-half js-save color-secondary custCol-secondary textOpacity90 custCol-border-primary custCol-text" tabindex="0">
+    <a class="btn btn-bar btn-half js-save blue-background custCol-secondary textOpacity90 custCol-border-primary custCol-text" tabindex="0">
       <span class="ion-checkmark fontSize10 marginRight2 textOpacity50"></span>
       <%= polyglot.t('serverConnectModal.saveChanges') %>
     </a>

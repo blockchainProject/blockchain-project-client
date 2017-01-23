@@ -29,7 +29,7 @@ module.exports = baseModal.extend({
 
   constructor: function(options) {
     options = __.extend({
-      innerWrapperClass: 'modal-child modal-childMain custCol-primary custCol-text padding20'
+      innerWrapperClass: 'modal-child modal-childMain custCol-primary custCol-text padding24'
     }, options || {});
 
     baseModal.prototype.constructor.apply(this, [options].concat(Array.prototype.slice.call(arguments, 1)));

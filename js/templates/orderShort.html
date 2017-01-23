@@ -2,7 +2,7 @@
   <% if (ob.unread) { %>
   <div class="highlightRow"></div>
   <% } %>
-  <div class="rowItem padding20">
+  <div class="rowItem padding24">
     <div class="flexRow">
       <div class="clearFix">
         <div class="floatLeft noOverflow marginBottom2 marginRight5 textSize15px js-searchOrderID js-orderShort">
@@ -21,10 +21,10 @@
           </div>
         </div>
         <span class="visuallyHidden js_searchStatusNum"><%= ob.status %></span><!--used only for the search filter-->
-        <table class="floatLeft custCol-text fontSize14  width450 fontWeight500">
+        <table class="floatLeft custCol-text fontSize14  width448px fontWeight500">
           <tr>
             <td class="textOpacity50 padding2"><%= polyglot.t('Listing') %></td>
-            <td class="js-searchTitle textOpacity75 padding2"><div class="noOverflow width260"><%= ob.title %></div></td>
+            <td class="js-searchTitle textOpacity75 padding2"><div class="noOverflow width260px"><%= ob.title %></div></td>
           </tr>
           <tr>
             <td class="textOpacity50 padding2"><%= polyglot.t('transactions.OrderTotal') %> </td>
