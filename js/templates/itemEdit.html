@@ -20,7 +20,7 @@
       <div class="flexRow custCol-secondary border0 height50">
         <label for="itemImageUploadMain" class="fieldItem width100">
           <h5 class="floatLeft"><%= polyglot.t('Photos') %></h5>
-          <span class="btn btn-c1 btn-txt marginTop24 pull-right custCol-primary textOpacity1 margin0 marginTopNeg8 <%= ob.images.length >= ob.MAX_PHOTOS ? 'disabled' : '' %>">
+          <span class="btn btn-c1 btn-txt marginTop24px pull-right custCol-primary textOpacity1 margin0 marginTopNeg8 <%= ob.images.length >= ob.MAX_PHOTOS ? 'disabled' : '' %>">
             <span class="ion-images fontSize11 marginRight2 textOpacity75"></span>
             <%= polyglot.t('SelectPhotos') %>
           </span>
@@ -29,7 +29,7 @@
       </div>
       <div class="flexRow js-editItemSubImagesWrapper editItemImageHolder" data-label="<%= polyglot.t('Photos') %>">
         <div class="statusBar navBar fadeOut positionAbsolute js-itemEditImageLoading">
-          <div class="padding24px marginTop24 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
+          <div class="padding24px marginTop24px width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
         </div>
         <div class="js-subImageWrap">
           <% _.each(ob.images, function(url, i) { %>

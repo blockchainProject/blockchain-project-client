@@ -1644,7 +1644,7 @@ label.fieldItem {
 }
 
 .modal-opaque .modal-child {
-  height: 500px;
+  height: 460px;
 }
 
 .accordion {
@@ -1938,7 +1938,7 @@ label.fieldItem {
 .modal-hero-icon {
   background: url(../imgs/grabjob-logo.png);
   background-size: cover;
-  margin: 16px auto;
+  margin: 8px auto;
   width: 35%;
   height: 62px;
 }
@@ -5653,7 +5653,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 15px;
 }
 
-#gj  .marginTop16 {
+#gj  .marginTop16px {
   margin-top: 16px;
 }
 
@@ -5669,7 +5669,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 22px;
 }
 
-#gj  .marginTop24 {
+#gj  .marginTop24px {
   margin-top: 24px;
 }
 
@@ -6193,6 +6193,18 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #gj .disabled-icon:before,
 #gj .disabled [class *= "ion-"]:before {
   opacity: 0.2;
+}
+
+.playful-cat-icon:before {
+  background-image: url('../imgs/playful-cat.png');
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  content:"";
+  position: relative;
+  top: 8px;
+  right: 4px;
 }
 
 .ion-ios-close:before {

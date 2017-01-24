@@ -1,33 +1,29 @@
 <div class="modal-child modal-childMain custCol-primary">
-  <div class="about-hero modal-hero-about custCol-secondary-darken">
-    <div class="modal-hero-icon"></div>
-    <div class="alignCenter">
-      <img class="width40px" src="./imgs/playful-cat.png" alt="">
-      <p class="colorBlack marginTop8">crafted with playful mind</p>
-      <!-- Created by Denis Sazhin from the Noun Project-->
-    </div>
-  </div>
   <div class="aboutModal-accordion accordion">
     <div class="accordion-window">
-      <div class="accordion-child custCol-primary custCol-text">
-        <div class="bar navBar barFlush custCol-text custCol-secondary height56">
-          <a class="btn btn-bar btn-tab custCol-secondary js-tab <% ob.tab === 'support' && print('active') %>" data-tab="support">
+      <div class="accordion-child custCol-primary custCol-text colorBlack">
+        <div class="bar barFlush height24 alignCenter marginTop32px">
+          <a class="btn-tab js-tab colorBlack <% ob.tab === 'support' && print('active') %>" data-tab="support">
             <span class="ion-android-favorite fontSize11 marginRight2 textOpacity1"></span>
             <%= polyglot.t('Support') %>
           </a>
         </div>
 
         <% if (ob.tab === 'support') { %>
-        <div class="custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20">
-        <% } else if (ob.tab === 'support') { %>
         <div class="custCol-primary modal-about-section js-externalLinks customThemeScrollbar lineHeight20 alignCenter">
-          <div class="width100 alignCenter">
+          <div class="width100 alignCenter marginTop16px">
             <img class="width40" src="./imgs/donations.png" />
           </div>
-          <div class="margin0auto width"><%= polyglot.t('aboutSection.support') %></div>
+          <div class="margin0auto width95 textSize14px"><%= polyglot.t('aboutSection.support') %></div>
         </div>
         <% } %>
-
+        <div class="about-hero marginTop24px">
+          <div class="alignCenter">
+          <div class="modal-hero-icon"></div>
+            <p class="colorBlack marginTop8 playful-cat-icon">crafted with playful mind</p>
+            <!-- Created by Denis Sazhin from the Noun Project-->
+          </div>
+        </div>  
       </div>
     </div>
   </div>

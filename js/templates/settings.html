@@ -1,6 +1,6 @@
 <div class="mainContainer custCol-background">
 
-  <div class="userBar marginTop16">
+  <div class="userBar marginTop16px">
     <div class="title-section custCol-primary-darken">
       <div class="thumbnail pull-left"
         <% if(ob.page.profile.avatar_hash) { %>
@@ -284,14 +284,14 @@
               <div class="flexCol-9 borderRight0 custCol-border">
                 <div id="settings-image-cropper" class="positionWrapper">
                   <div class="statusBar navBar fadeOut positionAbsolute js-avatarLoading">
-                    <div class="padding24px marginTop24 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
+                    <div class="padding24px marginTop24px width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
                   </div>
-                  <div class="cropit-image-preview cropit-avatar js-settingsAvatarPreview marginTop24 thumbnail thumbnail-huge box-border pull-left marginBottom24 marginLeft12"></div>
+                  <div class="cropit-image-preview cropit-avatar js-settingsAvatarPreview marginTop24px thumbnail thumbnail-huge box-border pull-left marginBottom24 marginLeft12"></div>
                   <div>
-                    <input type="range" class="cropit-image-zoom-input marginTop24 marginBottom24  marginLeft12 hide" />
+                    <input type="range" class="cropit-image-zoom-input marginTop24px marginBottom24  marginLeft12 hide" />
                   </div>
                   <input type="file" id="settingsAvatarInput" class="cropit-image-input hide" />
-                  <label for="settingsAvatarInput" class="btn btn-txt marginTop24 marginLeft12 marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewAvatar') %></label>
+                  <label for="settingsAvatarInput" class="btn btn-txt marginTop24px marginLeft12 marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewAvatar') %></label>
                 </div>
               </div>
             </div>
@@ -459,7 +459,7 @@
               <div class="flexCol-9 borderRight0 custCol-border js-settingsCoverPhoto">
                 <div id="settings-image-cropperBanner" class="banner-settings positionWrapper">
                   <div class="statusBar navBar fadeOut positionAbsolute js-bannerLoading">
-                    <div class="padding24px marginTop24 width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
+                    <div class="padding24px marginTop24px width100"><h4 class="txt-center"><%= polyglot.t('LoadingImage') %></h4></div>
                   </div>
                   <div class="cropit-image-preview banner-settings positionTop js-settingsBannerPreview"></div>
                   <div class="positionBottom hCentered marginBottom96px">
@@ -648,7 +648,7 @@
               <div class="flexRow">
                 <h3 class="padding16 margin0 fontWeight500"><%= polyglot.t('CurrentAddress') %></h3>
               </div>
-              <div class="flexRow pad4px marginTop16">
+              <div class="flexRow pad4px marginTop16px">
                 <% _.each(ob.user.shipping_addresses, function(address, i){ %>
                 <div class="flexCol-4 pad8px marginBottom16">
                   <div class="padding10 custCol-secondary borderRadius3 fontSize15 clearfix js-address">
