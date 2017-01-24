@@ -259,6 +259,14 @@
     <% } %>
 
     <div class="accordion-child" id="BuyWizardPaymentType">
+      <div>
+        <ul class="alignCenter">
+          <li class="inlineBlock process-circle"></li>
+          <li class="inlineBlock process-circle"></li>
+          <li class="inlineBlock process-circle"></li>
+          <li class="inlineBlock process-circle"></li>
+        </ul>
+      </div>
       <div class="bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
         <%= polyglot.t('PaymentType') %>
       </div>
@@ -267,14 +275,14 @@
           <% if(ob.vendor_offer.listing.moderators && ob.vendor_offer.listing.moderators.length > 0){ %>
             <% if(ob.vendor_offer.listing.moderators.length != 1 || ob.vendor_offer.listing.moderators[0].guid != ob.user.guid){ %>
             <div class="flexRow custCol-border">
-              <div class="rowItem padding2015">
-                <div class="floatLeft marginRight10">
+              <div class="rowItem padding2416">
+                <div class="floatRight marginRight10">
                   <input type="radio" name="radioPaymentType" class="marginTop4" id="buyWizardPaymentTypeModerated" />
                   <label class="customRadioButton" for="buyWizardPaymentTypeModerated"></label>
                 </div>
                 <div class="width448px floatLeft">
                   <label for="buyWizardPaymentTypeModerated" class="clickable">
-                    <div class="fontSize15">
+                    <div class="fontSize15 ios-locked-outline">
                       <%= polyglot.t('buyFlow.ModeratedPayment') %>
                       <span class="allCaps textOpacity50 fontSize13"><%= polyglot.t('Recommended') %></span>
                     </div>
@@ -296,7 +304,7 @@
                             <label for="buyWizardModeratorRadio<%= i %>" class="textOpacity1 clickable">
                               <div class="table padding8 border1 custCol-border">
                                 <div>
-                                  <div class="floatLeft marginTop8">
+                                  <div class="floatRight marginTop8">
                                     <input type="radio" class="js-buyWizardModeratorRadio floatLeft" name="moderator" id="buyWizardModeratorRadio<%= i %>" value="<%= i %>"/>
                                     <label class="customRadioButtonModerator" for="buyWizardModeratorRadio<%= i %>"></label>
                                   </div>
@@ -333,14 +341,14 @@
           <% } %>
           <% } %>
           <div class="flexRow custCol-border">
-            <div class="rowItem padding2015">
-              <div class="floatLeft marginRight10">
+            <div class="rowItem padding2416">
+              <div class="floatRight marginRight10">
                 <input type="radio" name="radioPaymentType" class="marginTop4" id="buyWizardPaymentTypeDirect" />
                 <label class="customRadioButton" for="buyWizardPaymentTypeDirect"></label>
               </div>
               <div class="width448px floatLeft">
                 <label for="buyWizardPaymentTypeDirect" class="clickable">
-                  <div class="fontSize15"><%= window.polyglot.t('buyFlow.DirectPayment') %></div>
+                  <div class="fontSize15 ios-unlocked-outline"><%= window.polyglot.t('buyFlow.DirectPayment') %></div>
                   <div class="textOpacity75 fontSize14 marginTop4">
                     <%= polyglot.t('buyFlow.DirectPaymentDescription') %>
                   </div>
@@ -351,18 +359,17 @@
           </div>
         </div>
       </div>
-      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3">
+      <div class="bar barFlush alignCenter white-background marginTop20">
          <% if(ob.user.refund_address === ""){ %>
-          <a class="btn btn-bar btn-half js-buyWizardModBack custCol-secondary borderBottomLeftRaidus3 borderRight custCol-border-primary">
+          <a class="js-buyWizardModBack black-color marginRight80">
             <span class="ion-chevron-left fontSize10 marginRight2 textOpacity75"></span>
             <%= polyglot.t('Back') %>
           </a>
         <% }else{ %>
-          <a class="btn btn-bar btn-half js-closeBuyWizardModal custCol-secondary borderBottomLeftRaidus3 borderRight custCol-border"><%= polyglot.t('Cancel') %></a>
+          <a class="js-closeBuyWizardModal black-color marginRight80"><%= polyglot.t('Cancel') %></a>
         <% } %>
-        <a class="btn btn-bar btn-half js-buyWizardModNext <% if(ob.vendor_offer.listing.moderators != null && ob.vendor_offer.listing.moderators.length > 0){ print('disabled'); } %> custCol-secondary custCol-border-primary borderBottomRightRaidus3  borderRight custCol-border">
+        <a class="js-buyWizardModNext <% if(ob.vendor_offer.listing.moderators != null && ob.vendor_offer.listing.moderators.length > 0){ print('disabled'); } %> nextButton marginLeft80">
           <%= polyglot.t('Next') %>
-          <span class="ion-chevron-right fontSize10 marginLeft2 textOpacity75"></span>
         </a>
       </div>
     </div>

@@ -94,6 +94,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+li {
+  list-style: none;
+}
+
 hr {
   border: solid 1px rgb(155,155,155);
   width: 70%;
@@ -108,6 +112,7 @@ hr {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 input {
@@ -242,6 +247,10 @@ form {
   color: #030303;
 }
 
+.grey-background{
+  background: #9B9B9B no-repeat center !important;
+}
+
 .white-background {
   background: #FFF;
 }
@@ -308,6 +317,22 @@ h6, .h6 {
 
 .ion-ios-checkmark-outline:before {
   font-weight: bold !important;
+}
+
+.ios-locked-outline:before {
+  content: "\f457";  
+  font-family: 'ionicons';
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.ios-unlocked-outline:before {
+  content: "\f4c8";  
+  font-family: 'ionicons';
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 .txt-center {
@@ -389,6 +414,14 @@ h6, .h6 {
 .title-font{
   font-family: 'Francois One', sans-serif;
   font-weight: normal;
+}
+
+.process-circle {
+  background: #EEEEEE no-repeat center;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  margin: 16px;
 }
 
 /*========== structure classes ==========*/
@@ -1265,6 +1298,24 @@ label.fieldItem {
 }
 
 .homeTagButton:hover {
+  opacity: 0.8;
+}
+
+.nextButton{
+  background-color: #009DC4;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 8px 60px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nextButton:hover{
   opacity: 0.8;
 }
 
