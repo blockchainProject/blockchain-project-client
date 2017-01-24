@@ -676,6 +676,7 @@
         "MustAddAddress": "Musíte zadať adresu pre doručenie",
         "VendorShipsTo": "Tento predajca odosiela tovar do nasledujúcich krajín:",
         "DoesNotShipHere": "Nedoručuje do tejto krajiny",
+        "SendPayment": "Send Payment",
         "Send": "Odoslať",
         "SendBTCtoAddress": "Poslať %{amount} BTC na %{recipient}",
         "OpenAddress": "Otvoriť v Lokálnej Peňaženke",

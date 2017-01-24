@@ -676,6 +676,7 @@
         "MustAddAddress": "배송지 주소 추가해야 함",
         "VendorShipsTo": "배송지:",
         "DoesNotShipHere": "이업체는 여기에 배송되지 않습니다",
+        "SendPayment": "Send Payment",
         "Send": "발송",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "로컬 월렛에서 열기",

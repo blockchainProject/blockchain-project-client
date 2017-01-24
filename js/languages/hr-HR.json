@@ -676,6 +676,7 @@
         "MustAddAddress": "Morate unijeti adresu isporuke",
         "VendorShipsTo": "Isporuka:",
         "DoesNotShipHere": "Ne isporučuje ovdje",
+        "SendPayment": "Send Payment",
         "Send": "Pošalji",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "Open in Local Wallet",

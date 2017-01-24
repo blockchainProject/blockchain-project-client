@@ -676,6 +676,7 @@
         "MustAddAddress": "U moet een adres toevoegen om naar te verzenden",
         "VendorShipsTo": "Verzendt naar:",
         "DoesNotShipHere": "Verzendt niet naar hier",
+        "SendPayment": "Send Payment",
         "Send": "Verzend",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "Open in Lokale Wallet",

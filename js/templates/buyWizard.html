@@ -1,5 +1,3 @@
-<div class="modal-hero js-buyWizardHero custCol-text shadow-inner1-light"
-     style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.vendor_offer.listing.item.image_hashes[0] %><%= ob.imageExtension %>), url(imgs/defaultBanner.png);">
   <div class="js-buyWizardMap buyWizardMap positionRelative hide" style="height: 262px">
     <div class="js-mapSpinner txt-col1 ion-android-sync spinner spinner-slow icon-large icon-circle-background1 zIndex1 fullCentered" style="border: 1px solid #aaa;"></div>
     <div class="flexContainer mapWrap"></div>
@@ -10,27 +8,37 @@
       <h3 class="custCol-text padding32"><%= polyglot.t('CheckExchanges') %> </h3>
     </div>
   </div>
-  <div class="modal-hero modal-heroFullHeightNoButtons padding30 js-buyWizardPay hide background1 custCol-primary">
-    <div class="width100 row20">
+  <div class="modal-hero modal-heroFullHeightNoButtons padding32 js-buyWizardPay hide white-background custCol-primary colorBlack">
+    <div>
+    <ul class="alignCenter">
+      <li class="inlineBlock process-circle"></li>
+      <li class="inlineBlock process-circle"></li>
+      <li class="inlineBlock process-circle"></li>
+      <li class="inlineBlock process-circle grey-background"></li>
+    </ul>
+    </div>
+    <div class="bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
+      <%= polyglot.t('SendPayment') %>
+    </div>
+    <div class="txt-center marginBottom8 textSize20px lineHeight32">
+      <%=
+        polyglot.t('buyFlow.SendBTCtoAddress', {
+          amount: '<span class="js-buyWizardDetailsTotalBTC"></span>',
+          recipient: '<a class="textSize16px js-buyWizardPayLink custCol-text"><span class="js-buyWizardPayURL blueHover"></span></a>'
+        })
+      %><a class="btn js-buyWizardPayCopy blueHover marginTop12"><i class="ion-clipboard"></i></a>
+    </div>    
+    <div class="width100">
       <img class="blockCenter qrCode js-buyWizardPayQRCode" height="250" width="250" src="imgs/defaultItem.png"/>
     </div>
-    <div class="txt-bright pad20">
-      <div class="txt-center row10 textSize20px custCol-text">
-        <%=
-          polyglot.t('buyFlow.SendBTCtoAddress', {
-            amount: '<span class="js-buyWizardDetailsTotalBTC"></span>',
-            recipient: '<a class="textSize16px js-buyWizardPayLink custCol-text"><span class="js-buyWizardPayURL"></span></a>'
-          })
-        %>
-      </div>
-      <div class="txt-center row10">
+    <div class="padding24px alignCenter">
+      <div class="txt-center marginBottom8">
         <input type="checkbox" class="textSize11px fieldItem thin" id="BuyWizardQRDetailsInput">
-        <label for="BuyWizardQRDetailsInput" class="textSize11px  custCol-text"> <%= polyglot.t('AdditionalPaymentDataInfo') %></label>
+        <label for="BuyWizardQRDetailsInput" class="textSize12px  custCol-text"> <%= polyglot.t('AdditionalPaymentDataInfo') %></label>
       </div>
-      <a class="btn btn-txt btn-wide row10 js-buyWizardPayCopy custCol-secondary  custCol-text"><i class="ion-clipboard"></i> <%= polyglot.t('buyFlow.CopyAddress') %></a>
-      <a class="btn btn-txt btn-wide row10 js-buyWizardPayLink custCol-secondary custCol-text"><i class="ion-link"></i> <%= polyglot.t('buyFlow.OpenAddress') %></a>
-      <a class="btn btn-txt btn-wide js-buyWizardPayCheck custCol-secondary custCol-text"><i class="ion-refresh"></i> <%= polyglot.t('buyFlow.RefreshPayment') %></a>
-      <div class="rowTop10 txt-center note custCol-text">
+      <a class="btn js-buyWizardPayLink blueHover"><i class="ion-link"></i> <%= polyglot.t('buyFlow.OpenAddress') %></a>
+      <a class="btn-txt btn-wide js-buyWizardPayCheck custCol-secondary custCol-text"><i class="ion-refresh blue-color"></i> <%= polyglot.t('buyFlow.RefreshPayment') %></a>
+      <div class="marginTop8 txt-center note custCol-text">
         <%= polyglot.t('buyFlow.paymentNote') %>
       </div>
     </div>

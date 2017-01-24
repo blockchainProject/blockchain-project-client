@@ -676,6 +676,7 @@
         "MustAddAddress": "务必添加送货地址",
         "VendorShipsTo": "此商家向以下国家/地区发货:",
         "DoesNotShipHere": "不向以下国家/地区发货",
+        "SendPayment": "Send Payment",
         "Send": "发送",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "将地址在本地钱包里打开",

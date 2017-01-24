@@ -676,6 +676,7 @@
         "MustAddAddress": "Θα πρέπει να προσθέσετε την διεύθυνση σας για αποστολή",
         "VendorShipsTo": "Αποστολή προς:",
         "DoesNotShipHere": "Δεν γίνετε αποστολή εδώ",
+        "SendPayment": "Send Payment",
         "Send": "Αποστολή",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "Άνοιγμα σε Τοπικό Πορτοφόλι",

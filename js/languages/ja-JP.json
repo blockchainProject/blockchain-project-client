@@ -676,6 +676,7 @@
         "MustAddAddress": "お届け先住所を入力してください。",
         "VendorShipsTo": "配達可能エリア:",
         "DoesNotShipHere": "配達不能",
+        "SendPayment": "Send Payment",
         "Send": "送る",
         "SendBTCtoAddress": "%{amount} BTC を %{recipient} に送る",
         "OpenAddress": "ウォレットで開く",

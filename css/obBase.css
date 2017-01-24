@@ -230,6 +230,10 @@ form {
   margin: 0;
 }
 
+.blueHover:hover{
+  color: #009DC4;
+}
+
 /*========== color ==========*/
 .blue-color{
   color: #009DC4;
@@ -1883,7 +1887,6 @@ label.fieldItem {
 }
 
 .modal-hero {
-  background: linear-gradient(to bottom, rgb(209,209,209), rgb(55,55,55) 60px, rgb(55,55,55) 108px, rgb(0,0,0));
   background-position: center;
   background-size: cover;
   border-top-left-radius: 3px;
@@ -2215,7 +2218,7 @@ input[type="text"].txtField-bar {
 
 .btn.btn-txt {
   /* button with text */
-  padding: 0 12px;
+  margin: 0 12px;
 }
 
 .btn.btn-txt.active {
@@ -6198,6 +6201,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #ov1 .overflowVisible {
+.ion-refresh:before{
+  display: block;
+  font-size: 40px;
+}
+
   overflow: visible;
 }
 

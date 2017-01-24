@@ -676,6 +676,7 @@
         "MustAddAddress": "Trebuie să adăugați o adesă pentru livrare",
         "VendorShipsTo": "Acest furnizor livrează către următoarele țări:",
         "DoesNotShipHere": "Nu se livrează aici",
+        "SendPayment": "Send Payment",
         "Send": "Trimite",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "Deschidere în Portmoneu Local",

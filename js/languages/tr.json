@@ -676,6 +676,7 @@
         "MustAddAddress": "Gönderilecek bir adres eklemelisiniz",
         "VendorShipsTo": "Satıcı şu ülkelere gönderim yapmaktadır:",
         "DoesNotShipHere": "Satıcı buraya gönderim yapmamaktadır",
+        "SendPayment": "Send Payment",
         "Send": "Gönder",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "Adresi Yerel Cüzdanda Aç",

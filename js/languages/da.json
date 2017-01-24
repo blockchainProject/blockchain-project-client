@@ -676,6 +676,7 @@
         "MustAddAddress": "Du skal tilføje en adresse, der kan sendes til",
         "VendorShipsTo": "Afsendes til:",
         "DoesNotShipHere": "Sendes ikke hertil",
+        "SendPayment": "Send Payment",
         "Send": "Send",
         "SendBTCtoAddress": "Send %{amount} BTC til %{recipient}",
         "OpenAddress": "Åbn i lokal tegnebog",

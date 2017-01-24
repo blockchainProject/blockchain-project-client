@@ -676,6 +676,7 @@
         "MustAddAddress": "&Egrave; necessario aggiungere un indirizzo da spedire ai",
         "VendorShipsTo": "Invia in:",
         "DoesNotShipHere": "Non invia qui",
+        "SendPayment": "Send Payment",
         "Send": "Invia",
         "SendBTCtoAddress": "Invia %{amount} BTC a %{recipient}",
         "OpenAddress": "Apri indirizzo nel portafoglio locale",

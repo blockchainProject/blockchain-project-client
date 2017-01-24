@@ -676,6 +676,7 @@
         "MustAddAddress": "Вы должны указать адрес для доставки",
         "VendorShipsTo": "Этот производитель отправляет в следующие страны:",
         "DoesNotShipHere": "Выбранный производитель не производит доставку в указанный регион",
+        "SendPayment": "Send Payment",
         "Send": "Отправить",
         "SendBTCtoAddress": "Отправьте %{amount} BTC на %{recipient}",
         "OpenAddress": "Открыть адрес в кошельке по-умолчанию",

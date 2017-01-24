@@ -676,6 +676,7 @@
         "MustAddAddress": "Ви маєте вказти адресу доставки",
         "VendorShipsTo": "Можлива відправка в ці країни:",
         "DoesNotShipHere": "В ці країни доставка не здійснюється",
+        "SendPayment": "Send Payment",
         "Send": "Відправити",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "Відкрити адресу в локальному гаманці Bitcoin",

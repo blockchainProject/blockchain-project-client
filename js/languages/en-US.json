@@ -687,6 +687,7 @@
     "MustAddAddress": "You must add an address to ship to",
     "VendorShipsTo": "Ships to:",
     "DoesNotShipHere": "Does not ship here",
+    "SendPayment": "Send Payment",
     "Send": "Send",
     "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
     "OpenAddress": "Open in Local Wallet",

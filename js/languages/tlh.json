@@ -676,6 +676,7 @@
         "MustAddAddress": "SoQ Duj ghob'e' chel SoH",
         "VendorShipsTo": "Daq Duj tuq:",
         "DoesNotShipHere": "Does not ship here",
+        "SendPayment": "Send Payment",
         "Send": "NgeH",
         "SendBTCtoAddress": "Send %{amount} BTC to %{recipient}",
         "OpenAddress": "SoQ poS qaStaHvIS Sum chom Huch",
