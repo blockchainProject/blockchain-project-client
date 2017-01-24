@@ -374,9 +374,17 @@
       </div>
     </div>
 
-   <div class="accordion-child" id="BuyWizardBTCReturnAddress">
-      <div class="bar barTxt h6 paddingLeft15 custCol-secondary">
-        <%= polyglot.t('BitcoinReturnAddress') %>
+    <div class="accordion-child" id="BuyWizardBTCReturnAddress">
+      <div>
+      <ul class="alignCenter">
+        <li class="inlineBlock process-circle"></li>
+        <li class="inlineBlock process-circle grey-background"></li>
+        <li class="inlineBlock process-circle"></li>
+        <li class="inlineBlock process-circle"></li>
+      </ul>
+      </div>
+      <div class="bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
+        <%= polyglot.t('RefundAddress') %>
       </div>
       <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
         <p class="padding16 textOpacity75 margin0 width80 margin0auto"><%= polyglot.t('RefundAddressInfo') %></p>
@@ -406,14 +414,13 @@
           </div>
         </div>
       </div>
-      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3">
-        <a class="btn btn-bar btn-half js-accordionPrev custCol-secondary borderBottomLeftRaidus3 borderRight custCol-border-primary">
+      <div class="bar barFlush alignCenter white-background">
+        <a class="js-accordionPrev black-color marginRight80">
           <span class="ion-chevron-left fontSize10 marginRight2 textOpacity75"></span>
           <%= polyglot.t('Back') %>
         </a>
-        <a class="btn btn-bar btn-half js-buyWizardReturnNext custCol-secondary custCol-border-primary borderBottomRightRaidus3">
+        <a class="js-buyWizardReturnNext nextButton marginLeft80">
           <%= polyglot.t('Next') %>
-          <span class="ion-chevron-right fontSize10 marginLeft2 textOpacity75"></span>
         </a>
       </div>
     </div>
