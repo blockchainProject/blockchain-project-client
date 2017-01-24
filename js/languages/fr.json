@@ -303,7 +303,7 @@
     "Summary": "Récapitulatif",
     "Funds": "Fonds",
     "Discussion": "Discussion",
-    "Quantity": "Quantité :",
+    "Quantity": "Quantité",
     "Submit": "Envoyer",
     "maxLength20": "20 caractères maximum",
     "maxLength80": "80 caractères maximum",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Payé depuis le total si la transaction se termine par un litige.",
         "directPaymentDisclaimer": "Utilisez le paiement direct avec prudence, les fonds sont irréversibles",
         "paymentSent": "Paiement envoyé !",
-        "total": "Total :",
+        "total": "Total",
         "paymentNote": "Le paiement peut prendre quelques minutes, ou plus, à se faire. Vous pouvez partir de cet écran, et aller plus tard sur la page d'achat pour voir si votre paiement a bien été envoyé."
     },
     "chat": {

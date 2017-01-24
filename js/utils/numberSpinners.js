@@ -12,7 +12,7 @@ module.exports = function(view) {
   };
 
   view.off('click.numSpinnerUp').on('click.numSpinnerUp', ".numberSpinnerUp", function(){
-    var targetInput = $(this).siblings('input');
+    var targetInput = $(this).siblings().find('input');
     var step = Number(targetInput.attr("step"));
     var min = Number(targetInput.attr("min"));
     var curVal = Number(targetInput.val());
@@ -21,7 +21,7 @@ module.exports = function(view) {
   });
 
   view.off('click.numSpinnerDown').on('click.numSpinnerDown', ".numberSpinnerDown", function(){
-    var targetInput = $(this).siblings('input');
+    var targetInput = $(this).siblings().find('input');
     var step = Number(targetInput.attr("step")) * -1;
     var min = Number(targetInput.attr("min"));
     var curVal = Number(targetInput.val());

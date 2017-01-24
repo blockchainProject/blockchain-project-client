@@ -303,7 +303,7 @@
     "Summary": "Zusammenfassung",
     "Funds": "Guthaben",
     "Discussion": "Diskussion",
-    "Quantity": "Menge:",
+    "Quantity": "Menge",
     "Submit": "Abschicken",
     "maxLength20": "maximale L&auml;nge 20 Zeichen",
     "maxLength80": "maximale L&auml;nge 80 Zeichen",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Wird im Konfliktfall von der Bestellsumme bezahlt.",
         "directPaymentDisclaimer": "Sei &auml;u&szlig;erst vorsichtig, da Direktzahlungen unter keinen Umst&auml;nden wieder r&uuml;ckg&auml;ngig gemacht werden k&ouml;nnen",
         "paymentSent": "Zahlung gesendet!",
-        "total": "Gesamtsumme:",
+        "total": "Gesamtsumme",
         "paymentNote": "Die Zahlung kann ein paar Minuten oder mehr in Anspruch nehmen. Sie können diesen Bildschirm verlassen und später zum Käufe Abschnitt gehen, um zu sehen, ob Ihre Zahlung abgeschlossen wurde."
     },
     "chat": {

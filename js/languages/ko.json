@@ -303,7 +303,7 @@
     "Summary": "요약",
     "Funds": "Funds",
     "Discussion": "Discussion",
-    "Quantity": "분량:",
+    "Quantity": "분량",
     "Submit": "제출",
     "maxLength20": "max length 20 char",
     "maxLength80": "max length 80 char",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Paid from the total if the transaction ends in a dispute.",
         "directPaymentDisclaimer": "Use direct payment with caution, funds are irreversible",
         "paymentSent": "대금을 지불했습니다!",
-        "total": "합계:",
+        "total": "합계",
         "paymentNote": "Payment can take several minutes or more to complete. You can leave this screen, and go to the Purchases section to see if your payment has completed later."
     },
     "chat": {

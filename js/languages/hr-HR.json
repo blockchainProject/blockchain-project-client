@@ -303,7 +303,7 @@
     "Summary": "Sažetak",
     "Funds": "Novčana sredstva",
     "Discussion": "Rasprava",
-    "Quantity": "Količina:",
+    "Quantity": "Količina",
     "Submit": "Potvrdi",
     "maxLength20": "najduže 20 znakova",
     "maxLength80": "najduže 80 znakova",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Isplati iz ukupnog iznosa uplate ukoliko prijenos završi reklamacijom.",
         "directPaymentDisclaimer": "Koristite izravan prijenos uz dozu opreza, sredstva su nepovratna",
         "paymentSent": "Uplata poslana!",
-        "total": "Ukupno:",
+        "total": "Ukupno",
         "paymentNote": "Payment can take several minutes or more to complete. You can leave this screen, and go to the Purchases section to see if your payment has completed later."
     },
     "chat": {

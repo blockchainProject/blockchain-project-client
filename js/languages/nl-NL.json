@@ -303,7 +303,7 @@
     "Summary": "Overzicht",
     "Funds": "Betaling",
     "Discussion": "Discussie",
-    "Quantity": "Hoeveelheid:",
+    "Quantity": "Hoeveelheid",
     "Submit": "Verzend",
     "maxLength20": "max lengte 20 letters",
     "maxLength80": "max lengte 80 letters",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Betaald van het totaal als de transactie in een dispuut raakt.",
         "directPaymentDisclaimer": "Wees voorzichtig met directe betaling, deze betalingen zijn onomkeerbaar",
         "paymentSent": "Betaling Verzonden!",
-        "total": "Totaal:",
+        "total": "Totaal",
         "paymentNote": "Deze betaling kan meerdere minuten duren om te voltooien. U kunt dit scherm verlaten en later naar het Aankopen scherm gaan om te zien of uw betaling voltooid is."
     },
     "chat": {

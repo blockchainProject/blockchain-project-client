@@ -3296,14 +3296,11 @@ input[type="number"].fieldItem.fieldItem-withButton {
 .numberSpinnerDown {
   cursor: pointer;
   width: 18px;
-  position: absolute;
-  right: 0;
   box-sizing: border-box;
-  color: #FFF;
+  color: #9B9B9B;
   font-size: 14px;
   text-align: center;
   line-height: 20px;
-  background-color: rgba(140,140,140,0.2);
   margin: 4px;
 }
 
@@ -3312,7 +3309,9 @@ input[type="number"].fieldItem.fieldItem-withButton {
 }
 
 .numberSpinnerUp:before {
-  content: "\f10d";
+  content: "\f489";
+  font-family: 'ionicons';
+  font-size: 28px;
 }
 
 .numberSpinnerDown {
@@ -3320,7 +3319,9 @@ input[type="number"].fieldItem.fieldItem-withButton {
 }
 
 .numberSpinnerDown:before {
-  content: "\f104";
+  content: "\f462";
+  font-family: 'ionicons';
+  font-size: 28px;
 }
 
 .fieldItem .btn {
@@ -6798,4 +6799,14 @@ input[type=number]::-webkit-outer-spin-button {
 
 .item-description{
   color: #9B9B9B;  
+}
+
+/*========== payment process ==========*/
+.order-confirmation-image{
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 240px;
+    margin: 24px auto;
 }

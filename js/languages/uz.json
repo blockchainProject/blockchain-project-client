@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Оплачивается из бюджета суммы покупки, в случае если возникнет спор.",
         "directPaymentDisclaimer": "Будьте осторожны при отправке средств напрямую, средства невозвратимы",
         "paymentSent": "Платёж отправлен!",
-        "total": "Всего:",
+        "total": "Всего",
         "paymentNote": "Payment can take several minutes or more to complete. You can leave this screen, and go to the Purchases section to see if your payment has completed later."
     },
     "chat": {

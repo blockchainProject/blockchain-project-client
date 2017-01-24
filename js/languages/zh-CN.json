@@ -303,7 +303,7 @@
     "Summary": "汇总",
     "Funds": "Funds",
     "Discussion": "Discussion",
-    "Quantity": "Quantity:",
+    "Quantity": "Quantity",
     "Submit": "提交",
     "maxLength20": "最多20个字符",
     "maxLength80": "最多80个字符",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Paid from the total if the transaction ends in a dispute.",
         "directPaymentDisclaimer": "请谨慎使用直接支付方式，这是不可逆的。",
         "paymentSent": "支付指令已发送!",
-        "total": "总计:",
+        "total": "总计",
         "paymentNote": "Payment can take several minutes or more to complete. You can leave this screen, and go to the Purchases section to see if your payment has completed later."
     },
     "chat": {

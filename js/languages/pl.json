@@ -303,7 +303,7 @@
     "Summary": "Podsumowanie",
     "Funds": "Środki",
     "Discussion": "Dyskusja",
-    "Quantity": "Ilość:",
+    "Quantity": "Ilość",
     "Submit": "Wyślij",
     "maxLength20": "maksymalnie 20 znaków",
     "maxLength80": "maksymalnie 80 znaków",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Paid from the total if the transaction ends in a dispute.",
         "directPaymentDisclaimer": "Korzystaj z płatności bezpośredniej ostrożnie; środki nie są zwracane",
         "paymentSent": "Dokonano płatności!",
-        "total": "Suma:",
+        "total": "Suma",
         "paymentNote": "Płatność może potrwać kilka minut lub więcej. Możesz opuścić ten ekran i przejść do sekcji płatności, aby sprawdzić później czy została ona zakończona."
     },
     "chat": {

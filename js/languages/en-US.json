@@ -269,7 +269,7 @@
   "PaymentType": "Choose Payment Method",
   "ShipTo": "Ship To",
   "FreeShipping": "Free Shipping",
-  "OrderDetails": "Order Details",
+  "OrderDetails": "Here Is What You Ordered",
   "OrderSummary": "Order Summary",
   "AllListings": "All Listings",
   "ComingSoon": "Coming Soon",
@@ -312,7 +312,7 @@
   "Summary": "Summary",
   "Funds": "Funds",
   "Discussion": "Discussion",
-  "Quantity": "Quantity:",
+  "Quantity": "Quantity",
   "Submit": "Submit",
   "maxLength20": "max length 20 char",
   "maxLength80": "max length 80 char",
@@ -700,7 +700,7 @@
     "moderatorPaymentDisclaimer": "Paid from the total if the transaction ends in a dispute.",
     "directPaymentDisclaimer": "Use direct payment with caution, funds are irreversible",
     "paymentSent": "Payment Sent!",
-    "total": "Total:",
+    "total": "Total",
     "paymentNote": "Payment can take several minutes or more to complete. You can leave this screen, and go to the Purchases section to see if your payment has completed later."
   },
   "chat": {

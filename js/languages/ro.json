@@ -303,7 +303,7 @@
     "Summary": "Rezumat",
     "Funds": "Fonduri",
     "Discussion": "Discuție",
-    "Quantity": "Quantity:",
+    "Quantity": "Quantity",
     "Submit": "Trimite",
     "maxLength20": "lungimea maximă 20 de caractere",
     "maxLength80": "lungimea maximă 80 de caractere",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Plătită din total dacă tranzacția se va sfîrși cu o dispută.",
         "directPaymentDisclaimer": "Utilizați plățile directe cu prudență, tranzacțiile sunt ireversibile",
         "paymentSent": "Plata Trimisă!",
-        "total": "Total:",
+        "total": "Total",
         "paymentNote": "Plată poate dura cîteva minute sau mai mult pentru a deveni completă. Puteți părăsi această pagină, și naviga la seciunea Cumpărături pentru a vedea dacă plata dvs. a devenit completă mai tîrziu."
     },
     "chat": {

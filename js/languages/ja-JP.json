@@ -303,7 +303,7 @@
     "Summary": "確認",
     "Funds": "資金",
     "Discussion": "ディスカッション",
-    "Quantity": "数量:",
+    "Quantity": "数量",
     "Submit": "送信",
     "maxLength20": "最大長20文字",
     "maxLength80": "最大長80文字",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "異議・クレームで取引が終了した場合、合計から支払いました。",
         "directPaymentDisclaimer": "直接支払いは慎重に使用してください。資金は取り消しできません",
         "paymentSent": "送金しました！",
-        "total": "注文合計:",
+        "total": "注文合計",
         "paymentNote": "お支払いが完了するまでに数分以上かかることがあります。この画面を終了しても、後で購入セクションに移動して、お支払いが完成したかどうかを確認することができます。"
     },
     "chat": {

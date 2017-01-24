@@ -520,25 +520,28 @@
       </div>
     </div>
     <div class="accordion-child" id="BuyWizardDetails">
-      <div class="bar barTxt h6 paddingLeft15 custCol-secondary">
-        <div class="js-buyWizardOrderDetails">
+      <div>
+      <ul class="alignCenter">
+        <li class="inlineBlock process-circle"></li>
+        <li class="inlineBlock process-circle"></li>
+        <li class="inlineBlock process-circle grey-background"></li>
+        <li class="inlineBlock process-circle"></li>
+      </ul>
+      </div>    
+      <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
+        <div class="js-buyWizardOrderDetails bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
           <%= polyglot.t('OrderDetails') %>
-          <div class="pull-right"><%= polyglot.t('buyFlow.total') %>
-            <span class="js-buyWizardDetailsBTCTotal"></span> BTC
-            <% if(ob.userCurrencyCode != 'BTC'){ %>
-            (<span class="textOpacity75 js-buyWizardDetailsTotal"></span>)
-            <% } %>
-          </div>
         </div>
         <div class="js-buyWizardOrderSummary hide">
           <%= polyglot.t('OrderSummary') %>
         </div>
       </div>
+      <div class="order-confirmation-image" style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.vendor_offer.listing.item.image_hashes[0] %><%= ob.imageExtension %>), url(imgs/defaultBanner.png);"></div>
       <div class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch js-buyWizardInsertDetails scrollOverflow custCol-primary customThemeScrollbar">
       <!--inser details view-->
       </div>
-      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3">
-        <a class="btn btn-bar btn-half js-buyWizardPurchaseBack custCol-secondary borderBottomLeftRaidus3 borderRight custCol-border-primary">
+      <div class="bar barFlush alignCenter white-background paddingTop24px">
+        <a class="js-buyWizardPurchaseBack black-color marginRight80">
           <span class="ion-chevron-left fontSize10 marginRight2 textOpacity75"></span>
           <%= polyglot.t('Back') %>
         </a>
@@ -547,9 +550,8 @@
           <%= polyglot.t('buyFlow.BuyOwnProductMsg') %>
         </div>
         <% } else { %>
-        <a class="btn btn-bar btn-half  js-buyWizardSendPurchase custCol-secondary custCol-border-primary borderBottomRightRaidus3">
+        <a class="js-buyWizardSendPurchase nextButton marginLeft80">
           <%= polyglot.t('buyFlow.PayForOrder') %>
-          <span class="ion-chevron-right fontSize10 marginLeft2 textOpacity75"></span>
         </a>
         <% } %>
         <span class="btn btn-bar btn-half disabled js-buyWizardPendingMsg hide custCol-secondary custCol-border-primary borderBottomRightRaidus3"><%= polyglot.t('PaymentPending') %></span>

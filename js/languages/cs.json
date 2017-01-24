@@ -303,7 +303,7 @@
     "Summary": "Souhrn",
     "Funds": "Funds",
     "Discussion": "Diskuze",
-    "Quantity": "Množství:",
+    "Quantity": "Množství",
     "Submit": "Submit",
     "maxLength20": "maximálně 20 znaků",
     "maxLength80": "maximálně 80 znaků",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Paid from the total if the transaction ends in a dispute.",
         "directPaymentDisclaimer": "Use direct payment with caution, funds are irreversible",
         "paymentSent": "Payment Sent!",
-        "total": "Celkem:",
+        "total": "Celkem",
         "paymentNote": "Dokončení platby může trvat obvykle pár minut ale i více. Můžete opustit tuto obrazovku, později lze ověřit, že platba byla dokončena v sekci Nákupy."
     },
     "chat": {

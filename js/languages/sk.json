@@ -303,7 +303,7 @@
     "Summary": "Zhrnutie",
     "Funds": "Zdroje",
     "Discussion": "Diskusia",
-    "Quantity": "Počet:",
+    "Quantity": "Počet",
     "Submit": "Odoslať",
     "maxLength20": "maximálna dľžka 20 znakov",
     "maxLength80": "maximálna dľžka 80 znakov",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Zaplatené z celkovej sumy ak sa transakcia dostane do sporu.",
         "directPaymentDisclaimer": "Dajte si pozor pri používaní priamej platby. Prostriedky sa nedajú vrátiť",
         "paymentSent": "Platba bola odoslaná!",
-        "total": "Spolu:",
+        "total": "Spolu",
         "paymentNote": "Dokončenie platby môže trvať niekoľko minút. Túto obrazovku môžete opustiť a neskôr sa môžete vrátiť do časti Nákupy, kde uvidíte či je Vaša platba dokončená."
     },
     "chat": {

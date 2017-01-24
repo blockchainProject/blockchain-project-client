@@ -303,7 +303,7 @@
     "Summary": "Sommario",
     "Funds": "Fondi",
     "Discussion": "Discussione",
-    "Quantity": "Quantit&agrave;:",
+    "Quantity": "Quantit&agrave;",
     "Submit": "Invio",
     "maxLength20": "lunghezza massima 20 caratteri",
     "maxLength80": "lunghezza massima 80 caratteri",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Pagato dal totale se la transazione si conclude in una disputa.",
         "directPaymentDisclaimer": "Usa il pagamento diretto con cauzione, i fondi sono irreversibili",
         "paymentSent": "Pagamento inviato!",
-        "total": "Totale:",
+        "total": "Totale",
         "paymentNote": "Il pagamento pu&ograve; richiedere diversi minuti o pi&ugrave; per completarsi. Puoi uscire da questa schermata, e andare poi nella sezione Acquisti per vedere se il tuo pagamento sar&agrave; stato completato."
     },
     "chat": {

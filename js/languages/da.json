@@ -303,7 +303,7 @@
     "Summary": "Opsummering",
     "Funds": "Beløb",
     "Discussion": "Diskussion",
-    "Quantity": "Mængde:",
+    "Quantity": "Mængde",
     "Submit": "Indsend",
     "maxLength20": "maksimal længde 20 tegn",
     "maxLength80": "maksimal længde 80 tegn",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Betales ud fra totalbeløbet, hvis handelen ender i en uenighed.",
         "directPaymentDisclaimer": "Brug direkte betaling med forsigtighed; pengene kan ikke trækkes tilbage!",
         "paymentSent": "Betaling afsendt!",
-        "total": "Total:",
+        "total": "Total",
         "paymentNote": "Betaling kan tage adskillige minutter eller mere at gennemføre. Du kan forlade denne skærm og senere gå til sektionen Køb for at se, om din betaling er gennemført."
     },
     "chat": {

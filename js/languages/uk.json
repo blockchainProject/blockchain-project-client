@@ -303,7 +303,7 @@
     "Summary": "Загалом",
     "Funds": "Кошти",
     "Discussion": "Дискусія",
-    "Quantity": "Quantity:",
+    "Quantity": "Quantity",
     "Submit": "Відправити",
     "maxLength20": "Максимум 20 знаків...",
     "maxLength80": "Максимум 80 знаків...",
@@ -689,7 +689,7 @@
         "moderatorPaymentDisclaimer": "Використовується лише для спірних транзакцій",
         "directPaymentDisclaimer": "Будьте обачні при відправці коштів на пряму, повернути кошти не можливо.",
         "paymentSent": "Платіж надіслно!",
-        "total": "Загалом:",
+        "total": "Загалом",
         "paymentNote": "Payment can take several minutes or more to complete. You can leave this screen, and go to the Purchases section to see if your payment has completed later."
     },
     "chat": {
