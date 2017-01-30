@@ -716,7 +716,7 @@
         "connectingToDefault": "Connecting to the default server",
         "authFailed": "błąd uwierzytelniania",
         "authFailedTooManyAttempts": "too many failed authentication attempts",
-        "serverConfigsHeaderMsg": "Your Server Configurations",
+        "serverConfigsHeaderMsg": "Manage Your Server",
         "newConfigHeaderMsg": "Enter Server Details",
         "editConfigHeaderMsg": "Configuration Settings",
         "serverConfigsTitle": "Server Configurations",

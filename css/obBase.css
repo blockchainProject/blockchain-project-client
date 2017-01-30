@@ -339,6 +339,18 @@ h6, .h6 {
   margin-right: 8px;
 }
 
+.ion-ios-gear-outline:before{
+  content: '\f43c';
+  font-family: 'ionicons';
+  font-size: 28px;
+}
+
+.ion-ios-trash-outline:before{
+  content: '\f4c4';
+  font-family: 'ionicons';
+  font-size: 28px;
+}
+
 .txt-center {
   text-align: center;
 }
@@ -1247,7 +1259,7 @@ label.fieldItem {
   text-decoration: none;
 }
 
-.chatButton {
+.greenOnWhiteButton {
   background-color: #FFF;
   border: 1px solid #12BB4F;
   -moz-border-radius: 6px;
@@ -1260,12 +1272,12 @@ label.fieldItem {
   text-decoration: none;
 }
 
-.chatButton:hover {
+.greenOnWhiteButton:hover {
   border:1px solid #FF3346;
   color: #FF3346;
 }
 
-.chatButton:active {
+.greenOnWhiteButton:active {
   position:relative;
   top:1px;
 }
@@ -4710,7 +4722,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #gj .server-connect-modal .modal-child {
-  height: 625px;
+  height: 340px;
 }
 
 #gj .server-connect-modal .message-bar {
@@ -5193,6 +5205,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-bottom: solid 1px rgba(255,255,255,0.08);
 }
 
+#gj .greyBorderBottom {
+  border-bottom: solid 1px #9B9B9B;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
 #gj  .borderBottomDashed {
   border-bottom: dashed 1px rgba(255,255,255,0.08);
 }
@@ -5506,6 +5524,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #gj  .marginRight15 {
   margin-right: 15px;
+}
+
+#gj  .marginRight16px {
+  margin-right: 16px;
 }
 
 #gj  .marginRight20 {
@@ -6005,6 +6027,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   padding-right: 16px;
 }
 
+#gj  .paddingRight22px {
+  padding-right: 22px;
+}
+
 #gj  .paddingLeft2px {
   padding-left: 2px;
 }
@@ -6023,6 +6049,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #gj  .paddingLeft24px {
   padding-left: 24px;
+}
+
+#gj  .paddingTop4px {
+  padding-top: 4px;
 }
 
 #gj  .paddingTop16px {
@@ -6059,6 +6089,30 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #gj  .widthAuto {
   width: auto;
+}
+
+#gj  .width10 {
+  width: 10%;
+}
+
+#gj  .width15 {
+  width: 15%;
+}
+
+#gj  .width20 {
+  width: 20%;
+}
+
+#gj  .width25 {
+  width: 25%;
+}
+
+#gj  .width30 {
+  width: 30%;
+}
+
+#gj  .width33 {
+  width: 33.3333333%;
 }
 
 #gj  .width40 {
@@ -6212,12 +6266,19 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   color: #12BB4F;
 }
 
-#ov1 .overflowVisible {
 .ion-refresh:before{
   display: block;
   font-size: 40px;
 }
 
+.ion-plus:before{
+  font-family: 'ionicons';
+  content: "\f218";
+  position: relative;
+  top: 1px;
+}
+
+#gj .overflowVisible {
   overflow: visible;
 }
 
