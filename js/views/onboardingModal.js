@@ -4,7 +4,7 @@ var __ = require('underscore'),
     loadTemplate = require('../utils/loadTemplate'),
     moment = require('moment'),
     cropit = require('../utils/jquery.cropit'),
-    app = require('../App').getApp(),    
+    app = require('../App').getApp(),
     baseModal = require('./baseModal'),
     timezonesModel = require('../models/timezonesMd'),
     languagesModel = require('../models/languagesMd'),
@@ -84,7 +84,7 @@ module.exports = baseModal.extend({
 
   blockClicks: function(e) {
     e.stopPropagation();
-  },  
+  },
 
   docFocusHandler: function(e) {
     if (this.isOpen() && !$.contains( this.el, e.target )) {
@@ -112,7 +112,7 @@ module.exports = baseModal.extend({
   languageSelect: function(e){
     var lang = $(e.currentTarget).attr('data-code');
     this.model.set('language', lang);
-  },  
+  },
 
   timeSelect: function(e){
     var inpt = $(e.target).closest('input[type=radio]');
@@ -135,7 +135,7 @@ module.exports = baseModal.extend({
     this.loadingModal.close();
 
     this.initAccordion('.js-profileAccordion');
-    
+
     // Scroll selected options to the top
     this.$('.js-homeModal-listParent').find('input:checked').each(function(){
       var checkedInputScrollParent = $(this).closest('ul');
@@ -165,8 +165,8 @@ module.exports = baseModal.extend({
         console.log(errorCode);
         console.log(errorMessage);
       }
-    });    
-  },  
+    });
+  },
 
   initAccordion: function(targ){
     setTimeout(() => { //move to after painting so values are not zero
@@ -183,7 +183,7 @@ module.exports = baseModal.extend({
       });
       this.accChildren.css({'width': this.accWidth, 'height': this.accHeight});
     }, 0);
-  },  
+  },
 
   accNext: function(advanceBy){
     var oldPos = parseInt(this.accWin.css('left').replace("px", "")),
@@ -288,11 +288,11 @@ module.exports = baseModal.extend({
 
     var themeId = this.$('input[name=theme-selection]:checked');
     if (themeId.length > 0){
-      var primaryColor = parseInt(themeId.data('blue-color').slice(1), 16),
-          secondaryColor = parseInt(themeId.data('green-color').slice(1), 16),
+      var primaryColor = parseInt(themeId.data('primary-color').slice(1), 16),
+          secondaryColor = parseInt(themeId.data('secondary-color').slice(1), 16),
           backgroundColor = parseInt(themeId.data('background-color').slice(1), 16),
           textColor = parseInt(themeId.data('text-color').slice(1), 16);
-      
+
       header = themeId.data('header');
 
       self.model.set('primary_color', primaryColor);
@@ -342,7 +342,7 @@ module.exports = baseModal.extend({
                   profile.fetch()
                     .done(function() {
                       self.trigger('onboarding-complete', profile.get('profile').guid);
-                    });                  
+                    });
                 }
               },
               error: function(jqXHR, status, errorThrown){
@@ -360,7 +360,7 @@ module.exports = baseModal.extend({
         }
       });
     };
-   
+
     var imageURI = this.$('#image-cropper').cropit('export', {
       type: 'image/jpeg',
       quality: 0.75,
@@ -374,7 +374,7 @@ module.exports = baseModal.extend({
     } else {
       bannerUpload.resolve();
     }
-    
+
     if (imageURI) {
       imageURI = imageURI.replace(/^data:image\/(png|jpeg|webp);base64,/, '');
 
@@ -427,14 +427,14 @@ module.exports = baseModal.extend({
           dataType: 'JSON',
           data: {
             guid: guid
-          }          
+          }
         }).fail(() => {
           failed ++;
 
           if (failed + succeeded === followers.length) {
             failed ? deferred.reject() : deferred.resolve();
           }
-          
+
         }).done(function(data) {
           if (data.success) {
             succeeded++;
@@ -445,7 +445,7 @@ module.exports = baseModal.extend({
 
           if (failed + succeeded === followers.length) {
             failed ? deferred.reject() : deferred.resolve();
-          }          
+          }
         });
       }).fail(() => {
         failed++;
@@ -504,15 +504,15 @@ module.exports = baseModal.extend({
 
     if (!bannerPath) {
       throw new Error('Please provide the bannerPath.');
-    }        
+    }
 
-    xhr.open('GET', bannerPath, true); 
+    xhr.open('GET', bannerPath, true);
     xhr.responseType = 'blob';
-    
+
     xhr.onload = function () {
       var reader = new FileReader(),
           file = this.response;
-      
+
       reader.onload = function(event) {
         var res = event.target.result,
             bannerFormData = new FormData();
@@ -543,7 +543,7 @@ module.exports = baseModal.extend({
           }
         });
       };
-      
+
       reader.readAsDataURL(file);
     };
 
@@ -559,7 +559,7 @@ module.exports = baseModal.extend({
 
   settingsDoneKeypress: function(e) {
     this.triggerOnEnterSpace(e, this.settingsDone.bind(this));
-  },      
+  },
 
   render: function() {
     var self = this;
@@ -576,10 +576,10 @@ module.exports = baseModal.extend({
       // pre-select timezone
       var timeZoneOffset1 = new Date().getTimezoneOffset(),
           timeZoneOffset2 = parseInt(Math.abs(timeZoneOffset1/60)),
-          timeZoneOffset3 = moment().isDST() ? timeZoneOffset2 + 1 : timeZoneOffset2,      
+          timeZoneOffset3 = moment().isDST() ? timeZoneOffset2 + 1 : timeZoneOffset2,
           timeZoneOffset4 = '(GMT ' + (timeZoneOffset3 < 0 ? '+' : '-') + timeZoneOffset3 + ':00)',
           selectedTimeZone = self.$("[id*='" + timeZoneOffset4 + "']");
-      
+
       selectedTimeZone.prop('checked', true);
       self.model.set('time_zone', selectedTimeZone.val());
 

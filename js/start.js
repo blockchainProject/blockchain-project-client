@@ -50,7 +50,7 @@ var Polyglot = require('node-polyglot'),
     ServerConfigsCl = require('./collections/serverConfigsCl'),
     ServerConnectModal = require('./views/serverConnectModal'),
     OnboardingModal = require('./views/onboardingModal'),
-    PageConnectModal = require('./views/pageConnectModal'), 
+    PageConnectModal = require('./views/pageConnectModal'),
     Dialog = require('./views/dialog.js'),
     loadProfileNeeded = true,
     startUpConnectMaxRetries = 2,
@@ -131,7 +131,7 @@ app.serverConfigs.fetch().done(() => {
     // old single config set-up (_serverConfig-1)
     if (oldConfig = localStorage['_serverConfig-1']) { // eslint-disable-line no-cond-assign
       oldConfig = JSON.parse(oldConfig);
-      
+
       // don't create a ported connection if it's the same as the default one
       if (
         oldConfig.server_ip +
@@ -150,7 +150,7 @@ app.serverConfigs.fetch().done(() => {
               __.omit(oldConfig, ['local_username', 'local_password', 'id']),
               { name: window.polyglot.t('serverConnectModal.portedConnectionName') }
             )
-          ).id          
+          ).id
         );
       }
 
@@ -163,14 +163,14 @@ app.serverConfigs.fetch().done(() => {
     } else {
       app.serverConfigs.setActive(defaultConfig.id);
     }
-  }  
+  }
 });
 
 ipcRenderer.send('activeServerChange', app.serverConfigs.getActive().toJSON());
 
 app.serverConfigs.on('activeServerChange', (server) => {
   ipcRenderer.send('activeServerChange', server.toJSON());
-});  
+});
 
 //keep user and profile urls synced with the active server configuration
 (setServerUrl = function() {
@@ -407,7 +407,7 @@ var loadProfile = function(landingRoute, onboarded) {
                 userProfile: userProfile,
                 showDiscIntro: onboarded
               });
-              
+
               newPageNavView.render();
 
               app.leftSidebar = newleftSidebarView = new leftSidebarView({
@@ -416,7 +416,7 @@ var loadProfile = function(landingRoute, onboarded) {
                 userProfile: userProfile,
                 showDiscIntro: onboarded
               });
-              
+
               newleftSidebarView.render();
 
               app.chatVw = new ChatVw({
@@ -543,7 +543,7 @@ launchOnboarding = function(guidCreating) {
     app.serverConnectModal.succeedConnection(app.serverConfigs.getActive());
     onboardingModal && onboardingModal.remove();
     onboardingModal = null;
-    loadProfile('#userPage/' + guid + '/store', true);
+    loadProfile('home', true);
     startUpLoadingModal.open();
   });
 };
@@ -588,7 +588,7 @@ app.serverConnectModal.on('connected', () => {
 app.getHeartbeatSocket().on('open', function() {
   removeStartupRetry();
   pageConnectModal.remove();
-  startUpLoadingModal.open();  
+  startUpLoadingModal.open();
 
   if (!profileLoaded) {
     // clear some flags so the heartbeat events will
@@ -597,7 +597,7 @@ app.getHeartbeatSocket().on('open', function() {
     loadProfileNeeded = true;
     app.serverConnectModal.close();
     startUpLoadingModal.open();
-  }  
+  }
 });
 
 app.getHeartbeatSocket().on('close', startUpRetry = function() {
@@ -620,7 +620,7 @@ removeStartupRetry = function() {
   app.getHeartbeatSocket().off('close', startUpRetry);
   app.getHeartbeatSocket().on('close', () => {
     app.serverConnectModal.failConnection(null, app.serverConfigs.getActive());
-    
+
     if (app.serverConnectModal.getConnectAttempt()) {
       app.serverConnectModal.getConnectAttempt()
         .fail(() => {
@@ -628,7 +628,7 @@ removeStartupRetry = function() {
         });
     } else {
       app.serverConnectModal.open();
-    }      
+    }
   });
 };
 
@@ -686,7 +686,7 @@ app.getHeartbeatSocket().on('message', function(e) {
             app.serverConnectModal.failConnection(
                 data.reason === 'too many attempts' ? 'failed-auth-too-many' : 'failed-auth',
                 app.serverConfigs.getActive()
-              ).open();              
+              ).open();
           }
         }).fail(function() {
           app.serverConnectModal.failConnection(null, app.serverConfigs.getActive())
