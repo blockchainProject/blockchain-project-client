@@ -210,7 +210,7 @@ module.exports = baseVw.extend({
 
     if (this.chatConversationVw) {
       // if we were already chatting with this person and that
-      // conversation is just hidden, show it
+      // conversation is just hidden, show instance
       if (this.chatConversationVw.model.get('guid') === model.get('guid') && !refresh) {
         this.$convoContainer.removeClass('chatConversationContainerHide');
         return;
@@ -439,10 +439,6 @@ module.exports = baseVw.extend({
   slideOut: function() {
     this.$html.addClass('chatOpen');
     self.$('.chatSearch').addClass('chatSearchOut');
-    self.$('.btn-chatOpen')
-        .addClass('hide')
-        .find('span')
-        .removeClass('hide');
   },
 
   slideIn: function() {

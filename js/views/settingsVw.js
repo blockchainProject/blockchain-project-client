@@ -123,7 +123,7 @@ module.exports = pageVw.extend({
 
     this.fetchModel();
 
-    this.$obContainer = $('#obContainer');
+    this.$gjContainer = $('#gjContainer');
 
     this.listenTo(app.router, 'cache-will-detach', this.onCacheWillDetach);
     this.listenTo(app.router, 'cache-detached', this.onCacheDetached);
@@ -140,16 +140,16 @@ module.exports = pageVw.extend({
     this.loading && app.loadingModal.open();
 
     this.blockedUsersScrollHandler &&
-      this.$obContainer.on('scroll', this.blockedUsersScrollHandler);
+      this.$gjContainer.on('scroll', this.blockedUsersScrollHandler);
 
-    if (this.cachedScrollPositions[state]) this.$obContainer[0].scrollTop = this.cachedScrollPositions[state];
+    if (this.cachedScrollPositions[state]) this.$gjContainer[0].scrollTop = this.cachedScrollPositions[state];
     this.setState(state);
   },
 
   onCacheWillDetach: function(e) {
     if (e.view !== this) return;
 
-    this.cachedScrollPositions[this.state] = this.$obContainer[0].scrollTop;
+    this.cachedScrollPositions[this.state] = this.$gjContainer[0].scrollTop;
   },
 
   onCacheDetached: function(e) {
@@ -158,7 +158,7 @@ module.exports = pageVw.extend({
     app.loadingModal.close();
 
     this.blockedUsersScrollHandler &&
-      this.$obContainer.off('scroll', this.blockedUsersScrollHandler);
+      this.$gjContainer.off('scroll', this.blockedUsersScrollHandler);
   },
 
   fetchModel: function(){
@@ -392,14 +392,14 @@ module.exports = pageVw.extend({
     });
 
     // implement scroll based lazy loading of blocked users
-    this.blockedUsersScrollHandler && this.$obContainer.off('scroll', this.blockedUsersScrollHandler);
+    this.blockedUsersScrollHandler && this.$gjContainer.off('scroll', this.blockedUsersScrollHandler);
     this.blockedUsersScrollHandler = __.throttle(function() {
       var colLen;
 
       if (
           self.state === 'blocked' &&
           blockedUsersCl.length < getBlockedGuids().length &&
-          domUtils.isScrolledIntoView(self.$lazyLoadTrigger[0], self.$obContainer[0])
+          domUtils.isScrolledIntoView(self.$lazyLoadTrigger[0], self.$gjContainer[0])
       ) {
         colLen = blockedUsersCl.length;
 
@@ -413,7 +413,7 @@ module.exports = pageVw.extend({
       }
     }, 200);
 
-    this.$obContainer.on('scroll', this.blockedUsersScrollHandler);
+    this.$gjContainer.on('scroll', this.blockedUsersScrollHandler);
     // end - implement scroll based lazy loading of blocked users
   },
 
@@ -1146,7 +1146,7 @@ this.$('#advancedForm').find('input[name=smtp_mo]').val([String(moderatorStatus)
   remove: function() {
     this.blockedUsersVw && this.blockedUsersVw.remove();
     this.blockedUsersScrollHandler &&
-      this.$obContainer.off('scroll', this.blockedUsersScrollHandler);
+      this.$gjContainer.off('scroll', this.blockedUsersScrollHandler);
 
     this.serverConnectSyncHandler &&
       app.serverConfigs.getActive().off(null, this.serverConnectSyncHandler);

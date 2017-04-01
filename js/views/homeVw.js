@@ -39,7 +39,7 @@ module.exports = pageVw.extend({
     this.slimVisible = false;
     this.itemViews = [];
     this.userViews = [];
-    this.obContainer = $('#obContainer');
+    this.gjContainer = $('#gjContainer');
     this.loadingProducts = false;
     this.loadingVendors = false;
     //store a list of the viewing user's followees. They will be different from the page followers if this is not their own page.
@@ -82,23 +82,23 @@ module.exports = pageVw.extend({
     state = state || this.state;
 
     if (this.cachedScrollPositions[state]) {
-      this.obContainer[0].scrollTop = this.cachedScrollPositions[state];
+      this.gjContainer[0].scrollTop = this.cachedScrollPositions[state];
     }
 
     this.setState(state);
 
     if (searchTerm && searchTerm !== this.searchItemsText) {
       this.searchItems(searchTerm);
-      this.obContainer[0].scrollTop = 0;
+      this.gjContainer[0].scrollTop = 0;
     }
 
-    this.obContainer.on('scroll', this.scrollHandler);
+    this.gjContainer.on('scroll', this.scrollHandler);
   },  
 
   onCacheWillDetach: function(e) {
     if (e.view !== this) return;
 
-    this.cachedScrollPositions[this.state] = this.obContainer[0].scrollTop;
+    this.cachedScrollPositions[this.state] = this.gjContainer[0].scrollTop;
   },
 
   onCacheDetached: function(e) {
@@ -108,7 +108,7 @@ module.exports = pageVw.extend({
       this.safeListingsDialog.close();
     }
 
-    this.obContainer.off('scroll', this.scrollHandler);
+    this.gjContainer.off('scroll', this.scrollHandler);
   },
 
   fetchOwnFollowing: function(callback){
@@ -223,7 +223,7 @@ module.exports = pageVw.extend({
           __.throttle(self.onScroll, 100),
           self
         );
-        self.obContainer.on('scroll', self.scrollHandler);
+        self.gjContainer.on('scroll', self.scrollHandler);
 
         self.$backToTop = self.$('.backToTop');
       });
@@ -431,7 +431,7 @@ module.exports = pageVw.extend({
   },
 
   clickBackToTop: function() {
-    this.obContainer.animate({ scrollTop: 0 }, {
+    this.gjContainer.animate({ scrollTop: 0 }, {
       complete: () => {
         this.$backToTop.removeClass('slideUp');
       }
@@ -439,7 +439,7 @@ module.exports = pageVw.extend({
   },
 
   onScroll: function(){
-    if (this.obContainer[0].scrollTop + this.obContainer[0].clientHeight + 200 > this.obContainer[0].scrollHeight && !this.searchItemsText){
+    if (this.gjContainer[0].scrollTop + this.gjContainer[0].clientHeight + 200 > this.gjContainer[0].scrollHeight && !this.searchItemsText){
       if (this.state == "products" && !this.loadingProducts){
         this.setSocketTimeout();
         this.loadingProducts = true;
@@ -452,8 +452,8 @@ module.exports = pageVw.extend({
     }
 
     if (
-      this.state === "products" && this.obContainer[0].scrollTop > 180 ||
-      this.state === "vendors" && this.obContainer[0].scrollTop > 140
+      this.state === "products" && this.gjContainer[0].scrollTop > 180 ||
+      this.state === "vendors" && this.gjContainer[0].scrollTop > 140
     ) {
       this.$backToTop.addClass('slideUp');
     } else {
@@ -658,7 +658,7 @@ module.exports = pageVw.extend({
 
   remove: function() {
     this.clearSocketTimeout();
-    this.scrollHandler && this.obContainer.off('scroll', this.scrollHandler);
+    this.scrollHandler && this.gjContainer.off('scroll', this.scrollHandler);
     pageVw.prototype.remove.apply(this, arguments);
   }
 });

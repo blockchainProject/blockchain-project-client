@@ -26,9 +26,9 @@ module.exports = baseVw.extend({
       throw new Error('Please provide a collection.');
     }
 
-    this.$obContainer = $('#obContainer');
+    this.$gjContainer = $('#gjContainer');
     this.throttledScroll = __.throttle(this.onScroll, 100).bind(this);
-    this.$obContainer.on('scroll', this.throttledScroll);
+    this.$gjContainer.on('scroll', this.throttledScroll);
   },
 
   onScroll: function() {
@@ -39,7 +39,7 @@ module.exports = baseVw.extend({
         this.paginatedCollection.length < this.MAX_VIEWS &&
         this.$el.is(':visible') &&
         // if we're within 200 pixels of the bottom of the scroll container
-        (this.$obContainer[0].scrollTop >= (this.$obContainer[0].scrollHeight - this.$obContainer[0].offsetHeight) - 200)) {
+        (this.$gjContainer[0].scrollTop >= (this.$gjContainer[0].scrollHeight - this.$gjContainer[0].offsetHeight) - 200)) {
       untilIndex = this.paginatedCollection.length + this.VIEWS_PER_BATCH > this.MAX_VIEWS ?
         this.MAX_VIEWS : this.paginatedCollection.length + this.VIEWS_PER_BATCH;
       this.paginatedCollection.add(
@@ -101,7 +101,7 @@ module.exports = baseVw.extend({
   },
 
   remove: function() {
-    this.$obContainer.off('scroll', this.throttledScroll);
+    this.$gjContainer.off('scroll', this.throttledScroll);
 
     baseVw.prototype.remove.apply(this, arguments);
   }

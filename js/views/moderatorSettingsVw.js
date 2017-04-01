@@ -110,7 +110,7 @@ module.exports = Backbone.View.extend({
   },
 
   closeModeratorSettings: function() {
-    $('#obContainer').removeClass('modalOpen');
+    $('#gjContainer').removeClass('modalOpen');
     this.close();
   },
 

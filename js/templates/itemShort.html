@@ -11,7 +11,7 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
     <div class="itemImg <% if(ob.cloak){ %> nsfw <% } %>" style="background-image: url(<%= ob.imageURL %>), url(imgs/defaultItem.png);">
       <div class="table">
         <div>
-          <div class="itemPrice textSize13px txt-fade"><span class="itemPriceTag">
+          <div class="itemPrice textSize13px txt-fade"><span class="itemPriceTag colorGrey">
             <%= ob.intlNumFormat(ob.vendorBTCPrice, 4) %> BTC
             <% if(ob.userCurrencyCode != 'BTC'){ %>
              (<%= ob.displayPrice %>)
@@ -28,7 +28,7 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
     <li>
     <div class="homeFeedServiceTitle js-item <% if(ob.title.length >= 30) { %><% } %>"
     <% if(ob.title.length >= 30) { %> <% } %> data-id="<%= ob.contract_hash %>">
-    <div class="textSize14px textOpacity1 js-searchTitle">
+    <div class="textSize14px textOpacity1 js-searchTitle colorGrey">
       <%= ob.title %>
     </div>
     </li>
@@ -41,7 +41,7 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
     <% } %>
     <% } %>
     <div class="homeFeedChatButton">
-      <a href="#" class="chatButton">Chat</a>
+      <a href="#" class="greenOnWhiteButton js-message">Chat</a>
     </div>
 
   </ul>

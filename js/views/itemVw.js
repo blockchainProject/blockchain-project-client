@@ -142,13 +142,13 @@ module.exports = baseVw.extend({
 
   clickItemRating: function() {
     this.setTab('itemReviews');
-    $('#obContainer').animate({
+    $('#gjContainer').animate({
       scrollTop: this.$('.js-reviewsContainer').offset().top
     }, 200);
   },
 
   remove: function() {
-    $('#obContainer').removeClass('modalOpen');
+    $('#gjContainer').removeClass('modalOpen');
 
     baseVw.prototype.remove.apply(this, arguments);
   }
