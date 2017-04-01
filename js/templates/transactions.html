@@ -22,27 +22,27 @@
 </div>
 
 <div class="bar barFlush custCol-secondary clearFix height55">
-  <a class="btn btn-bar btn-tab custCol-secondary js-tab js-purchasesTab paddingRight18 active" data-tab="purchases">
+  <a class="btn btn-bar btn-tab custCol-secondary js-tab js-purchasesTab active" data-tab="purchases">
     <span class="ion-log-out fontSize11 marginRight2 textOpacity1"></span>
     <%= polyglot.t('Purchases') %>
     <span class="pill fontSize12 textOpacity75 marginLeft2 js-purchasesCount"></span>
   </a>
   <% if(ob.page.vendor){ %>
-  <a class="btn btn-bar btn-tab custCol-secondary js-tab js-salesTab paddingRight18" data-tab="sales">
+  <a class="btn btn-bar btn-tab custCol-secondary js-tab js-salesTab" data-tab="sales">
     <span class="ion-log-in fontSize11 marginRight2 textOpacity1"></span>
     <%= polyglot.t('Sales') %>
     <span class="pill fontSize12 textOpacity75 marginLeft2 js-salesCount"></span>
   </a>
   <% } %>
   <% if(ob.page.moderator){ %>
-  <a class="btn btn-bar btn-tab custCol-secondary js-tab js-casesTab paddingRight18" data-tab="cases">
+  <a class="btn btn-bar btn-tab custCol-secondary js-tab js-casesTab" data-tab="cases">
     <span class="ion-briefcase fontSize11 marginRight2 textOpacity1"></span>
     <%= polyglot.t('Cases') %>
     <span class="pill fontSize12 textOpacity75 marginLeft2 js-casesCount"></span>
   </a>
   <% } %>
   <div class="flexExpand marginRight10">
-    <a class="btn btn-txt pull-right custCol-primary js-downloadCSV"><i class="ion-archive fontSize12"></i><%= polyglot.t('transactions.ExportCSV') %></a>
+    <a class="btn pull-right js-downloadCSV"><i class="ion-archive fontSize12"></i><%= polyglot.t('transactions.ExportCSV') %></a>
   </div>
 </div>
 
@@ -71,7 +71,7 @@
                  data-tab="purchases"
                  <% if(ob.showUnpaid_purchases === 'true'){ %> checked <% } %>
                  value="<%= ob.showUnpaid_purchases || 'false' %>">
-          <label for="toggleUnpaidPurchases" class="btn btn-txt custCol-secondary clickable">
+          <label for="toggleUnpaidPurchases" class="btn clickable">
             <span class="fontSize12 clickable togLabelOff">
               <%= polyglot.t('transactions.ShowUnpaid') %>
             </span>
@@ -82,7 +82,7 @@
           </label>
         </div>
         <div class="positionWrapper searchWrapper borderBottom custCol-border flexExpand">
-          <input type="text" class="txtField txtField-bar search" placeholder="<%= polyglot.t('transactions.searchByOrder') %>" />
+          <input type="text" class="txtField txtField-bar search borderTransparent" placeholder="<%= polyglot.t('transactions.searchByOrder') %>" />
           <a class="btn-corner btn-cornerTR ion-close-circled vCentered icon-med hide js-transactionsSearchClear textOpacity50"></a>
         </div>
         <div class="padding10 width100 alignCenter js-loadingMsg">
@@ -116,7 +116,7 @@
                  data-tab="sales"
                  <% if(ob.showUnpaid_sales === 'true'){ %> checked <% } %>
                  value="<%= ob.showUnpaid_sales || 'false' %>">
-          <label for="toggleUnpaidSales" class="btn btn-txt custCol-secondary clickable">
+          <label for="toggleUnpaidSales" class="btn clickable">
             <span class="fontSize12 togLabelOff">
               <%= polyglot.t('transactions.ShowUnpaid') %>
             </span>
@@ -127,7 +127,7 @@
           </label>
         </div>
         <div class="positionWrapper searchWrapper borderBottom custCol-border flexExpand">
-          <input type="text" class="txtField txtField-bar search" placeholder="<%= polyglot.t('transactions.searchByOrder') %>" />
+          <input type="text" class="txtField txtField-bar search borderTransparent" placeholder="<%= polyglot.t('transactions.searchByOrder') %>" />
           <a class="btn-corner btn-cornerTR ion-close-circled vCentered icon-med hide js-transactionsSearchClear textOpacity50"></a>
         </div>
         <div class="padding10 width100 alignCenter js-loadingMsg">
@@ -146,7 +146,7 @@
           </select>
         </div>
         <div class="positionWrapper searchWrapper borderBottom custCol-border flexExpand">
-          <input type="text" class="txtField txtField-bar search" placeholder="<%= polyglot.t('transactions.searchByOrder') %>" />
+          <input type="text" class="txtField txtField-bar search borderTransparent borderTransparent" placeholder="<%= polyglot.t('transactions.searchByOrder') %>" />
           <a class="btn-corner btn-cornerTR ion-close-circled vCentered icon-med hide js-transactionsSearchClear textOpacity50"></a>
         </div>
         <div class="padding10 width100 alignCenter js-loadingMsg">

@@ -177,7 +177,7 @@
               </div>
             </div>
 
-            <a class="btn btn-large js-saveGeneral custCol-secondary pull-right marginRight15 marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
+            <a class="btn btn-large js-saveGeneral custCol-secondary pull-right marginRight16px marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
             </a>
@@ -291,7 +291,7 @@
                     <input type="range" class="cropit-image-zoom-input marginTop24px marginBottom24  marginLeft12 hide" />
                   </div>
                   <input type="file" id="settingsAvatarInput" class="cropit-image-input hide" />
-                  <label for="settingsAvatarInput" class="btn btn-txt marginTop24px marginLeft12 marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewAvatar') %></label>
+                  <label for="settingsAvatarInput" class="btn whiteOnBlueButton marginTop24px marginLeft12 marginBottom24"><%= polyglot.t('NewAvatar') %></label>
                 </div>
               </div>
             </div>
@@ -466,12 +466,12 @@
                     <input type="range" class="cropit-image-zoom-input" />
                   </div>
                   <input type="file" id="settingsBannerInput" class="cropit-image-input hide" />
-                  <label for="settingsBannerInput" class="btn btn-txt positionBottom hCentered marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewCoverImage') %></label>
+                  <label for="settingsBannerInput" class="btn positionBottom hCentered marginBottom24 blue-background custCol-secondary"><%= polyglot.t('NewCoverImage') %></label>
                 </div>
               </div>
             </div>
 
-            <a class="btn btn-large js-savePage custCol-secondary pull-right marginRight15 marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
+            <a class="btn btn-large js-savePage custCol-secondary pull-right marginRight16px marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
             </a>
@@ -634,7 +634,7 @@
               </div>
             </div>
 
-            <a class="btn btn-large js-saveStore custCol-secondary pull-right marginRight15 marginTop15 marginBottom5 btn-secondary whiteOnRedButton">
+            <a class="btn btn-large js-saveStore custCol-secondary pull-right marginRight16px marginTop15 marginBottom5 btn-secondary whiteOnRedButton">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
             </a>
@@ -659,7 +659,7 @@
                       <div><%= address.displayCountry %></div>
                     </div>
 
-                    <div class="btn btn-txt marginTop6 custCol-primary clickable">
+                    <div class="btn blueHover marginTop6 custCol-primary clickable">
                       <input type="checkbox"
                              class="hide js-settingsAddress"
                              id="settingsAddress<%= i %>"
@@ -803,7 +803,7 @@
               </div>
             </div>
 
-            <a class="btn btn-large js-saveAddress custCol-secondary pull-right marginRight15 marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
+            <a class="btn btn-large js-saveAddress custCol-secondary pull-right marginRight16px marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
             </a>
@@ -859,12 +859,12 @@
                        max="25"
                        step="0.01"
                        name="moderation_fee"
-                       class="fieldItem custCol-text width72px floatLeft"
+                       class="fieldItem width72px floatLeft height56"
                        id="moderatorFeeInput"
-                       value="<%= ob.page.profile.moderation_fee.toFixed(2) %>" required/><div class="floatLeft marginLeft5 lineHeight51 fontWeight500 textOpacity75">%</div>
+                       value="<%= ob.page.profile.moderation_fee.toFixed(2) %>" required/><div class="floatLeft marginLeft5 lineHeight58 height56">%</div>
               </div>
             </div>
-            <a class="btn btn-large js-saveModerator custCol-secondary pull-right marginRight15 marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
+            <a class="btn btn-large js-saveModerator custCol-secondary pull-right marginRight16px marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
             </a>
@@ -942,7 +942,7 @@
                   <label for="refund_address">
                     <%= polyglot.t('BitcoinAddress') %>
                   </label>
-                  <i class="ion-help-circled tooltip tooltip-box" data-tooltip="<%= polyglot.t('BitcoinReturnAddressInfo') %>"></i>
+                  <i class="ion-help-circled tooltip tooltip-box" data-tooltip="<%= polyglot.t('RefundAddressInfo') %>"></i>
                 </div>
               </div>
 
@@ -1046,7 +1046,7 @@
 
               <div class="flexCol-9 borderRight0 custCol-border">
                 <div class="padding10">
-                  <a class="btn btn-txt custCol-secondary js-changeServerSettings"><%= polyglot.t('Change') %></a>
+                  <a class="btn js-changeServerSettings"><%= polyglot.t('Change') %></a>
                 </div>
               </div>
 
@@ -1064,7 +1064,7 @@
 
               <div class="flexCol-9 borderRight0 custCol-border">
                 <div class="padding10">
-                  <a class="btn btn-txt custCol-secondary ion-power js-shutDownServer"></a>
+                  <a class="btn ion-power js-shutDownServer"></a>
                 </div>
               </div>
 
@@ -1200,7 +1200,7 @@
               </div>
             </div>
 
-            <a class="btn btn-large js-saveAdvanced custCol-secondary pull-right marginRight15 marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
+            <a class="btn btn-large js-saveAdvanced custCol-secondary pull-right marginRight16px marginTop15 marginBottom50 btn-secondary whiteOnRedButton">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
             </a>

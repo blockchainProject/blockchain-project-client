@@ -66,7 +66,7 @@ module.exports = Backbone.Router.extend({
     this.historyPosition = -1;
     this.historyAction = 'default';
 
-    this.$obContainer = $('#obContainer');
+    this.$gjContainer = $('#gjContainer');
     this.viewCache = {};
 
     window.setInterval(() => {
@@ -256,7 +256,7 @@ module.exports = Backbone.Router.extend({
 
       $('#content').html(this.view.$el);
       this.view.delegateEvents();
-      this.$obContainer[0].scrollTop = 0;
+      this.$gjContainer[0].scrollTop = 0;
 
       this.trigger('cache-reattached', {
         view: this.view,
@@ -265,7 +265,7 @@ module.exports = Backbone.Router.extend({
     } else {
       this.view = new (Function.prototype.bind.apply(View, [null].concat(options.viewArgs)));
       $('#content').html(this.view.$el);
-      this.$obContainer[0].scrollTop = 0;
+      this.$gjContainer[0].scrollTop = 0;
 
       if (
         (loadingConfig = __.result(this.view, 'loadingConfig')) &&

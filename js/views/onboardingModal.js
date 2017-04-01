@@ -288,8 +288,8 @@ module.exports = baseModal.extend({
 
     var themeId = this.$('input[name=theme-selection]:checked');
     if (themeId.length > 0){
-      var primaryColor = parseInt(themeId.data('blue-color').slice(1), 16),
-          secondaryColor = parseInt(themeId.data('green-color').slice(1), 16),
+      var primaryColor = parseInt(themeId.data('primary-color').slice(1), 16),
+          secondaryColor = parseInt(themeId.data('secondary-color').slice(1), 16),
           backgroundColor = parseInt(themeId.data('background-color').slice(1), 16),
           textColor = parseInt(themeId.data('text-color').slice(1), 16);
       

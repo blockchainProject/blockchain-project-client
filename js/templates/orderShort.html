@@ -61,7 +61,7 @@
       </div>
       <div class="flexCol-4 marginTop2">
         <% if(ob.transactionType == "purchases" && ob.status == 0){ %>
-        <div class="btn btn-txt height36 custCol-secondary marginBottom5 width100 js-orderShort">
+        <div class="btn height36 marginBottom5 width100 js-orderShort">
           <%= polyglot.t('transactions.PayPurchase') %>
         </div>
         <% } else if(ob.transactionType == "sales" && ob.status == 1){ %>
@@ -77,7 +77,7 @@
           <%= polyglot.t('transactions.CompleteOrder') %>
         </div>
         <% } else { %>
-        <div class="btn btn-txt height36 custCol-secondary js-orderShort marginBottom5 width100">
+        <div class="btn height36 js-orderShort width100">
           <%= polyglot.t('transactions.OrderDetails') %>
         </div>
         <% } %>

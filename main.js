@@ -197,6 +197,23 @@ ipcMain.on('activeServerChange', function(event, server) {
 // Report crashes to our server.
 //require('crash-reporter').start();
 
+// Bounce the app icon on OSX
+var bounceAndCancel = function(callback){
+  var bounceID = app.dock.bounce();
+  setTimeout( function(){ 
+    app.dock.cancelBounce( bounceID);
+    // if a callback was given 
+    // if( typeof callback = = = 'function')
+    // {
+    //   callback(); 
+    // } 
+  }, 1000);
+};
+bounceAndCancel( function(){ 
+  bounceAndCancel( bounceAndCancel);
+}); 
+
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is GCed.
 var mainWindow = null;
@@ -430,10 +447,10 @@ app.on('ready', function() {
   // Application Menu
   var appMenu = menu.buildFromTemplate([
     {
-      label: 'OpenBazaar',
+      label: 'GrabJob',
       submenu: [
         {
-          label: 'Quit OpenBazaar',
+          label: 'Quit GrabJob',
           accelerator: 'CmdOrCtrl+Q',
           click: function() {
             app.quit();
@@ -577,9 +594,9 @@ app.on('ready', function() {
   // Create the browser window.
   mainWindow = new browserWindow({
     "minWidth": 1024,
-    "minHeight": 700,
+    "minHeight": 768,
     "center": true,
-    "title": "OpenBazaar",
+    "title": "GrabJob",
     "frame": false,
     "icon": "imgs/grabjob-logo.png",
     "titleBarStyle": "hidden"

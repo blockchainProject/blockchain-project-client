@@ -98,6 +98,19 @@ module.exports = Backbone.Model.extend({
         response.profile.location = "UNITED_STATES";
       }
 
+      // display the country name with a space and the capital first word
+      response.profile.location = response.profile.location.toLowerCase();
+
+      if(response.profile.location.includes("_"))
+      {
+        response.profile.location = response.profile.location.replace("_", " ");
+        //response.profile.location = response.profile.location.substring(0, response.profile.location.indexOf("e"))
+      }
+
+      response.profile.location = response.profile.location.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+      //response.profile.location = response.profile.location.substring(0,1).toUpperCase() + response.profile.location.substring(1)
+
+
       //put a copy of the avatar outside of the profile object, so change events can be triggered for it
       if (response.profile.avatar_hash){
         response.avatar_hash = response.profile.avatar_hash;
