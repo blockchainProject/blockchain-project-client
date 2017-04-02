@@ -1,10 +1,13 @@
 /*========== base styles ==========*/
+html{
+  font-size: 62.5%;
+}
 body {
   background-color: #FAFAFA;
   overflow: hidden;
   color: rgb(255, 255, 255);
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 1.6rem;
   -webkit-font-smoothing: antialiased;
   /*-webkit-font-smoothing: subpixel-antialiased;*/
   letter-spacing: 0.4px;
@@ -69,7 +72,7 @@ ul {
 
 input {
   outline: none;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 input::-webkit-input-placeholder,
@@ -81,7 +84,7 @@ textarea::-webkit-input-placeholder,
 .fieldItem .txt-placeholder {
   opacity: .5;
   color: #FFF;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -95,7 +98,7 @@ textarea {
   border: none;
   color: #000;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -219,7 +222,7 @@ h1,h2,h3,h4,h5,h6,
   margin: 0;
   -webkit-user-select: none;
   cursor: default;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 h1,h2,h3,
@@ -233,19 +236,19 @@ h4,h5,h6,
 }
 
 h3, .h3 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 h4, .h4 {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 h5, .h5 {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 h6, .h6 {
-  font-size: 15px; /* TODO: refactor to remove h6 since it is identical to h5 */
+  font-size: 1.5rem; /* TODO: refactor to remove h6 since it is identical to h5 */
 }
 
 .fieldItem-textarea h2, .fieldItem-textarea h3, .editableContent h2, .editableContent h3 {
@@ -259,12 +262,12 @@ h6, .h6 {
 .note {
   /* use for instructions and incidental text */
   /*font-style: italic;*/
-  font-size: 9px;
+  font-size: 1.2rem;
   opacity: 0.50;
 }
 
 [class *= "ion-"]:before {
-  font-size: 1.2em;
+  font-size: 1.4rem;
   pointer-events: none;
 }
 
@@ -275,7 +278,7 @@ h6, .h6 {
 .ios-locked-outline:before {
   content: "\f457";  
   font-family: 'ionicons';
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -283,7 +286,7 @@ h6, .h6 {
 .ios-unlocked-outline:before {
   content: "\f4c8";  
   font-family: 'ionicons';
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -291,13 +294,13 @@ h6, .h6 {
 .ion-ios-gear-outline:before{
   content: '\f43c';
   font-family: 'ionicons';
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 .ion-ios-trash-outline:before{
   content: '\f4c4';
   font-family: 'ionicons';
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 .txt-center {
@@ -436,7 +439,7 @@ h6, .h6 {
   border-radius: 6px;
   cursor: pointer;
   color: #12BB4F;
-  font-size: 24px;
+  font-size: 2.4rem;
   padding: 6px 32px;
   text-decoration: none;
 }
@@ -455,7 +458,7 @@ h6, .h6 {
   border-radius: 6px;
   cursor: pointer;
   color: #12BB4F;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 4px 16px;
   text-decoration: none;
 }
@@ -468,7 +471,7 @@ h6, .h6 {
   border-radius: 6px;
   cursor: pointer;
   color: #12BB4F;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 4px 16px;
   text-decoration: none;
 }
@@ -490,7 +493,7 @@ h6, .h6 {
   border-radius: 16px;
   cursor: pointer;
   color: #9B9B9B;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 2px 14px;
   margin-bottom: 4px;
   margin-right: 4px;
@@ -508,7 +511,7 @@ h6, .h6 {
   border-radius: 8px 0 0 8px;
   cursor: pointer;
   color: #FFF;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 4px 12px;
   margin-bottom: 4px;
   text-decoration: none;
@@ -525,7 +528,7 @@ h6, .h6 {
   border-radius: 4px;
   cursor: pointer;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 8px 60px;
   margin-bottom: 16px;
   text-decoration: none;
@@ -546,7 +549,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #009DC4;
-  font-size: 18px;
+  font-size: 1.8rem;
   padding: 6px 24px;
   text-decoration: none;
 }
@@ -569,7 +572,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #009DC4;
-  font-size: 12px;
+  font-size: 1.2rem;
   padding: 4px 12px;
   margin-top: 8px;
   text-decoration: none;
@@ -587,7 +590,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 6px 24px !important;
   text-decoration: none;
 }
@@ -610,7 +613,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #009DC4;
-  font-size: 12px;
+  font-size: 1.2rem;
   padding: 4px 12px;
   margin-top: 8px;
   text-decoration: none;
@@ -628,7 +631,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 8px 40px;
   text-decoration: none;
 }
@@ -650,7 +653,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 6px 24px;
   text-decoration: none;
 }
@@ -667,7 +670,7 @@ h6, .h6 {
   display: inline-block;
   cursor: pointer;
   color: #030303;
-  font-size: 16px;
+  font-size: 1.6rem;
   padding: 6px 24px;
   text-decoration: none;
 }
@@ -1146,7 +1149,7 @@ h6, .h6 {
   right: 24px;
   padding: 0;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .gridItemControls .btn-gridItemControl .gridItemOverlay {
@@ -1155,7 +1158,7 @@ h6, .h6 {
   min-width: 190px;
   padding: 10px;
   right: 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   border-width: 1px;
   border-style: solid;
@@ -1164,7 +1167,7 @@ h6, .h6 {
 }
 
 .gridItemControls .btn-gridItemControl .gridItemOverlay .btn {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -1246,7 +1249,7 @@ h6, .h6 {
   position: absolute;
   top: 20px;
   right: 15px;
-  font-size: 12px;
+  font-size: 1.2rem;
   cursor: pointer;
   z-index: 4;
 }
@@ -1308,7 +1311,7 @@ h6, .h6 {
   border-radius: 1px;
   line-height: 82px;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -1406,7 +1409,7 @@ label.fieldItem {
 }
 
 .btn {
-  font-size: 13px;
+  font-size: 1.3rem;
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -1496,7 +1499,6 @@ label.fieldItem {
    position: absolute;
    top: 18px;
    right: -8px;
-   font-size: .7em;
    background: #12BB4F;
    color: white;
    width: 16px;
@@ -1749,13 +1751,13 @@ label.fieldItem {
 
 #addressBar{
   height: 32px;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 #gj #addressBar::-webkit-input-placeholder,
 #gj #userPage #addressBar::-webkit-input-placeholder {
   color: #000;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .smPageHeader {
@@ -1778,7 +1780,7 @@ label.fieldItem {
   margin-top: 10px;
   width: 20px;
   text-align: center;
-  font-size: 10px;
+  font-size: 1.0rem;
   opacity: .5;
 }
 
@@ -1812,7 +1814,7 @@ label.fieldItem {
 .userPageImageUpload {
   background: transparent !important;
   opacity: 1;
-  font-size: 24px;
+  font-size: 2.4rem;
   margin-top: 20px;
 }
 
@@ -2028,7 +2030,7 @@ removed because I don't think we're using the trick to hide the borders any more
 
 .txtField {
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 1.2rem;
   height: 32px;
   opacity: .85;
   transition: opacity .3s cubic-bezier(0, 0, 0.2, 1);
@@ -2043,7 +2045,7 @@ removed because I don't think we're using the trick to hide the borders any more
 .txtFieldWrapper:before,
 .searchWrapper:before {
   font-family: "Ionicons";
-  font-size: 18px;
+  font-size: 1.8rem;
   left: 15px;
   opacity: 0.75;
   padding-left: 2px;
@@ -2088,7 +2090,7 @@ removed because I don't think we're using the trick to hide the borders any more
 }
 
 .mainSearchWrapper .txtField {
-  font-size: 12px;
+  font-size: 1.2rem;
   letter-spacing: 0;
   text-indent: 26px;
   transition: opacity .75s cubic-bezier(0, 0, 0.2, 1);
@@ -2146,7 +2148,7 @@ input[type="text"].txtField-bar {
   color: #030303;
   height: 53px;
   line-height:53px;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: 0;
   opacity: 1;
   outline: none;
@@ -2175,7 +2177,7 @@ input[type="text"].txtField-bar {
 .btn-enter {
   margin: 12px 15px 15px 15px;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 1.4rem;
   cursor: pointer;
   width: 90%;
 }
@@ -2191,7 +2193,7 @@ input[type="text"].txtField-bar {
 }
 
 .btn-small {
-  font-size: 10px;
+  font-size: 1.0rem;
   line-height: 24px;
   height: 24px;
   padding: 0 6px;
@@ -2202,7 +2204,7 @@ input[type="text"].txtField-bar {
 
 .btn-large {
   height: 42px;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 42px;
   padding: 0 20px;
   border-radius: 3px;
@@ -2292,7 +2294,7 @@ input[type="text"].txtField-bar {
   border-radius: 0;
   opacity: 1;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
   transition: none;
   letter-spacing: 0;
   height: auto;
@@ -2393,7 +2395,7 @@ input[type="text"].txtField-bar {
   left: 0.5px;
   width: 100%;
   height: 100%;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #000;
 }
 
@@ -2441,7 +2443,7 @@ input[type="text"].txtField-bar {
   text-align: center;
   box-shadow: none;
   height: 47px;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 47px;
   margin-top: 3px;
   opacity: .50;
@@ -2451,7 +2453,7 @@ input[type="text"].txtField-bar {
 .btn-chatOpen {
   background-color: transparent;
   text-align: center;
-  font-size: 20px;
+  font-size: 2.0rem;
   color: white;
   font-weight: normal;
 }
@@ -2465,22 +2467,22 @@ input[type="text"].txtField-bar {
   text-align: left;
   margin-top: 7px;
   padding: 0 10px;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .btn-chatSearch {
   background-color: unset;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: normal;
 }
 
 #transactionDiscussionSendText {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 #transactionDiscussionSendText::-webkit-input-placeholder {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .transitionBottomSlow {
@@ -2508,12 +2510,12 @@ input[type="text"].txtField-bar {
   width: calc(100% - 30px);
   outline: none;
   margin-left: 5px;
-  font-size: 13px;
+  font-size: 1.3rem;
   background-color: unset;
   color: white;
 }
 .chatSearch input::-webkit-input-placeholder {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .chatSearchIcon {
@@ -2522,7 +2524,7 @@ input[type="text"].txtField-bar {
   float: left;
   margin-top: 13px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.5rem;
   opacity: .50;
   transition: opacity .25s cubic-bezier(0, 0, 0.2, 1);
 }
@@ -2560,7 +2562,7 @@ div.chatSearchOut .chatSearchIcon {
 .chatMessagesLabel {
   float:left;
   color: #030303;
-  font-size: 15px;
+  font-size: 1.5rem;
   height: 43px;
   line-height: 43px;
   padding-left: 10px;
@@ -2653,7 +2655,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 #inputConversationRecipient {
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 19px;
 }
 
@@ -2676,7 +2678,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .chatConversationMessage  .txtAreaField::-webkit-input-placeholder{
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .chatConversationMessage  .txtAreaField {
@@ -2718,7 +2720,7 @@ div.chatSearchOut .chatSearchIcon {
   background: #252525;
   z-index: 5;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .chatConversationMenu div {
@@ -2735,7 +2737,7 @@ div.chatSearchOut .chatSearchIcon {
   color: white;
   background-color: unset;
   width: 100%;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .chatConversationMessageLine {
@@ -2790,7 +2792,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .chatPreview {
   width: calc(100% - 60px);
-  font-size: 11px;
+  font-size: 1.1rem;
   float:left;
   padding:0 5px;
   margin-top: 3px;
@@ -2813,7 +2815,7 @@ div.chatSearchOut .chatSearchIcon {
   white-space: nowrap;
   color: #030303;
   opacity: .75;
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-left: 2px;
 }
 
@@ -2821,7 +2823,7 @@ div.chatSearchOut .chatSearchIcon {
   background-color: #EEEEEE;
   border-radius: 3px;
   color: #030303;
-  font-size: 12px;
+  font-size: 1.2rem;
   padding: 6px 8px;
   display: inline-block;
   font-weight: 500;
@@ -2836,7 +2838,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 #inputConversationMessage::-webkit-input-placeholder  {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #FFF !important; /* i'm using important here because the custom theme styles should never override this color */
 }
 
@@ -2846,7 +2848,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .chatConversationMessageTimestamp {
-  font-size: 11px;
+  font-size: 1.1rem;
   opacity: .35;
   font-weight: 500;
   letter-spacing: 0;
@@ -2863,7 +2865,7 @@ div.chatSearchOut .chatSearchIcon {
   background: #252525;
   border-radius: 3px;
   padding: 7px;
-  font-size: 11px;
+  font-size: 1.1rem;
   cursor: default;
   border-left: solid 3px #F3A123;
   border-top-left-radius: 0;
@@ -2895,7 +2897,7 @@ div.chatSearchOut .chatSearchIcon {
   background: transparent;
   border: solid 1px #FFF;
   opacity: 1;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 .softwareUpdate .btn-txt:hover {
   opacity: .75;
@@ -2924,7 +2926,7 @@ div.chatSearchOut .chatSearchIcon {
   line-height: 16px;
   margin: 6px 20px;
   padding-top: 14px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .btn.btn-bar.active {
@@ -3043,7 +3045,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .btn-toWrapper-discoverToggle .btn.btn-togRight {
   border-radius: 0;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .btn.btn-flushTop {
@@ -3100,7 +3102,7 @@ div.chatSearchOut .chatSearchIcon {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   position: relative;
-  font-size: 11px;
+  font-size: 1.1rem;
   height: 28px;
   line-height: 28px;
   padding: 0;
@@ -3132,7 +3134,7 @@ div.chatSearchOut .chatSearchIcon {
   margin-left: 4px;
   position: relative;
   top: -6px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .btn .postConfirm {
@@ -3186,7 +3188,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 label {
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: .4px;
   opacity: .75;
 }
@@ -3195,7 +3197,7 @@ label {
   margin-top: 2px;
   color: rgba(255,255,255,0.6);
   background: none;
-  font-size: 12px;
+  font-size: 1.2rem;
   width: 100%;
 }
 
@@ -3323,7 +3325,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
   width: 18px;
   box-sizing: border-box;
   color: #9B9B9B;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
   line-height: 20px;
   margin: 4px;
@@ -3336,7 +3338,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
 .numberSpinnerUp:before {
   content: "\f489";
   font-family: 'ionicons';
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 .numberSpinnerDown {
@@ -3346,7 +3348,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
 .numberSpinnerDown:before {
   content: "\f462";
   font-family: 'ionicons';
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 .fieldItem .btn {
@@ -3452,7 +3454,7 @@ input[type="number"].fieldItem.fieldItem-withButton {
 
 .chosen-container-single .chosen-single span {
   padding-left: 10px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 
@@ -3556,7 +3558,7 @@ input[type="radio"].fieldItem.starRating + label:before {
   content: "\f2fc";
   color: #FFF;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
   height: 24px;
   width: 24px;
@@ -3598,7 +3600,7 @@ input[type="radio"].fieldItem.starRating:checked + label + input + label + input
   content: "\f2fc";
   color: #FFF;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .radioLabel {
@@ -3623,7 +3625,7 @@ input[type="checkbox"].fieldItem + label:before {
   line-height:inherit;
   box-shadow: none;
   opacity: 1;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   vertical-align: middle;
 }
 
@@ -3740,7 +3742,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   color: rgba(255,255,255,0.8);
   right: 2px;
   top: 6px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .fieldItem .taggle_list .taggle_input {
@@ -3863,7 +3865,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-radius: 4px;
   color: #030303;
   float: right;
-  font-size: 13px;
+  font-size: 1.3rem;
   margin-top: 4px;
   margin-right: 4px;
   min-width: 240px;
@@ -3886,7 +3888,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .popMenu-navBar a {
   display: block;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 26px;
   padding: 0 16px;
   transition: opacity .2s cubic-bezier(0, 0, 0.2, 1);
@@ -3931,7 +3933,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #notificationsPanel {
   background-color: #D5DCD8;
-  font-size: 15px;
+  font-size: 1.5rem;
   transform: translateY(-110%);
   transition: transform 200ms;
   border-radius: 4px;
@@ -4036,26 +4038,26 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .icon-huge {
-  font-size: 140px;
+  font-size: 14.0rem;
 }
 
 .icon-gigantic {
-  font-size: 250px;
+  font-size: 25.0rem;
 }
 
 .icon-large {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 .icon-med {
-  font-size: 20px;
+  font-size: 2.0rem;
   /* padding prevents icon from being cut off due to overlapping edges of element */
   padding-right: 3px;
   padding-left: 3px;
 }
 
 .icon-small {
-  font-size: 11px;
+  font-size: 1.1rem;
 }
 
 .icon-circle-background1 {
@@ -4350,7 +4352,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   bottom: 0;
   top: 200px;
   color: #FFF;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 22px;
   width: 70%;
   margin: 0 15%;
@@ -4364,7 +4366,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .modal .homeModal-accordion .btn-bar{
   border-radius: 0;
-  font-size: 14px;
+  font-size: 1.4rem;
   height: 50px;
   line-height: 50px;
   margin: 0;
@@ -4372,7 +4374,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .modal .aboutModal-accordion .btn-bar{
-  font-size: 14px;
+  font-size: 1.4rem;
   height: 50px;
   line-height: 50px;
   opacity: 1;
@@ -4451,7 +4453,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   font-weight: 400;
   padding: 10px 20px;
   overflow: scroll;
-  font-size: 14px;
+  font-size: 1.4rem;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -4470,7 +4472,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .default-avatar {
   border-radius: 3px;
   color: #086a9e;
-  font-size: 73px;
+  font-size: 7.3rem;
   height: 76px;
   text-align: center;
   width: 80px;
@@ -4478,7 +4480,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .fancy-heading {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 3.4rem;
   opacity: .8;
   letter-spacing: 1.5px;
   margin-bottom: 0;
@@ -4486,7 +4488,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .page-contractTitle {
-  font-size: 18px;
+  font-size: 1.8rem;
   letter-spacing: .8px;
   margin-bottom: 0;
   margin-top: 10px;
@@ -4504,7 +4506,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: absolute;
   z-index: 10;
   height: 16px;
-  font-size: 11px;
+  font-size: 1.1rem;
   right: 0;
   line-height: 16px;
   opacity: 1;
@@ -4539,7 +4541,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: absolute;
   z-index: 10;
   height: 16px;
-  font-size: 11px;
+  font-size: 1.1rem;
   left: 0;
   line-height: 4px;
   opacity: 1;
@@ -4681,7 +4683,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #userPage .photosModule .dropPanel .icon {
-  font-size: 50px;
+  font-size: 5.0rem;
   margin-top: 50px;
 }
 
@@ -4708,12 +4710,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #transactionConfirmForm label {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 #transactionConfirmForm input::-webkit-input-placeholder,
 #transactionConfirmForm textarea::-webkit-input-placeholder {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .confirmOrderHolder,
@@ -4823,7 +4825,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-radius: 3px;
   color: #FFF;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-left: 10px;
   letter-spacing: .4px;
   line-height: 32px;
@@ -4964,7 +4966,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   padding: 0 10px;
   line-height: 30px;
   color: #FFF;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-style: italic;
   background: #12BB4F;
   position: relative;
@@ -5317,47 +5319,47 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #gj .textSize11px {
-  font-size: 11px;
+  font-size: 1.1rem;
 }
 
 #gj .textSize12px {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 #gj  .textSize13px {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 #gj  .textSize14px {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 #gj  .textSize15px {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #gj  .textSize16px {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #gj  .textSize17px {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 #gj  .textSize20px {
-  font-size: 20px;
+  font-size: 2.0rem;
 }
 
 #gj  .textSize22px {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 #gj  .textSize24px {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 #gj  .textSize28px {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
 #gj  .textFirstCharUppercase {
@@ -5389,66 +5391,66 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #gj .fontSize8 {
-  font-size: 8px;
+  font-size: .8rem
 }
 #gj .fontSize9 {
-  font-size: 9px;
+  font-size: .9rem
 }
 
 #gj .fontSize10 {
-  font-size: 10px;
+  font-size: 1.0rem;
 }
 
 #gj .fontSize11 {
-  font-size: 11px;
+  font-size: 1.1rem;
 }
 
 #gj .fontSize12 {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 #gj .fontSize13 {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 #gj .fontSize14 {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 #gj .fontSize15 {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #gj .fontSize16 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #gj .fontSize17 {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 #gj .fontSize18 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 #gj .fontSize20 {
-  font-size: 20px;
+  font-size: 2.0rem;
 }
 
 #gj .fontSize24 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 #gj .fontSize30 {
-  font-size: 30px;
+  font-size: 3.0rem;
 }
 
 #gj .fontSize34 {
-  font-size: 34px;
+  font-size: 3.4rem;
 }
 
 #gj .fontSize40 {
-  font-size: 40px;
+  font-size: 4.0rem;
 }
 
 #gj .txt-bright {
@@ -6270,7 +6272,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .ion-refresh:before{
   display: block;
-  font-size: 40px;
+  font-size: 4.0rem;
 }
 
 .ion-plus:before{
@@ -6342,7 +6344,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   top: -36px;
   right: -8px;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.2rem;
   border-radius: 8px;
   color: white;
   background-color: #FF3346;
@@ -6355,7 +6357,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   top: -36px;
   right: -8px;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.2rem;
   border-radius: 8px;
   color: white;
   background-color: transparent;
@@ -6417,7 +6419,7 @@ input[type=number]::-webkit-outer-spin-button {
   /* load a loading image on top */
   content: "\f3b3";
   font-family: "Ionicons";
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: rgba(255,255,255,0);
   pointer-events: none;
   display: block;
