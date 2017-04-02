@@ -28,6 +28,7 @@ window.onblur = function() {
 var Polyglot = require('node-polyglot'),
     ipcRenderer = require('ipc-renderer'),
     remote = require('electron').remote,
+    os = require('os'),
     getBTPrice = require('./utils/getBitcoinPrice'),
     router = require('./router'),
     userModel = require('./models/userMd'),
@@ -200,6 +201,17 @@ if (platform === "linux") {
   }
   $("body").css("zoom", 1 / scaleFactor);
 }
+
+// add platform-dependent style
+var name = os.platform();
+if( name === 'darwin'){
+  name = 'mac'; 
+} else if( name === 'linux'){
+  name = 'linux'; 
+} else { 
+  name = 'windows';
+}
+$('html').addClass('platform-' + name);
 
 //open external links in a browser, not the app
 $('body').on('click', 'a', function(e){
