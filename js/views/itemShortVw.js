@@ -3,7 +3,7 @@
 var Backbone = require('backbone'),
     $ = require('jquery'),
     loadTemplate = require('../utils/loadTemplate'),
-    baseVw = require('./baseVw'),
+    baseVw = require('./baseVw')
 
 module.exports = baseVw.extend({
 
