@@ -200,19 +200,18 @@ ipcMain.on('activeServerChange', function(event, server) {
 // Bounce the app icon on OSX
 var bounceAndCancel = function(callback){
   var bounceID = app.dock.bounce();
-  setTimeout( function(){ 
-    app.dock.cancelBounce( bounceID);
-    // if a callback was given 
-    // if( typeof callback = = = 'function')
-    // {
-    //   callback(); 
-    // } 
+  setTimeout(function(){ 
+    app.dock.cancelBounce(bounceID);
+
+    if( typeof callback === 'function')
+    {
+      callback(); 
+    } 
   }, 1000);
 };
 bounceAndCancel( function(){ 
   bounceAndCancel( bounceAndCancel);
 }); 
-
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is GCed.
