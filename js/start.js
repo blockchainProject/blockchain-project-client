@@ -551,7 +551,7 @@ launchOnboarding = function(guidCreating) {
   onboardingModal.render().open();
   startUpLoadingModal.close();
 
-  onboardingModal.on('onboarding-complete', function(guid) {
+  onboardingModal.on('onboarding-complete', function() {
     app.serverConnectModal.succeedConnection(app.serverConfigs.getActive());
     onboardingModal && onboardingModal.remove();
     onboardingModal = null;
