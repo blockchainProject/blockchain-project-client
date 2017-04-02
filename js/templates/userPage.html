@@ -13,18 +13,18 @@
       <div class="padding24px marginTop24px width100"><h2 class="txt-center"><% polyglot.t('LoadingImage') %></h2></div>
     </div>
     <input type="range" class="cropit-image-zoom-input hCentered marginTop24px js-bannerRangeInput hide" />
-    <label for="headerImageInput" class="btn btn-c1 btn-txt marginTop24px fullCentered js-pageCustomizationButtons btn-upload-cover-photo custCol-primary">
+    <label for="headerImageInput" class="btn btn-c1 marginTop24px fullCentered js-pageCustomizationButtons btn-upload-cover-photo custCol-primary">
       <span class="ion-qr-scanner fontSize11 marginRight2 textOpacity1"></span>
       <%= polyglot.t('UploadCoverPhoto') %> (866px x 320px)
     </label>
     <input id="headerImageInput" type="file" class="cropit-image-input hide" />
     <div class="bar navBar barFlush user-page-navigation positionBottom">
       <div class="navEnd pad8px">
-        <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls hide">
-          <a class="btn btn-txt custCol-primary js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
+        <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls marginRight16px hide">
+          <a class="btn custCol-primary js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
         </div>
-        <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls hide">
-          <a class="btn btn-txt custCol-primary js-saveCustomization">
+        <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls marginRight16px hide">
+          <a class="btn custCol-primary js-saveCustomization">
             <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
             <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
           </a>
@@ -42,24 +42,24 @@
         <div class="widthAuto bar navBar barFlush user-page-navigation-buttons positionBottomRight backgroundTransparent">
           <div class="navEnd pad8px">
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="btn btn-txt custCol-primary js-sellItem">
+              <a class="btn custCol-primary js-sellItem marginRight16px">
                 <span class="ion-ios-pricetag fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('nav.createListing') %>
               </a>
-              <a class="btn btn-txt custCol-primary js-createStore">
+              <a class="btn custCol-primary js-createStore marginRight16px">
                 <span class="ion-ios-cart fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('CreateStore') %>
               </a>
             </div>
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="btn btn-txt custCol-primary js-customize">
+              <a class="btn custCol-primary js-customize marginRight16px">
                 <span class="ion-paintbucket fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Customize') %>
               </a>
             </div>
             <% if(ob.page.profile.moderator && ob.user.vendor) { %>
 		          <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls">
-              <a class="btn btn-txt custCol-primary hide js-addmoderator">
+              <a class="btn custCol-primary hide js-addmoderator">
                 <span class="ion-person-add fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('AddModerator') %>
               </a>
@@ -92,7 +92,7 @@
               </a>
             </div>
             <div class="ctrlGroup hide js-extraButtonsNotOwnPage js-userPageControls">
-              <a class="btn btn-txt custCol-primary js-block <% if(ob.isBlocked){ %>hide<% } %>">
+              <a class="btn custCol-primary js-block <% if(ob.isBlocked){ %>hide<% } %>">
                 <span class="ion-android-remove-circle fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Block') %>
               </a>
@@ -102,14 +102,14 @@
               </a>
             </div>
             <div class="ctrlGroup hide js-extraButtonsOwnPage js-userPageControls">
-              <a class="btn btn-txt custCol-primary js-moderatorSettings">
+              <a class="btn custCol-primary js-moderatorSettings">
                 <span class="ion-ios-pricetag fontSize11 marginRight2 textOpacity1"></span>
                 <span class="js-userPageEditModerator <% if(!ob.page.profile.moderator){ %> hide <% } %>"><%= polyglot.t('EditModerator') %></span>
                 <span class="js-userPageBecomeModerator <% if(ob.page.profile.moderator){ %> hide <% } %>"><%= polyglot.t('BecomeModerator') %></span>
               </a>
             </div>
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="ion-more btn btn-txt custCol-primary js-moreButtonsOwnPage width32px lineHeight32 padding0 fontSize18"></a>
+              <a class="ion-more btn custCol-primary js-moreButtonsOwnPage width32px lineHeight32 padding0 fontSize18"></a>
             </div>
             <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls">
               <a class="ion-more btn custCol-primary js-moreButtonsNotOwnPage width32px lineHeight32 padding0 fontSize18"></a>
@@ -159,11 +159,12 @@
       <div class="flexRow minHeight650">
         <div class="flexCol-4 flex-border border0 userPageSocialAccounts overflowHidden">
           <div class="flexRow">
-            <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls alignCenter">
+            <div class="locationDisplay ion-ios-location-outline"><%= ob.page.profile.location %></div>
+            <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls alignCenter width100">
               <a class="blueOnWhiteButton hide js-follow">
                 <%= polyglot.t('Follow') %>
               </a>
-              <a class="whiteOnBlueButton btn btn-txt custCol-primary hide confirmable js-unfollow">
+              <a class="whiteOnBlueButton btn custCol-primary hide confirmable js-unfollow">
                 <span class="preSpacer">
                   Following
                 </span>
@@ -176,7 +177,7 @@
               </a>
             </div>          
             <div class="flexRow borderBottom custCol-border margintop25">
-              <ul class="positionWrapper noOverflow alignCenter padding0">
+              <ul class="positionWrapper noOverflow alignCenter padding0 width100">
                 <li class="borderBottom custCol-border holizontalAlign">
                   <div class="positionWrapper noOverflow holizontalAlign">
                     <a class="fontSize18 js-followingTab js-tab">
@@ -315,7 +316,7 @@
                 </div>
               </div>
               <div class="hide js-notOwnPageButtons js-userPageControls holizontalAlign profileChatButton width30 alignRight">
-                <a class="chatButton js-message">Chat</a>
+                <a class="greenOnWhiteButton js-message">Chat</a>
               </div>
             </div> 
             <div class="rowItem userPageAboutSection js-userPageAboutSection">

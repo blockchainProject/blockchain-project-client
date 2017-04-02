@@ -1,55 +1,7 @@
-/*========== scroll bars ==========*/
-#obContainer::-webkit-scrollbar {
-  width: 8px;
-}
-
-#obContainer::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #9B9B9B;
-}
-
-.popMenu-notificationsContent::-webkit-scrollbar,
-.chatConversationHeads::-webkit-scrollbar,
-.chatConversationContent::-webkit-scrollbar,
-#sideBar textarea::-webkit-scrollbar {
-  width: 6px;
-}
-
-.popMenu-notificationsContent::-webkit-scrollbar-thumb,
-.chatConversationHeads::-webkit-scrollbar-thumb,
-.chatConversationContent::-webkit-scrollbar-thumb,
-#sideBar textarea::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background: #3E3E3E;
-}
-
-.customThemeScrollbar::-webkit-scrollbar {
-  width: 8px;
-}
-
-.customThemeScrollbar::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background: #08324A;
-}
-
-.noScrollBar::-webkit-scrollbar {
-  width: 0 !important;
-}
-
-.popMenu-notificationsContent::-webkit-scrollbar {
-  width: 8px;
-}
-
-.popMenu-notificationsContent::-webkit-scrollbar-thumb {
-  border-radius: 0;
-  background: #3E3E3E;
-}
-
 /*========== base styles ==========*/
 body {
   background-color: #FAFAFA;
   overflow: hidden;
-  /*fonts*/
   color: rgb(255, 255, 255);
   font-family: 'Lato', sans-serif;
   font-size: 16px;
@@ -235,20 +187,20 @@ form {
 }
 
 /*========== color ==========*/
-.blue-color{
-  color: #009DC4;
+.black-color{
+  color: #030303;
 }
 
-.red-color{
-  color: #FF3346;
+.blue-color{
+  color: #009DC4;
 }
 
 .green-color{
   color: #12BB4F;
 }
 
-.black-color{
-  color: #030303;
+.blue-background {
+  background: #009DC4;
 }
 
 .grey-background{
@@ -259,9 +211,6 @@ form {
   background: #FFF;
 }
 
-.blue-background {
-  background: #009DC4;
-}
 
 /*========== typography ==========*/
 
@@ -384,10 +333,6 @@ h6, .h6 {
   font-weight: bold;
 }
 
-#gj .unbold {
-  font-weight: 400;
-}
-
 #gj .allCaps {
   text-transform: uppercase;
 }
@@ -421,12 +366,6 @@ h6, .h6 {
   -webkit-box-orient: vertical;
 }
 
-.txtRow2 {
-  /* limits an element to being 2 rows of text tall */
-  line-height: 1.25em;;
-  height: 2.5em;
-}
-
 .title-font{
   font-family: 'Francois One', sans-serif;
   font-weight: normal;
@@ -438,6 +377,303 @@ h6, .h6 {
   height: 12px;
   border-radius: 10px;
   margin: 16px;
+}
+
+/*========== scroll bars ==========*/
+#gjContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+#gjContainer::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #9B9B9B;
+}
+
+.popMenu-notificationsContent::-webkit-scrollbar,
+.chatConversationHeads::-webkit-scrollbar,
+.chatConversationContent::-webkit-scrollbar,
+#sideBar textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.popMenu-notificationsContent::-webkit-scrollbar-thumb,
+.chatConversationHeads::-webkit-scrollbar-thumb,
+.chatConversationContent::-webkit-scrollbar-thumb,
+#sideBar textarea::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #3E3E3E;
+}
+
+.customThemeScrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.customThemeScrollbar::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #08324A;
+}
+
+.noScrollBar::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.popMenu-notificationsContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popMenu-notificationsContent::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: #3E3E3E;
+}
+
+/*========== buttons ==========*/
+
+.profileChatButton .chatButton {
+  background-color: #FFF;
+  border: 1px solid #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #12BB4F;
+  font-size: 24px;
+  padding: 6px 32px;
+  text-decoration: none;
+}
+
+.profileChatButton{  
+  position: absolute;
+  top: 24px;
+  right: 40px;
+}
+
+.homeFeedChatButton .chatButton {
+  background-color: #FFF;
+  border: 1px solid #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #12BB4F;
+  font-size: 16px;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+.greenOnWhiteButton {
+  background-color: #FFF;
+  border: 1px solid #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #12BB4F;
+  font-size: 16px;
+  padding: 4px 16px;
+  text-decoration: none;
+}
+
+.greenOnWhiteButton:hover {
+  border:1px solid #FF3346;
+  color: #FF3346;
+}
+
+.greenOnWhiteButton:active {
+  position:relative;
+  top:1px;
+}
+
+.tagButton {
+  background-color: #EEEEEE;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #9B9B9B;
+  font-size: 14px;
+  padding: 2px 14px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.tagButton:hover {
+  opacity: 0.8;
+}
+
+.homeTagButton {
+  background-color: #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 14px;
+  padding: 4px 12px;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.homeTagButton:hover {
+  opacity: 0.8;
+}
+
+.nextButton{
+  background-color: #009DC4;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 8px 60px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nextButton:hover{
+  opacity: 0.8;
+}
+
+
+.blueOnWhiteButton{
+  background-color: #FFF;
+  border:1px solid #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #009DC4;
+  font-size: 18px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.blueOnWhiteButton:hover {
+  opacity: 0.8;
+}
+
+.blueOnWhiteButton:active {
+  position:relative;
+  top:1px;
+}
+
+.smallBlueOnWhiteButton {
+  background-color: #FFF;
+  border: 1px solid #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #009DC4;
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.smallBlueOnWhiteButton:hover {
+  opacity: 0.8;
+}
+
+.whiteOnBlueButton{
+  background-color: #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 6px 24px !important;
+  text-decoration: none;
+}
+
+.whiteOnBlueButton:hover {
+  opacity: 0.8;
+}
+
+.whiteOnBlueButton:active {
+  position:relative;
+  top:1px;
+}
+
+.smallWhiteOnBlueButton {
+  background-color: #FFF;
+  border: 1px solid #009DC4;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #009DC4;
+  font-size: 12px;
+  padding: 4px 12px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+.smallWhiteOnBlueButton:hover {
+  opacity: 0.8;
+}
+
+.whiteOnGreenButton{
+  background-color: #12BB4F;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 8px 40px;
+  text-decoration: none;
+}
+
+.whiteOnGreenButton:hover {
+  opacity: 0.8;
+}
+
+.whiteOnGreenButton:active {
+  position:relative;
+  top:1px;
+}
+
+.whiteOnRedButton{
+  background-color: #FF3346;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.whiteOnRedButton:hover {
+  opacity: 0.8;
+}
+
+.blackOnGreyButton{
+  background-color: #EEEEEE;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #030303;
+  font-size: 16px;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.blackOnGreyButton:hover {
+  opacity: 0.8;
 }
 
 /*========== structure classes ==========*/
@@ -470,7 +706,7 @@ h6, .h6 {
   z-index: 1;
 }
 
-#obContainer {
+#gjContainer {
   transition: width 0.5s ease;
   width: 70%;
   height: calc(100% - 50px);
@@ -482,14 +718,14 @@ h6, .h6 {
   box-sizing: border-box;
 }
 
-#obContainer.customizeUserPage {
+#gjContainer.customizeUserPage {
   overflow: hidden;
   border: 5px dashed #FFF;
   height: calc(100% - 76px);
   animation: borderDashedFade .35s normal linear;
 }
 
-#obContainer.customizeUserPage::-webkit-scrollbar {
+#gjContainer.customizeUserPage::-webkit-scrollbar {
   width: 0 !important;
 }
 
@@ -504,10 +740,10 @@ h6, .h6 {
 }
 
 .userView {
-  margin-top: -20px; /*negate the 20px padding in obContainer */
+  margin-top: -20px; /*negate the 20px padding in gjContainer */
 }
 
-#gj.chatOpen #obContainer {
+#gj.chatOpen #gjContainer {
   width: 70%;
 }
 
@@ -884,6 +1120,7 @@ h6, .h6 {
 
 .gridItemControls {
   background-color: #FFF;
+  border-radius: 0 0 4px 4px;
   position: relative;
   opacity: 1;
   bottom: 0;
@@ -988,7 +1225,7 @@ h6, .h6 {
 }
 
 .homeGridItems{
-  background-color: #FAFAFA;
+  background-color: #F3F3F3;
 }
 
 .pageGridItems .flexCol-4:nth-child(3n) .gridItem,
@@ -1030,7 +1267,7 @@ h6, .h6 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 2px;
+  border-radius: 4px 4px 0 0;
   color: #FFF;
   height: 276px;
   width: 100%;
@@ -1114,7 +1351,7 @@ h6, .h6 {
 }
 
 .fieldItem {
-  min-height: 50px;
+  min-height: 40px;
   padding: 15px;
   position: relative;
   display: block;
@@ -1192,8 +1429,8 @@ label.fieldItem {
 }
 
 .btn-corner.btn-cornerTR {
-  top: 10px;
-  right: 10px;
+  top: 6px;
+  right: 8px;
 }
 
 .btn-corner.btn-cornerTR:hover {
@@ -1233,108 +1470,6 @@ label.fieldItem {
   top: 23px;
 }
 
-.profileChatButton .chatButton {
-  background-color: #FFF;
-  border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #12BB4F;
-  font-size: 24px;
-  padding: 6px 32px;
-  text-decoration: none;
-}
-
-.homeFeedChatButton .chatButton {
-  background-color: #FFF;
-  border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #12BB4F;
-  font-size: 16px;
-  padding: 4px 16px;
-  text-decoration: none;
-}
-
-.greenOnWhiteButton {
-  background-color: #FFF;
-  border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #12BB4F;
-  font-size: 16px;
-  padding: 4px 16px;
-  text-decoration: none;
-}
-
-.greenOnWhiteButton:hover {
-  border:1px solid #FF3346;
-  color: #FF3346;
-}
-
-.greenOnWhiteButton:active {
-  position:relative;
-  top:1px;
-}
-
-.tagButton {
-  background-color: #EEEEEE;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 16px;
-  cursor: pointer;
-  color: #9B9B9B;
-  font-size: 14px;
-  padding: 2px 14px;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  text-decoration: none;
-}
-
-.tagButton:hover {
-  opacity: 0.8;
-}
-
-.homeTagButton {
-  background-color: #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 8px 0 0 8px;
-  cursor: pointer;
-  color: #FFF;
-  font-size: 14px;
-  padding: 4px 12px;
-  margin-bottom: 4px;
-  text-decoration: none;
-}
-
-.homeTagButton:hover {
-  opacity: 0.8;
-}
-
-.nextButton{
-  background-color: #009DC4;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #FFF;
-  font-size: 16px;
-  padding: 8px 60px;
-  margin-bottom: 16px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.nextButton:hover{
-  opacity: 0.8;
-}
-
 .home-page-navigation .ion-ios-close-empty{
   background-color: #12BB4F;
   color: #FFF;
@@ -1344,145 +1479,6 @@ label.fieldItem {
   padding-bottom: 2px;
   padding-right: 6px;
   padding-left: 6px;
-}
-
-.blueOnWhiteButton{
-  background-color: #FFF;
-  border:1px solid #009DC4;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #009DC4;
-  font-size: 18px;
-  padding: 6px 24px;
-  text-decoration: none;
-}
-
-.blueOnWhiteButton:hover {
-  opacity: 0.8;
-}
-
-.blueOnWhiteButton:active {
-  position:relative;
-  top:1px;
-}
-
-.smallBlueOnWhiteButton {
-  background-color: #FFF;
-  border: 1px solid #009DC4;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #009DC4;
-  font-size: 12px;
-  padding: 4px 12px;
-  margin-top: 8px;
-  text-decoration: none;
-}
-
-.smallBlueOnWhiteButton:hover {
-  opacity: 0.8;
-}
-
-.whiteOnBlueButton{
-  background-color: #009DC4;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFF;
-  font-size: 16px;
-  padding: 6px 24px;
-  text-decoration: none;
-}
-
-.whiteOnBlueButton:hover {
-  opacity: 0.8;
-}
-
-.whiteOnBlueButton:active {
-  position:relative;
-  top:1px;
-}
-
-.smallWhiteOnBlueButton {
-  background-color: #FFF;
-  border: 1px solid #009DC4;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #009DC4;
-  font-size: 12px;
-  padding: 4px 12px;
-  margin-top: 8px;
-  text-decoration: none;
-}
-
-.smallWhiteOnBlueButton:hover {
-  opacity: 0.8;
-}
-
-.whiteOnGreenButton{
-  background-color: #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFF;
-  font-size: 16px;
-  padding: 8px 40px;
-  text-decoration: none;
-}
-
-.whiteOnGreenButton:hover {
-  opacity: 0.8;
-}
-
-.whiteOnGreenButton:active {
-  position:relative;
-  top:1px;
-}
-
-.whiteOnRedButton{
-  background-color: #FF3346;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #FFF;
-  font-size: 16px;
-  padding: 6px 24px;
-  text-decoration: none;
-}
-
-.whiteOnRedButton:hover {
-  opacity: 0.8;
-}
-
-.blackOnGreyButton{
-  background-color: #EEEEEE;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  display: inline-block;
-  cursor: pointer;
-  color: #030303;
-  font-size: 16px;
-  padding: 6px 24px;
-  text-decoration: none;
-}
-
-.blackOnGreyButton:hover {
-  opacity: 0.8;
 }
 
 .thumbnail-small {
@@ -1611,7 +1607,7 @@ label.fieldItem {
 }
 
 .modal .btn-corner {
-  z-index: 0;
+  z-index: 2;
 }
 
 .modal.underPageNav {
@@ -2074,7 +2070,7 @@ removed because I don't think we're using the trick to hide the borders any more
 }
 
 .searchWrapper .txtField:focus {
-  outline: 2px solid rgba(255,255,255,0.35);
+  outline: 1px solid #12BB4F;
   -webkit-background-clip: border;
 }
 
@@ -2100,7 +2096,7 @@ removed because I don't think we're using the trick to hide the borders any more
 }
 
 .mainSearchWrapper .txtField:focus {
-  border: solid 2px #009DC4;
+  border: solid 1px #009DC4;
   outline: none;
   text-indent: 25px;
   box-shadow: none;
@@ -2234,6 +2230,7 @@ input[type="text"].txtField-bar {
 }
 
 .btn.btn-txt.active {
+  border-bottom: 2px solid #009DC4;
   color: #009DC4;
   opacity: 1;
 }
@@ -2432,6 +2429,11 @@ input[type="text"].txtField-bar {
 
 .ion-ios-close-empty:before {
   font-weight: 800;
+}
+
+.ion-close-circled:before {
+    content: "\f128";
+    color: #12BB4F;
 }
 
 .btn.btn-bar {
@@ -2926,6 +2928,7 @@ div.chatSearchOut .chatSearchIcon {
 }
 
 .btn.btn-bar.active {
+  border-bottom: 2px solid #009DC4;
   color: #009DC4;
   opacity: 1;
 }
@@ -3040,6 +3043,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .btn-toWrapper-discoverToggle .btn.btn-togRight {
   border-radius: 0;
+  font-size: 14px;
 }
 
 .btn.btn-flushTop {
@@ -3126,12 +3130,17 @@ div.chatSearchOut .chatSearchIcon {
   max-width: 200px;
   transition: 1s opacity;
   margin-left: 4px;
+  position: relative;
+  top: -6px;
+  font-size: 16px;
 }
 
 .btn .postConfirm {
   max-width: 0;
   width: 0;
   opacity: 0;
+  position: relative;
+  top: -6px;
 }
 
 .btn .preSpacer {
@@ -3206,10 +3215,11 @@ input[type="file"].fieldItem,
 input[type="url"].fieldItem,
 input[type="password"].fieldItem,
 input[type="datetime-local"].fieldItem {
-  background: none;
-  border: 2px solid transparent;
   color: #030303;
   width: 100%;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+  margin: 0 auto;
 }
 
 input[type="datetime-local"].fieldItem {
@@ -3258,7 +3268,7 @@ input[type="email"].fieldItem:focus,
 input[type="url"].fieldItem:focus,
 input[type="password"].fieldItem:focus,
 input[type="datetime-local"].fieldItem:focus {
-  border: 2px solid #FFF;
+  border: 1px solid #12BB4F;
   border-radius: 8px;
   transition: border 0.3s;
 }
@@ -3608,7 +3618,8 @@ input[type="checkbox"].fieldItem + label {
 
 input[type="checkbox"].fieldItem + label:before {
   display: inline;
-  content: "\f371";
+  content: "\f372";
+  font-family: 'ionicons';
   line-height:inherit;
   box-shadow: none;
   opacity: 1;
@@ -3630,7 +3641,7 @@ input[type="checkbox"].fieldItem.thin + label {
 }
 
 input[type="checkbox"].fieldItem:checked + label:before {
-  content: "\f374";
+  content: "\f373";
 }
 
 input[type="checkbox"].fieldItem + label div,
@@ -4348,7 +4359,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 .modal .homeModal-accordion,
 .modal .aboutModal-accordion {
-  height: 374px;
+  height: 680px;
 }
 
 .modal .homeModal-accordion .btn-bar{
@@ -4377,9 +4388,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   opacity: .75;
 }
 
-.modal .homeModal-accordion .btn,
-.modal .aboutModal-accordion .btn {
-  background-color: rgb(50,126,184);
+.modal .homeModal-accordion .btn {
+  background-color: #009DC4;
 }
 
 .modal .homeModal-accordion .btn-bar,
@@ -4388,7 +4398,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .modal .aboutModal-accordion .btn-bar.active{
-  background: #106DA3;
+  color: #009DC4;
 }
 
 .modal .aboutModal-accordion .btn-bar.active:hover{
@@ -4421,7 +4431,8 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 .modal .homeModal-settings.flexRow {
   height: 222px;
   overflow-y: auto;
-  background-color: #086A9E;
+  background-color: #FFF;
+  color: #030303;
 }
 
 .modal .homeModal-settings.homeModal-settings-noSearch {
@@ -4603,8 +4614,13 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .btn-upload-cover-photo {
-  padding: 7px 20px;
+  color: #FFF;
+  padding: 0px 16px;
   opacity: 1;
+}
+
+.btn-upload-cover-photo:hover {
+  opacity: 0.8;
 }
 
 .chatHead.tooltip:hover:after{
@@ -5223,6 +5239,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   border-top: dashed 1px rgba(255,255,255,0.08);
 }
 
+#gj  .borderTransparent {
+  border: solid 1px transparent;
+}
+
 #gj  .border1 {
   border: solid 1px rgba(255,255,255,0.08);
 }
@@ -5510,20 +5530,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-right: 5px;
 }
 
-#gj  .marginRight7 {
-  margin-right: 7px;
-}
-
 #gj  .marginRight8 {
   margin-right: 8px;
 }
 
 #gj  .marginRight10 {
   margin-right: 10px;
-}
-
-#gj  .marginRight15 {
-  margin-right: 15px;
 }
 
 #gj  .marginRight16px {
@@ -5552,10 +5564,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 
 #gj  .marginLeft0 {
   margin-left: 0;
-}
-
-#gj  .marginLeft05 {
-  margin-left: 0.5px;
 }
 
 #gj  .marginLeft1 {
@@ -5613,15 +5621,11 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-left: 80px;
 }
 
-#gj  .marginLeft82 {
-  margin-left: 82px;
-}
-
 #gj  .marginTopNeg8 {
   margin-top: -8px;
 }
 
-#gj  .marginTop-8 {
+#gj  .marginTopNeg8 {
   margin-top: -8px;
 }
 
@@ -5636,6 +5640,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #gj  .marginTop2 {
   margin-top: 2px;
 }
+
 #gj  .marginTop3 {
   margin-top: 3px;
 }
@@ -5647,6 +5652,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 #gj  .marginTop5 {
   margin-top: 5px;
 }
+
 #gj  .marginTop6 {
   margin-top: 6px;
 }
@@ -5667,10 +5673,6 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 12px;
 }
 
-#gj  .marginTop13 {
-  margin-top: 13px;
-}
-
 #gj  .marginTop15 {
   margin-top: 15px;
 }
@@ -5679,16 +5681,12 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 16px;
 }
 
-#gj  .marginTop18 {
+#gj  .marginTop18px {
   margin-top: 18px;
 }
 
 #gj  .marginTop20 {
   margin-top: 20px;
-}
-
-#gj  .marginTop22 {
-  margin-top: 22px;
 }
 
 #gj  .marginTop24px {
@@ -5912,6 +5910,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 #gj  .lineHeight51{
   line-height: 51px;
+}
+
+#gj  .lineHeight58{
+  line-height: 58px;
 }
 
 #gj  .lineHeightReset{
@@ -6361,12 +6363,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   pointer-events: none;
 }
 
-#ov1 .alignCenter {
-  width: 100%;
-  text-align: center;
-}
-
-#ov1 .blockCenter {
+#gj .blockCenter {
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -6458,8 +6455,8 @@ input[type=number]::-webkit-outer-spin-button {
 #gj.minEffects *,
 #gj.minEffects #userPage,
 #gj.minEffects #userPage *,
-#gj.minEffects #obContainer,
-#gj.minEffects #obContainer *,
+#gj.minEffects #gjContainer,
+#gj.minEffects #gjContainer *,
 #gj.minEffects #overlay,
 #gj.minEffects #sideBar,
 #gj.minEffects #pageNav,
@@ -6485,7 +6482,7 @@ input[type=number]::-webkit-outer-spin-button {
 #gj.minEffects #userPage .fadeOut,
 #gj.minEffects #userPage #pageNav .fadeOut,
 #gj.minEffects #userPage #pageNav .statusBar.fadeOut,
-#gj.minEffects #userPage #obContainer #content .statusBar.fadeOut {
+#gj.minEffects #userPage #gjContainer #content .statusBar.fadeOut {
   opacity: 0 !important;
 }
 
@@ -6495,7 +6492,7 @@ input[type=number]::-webkit-outer-spin-button {
 #gj.minEffects #userPage .fadeIn,
 #gj.minEffects #userPage #pageNav .fadeIn,
 #gj.minEffects #userPage #pageNav .statusBar.fadeIn,
-#gj.minEffects #userPage #obContainer #content .statusBar.fadeIn {
+#gj.minEffects #userPage #gjContainer #content .statusBar.fadeIn {
   opacity: 1 !important;
 }
 
@@ -6536,26 +6533,26 @@ input[type=number]::-webkit-outer-spin-button {
   display: inline-block;
 }
 
-#gj.minEffects #userPage #obContainer #content .labelWrap.fade {
+#gj.minEffects #userPage #gjContainer #content .labelWrap.fade {
   opacity: 0 !important;
 }
 
-#gj.minEffects #userPage #obContainer #content .labelWrap.fadeIn {
+#gj.minEffects #userPage #gjContainer #content .labelWrap.fadeIn {
   opacity: 1;
 }
 
-#gj.minEffects #obContainer .taggle_placeholder,
-#gj.minEffects #userPage #obContainer .taggle_placeholder {
+#gj.minEffects #gjContainer .taggle_placeholder,
+#gj.minEffects #userPage #gjContainer .taggle_placeholder {
   display: none !important;
 }
 
-#gj.minEffects #obContainer .unfilled,
+#gj.minEffects #gjContainer .unfilled,
 #gj.minEffects #userPage .unfilled {
   opacity: 0.35 !important;
 }
 
 #gj.minEffects .minEffectsDarkBackground,
-#gj.minEffects #obContainer .minEffectsDarkBackground {
+#gj.minEffects #gjContainer .minEffectsDarkBackground {
   background: #262626 !important;
 }
 
@@ -6565,7 +6562,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #gj.minEffects .disabled,
 #gj.minEffects #userPage .disabled,
-#gj.minEffects #obContainer .disabled,
+#gj.minEffects #gjContainer .disabled,
 #gj.minEffects #overlay .disabled,
 #gj.minEffects #sideBar .disabled,
 #gj.minEffects #pageNav .disabled,
@@ -6575,7 +6572,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 #gj.minEffects .disabled2,
 #gj.minEffects #userPage .disabled2,
-#gj.minEffects #obContainer .disabled2,
+#gj.minEffects #gjContainer .disabled2,
 #gj.minEffects #overlay .disabled2,
 #gj.minEffects #sideBar .disabled2,
 #gj.minEffects #pageNav .disabled2,
@@ -6590,10 +6587,10 @@ input[type=number]::-webkit-outer-spin-button {
 /* add a shadow and a glow, so modal close buttons are still barely visible if the user picks a bad color */
 #gj .js-modal-close [class *= "ion-"]:before,
 #gj #userPage .js-modal-close [class *= "ion-"]:before,
-#gj #obContainer .js-modal-close [class *= "ion-"]:before,
+#gj #gjContainer .js-modal-close [class *= "ion-"]:before,
 #gj.minEffects .js-modal-close [class *= "ion-"]:before,
 #gj.minEffects #userPage .js-modal-close [class *= "ion-"]:before,
-#gj.minEffects #obContainer .js-modal-close [class *= "ion-"]:before {
+#gj.minEffects #gjContainer .js-modal-close [class *= "ion-"]:before {
   color: #9B9B9B;
 }
 
@@ -6692,14 +6689,6 @@ input[type=number]::-webkit-outer-spin-button {
   padding-left: 28px;
 }
 
-.leftSidebar-browse-other{
-  background-image: url('../imgs/icon.svg');
-  background-position: 4px 11px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 28px;
-}
-
 .leftSidebar-create-create{
   background-image: url('../imgs/createIcon.svg');
   background-position: 4px 12px;
@@ -6719,22 +6708,16 @@ input[type=number]::-webkit-outer-spin-button {
 /*========== home feed ==========*/
 .homeFeedServiceTitle {
   font-weight: bold;
-  position: absolute;
-  left: 8px;
-  top: 12px;
-  width: 70%;
+  margin-left: 16px;
+  margin-top: 12px;
+  width: 100%;
 }
 
 .homeFeedProfileIcon {
-  position: absolute;
-  right: 52px;
-  top: 16px;
 }
 
 .homeFeedChatButton {
-  position: absolute;
-  right: 32px;
-  top: 64px;
+  margin-right: 16px;
 }
 
 /*========== profile page ==========*/
@@ -6752,12 +6735,6 @@ input[type=number]::-webkit-outer-spin-button {
   border-left: solid 1px rgb(155,155,155);
   padding-top: 16px;
   position: relative;
-}
-
-.profileChatButton{  
-  position: absolute;
-  top: 24px;
-  right: 40px;
 }
 
 .storeReviewTab{
@@ -6790,31 +6767,6 @@ input[type=number]::-webkit-outer-spin-button {
 .storeReviewTab a:nth-child(3){
   margin-left: 3px;
   padding: 20px 15px 20px 0;
-}
-
-.ion-person{
-  position: relative;
-  top: 1px;
-}
-
-.ion-ios-email{
-  position: relative;
-  top: 1px;
-}
-
-.ion-social-facebook{
-  position: relative;
-  top: 1px;
-}
-
-.ion-social-twitter{
-  position: relative;
-  top: 1px;
-}
-
-.ion-social-instagram{
-  position: relative;
-  top: 2px;
 }
 
 .userPageRight{
@@ -6856,10 +6808,20 @@ input[type=number]::-webkit-outer-spin-button {
 
 .profilePageIcon {
   z-index: 0;
-  margin-left: 96px;
+  margin-left: 88px;
   top: -60px;
   position: absolute;  
   display: inline-block;
+}
+
+.locationDisplay{
+  margin: 16px auto;
+}
+
+.locationDisplay:before {
+  content: "\f455";
+  font-family: 'ionicons';
+  margin-right: 4px;
 }
 
 .followingModalTitle{

@@ -29,7 +29,7 @@ module.exports = Backbone.View.extend({
     this.nextUserToShow = 0;
     this.fetchedUsers = this.usersShort.length;
     this.totalUsers = this.options.followerCount;
-    this.$container = $('#obContainer');
+    this.$container = $('#gjContainer');
 
     //listen to scrolling on container
     this.scrollHandler = __.bind(

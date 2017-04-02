@@ -2,12 +2,18 @@
 
 var Backbone = require('backbone'),
     $ = require('jquery'),
+    app = require('../App.js').getApp(),
     loadTemplate = require('../utils/loadTemplate'),
-    baseVw = require('./baseVw');
+    baseVw = require('./baseVw'),
+    userModel = require('../models/userMd'),
+    pageVw = require('./pageVw'),
+    userProfileModel = require('../models/userProfileMd');
 
 module.exports = baseVw.extend({
 
-  className: "flexCol-6 borderBottom",
+// should this be pageVw?
+
+  className: "flexCol-6",
 
   events: {
     'click .js-item': 'itemClick',
@@ -16,12 +22,16 @@ module.exports = baseVw.extend({
     'click .js-itemShortDelete': 'deleteItemClick',
     'click .js-itemShortDeleteConfirm': 'deleteItem',
     'click .js-itemShortDeleteCancel': 'cancelConfirmDelete',
-    'click .js-itemShortClone': 'cloneItemClick'
+    'click .js-itemShortClone': 'cloneItemClick',
+    'click .js-message': 'sendMessage'
   },
 
   initialize: function(options){
     //pre-load image
     this.parentEl = $(options.parentEl);
+    this.userProfile = new userProfileModel();
+    this.userModel = new userModel();
+    this.userProfile.urlRoot = this.userModel.get('serverUrl') + "profile";
     this.listenTo(this.model, 'change', this.render);
     //if price has already been set, render
     if (this.model.get('priceSet') !== 0){
@@ -110,6 +120,16 @@ module.exports = baseVw.extend({
 
   cloneItemClick: function() {
     window.obEventBus.trigger('itemShortClone', {'contract_hash': this.model.get('contract_hash')});
+  },
+
+  sendMessage: function(){
+    app.chatVw.openConversation(
+      new userProfileModel(this.userProfile.get('profile'))
+    );
+  },
+
+  isRemoved: function() {
+    return this._removed;
   }
 
 });

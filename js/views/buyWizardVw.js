@@ -456,7 +456,7 @@ module.exports = baseModal.extend({
         function () {
           app.simpleMessageModal.open({
             title: window.polyglot.t('errorMessages.serverError'),
-            message: window.polyglot.t('errorMessages.missingError') + '<br>' + window.polyglot.t('BitcoinReturnAddress')
+            message: window.polyglot.t('errorMessages.missingError') + '<br>' + window.polyglot.t('RefundAddress')
           });
         });
       } else {

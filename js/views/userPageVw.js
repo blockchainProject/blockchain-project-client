@@ -185,7 +185,7 @@ UserPageVw = pageVw.extend({
     this.showNSFW = options.skipNSFWmodal ? options.skipNSFWmodal : JSON.parse(localStorage.getItem('NSFWFilter'));
     this.showNSFWContent = this.showNSFW;
     this.currentItemHash = options.itemHash;
-    this.$obContainer = $('#obContainer');
+    this.$gjContainer = $('#gjContainer');
     /*
     //hold changes to the page for undoing, such as custom colors
     this.undoCustomAttributes = {
@@ -409,8 +409,8 @@ UserPageVw = pageVw.extend({
           self
         );
 
-        self.$obContainer.off('scroll', self.scrollHandler);
-        self.$obContainer.on('scroll', self.scrollHandler);
+        self.$gjContainer.off('scroll', self.scrollHandler);
+        self.$gjContainer.on('scroll', self.scrollHandler);
       });
     });
 
@@ -421,14 +421,14 @@ UserPageVw = pageVw.extend({
   },
 
   onScroll: function() {
-    if (this.$obContainer.scrollTop() > 400 && this.slimVisible === false ) {
+    if (this.$gjContainer.scrollTop() > 400 && this.slimVisible === false ) {
       this.slimVisible = true;
       this.$('.user-page-header').removeClass('shadow-inner1')
         .find('.rowItem')
         .hide();
       this.$('.user-page-navigation-buttons').addClass('positionFixed positionTop72px');
       this.$backToTop.addClass('slideUp');
-    } else if (this.$obContainer.scrollTop() < 400 && this.slimVisible === true ) {
+    } else if (this.$gjContainer.scrollTop() < 400 && this.slimVisible === true ) {
       this.slimVisible = false;
       this.$('.user-page-header').addClass('shadow-inner1')
         .find('.rowItem')
@@ -439,7 +439,7 @@ UserPageVw = pageVw.extend({
   },
 
   clickBackToTop: function() {
-    this.$obContainer.animate({ scrollTop: 0 }, {
+    this.$gjContainer.animate({ scrollTop: 0 }, {
       complete: () => {
         this.$backToTop.removeClass('slideUp');
       }
@@ -507,13 +507,13 @@ UserPageVw = pageVw.extend({
       this.$el.find('.js-list4').html("");
       this.tabClick(this.$el.find('.js-storeTab'), this.$el.find('.js-item'));
       this.renderItem(hash);
-      this.$obContainer.scrollTop(352);
+      this.$gjContainer.scrollTop(352);
     }else if (state === "listingOld") {
       this.tabClick(this.$el.find(".js-storeTab"), this.$el.find(".js-item"));
-      this.$obContainer.scrollTop(352);
+      this.$gjContainer.scrollTop(352);
     }else if(state === "listingNew"){
       this.tabClick(this.$el.find(".js-storeTab"), this.$el.find(".js-store"));
-      this.$obContainer.scrollTop(352);
+      this.$gjContainer.scrollTop(352);
       this.addTabToHistory('listingNew', options.replaceHistory);
       this.sellItem();
     } else if (state === "createStore") {
@@ -578,7 +578,7 @@ UserPageVw = pageVw.extend({
     this.$el.find('.js-unfollow').removeClass('confirm');
     this.$el.find('.js-removemoderator').removeClass('confirm');
     this.$el.find('.user-page-header-slim-bg-cover').removeClass('user-page-header-slim-bg-cover-customize');
-    this.$obContainer.removeClass("customizeUserPage", "noScrollBar", "overflowHidden");
+    this.$gjContainer.removeClass("customizeUserPage", "noScrollBar", "overflowHidden");
     //unhide the ones that are needed
     if (this.options.ownPage === true) {
       if (state === "listing" || state === "listingOld") {
@@ -588,7 +588,7 @@ UserPageVw = pageVw.extend({
       } else if (state === "customize") {
         this.$el.find('.js-pageCustomizationButtons').removeClass('hide');
         this.$el.find('.user-page-header-slim-bg-cover').addClass('user-page-header-slim-bg-cover-customize');
-        this.$obContainer.addClass("customizeUserPage", "noScrollBar", "overflowHidden");
+        this.$gjContainer.addClass("customizeUserPage", "noScrollBar", "overflowHidden");
       } else {
         this.$el.find('.js-pageButtons').removeClass('hide');
       }
@@ -1244,7 +1244,7 @@ UserPageVw = pageVw.extend({
     this.customizing = true;
     this.setControls('customize');
     $('.user-page-header').addClass('shadow-inner1-strong');
-    this.$obContainer.animate({ scrollTop: "0" });
+    this.$gjContainer.animate({ scrollTop: "0" });
   },
 
   uploadUserPageImage: function() {
@@ -1390,7 +1390,7 @@ UserPageVw = pageVw.extend({
 
   cancelClick: function(){
     this.setState(this.lastTab);
-    this.$obContainer.animate({ scrollTop: 0 });
+    this.$gjContainer.animate({ scrollTop: 0 });
 
     this.editing = false;
   },
@@ -1719,7 +1719,7 @@ UserPageVw = pageVw.extend({
   remove: function(){
     // close colorbox to make sure the overlay doesnt remain open when going to a different page
     //$.colorbox.close();
-    $('#obContainer').off('scroll', this.onScroll);
+    $('#gjContainer').off('scroll', this.onScroll);
 
     pageVw.prototype.remove.apply(this, arguments);
   }

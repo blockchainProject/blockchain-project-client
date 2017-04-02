@@ -211,7 +211,7 @@ module.exports = baseVw.extend({
 
     //focus main input
     this.$el.find('input[name=title]').focus();
-    $('#obContainer').animate({ scrollTop: "460px" });
+    $('#gjContainer').animate({ scrollTop: "460px" });
   },
 
   disableShippingPrice: function(){
