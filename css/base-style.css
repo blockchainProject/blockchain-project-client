@@ -6642,6 +6642,8 @@ input[type=number]::-webkit-outer-spin-button {
 .leftSidebar-browse a:hover, .leftSidebar-create a:hover{
   color: #009DC4;
   text-decoration: none;
+  margin-left: 8px;
+  transition: all 0.2s ease-in-out;
 }
 
 .leftSidebar-create{
