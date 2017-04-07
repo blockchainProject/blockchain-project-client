@@ -11,7 +11,7 @@
         <%= polyglot.t('Feed') %>
       </a> -->
       <a class="btn btn-bar btn-tab active js-productsTab">Home</a>
-      <a class="btn btn-bar btn-tab js-vendorsTab">
+      <a class="btn btn-bar btn-tab js-vendorsTab colorGrey">
         <%= polyglot.t('Pages') %>
       </a>
       <p class="paddingTop16px paddingBottom4px marginTop4 inlineBlock marginLeft32"><span class="js-discoverHeading"></span><a class="ion-ios-close-empty vertAlignMid hide js-homeSearchItemsClear"></a></p>
@@ -21,17 +21,17 @@
             <div class="flexCol-12">
               <div class="flexRow positionAbsolute">
                 <div class="btn-togWrapper btn-togWrapper-c1 btn-toWrapper-discoverToggle marginRight10 js-homeListingToggle">
-                  <a class="btn btn-txt btn-togRight active js-homeListingsFollowed tooltip tooltip-left"
+                  <a class="btn btn-txt btn-togRight js-homeListingsAll tooltip tooltip-left colorGrey"
+                     data-tooltip="<%= polyglot.t('ShowAllListingsTooltip') %>">
+                    <span class="toggle-txt"><%= polyglot.t('Random') %></span>
+                  </a>
+                  <a class="btn btn-txt btn-togRight active js-homeListingsFollowed tooltip tooltip-left colorGrey"
                      data-tooltip="<%= polyglot.t('ShowOnlyFollowerListingsTooltip') %>">
                     <span class="toggle-txt"><%= polyglot.t('ShowOnlyFollowerListings') %></span>
                   </a>
                   <% if(!localStorage.getItem('safeListingsWarningDissmissed')){ %>
                     <div class="discoverToggleHelper js-discoverToggleHelper"><%= polyglot.t('TryRandom') %></div>
                   <% } %>
-                  <a class="btn btn-txt btn-togRight js-homeListingsAll tooltip tooltip-left"
-                     data-tooltip="<%= polyglot.t('ShowAllListingsTooltip') %>">
-                    <span class="toggle-txt"><%= polyglot.t('Random') %></span>
-                  </a>
                 </div>
               </div>
             </div>
