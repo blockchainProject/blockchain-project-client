@@ -1273,7 +1273,12 @@ h6, .h6 {
   border-radius: 4px 4px 0 0;
   color: #FFF;
   height: 276px;
+  transition: all 0.5s ease;
   width: 100%;
+}
+
+.itemImg:hover{
+  opacity: 0.85;
 }
 
 .itemPrice span{
