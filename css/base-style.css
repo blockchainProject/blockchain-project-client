@@ -711,9 +711,9 @@ h6, .h6 {
 
 #gjContainer {
   transition: width 0.5s ease;
-  width: 70%;
+  width: 72%;
   height: calc(100% - 50px);
-  margin: 0 15%;
+  margin: 0 13%;
   overflow-y: scroll;
   -webkit-app-region: no-drag;
   position: relative;
@@ -747,7 +747,7 @@ h6, .h6 {
 }
 
 #gj.chatOpen #gjContainer {
-  width: 70%;
+  width: 72%;
 }
 
 #pageNav{
@@ -784,7 +784,7 @@ h6, .h6 {
   position: fixed;
   left: 0px;
   top: 56px;
-  width: 15%;
+  width: 13%;
   background-color: #1F2129;
   border-right: 0;
   height: calc(100% - 56px);
