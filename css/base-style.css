@@ -6730,6 +6730,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .homeFeedChatButton {
   margin-right: 16px;
+  overflow: hidden;
 }
 
 /*========== profile page ==========*/
