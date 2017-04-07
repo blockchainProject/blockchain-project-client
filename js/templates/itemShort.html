@@ -35,8 +35,8 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
     <li>
     <% if(ob.discover) { %>
     <% if(ob.showAvatar) { %>
-    <div class="homeFeedProfileIcon thumbnail-small js-about tooltip" data-tooltip="<% if(ob.handle) { %><%= ob.handle %><% }else{ %><%= ob.guid %><% } %>" data-handle="<%= ob.handle %>"
-      style="background-image: <% if(ob.avatar_hash && ob.avatarURL) { %> url(<%= ob.avatarURL %>), <% } %>url(imgs/defaultUser.png);">
+    <div class="homeFeedProfileIcon thumbnail-small js-about tooltip clickable" data-tooltip="<% if(ob.handle) { %><%= ob.handle %><% }else{ %><%= ob.guid %><% } %>" data-handle="<%= ob.handle %>"
+      style="background-image: <% if(ob.avatar_hash && ob.avatarURL) { %> url(<%= ob.avatarURL %>), <% } %>url(imgs/defaultUser.png);"><a href="#userPage/<%= ob.guid %>/store"></a>
     </div>        
     <% } %>
     <% } %>
