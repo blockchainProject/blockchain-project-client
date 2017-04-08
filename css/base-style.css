@@ -266,11 +266,6 @@ h6, .h6 {
   opacity: 0.50;
 }
 
-[class *= "ion-"]:before {
-  font-size: 1.4rem;
-  pointer-events: none;
-}
-
 .ion-ios-checkmark-outline:before {
   font-weight: bold !important;
 }
