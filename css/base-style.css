@@ -445,19 +445,6 @@ h6, .h6 {
   right: 40px;
 }
 
-.homeFeedChatButton .chatButton {
-  background-color: #FFF;
-  border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #12BB4F;
-  font-size: 1.6rem;
-  padding: 4px 16px;
-  text-decoration: none;
-}
-
 .greenOnWhiteButton {
   background-color: #FFF;
   border: 1px solid #12BB4F;

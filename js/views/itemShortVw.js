@@ -73,7 +73,6 @@ module.exports = baseVw.extend({
 
       if($(".js-list3").closest(".js-store").length ) {
           $(".js-store .js-list3 .flexCol-6").toggleClass('flexCol-6 flexCol-12');
-          $(".js-store .js-list3 .homeFeedChatButton").css("display", "none");
           $(".js-store .js-list3 .gridItemControls").css("width", "600px");
           $(".js-store .js-list3 .flexCol-12 .gridItemControls").each(function() {
             $(this).prepend( $(this).siblings().find(".itemPrice .itemPriceTag") );
