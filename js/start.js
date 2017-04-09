@@ -205,10 +205,10 @@ if (platform === "linux") {
 // add platform-dependent style
 var name = os.platform();
 if( name === 'darwin'){
-  name = 'mac'; 
+  name = 'mac';
 } else if( name === 'linux'){
-  name = 'linux'; 
-} else { 
+  name = 'linux';
+} else {
   name = 'windows';
 }
 $('html').addClass('platform-' + name);
@@ -290,6 +290,10 @@ $(window).bind('keydown', function(e) {
 
   if (e.keyCode == 116) { //on F5 press
     Backbone.history.loadUrl();
+  }
+
+  if (e.keyCode == 8) { //on Backspace (windows) or Delete (mac)
+    window.history.back();
   }
 
   if (ctrl) {
