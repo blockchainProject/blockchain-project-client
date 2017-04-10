@@ -199,19 +199,23 @@ ipcMain.on('activeServerChange', function(event, server) {
 
 // Bounce the app icon on OSX
 var bounceAndCancel = function(callback){
+  if(process.platform === "win32")
+  {
+    return;
+  }
   var bounceID = app.dock.bounce();
-  setTimeout(function(){ 
+  setTimeout(function(){
     app.dock.cancelBounce(bounceID);
 
     if( typeof callback === 'function')
     {
-      callback(); 
-    } 
+      callback();
+    }
   }, 1000);
 };
-bounceAndCancel( function(){ 
+bounceAndCancel( function(){
   bounceAndCancel( bounceAndCancel);
-}); 
+});
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is GCed.
@@ -517,7 +521,7 @@ app.on('ready', function() {
               }
             }
           }
-        }    
+        }
       ]
     },
     {
@@ -563,7 +567,7 @@ app.on('ready', function() {
           dialog.showErrorBox('Unable To Open Debug Log',
             'There was an error and we are unable to open the server debug log at this time.\n\n' + err);
         }
-        
+
         require('open')(debugPath);
       });
     }},
@@ -600,9 +604,9 @@ app.on('ready', function() {
     "icon": "imgs/grabjob-logo.png",
     "titleBarStyle": "hidden"
   });
-  
+
   mainWindow.maximize()
-  
+
   // and load the index.html of the app.
   if(open_url) {
     mainWindow.loadURL('file://' + __dirname + '/index.html' + open_url);
@@ -681,7 +685,7 @@ function openURL(uri) {
     // if our app router is fully loaded it will process the event sent below, otherwise
     // the global.externalRoute will be used
     mainWindow.webContents.send('external-route', uri);
-  }  
+  }
 
 }
 
