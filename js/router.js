@@ -390,7 +390,7 @@ module.exports = Backbone.Router.extend({
       bodyClass: 'onPage'
     });
 
-    app.appBar.setTitle(handle ? handle : options.userId || this.userModel.get('guid'));
+    app.setTitle(handle ? handle : options.userId || this.userModel.get('guid')); //router problem fix
   },
 
   userPageViaHandle: function(handle, subPath) {
