@@ -5661,6 +5661,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 9px;
 }
 
+#gj  .marginTop10 {
+  margin-top: 10px;
+}
+
 #gj  .marginTop12 {
   margin-top: 12px;
 }
@@ -5815,8 +5819,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: 36px;
   line-height: 36px;
 }
-
 #gj  .height50 {
+  height: 50%;
+}
+#gj  .height50px {
   height: 50px;
 }
 #gj  .height54 {
@@ -5838,8 +5844,16 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   line-height: 30px;
 }
 
-#gj  .height70 {
+#gj  .height70px {
   height: 70px;
+}
+
+#gj  .height70 {
+  height: 70%;
+}
+
+#gj  .height100 {
+  height: 100%;
 }
 
 #gj  .height130 {
@@ -5878,6 +5892,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #gj  .lineHeight15{
+  line-height: 1.5;
+}
+
+#gj  .lineHeight15px{
   line-height: 15px;
 }
 #gj  .lineHeight16{
@@ -5892,6 +5910,9 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 #gj  .lineHeight24{
   line-height: 24px;
+}
+#gj  .lineHeight26{
+  line-height: 26px;
 }
 #gj  .lineHeight32{
   line-height: 32px;
