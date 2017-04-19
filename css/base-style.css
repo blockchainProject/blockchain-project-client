@@ -1210,6 +1210,7 @@ h6, .h6 {
 
 .homeGridItems{
   background-color: #F3F3F3;
+  margin-top: 88px;
 }
 
 .pageGridItems .flexCol-4:nth-child(3n) .gridItem,
@@ -1489,6 +1490,16 @@ label.fieldItem {
   top: 23px;
 }
 
+.home-page-header {
+  height: 72px;
+  background-color: #FFF;
+  box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
+  position: fixed;
+  left: 166px;
+  top: 56px;
+  width: 72%;
+  z-index: 10;
+}
 .home-page-navigation .ion-ios-close-empty{
   background-color: #12BB4F;
   color: #FFF;
