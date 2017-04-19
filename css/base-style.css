@@ -3,7 +3,7 @@ html{
   font-size: 62.5%;
 }
 body {
-  background-color: #FAFAFA;
+  background-color: #F3F3F3;
   overflow: hidden;
   color: rgb(255, 255, 255);
   font-family: 'Lato', sans-serif;
@@ -448,13 +448,13 @@ h6, .h6 {
 .greenOnWhiteButton {
   background-color: #FFF;
   border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
   cursor: pointer;
   color: #12BB4F;
-  font-size: 1.6rem;
-  padding: 4px 16px;
+  font-size: 2.0rem;
+  padding: 3px 21px;
   text-decoration: none;
 }
 
@@ -818,7 +818,7 @@ h6, .h6 {
 
 .mainContainer {
   background-color: #FAFAFA;
-  color: #030303;
+  color: #3a3e46;
   position: relative;
   min-height: 740px;
   margin-bottom: 50px;
@@ -1105,18 +1105,17 @@ h6, .h6 {
 
 .gridItemControls {
   background-color: #FFF;
-  border-radius: 0 0 4px 4px;
   position: relative;
   opacity: 1;
   bottom: 0;
   left: 0px;
-  height: 104px;
-  padding: 0;
+  height: 132px;
+  box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
   box-sizing: border-box;
   transition: opacity .5s cubic-bezier(0, 0, 0.2, 1);
   width: 93%;
-  background: #FFF;
-  margin: 0px 16px; 
+  padding: 16px;
+  margin-left: 16px;
 }
 
 .gridItemControls ul li {
@@ -1247,14 +1246,22 @@ h6, .h6 {
   width: 100%;
 }
 
+.itemTitleAndProfile{
+  width: 100%;
+}
+
+#userPage .itemTitleAndProfile{
+  width: 80%;
+}
+
 .itemImg {
-  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 4px 4px 0 0;
+  border-radius: 8px 8px 0 0;
   color: #FFF;
   height: 276px;
+  position: relative;
   transition: all 0.5s ease;
   width: 100%;
 }
@@ -1264,10 +1271,26 @@ h6, .h6 {
 }
 
 .itemPrice span{
-  background-color: rgba(3, 3, 3, 0.9);
-  padding: 6px 8px 6px 12px;
-  position: relative;
-  top: 240px;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+#userPage .itemPrice span{
+  font-size: 1.8rem;
+}
+
+#userPage .itemPrice{
+  float: right;
+  margin-top: 12px;
+}
+
+#userPage .itemPriceTag{
+  color: #009DC4;
+  border: 1px solid #009DC4;
+  border-radius: 8px;
+  padding: 8px 24px;
+  margin-top: 16px;
+  margin-right: 34px;
 }
 
 .itemImg.itemImg-large {
@@ -1328,6 +1351,12 @@ h6, .h6 {
 
 .itemMeta .itemPrice {
   padding: 0 15px 2px 0px;
+}
+
+.itemPriceTag:before {
+  font-family: 'ionicons';
+  font-weight: normal;
+  content: '\f2af';
 }
 
 .rowItem {
@@ -1479,9 +1508,8 @@ label.fieldItem {
   height: 40px;
   position: relative;
   width: 40px;
-  margin-top: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 21px;
+  margin-left: 71px;
 }
 
 .thumbnail-small:after {
@@ -6717,8 +6745,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*========== home feed ==========*/
 .homeFeedServiceTitle {
   font-weight: bold;
-  margin-left: 16px;
-  margin-top: 12px;
+  margin-top: 16px;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
@@ -6726,12 +6753,8 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-orient: vertical;
 }
 
-.homeFeedProfileIcon {
-}
-
-.homeFeedChatButton {
-  margin-right: 16px;
-  overflow: hidden;
+#userPage .homeFeedServiceTitle{
+  padding-top: 0;
 }
 
 /*========== profile page ==========*/
