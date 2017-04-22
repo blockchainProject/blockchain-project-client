@@ -1210,7 +1210,7 @@ h6, .h6 {
 
 .homeGridItems{
   background-color: #F3F3F3;
-  margin-top: 88px;
+  margin-top: 80px;
 }
 
 .pageGridItems .flexCol-4:nth-child(3n) .gridItem,
@@ -1491,15 +1491,25 @@ label.fieldItem {
 }
 
 .home-page-header {
-  height: 72px;
+  height: 64px;
   background-color: #FFF;
   box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
   position: fixed;
   left: 166px;
   top: 56px;
   width: 72%;
+  transition: top 0.2s ease-in-out;
   z-index: 10;
 }
+
+.home-page-header-up{
+  top: -56px;
+}
+
+.home-page-header-down{
+  top: 56px;
+}
+
 .home-page-navigation .ion-ios-close-empty{
   background-color: #12BB4F;
   color: #FFF;
