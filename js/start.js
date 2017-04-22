@@ -282,7 +282,7 @@ $('body').on('keypress', 'input', function(event) {
   }
 });
 
-//keyboard shortucts
+//keyboard shortcuts
 $(window).bind('keydown', function(e) {
   var char = String.fromCharCode(e.which).toLowerCase(),
       ctrl = (e.ctrlKey || e.metaKey) && !e.altKey, //test for alt key to prevent international keyboard issues

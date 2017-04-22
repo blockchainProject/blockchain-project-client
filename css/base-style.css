@@ -3,7 +3,7 @@ html{
   font-size: 62.5%;
 }
 body {
-  background-color: #FAFAFA;
+  background-color: #F3F3F3;
   overflow: hidden;
   color: rgb(255, 255, 255);
   font-family: 'Lato', sans-serif;
@@ -266,11 +266,6 @@ h6, .h6 {
   opacity: 0.50;
 }
 
-[class *= "ion-"]:before {
-  font-size: 1.4rem;
-  pointer-events: none;
-}
-
 .ion-ios-checkmark-outline:before {
   font-weight: bold !important;
 }
@@ -450,29 +445,16 @@ h6, .h6 {
   right: 40px;
 }
 
-.homeFeedChatButton .chatButton {
-  background-color: #FFF;
-  border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #12BB4F;
-  font-size: 1.6rem;
-  padding: 4px 16px;
-  text-decoration: none;
-}
-
 .greenOnWhiteButton {
   background-color: #FFF;
   border: 1px solid #12BB4F;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
   cursor: pointer;
   color: #12BB4F;
-  font-size: 1.6rem;
-  padding: 4px 16px;
+  font-size: 2.0rem;
+  padding: 3px 21px;
   text-decoration: none;
 }
 
@@ -711,9 +693,9 @@ h6, .h6 {
 
 #gjContainer {
   transition: width 0.5s ease;
-  width: 70%;
+  width: 72%;
   height: calc(100% - 50px);
-  margin: 0 15%;
+  margin: 0 13%;
   overflow-y: scroll;
   -webkit-app-region: no-drag;
   position: relative;
@@ -747,7 +729,7 @@ h6, .h6 {
 }
 
 #gj.chatOpen #gjContainer {
-  width: 70%;
+  width: 72%;
 }
 
 #pageNav{
@@ -784,7 +766,7 @@ h6, .h6 {
   position: fixed;
   left: 0px;
   top: 56px;
-  width: 15%;
+  width: 13%;
   background-color: #1F2129;
   border-right: 0;
   height: calc(100% - 56px);
@@ -836,7 +818,7 @@ h6, .h6 {
 
 .mainContainer {
   background-color: #FAFAFA;
-  color: #030303;
+  color: #3a3e46;
   position: relative;
   min-height: 740px;
   margin-bottom: 50px;
@@ -937,21 +919,21 @@ h6, .h6 {
 
 .header-alignleft .ctrlGroup:first-child {
   padding-left: 0;
-  position: relative;
-  top: 2px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 .header-alignleft .ctrlGroup:nth-child(2) {
   color: #030303;
   padding-left: 8px;
-  position: relative;
-  top: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .header-alignleft .ctrlGroup:nth-child(3) {
   color: #030303;
-  position: relative;
-  top: 13px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .header-alignright .ctrlGroup:nth-child(2) {
@@ -988,6 +970,10 @@ h6, .h6 {
 
 .flexContainer {
   overflow: hidden;
+}
+
+.flexRow-wrap {
+  margin-top: 72px;
 }
 
 .flexRow {
@@ -1123,18 +1109,17 @@ h6, .h6 {
 
 .gridItemControls {
   background-color: #FFF;
-  border-radius: 0 0 4px 4px;
   position: relative;
   opacity: 1;
   bottom: 0;
   left: 0px;
-  height: 104px;
-  padding: 0;
+  height: 132px;
+  box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
   box-sizing: border-box;
   transition: opacity .5s cubic-bezier(0, 0, 0.2, 1);
   width: 93%;
-  background: #FFF;
-  margin: 0px 16px; 
+  padding: 16px;
+  margin-left: 16px;
 }
 
 .gridItemControls ul li {
@@ -1229,6 +1214,7 @@ h6, .h6 {
 
 .homeGridItems{
   background-color: #F3F3F3;
+  margin-top: 80px;
 }
 
 .pageGridItems .flexCol-4:nth-child(3n) .gridItem,
@@ -1265,22 +1251,51 @@ h6, .h6 {
   width: 100%;
 }
 
-.itemImg {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 4px 4px 0 0;
-  color: #FFF;
-  height: 276px;
+.itemTitleAndProfile{
   width: 100%;
 }
 
-.itemPrice span{
-  background-color: rgba(3, 3, 3, 0.9);
-  padding: 6px 8px 6px 12px;
+#userPage .itemTitleAndProfile{
+  width: 80%;
+}
+
+.itemImg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+  color: #FFF;
+  height: 276px;
   position: relative;
-  top: 240px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.itemImg:hover{
+  opacity: 0.85;
+}
+
+.itemPrice span{
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+#userPage .itemPrice span{
+  font-size: 1.8rem;
+}
+
+#userPage .itemPrice{
+  float: right;
+  margin-top: 12px;
+}
+
+#userPage .itemPriceTag{
+  color: #009DC4;
+  border: 1px solid #009DC4;
+  border-radius: 8px;
+  padding: 8px 24px;
+  margin-top: 16px;
+  margin-right: 34px;
 }
 
 .itemImg.itemImg-large {
@@ -1341,6 +1356,12 @@ h6, .h6 {
 
 .itemMeta .itemPrice {
   padding: 0 15px 2px 0px;
+}
+
+.itemPriceTag:before {
+  font-family: 'ionicons';
+  font-weight: normal;
+  content: '\f2af';
 }
 
 .rowItem {
@@ -1473,6 +1494,26 @@ label.fieldItem {
   top: 23px;
 }
 
+.home-page-header {
+  height: 64px;
+  background-color: #FFF;
+  box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
+  position: fixed;
+  left: 166px;
+  top: 56px;
+  width: 72%;
+  transition: top 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.home-page-header-up{
+  top: -56px;
+}
+
+.home-page-header-down{
+  top: 56px;
+}
+
 .home-page-navigation .ion-ios-close-empty{
   background-color: #12BB4F;
   color: #FFF;
@@ -1485,20 +1526,22 @@ label.fieldItem {
 }
 
 .thumbnail-small {
-  background-position: left top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 45px 45px;
-  border-radius: 0px;
-  height: 30px;
+  background-size: 40px;
+  border-radius:20px;
+  height: 40px;
   position: relative;
-  width: 30px;
+  width: 40px;
+  margin-top: 21px;
+  margin-left: 71px;
 }
 
 .thumbnail-small:after {
    content: "";
    position: absolute;
-   top: 18px;
-   right: -8px;
+   top: 28px;
+   right: -3px;
    background: #12BB4F;
    color: white;
    width: 16px;
@@ -2222,10 +2265,6 @@ input[type="text"].txtField-bar {
   text-decoration: none;
 }
 
-.btn:before {
-  line-height: 32px;
-}
-
 .btn.btn-txt {
   /* button with text */
   margin: 0 12px;
@@ -2233,13 +2272,13 @@ input[type="text"].txtField-bar {
 
 .btn.btn-txt.active {
   border-bottom: 2px solid #009DC4;
-  color: #009DC4;
+  color: #009DC4 !important;
   opacity: 1;
 }
 
 .btn.btn-txt:hover {
   border-bottom: 2px solid #009DC4;
-  color: #009DC4;
+  color: #009DC4 !important;
   opacity: 1.0;
 }
 
@@ -2382,17 +2421,13 @@ input[type="text"].txtField-bar {
 
 .btn.btn-win.btn-winClose {
   background-color: #FA6058;
-  position: relative;
   border: 1px solid #E14540;
 }
 
 .btn.btn-win.btn-winClose .btn-win-icon,
 .btn.btn-win.btn-winMin .btn-win-icon,
 .btn.btn-win.btn-winMax .btn-win-icon {
-  position: absolute;
   display: none;
-  top: -1.5px;
-  left: 0.5px;
   width: 100%;
   height: 100%;
   font-size: 1.3rem;
@@ -2407,13 +2442,11 @@ input[type="text"].txtField-bar {
 
 .btn.btn-win.btn-winMin {
   background-color: #FCBD2E;
-  position: relative;
   border: 1px solid #E0A027;
 }
 
 .btn.btn-win.btn-winMax {
   background-color: #30CA41;
-  position: relative;
   border: 1px solid #2EAD31;
 }
 
@@ -2908,7 +2941,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .btn.btn-bar:hover {
   border-bottom: 2px solid #009DC4;
-  color: #009DC4;
+  color: #009DC4 !important;
   opacity: 1.0;
 }
 
@@ -4727,6 +4760,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .loadingModal .loadingModalContent {
+  color: #030303;
   position: absolute;
   right: 0;
   left: 0;
@@ -5038,7 +5072,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: fixed;
   bottom: 15px;
   color: #FFF;
-  right: 73px;
+  right: 16%;
   padding: 10px;
   background-color: #009DC4;
   transform: translateY(100%);
@@ -5671,6 +5705,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   margin-top: 9px;
 }
 
+#gj  .marginTop10 {
+  margin-top: 10px;
+}
+
 #gj  .marginTop12 {
   margin-top: 12px;
 }
@@ -5825,8 +5863,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: 36px;
   line-height: 36px;
 }
-
 #gj  .height50 {
+  height: 50%;
+}
+#gj  .height50px {
   height: 50px;
 }
 #gj  .height54 {
@@ -5848,8 +5888,16 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   line-height: 30px;
 }
 
-#gj  .height70 {
+#gj  .height70px {
   height: 70px;
+}
+
+#gj  .height70 {
+  height: 70%;
+}
+
+#gj  .height100 {
+  height: 100%;
 }
 
 #gj  .height130 {
@@ -5888,6 +5936,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 #gj  .lineHeight15{
+  line-height: 1.5;
+}
+
+#gj  .lineHeight15px{
   line-height: 15px;
 }
 #gj  .lineHeight16{
@@ -5902,6 +5954,9 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 #gj  .lineHeight24{
   line-height: 24px;
+}
+#gj  .lineHeight26{
+  line-height: 26px;
 }
 #gj  .lineHeight32{
   line-height: 32px;
@@ -6712,16 +6767,16 @@ input[type=number]::-webkit-outer-spin-button {
 /*========== home feed ==========*/
 .homeFeedServiceTitle {
   font-weight: bold;
-  margin-left: 16px;
-  margin-top: 12px;
+  margin-top: 16px;
   width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
-.homeFeedProfileIcon {
-}
-
-.homeFeedChatButton {
-  margin-right: 16px;
+#userPage .homeFeedServiceTitle{
+  padding-top: 0;
 }
 
 /*========== profile page ==========*/

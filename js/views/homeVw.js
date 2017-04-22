@@ -57,6 +57,8 @@ module.exports = pageVw.extend({
     this.socketUsersID = Math.random().toString(36).slice(2);
     this.socketSearchID = '';
 
+    $('#gjContainer').bind("scroll", self.scrollHeader);
+
     //listen to follow and unfollow events
     this.listenTo(window.obEventBus, "followUser", function(options){
       self.followUser(options);
@@ -71,6 +73,36 @@ module.exports = pageVw.extend({
     this.listenTo(app.router, 'cache-will-detach', this.onCacheWillDetach);
     this.listenTo(app.router, 'cache-detached', this.onCacheDetached);
     this.listenTo(app.router, 'cache-reattached', this.onCacheReattached);
+  },
+
+  scrollHeader: function(){
+    // Hide Header on scroll down
+    var didScroll = true;
+    var lastScrollTop = 0;
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $('#gjContainer').scrollTop();
+
+        // If they scrolled down and are past the navbar, add class .home-page-header-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop){
+            // Scroll Down
+          if(st > 1500){
+            $('.home-page-header').removeClass('home-page-header-down').addClass('home-page-header-up');
+          }
+        } else {
+            // Scroll Up
+            $('.home-page-header').removeClass('home-page-header-up').addClass('home-page-header-down');
+        }
+        lastScrollTop = st;
+    }
   },
 
   onCacheReattached: function(e) {
@@ -226,6 +258,7 @@ module.exports = pageVw.extend({
         self.gjContainer.on('scroll', self.scrollHandler);
 
         self.$backToTop = self.$('.backToTop');
+
       });
     });
   },
