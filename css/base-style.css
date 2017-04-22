@@ -972,6 +972,10 @@ h6, .h6 {
   overflow: hidden;
 }
 
+.flexRow-wrap {
+  margin-top: 72px;
+}
+
 .flexRow {
   display: flex;
   align-content: flex-start;
@@ -2261,10 +2265,6 @@ input[type="text"].txtField-bar {
   text-decoration: none;
 }
 
-.btn:before {
-  line-height: 32px;
-}
-
 .btn.btn-txt {
   /* button with text */
   margin: 0 12px;
@@ -2272,13 +2272,13 @@ input[type="text"].txtField-bar {
 
 .btn.btn-txt.active {
   border-bottom: 2px solid #009DC4;
-  color: #009DC4;
+  color: #009DC4 !important;
   opacity: 1;
 }
 
 .btn.btn-txt:hover {
   border-bottom: 2px solid #009DC4;
-  color: #009DC4;
+  color: #009DC4 !important;
   opacity: 1.0;
 }
 
@@ -2941,7 +2941,7 @@ div.chatSearchOut .chatSearchIcon {
 
 .btn.btn-bar:hover {
   border-bottom: 2px solid #009DC4;
-  color: #009DC4;
+  color: #009DC4 !important;
   opacity: 1.0;
 }
 
@@ -4760,6 +4760,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .loadingModal .loadingModalContent {
+  color: #030303;
   position: absolute;
   right: 0;
   left: 0;
@@ -5071,7 +5072,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   position: fixed;
   bottom: 15px;
   color: #FFF;
-  right: 73px;
+  right: 16%;
   padding: 10px;
   background-color: #009DC4;
   transform: translateY(100%);
