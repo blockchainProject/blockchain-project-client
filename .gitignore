@@ -20,3 +20,6 @@ npm-debug.log
 
 .DS_Store
 .idea/watcherTasks.xml
+
+Update.exe
+tmp/
