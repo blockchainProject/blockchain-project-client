@@ -9,40 +9,35 @@ if(_.intersection(ob.userCountries, ob.ships_to).length > 0 || ob.ships_to == "A
 <div class="gridItem clearfix custCol-border">
   <div class="itemImg custCol-secondary overflowHidden js-item" data-id="<%= ob.contract_hash %>">
     <div class="itemImg <% if(ob.cloak){ %> nsfw <% } %>" style="background-image: url(<%= ob.imageURL %>), url(imgs/defaultItem.png);">
-      <div class="table">
-        <div>
-          <div class="itemPrice textSize13px txt-fade"><span class="itemPriceTag colorGrey">
-            <%= ob.intlNumFormat(ob.vendorBTCPrice, 4) %> BTC
-            <% if(ob.userCurrencyCode != 'BTC'){ %>
-             (<%= ob.displayPrice %>)
-            <% } %></span>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 
 <div class="gridItemControls custCol-border custCol-primary">
-  <ul>
-    <li>
-    <div class="homeFeedServiceTitle js-item <% if(ob.title.length >= 30) { %><% } %>"
-    <% if(ob.title.length >= 30) { %> <% } %> data-id="<%= ob.contract_hash %>">
-    <div class="textSize14px textOpacity1 js-searchTitle colorGrey">
-      <%= ob.title %>
-    </div>
+  <div class="itemPrice textSize13px">
+    <span class="itemPriceTag">
+      <%= ob.intlNumFormat(ob.vendorBTCPrice, 4) %>
+      <% if(ob.userCurrencyCode != 'BTC'){ %>
+       (<%= ob.displayPrice %>)
+      <% } %>
+    </span>
+  </div>
+  <ul class="height100 itemTitleAndProfile">
+    <li class="width70 height100">
+      <div class="homeFeedServiceTitle height50 js-item clickable <% if(ob.title.length >= 30) { %><% } %>"
+      <% if(ob.title.length >= 30) { %> <% } %> data-id="<%= ob.contract_hash %>">
+      <div class="textOpacity1 js-searchTitle fontSize18 lineHeight26">
+        <%= ob.title %>
+      </div>
     </li>
-    <li>
+    <li class="width30">
     <% if(ob.discover) { %>
     <% if(ob.showAvatar) { %>
-    <div class="homeFeedProfileIcon thumbnail-small js-about tooltip" data-tooltip="<% if(ob.handle) { %><%= ob.handle %><% }else{ %><%= ob.guid %><% } %>" data-handle="<%= ob.handle %>"
-      style="background-image: <% if(ob.avatar_hash && ob.avatarURL) { %> url(<%= ob.avatarURL %>), <% } %>url(imgs/defaultUser.png);">
+    <div class="homeFeedProfileIcon thumbnail-small js-about tooltip clickable" data-tooltip="<% if(ob.handle) { %><%= ob.handle %><% }else{ %><%= ob.guid %><% } %>" data-handle="<%= ob.handle %>"
+      style="background-image: <% if(ob.avatar_hash && ob.avatarURL) { %> url(<%= ob.avatarURL %>), <% } %>url(imgs/defaultUser.png);"><a href="#userPage/<%= ob.guid %>/store"></a>
     </div>        
     <% } %>
     <% } %>
-    <div class="homeFeedChatButton">
-      <a href="#" class="greenOnWhiteButton js-message">Chat</a>
-    </div>
 
   </ul>
   <% if(ob.ownPage){ %>

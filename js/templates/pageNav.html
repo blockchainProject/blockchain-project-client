@@ -5,7 +5,7 @@
       <span class="pull-right txt-muted ion-arrow-right-b positionRelative" style="top: 4px"></span>
     </a>
     <hr/>
-    <a href="#userPage">
+    <a href="#userPage/<%= ob.guid %>">
       <span class="ion-document-text fontSize12 marginRight2 textOpacity1"></span>
     	<%= polyglot.t('nav.myPage') %>
     	<span class="pull-right txt-muted marginLeft10"><%= config.keyShortcutPrefix + config.keyShortcuts.myPage.toUpperCase() %></span>
@@ -84,11 +84,11 @@
         </a>    
       </div>
       <div class="ctrlGroup">
-        <a class="btn btn-togLeft btn-back ion-ios-arrow-left js-navBack custCol-primary custCol-text fontSize24"></a>
-        <a class="btn btn-togRight btn-fwd ion-ios-arrow-right js-navFwd custCol-primary custCol-text fontSize24"></a>
+        <a class="btn btn-togLeft btn-back ion-ios-arrow-left js-navBack custCol-primary custCol-text fontSize30"></a>
+        <a class="btn btn-togRight btn-fwd ion-ios-arrow-right js-navFwd custCol-primary custCol-text fontSize30"></a>
       </div>
       <div class="ctrlGroup">
-        <a class="btn btn-home ion-ios-refresh-empty custCol-primary custCol-text js-navRefresh fontsize24"></a>
+        <a class="btn btn-home ion-ios-refresh-empty custCol-primary custCol-text js-navRefresh fontsize30"></a>
       </div>
     </div>    
     <div class="header-alignright">
