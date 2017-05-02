@@ -22,7 +22,10 @@ var __ = require('underscore'),
     saveToAPI = require('../utils/saveToAPI'),
     ModeratorSettingsModal = require('./moderatorSettingsModal'),
     HiddenWarningModal = require('./hiddenWarningModal'),
+    Clipboard = require('clipboard'),
     UserPageVw;
+
+new Clipboard('.btn');
 
 var defaultItem = {
   "vendor_offer": {
@@ -288,7 +291,7 @@ UserPageVw = pageVw.extend({
           self.model.set({ownPage: self.options.ownPage});
           self.render();
           !self.currentItemHash && self.loadingDeferred.resolve();
-          
+
           // Handle was requested
           if (profile.handle) {
             window.obEventBus.trigger('handleObtained', profile);
@@ -403,7 +406,7 @@ UserPageVw = pageVw.extend({
             console.log(errorMessage);
           }
         });
-        
+
         self.scrollHandler = __.bind(
           __.throttle(self.onScroll, 100),
           self
@@ -435,7 +438,7 @@ UserPageVw = pageVw.extend({
         .show();
       this.$('.user-page-navigation-buttons').removeClass('positionFixed positionTop72px');
       this.$backToTop.removeClass('slideUp');
-    }    
+    }
   },
 
   clickBackToTop: function() {
@@ -444,7 +447,7 @@ UserPageVw = pageVw.extend({
         this.$backToTop.removeClass('slideUp');
       }
     });
-  },  
+  },
 
   verifiedIconToggle: function(){
     if ((typeof $('.positionWrapper .js-websiteExternalLink').attr('href')) !== "undefined") {
@@ -617,15 +620,15 @@ UserPageVw = pageVw.extend({
       }
     }
   },
-  
-  setFollowingPlaceholder: function(totalLength, currentLength) {    
+
+  setFollowingPlaceholder: function(totalLength, currentLength) {
     if (totalLength > currentLength) {
       this.$('#inputFollowing').attr('placeholder', window.polyglot.t('SearchForFollowingPlaceholderMore'));
     } else {
       this.$('#inputFollowing').attr('placeholder', window.polyglot.t('SearchForFollowingPlaceholder'));
     }
   },
-  
+
   setFollowersPlaceholder: function(totalLength, currentLength) {
     if (totalLength > currentLength) {
       this.$('#inputFollowers').attr('placeholder', window.polyglot.t('SearchForFollowersPlaceholderMore'));
@@ -637,6 +640,7 @@ UserPageVw = pageVw.extend({
   categoryChanged: function() {
     this.renderItems(this.listings.get('listings'));
   },
+
 
   toggleFollowButtons: function(followed) {
     var followBtn = this.$('.js-follow'),
@@ -682,7 +686,7 @@ UserPageVw = pageVw.extend({
         app.simpleMessageModal.open({
           title: window.polyglot.t('errorMessages.notFoundError'),
           message: window.polyglot.t('Items')
-        });       
+        });
       },
       complete: function (xhr, textStatus) {
         if (textStatus == 'parsererror') {
@@ -690,7 +694,7 @@ UserPageVw = pageVw.extend({
             title: window.polyglot.t('errorMessages.serverError'),
             message: window.polyglot.t('errorMessages.badJSON')
           });
-          
+
           throw new Error("The listings data returned from the API has a parsing error.");
         }
       }
@@ -711,7 +715,7 @@ UserPageVw = pageVw.extend({
         app.simpleMessageModal.open({
           title: window.polyglot.t('errorMessages.notFoundError'),
           message: window.polyglot.t('Reviews')
-        });       
+        });
       }
     });
   },
@@ -731,7 +735,7 @@ UserPageVw = pageVw.extend({
           });
           self.renderFollowing(followingArray);
           self.setFollowingPlaceholder(followingArray.length, self.ownFollowing.length);
-          
+
           //call followers 2nd so list of following is available
           self.fetchFollowers();
         } else {
@@ -747,10 +751,10 @@ UserPageVw = pageVw.extend({
             });
             self.renderFollowing(followingArray);
             self.setFollowingPlaceholder(followingArray.length, self.ownFollowing.length);
-            
+
             //call followers 2nd so list of following is available
             self.fetchFollowers();
-            
+
             //mark whether page is following you
             if (self.options.ownPage === false && Boolean(__.findWhere(followingArray, {guid: self.userID}))){
               self.$('.js-followsMe').removeClass('hide');
@@ -769,7 +773,7 @@ UserPageVw = pageVw.extend({
       },
       error: function(){
         if (self.isRemoved()) return;
-        
+
         app.simpleMessageModal.open({
           title: window.polyglot.t('errorMessages.notFoundError'),
           message: window.polyglot.t('Following')
@@ -796,7 +800,7 @@ UserPageVw = pageVw.extend({
       //don't fetch again if all of the followers have been fetched
       return;
     }
-    
+
     if (this.fetchingFollowers){
       //don't cue up multiple calls
       return;
@@ -809,7 +813,7 @@ UserPageVw = pageVw.extend({
     } else {
       fetchFollowersParameters = $.param({'guid': this.pageID, 'start': this.followerFetchStart});
     }
-    
+
     this.followers.fetch({
       data: fetchFollowersParameters,
       success: (model)=> {
@@ -828,11 +832,11 @@ UserPageVw = pageVw.extend({
       },
       error: function(){
         if (self.isRemoved()) return;
-        
+
         app.simpleMessageModal.open({
           title: window.polyglot.t('errorMessages.notFoundError'),
           message: window.polyglot.t('Followers')
-        });        
+        });
       },
       complete: function(xhr, textStatus) {
         self.fetchingFollowers = false;
@@ -974,7 +978,7 @@ UserPageVw = pageVw.extend({
     });
   },
 
-  renderFollowing: function (model) {    
+  renderFollowing: function (model) {
     model = model || [];
     this.followingList = new personListView({
       model: model,
@@ -1004,7 +1008,7 @@ UserPageVw = pageVw.extend({
       if (this.followingSearch){
         this.followingSearch.reIndex();
         searchTerms && this.followingSearch.search(searchTerms);
-        
+
         this.setFollowingPlaceholder(model.length, this.followingSearch.size());
       }
     });
@@ -1063,7 +1067,7 @@ UserPageVw = pageVw.extend({
         app.simpleMessageModal.open({
           title: window.polyglot.t('errorMessages.notFoundError'),
           message: window.polyglot.t('Item')
-        });        
+        });
       },
       complete: function(xhr, textStatus) {
         if (textStatus == 'parsererror'){
@@ -1291,13 +1295,13 @@ UserPageVw = pageVw.extend({
               app.simpleMessageModal.open({
                 title: window.polyglot.t('errorMessages.saveError'),
                 message: window.polyglot.t('errorMessages.serverError')
-              });              
+              });
             }
           } else if (data.success === false){
             app.simpleMessageModal.open({
               title: window.polyglot.t('errorMessages.serverError'),
               message: '<i>' + data.reason + '</i>'
-            });            
+            });
           }
         },
         error: function (jqXHR, status, errorThrown) {
@@ -1363,7 +1367,7 @@ UserPageVw = pageVw.extend({
           app.simpleMessageModal.open({
             title: window.polyglot.t('errorMessages.serverError'),
             message: '<i>' + data.reason + '</i>'
-          });          
+          });
         }
       },
       error: function(jqXHR, status, errorThrown){
@@ -1465,7 +1469,7 @@ UserPageVw = pageVw.extend({
 
   createStore: function() {
     var storeWizardModel = new Backbone.Model();
-    
+
     storeWizardModel.set(this.model.attributes);
     this.storeWizardView && this.storeWizardView.remove();
     this.storeWizardView = new storeWizardVw({
@@ -1705,7 +1709,7 @@ UserPageVw = pageVw.extend({
           this.needsNSFWWarning = false;
           this.showNSFWContent = true;
           this.showNSFW = true;
-          
+
           if (this.state == "listing") {
             this.renderItem(this.currentItemHash);
           }

@@ -134,7 +134,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 input[type='radio'] {
   opacity: 0;
-  width: 18px;  
+  width: 18px;
 }
 
 input[type='radio'] + label {
@@ -271,7 +271,7 @@ h6, .h6 {
 }
 
 .ios-locked-outline:before {
-  content: "\f457";  
+  content: "\f457";
   font-family: 'ionicons';
   font-size: 1.8rem;
   font-weight: bold;
@@ -279,7 +279,7 @@ h6, .h6 {
 }
 
 .ios-unlocked-outline:before {
-  content: "\f4c8";  
+  content: "\f4c8";
   font-family: 'ionicons';
   font-size: 1.8rem;
   font-weight: bold;
@@ -439,7 +439,7 @@ h6, .h6 {
   text-decoration: none;
 }
 
-.profileChatButton{  
+.profileChatButton{
   position: absolute;
   top: 24px;
   right: 40px;
@@ -676,7 +676,7 @@ h6, .h6 {
 }
 
 #navArea{
-  height: 56px;  
+  height: 56px;
 }
 
 #pageNav {
@@ -774,7 +774,7 @@ h6, .h6 {
   transition: right 0.5s ease;
   color: #FFF;
   -webkit-app-region: no-drag;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 #leftSidebar a{
@@ -952,7 +952,7 @@ h6, .h6 {
   -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
   -o-transform: rotate(30deg);
-  transform: rotate(30deg);  
+  transform: rotate(30deg);
 }
 
 .header-alignright .ctrlGroup:nth-child(3) {
@@ -3332,8 +3332,8 @@ input[type="number"].fieldItem.fieldItem-withButton {
    color: #030303;
 }
 
-.settingsView textarea:-ms-input-placeholder {  
-   color: #030303;  
+.settingsView textarea:-ms-input-placeholder {
+   color: #030303;
 }
 
 .settingsView input::-webkit-input-placeholder {
@@ -3341,15 +3341,15 @@ input[type="number"].fieldItem.fieldItem-withButton {
 }
 
 .settingsView input:-moz-placeholder { /* Firefox 18- */
-   color: #030303;  
+   color: #030303;
 }
 
 .settingsView input::-moz-placeholder {  /* Firefox 19+ */
-   color: #030303;  
+   color: #030303;
 }
 
-.settingsView input:-ms-input-placeholder {  
-   color: #030303;  
+.settingsView input:-ms-input-placeholder {
+   color: #030303;
 }
 
 .numberSpinnerUp,
@@ -6312,7 +6312,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   background-image: url('../imgs/playful-cat.png');
   background-size: 25px 25px;
   display: inline-block;
-  width: 25px; 
+  width: 25px;
   height: 25px;
   content:"";
   position: relative;
@@ -6457,10 +6457,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   transition: border 0.3s, background-color 0.4s;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 #gj .loading,
@@ -6681,7 +6681,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .leftSidebar-browse-title:hover{
   color: #009DC4;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .leftSidebar-browse{
@@ -6845,7 +6845,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .reviewFeedRight{
-  width: 30%;  
+  width: 30%;
 }
 
 .rating-detail-overlay{
@@ -6869,7 +6869,7 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 0;
   margin-left: 88px;
   top: -60px;
-  position: absolute;  
+  position: absolute;
   display: inline-block;
 }
 
@@ -6900,7 +6900,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .item-description{
-  color: #9B9B9B;  
+  color: #9B9B9B;
 }
 
 /*========== payment process ==========*/
@@ -6911,4 +6911,12 @@ input[type=number]::-webkit-outer-spin-button {
     height: 200px;
     width: 240px;
     margin: 24px auto;
+}
+
+.tooltip_templates {
+  display: none;
+}
+
+#copyButton{
+  width: 115px;
 }
