@@ -293,6 +293,10 @@ $(window).bind('keydown', function(e) {
   }
 
   if (e.keyCode == 8) { //on Backspace (windows) or Delete (mac)
+    if ($(document.activeElement).attr("class") == "fieldItem" || $(document.activeElement).attr("class") == "fieldItem-textarea" ) {
+      return;
+    }
+    
     window.history.back();
   }
 
