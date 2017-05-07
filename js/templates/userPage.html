@@ -154,7 +154,7 @@
     </div>
   </div>
 
-  <div class="userPage-subViews custCol-primary minHeight650 js-userPageSubViews">         
+  <div class="userPage-subViews custCol-primary minHeight650 js-userPageSubViews">
     <div class="flexContainer flex-border custCol-primary js-about js-tabTarg minHeight650">
       <div class="flexRow minHeight650">
         <div class="flexCol-4 flex-border border0 userPageSocialAccounts overflowHidden">
@@ -175,7 +175,7 @@
                   <%= polyglot.t('ConfirmUnfollow') %>
                 </span>
               </a>
-            </div>          
+            </div>
             <div class="flexRow borderBottom custCol-border margintop25">
               <ul class="positionWrapper noOverflow alignCenter padding0 width100">
                 <li class="borderBottom custCol-border holizontalAlign">
@@ -194,14 +194,20 @@
                     </a>
                   </div>
                 </li>
-              </ul>  
-            </div>     
+              </ul>
+            </div>
             <hr>
             <div class="width100">
               <div class="marginTop24px marginLeft32 marginBottom16 fontSize24">Contact</div>
               <div class="flexRow custCol-border width100">
                 <div class="padding0832 positionWrapper noOverflow width100">
-                  <div class="tooltip marginBottom16 width100" title="<%= ob.page.profile.guid %>"><span class="green-color ion-ios-checkmark-outline marginRight8 textOpacity1 top2"></span><%= polyglot.t('Guid') %></div>
+                  <div class="tooltip marginBottom16 width100" data-tooltip-content="#copylink"><span class="green-color ion-ios-checkmark-outline marginRight8 textOpacity1 top2"></span><%= polyglot.t('Guid') %></div>
+                </div>
+                <div class="tooltip_templates">
+                  <span id="copylink">
+                    <button class="btn" data-clipboard-text="<%= ob.page.profile.guid %>" id="copyButton">Copy to Clipboard</button><!-- Please change copyButton for style points-->
+                    <%= ob.page.profile.guid %>
+                  </span>
                 </div>
               </div>
               <div class="flexRow custCol-border width100">
@@ -318,7 +324,7 @@
               <div class="hide js-notOwnPageButtons js-userPageControls holizontalAlign profileChatButton width30 alignRight">
                 <a class="greenOnWhiteButton js-message">Chat</a>
               </div>
-            </div> 
+            </div>
             <div class="rowItem userPageAboutSection js-userPageAboutSection">
               <% if(ob.ownPage) { %>
                 <a href="#settings/page">
@@ -349,7 +355,7 @@
               <span class="pill fontSize12 textOpacity75 js-userReviewsCount">...</span>
             </a>
             <% } %>
-          </div>    
+          </div>
           <div class="storeReviewContent">
             <div class="flexContainer flex-border custCol-primary js-store js-tabTarg minHeight650" id="searchStore">
               <div class="flexRow positionWrapper">
@@ -379,7 +385,7 @@
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </div>
     <div class="profilePageIcon thumbnail thumbnail-large js-userPageAvatar"
       <% if(ob.page.profile.avatar_hash) { %>
@@ -396,7 +402,7 @@
           </div>
         </a>
       <%}%>
-    </div> 
+    </div>
     <div class="flexContainer flex-border custCol-primary js-followers js-tabTarg hide minHeight650" id="searchFollowers">
       <div class="flexRow height54">
         <!--<div class="txtFieldWrapper searchWrapper searchWrapperWithPill borderBottom custCol-border">-->
