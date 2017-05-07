@@ -3,7 +3,6 @@
 var __ = require('underscore'),
     Backbone = require('backbone'),
     loadTemplate = require('../utils/loadTemplate'),
-    app = require('../App.js').getApp(),
     baseVw = require('./baseVw')
 
 module.exports = baseVw.extend({
