@@ -28,6 +28,7 @@ module.exports = baseVw.extend({
     'click .js-navMax': 'navMaxClick',    
     'click .js-navBack': 'navBackClick',
     'click .js-navFwd': 'navFwdClick',
+    'click .js-navHome': 'navHomeClick',
     'click .js-showSupportModal': 'showSupportModal',
     'click .js-navRefresh': 'navRefreshClick',
     //'click .js-navRestart': 'navRestartClick',
@@ -617,6 +618,10 @@ module.exports = baseVw.extend({
   },
 
   navRefreshClick: function(){
+    app.router.refresh();
+  },
+  
+  navHomeClick: function(){
     app.router.refresh();
   },
   

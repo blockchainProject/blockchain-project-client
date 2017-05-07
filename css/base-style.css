@@ -936,6 +936,17 @@ h6, .h6 {
   margin-bottom: 12px;
 }
 
+.header-alignleft .ctrlGroup:nth-child(4) {
+  margin-top: 12px;
+  margin-bottom: 9px;
+  margin-left: 2px;
+}
+
+.header-alignleft .ctrlGroup:nth-child(4) img {
+  height: 22px;
+  width: 22px;
+}
+
 .header-alignright .ctrlGroup:nth-child(2) {
   color: #030303;
   padding-left: 16px;
@@ -1866,7 +1877,7 @@ label.fieldItem {
 }
 
 .navBar {
-  background-color: #D5DCD8;
+  background-color: #E8E8E8;
   color: #FFF;
 }
 
