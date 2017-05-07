@@ -11,7 +11,6 @@ module.exports = baseVw.extend({
   el: '#leftSidebar',
 
   events:{
-  'click .leftSidebar-browse-title': 'navRefreshClick',
   'click .leftSidebar-create .leftSidebar-create-create': 'createListing',
   'click .leftSidebar-create .leftSidebar-create-edit': 'editListing'
   },
@@ -22,10 +21,6 @@ module.exports = baseVw.extend({
     this.socketView = options.socketView;
     this.userProfile = options.userProfile;
     this.userModel = options.userModel;
-  },
-
-  navRefreshClick: function(){
-    app.router.refresh();
   },
 
   createListing: function(){

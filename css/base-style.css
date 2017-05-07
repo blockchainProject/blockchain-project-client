@@ -6689,29 +6689,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*========== left sidebar ==========*/
-
-.leftSidebar-browse-title:hover{
-  color: #009DC4;
-  text-decoration: none;  
-}
-
-.leftSidebar-browse{
-  margin-left: 16px;
-  margin-top: 20px;
-}
-
-.leftSidebar-browse a{
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-.leftSidebar-browse a:hover, .leftSidebar-create a:hover{
-  color: #009DC4;
-  text-decoration: none;
-  margin-left: 8px;
-  transition: all 0.2s ease-in-out;
-}
-
 .leftSidebar-create{
   margin-left: 16px;
   margin-top: 40px;
@@ -6725,38 +6702,6 @@ input[type=number]::-webkit-outer-spin-button {
 .leftSidebar-create a{
   padding-bottom: 8px;
   padding-top: 8px;
-}
-
-.leftSidebar-browse-business{
-  background-image: url('../imgs/businessCategoryIcon.svg');
-  background-position: 4px 11px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 28px;
-}
-
-.leftSidebar-browse-design{
-  background-image: url('../imgs/designCategoryIcon.svg');
-  background-position: 4px 12px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 28px;
-}
-
-.leftSidebar-browse-programming{
-  background-image: url('../imgs/programmingCategoryIcon.svg');
-  background-position: 4px 12px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 28px;
-}
-
-.leftSidebar-browse-translation{
-  background-image: url('../imgs/translationCategoryIcon.svg');
-  background-position: 6px 11px;
-  background-repeat: no-repeat;
-  background-size: 12px;
-  padding-left: 28px;
 }
 
 .leftSidebar-create-create{
