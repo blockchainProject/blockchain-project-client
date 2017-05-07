@@ -925,21 +925,22 @@ h6, .h6 {
 
 .header-alignleft .ctrlGroup:nth-child(2) {
   color: #030303;
-  padding-left: 8px;
   margin-top: 12px;
   margin-bottom: 12px;
+  margin-left: 16px;
 }
 
 .header-alignleft .ctrlGroup:nth-child(3) {
   color: #030303;
   margin-top: 12px;
   margin-bottom: 12px;
+  margin-left: 16px;
 }
 
 .header-alignleft .ctrlGroup:nth-child(4) {
   margin-top: 12px;
   margin-bottom: 9px;
-  margin-left: 2px;
+  margin-left: 16px;
 }
 
 .header-alignleft .ctrlGroup:nth-child(4) img {
@@ -947,18 +948,25 @@ h6, .h6 {
   width: 22px;
 }
 
-.header-alignright .ctrlGroup:nth-child(2) {
+.header-alignleft .ctrlGroup:nth-child(5) {
+  color: #030303;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 28px;
+}
+
+.header-alignright .ctrlGroup:nth-child(1) {
   color: #030303;
   padding-left: 16px;
   position: relative;
   top: 11px;
 }
 
-.header-alignright .ctrlGroup:nth-child(2) .badge {
+.header-alignright .ctrlGroup:nth-child(1) .badge {
   display: inline-block;
 }
 
-.header-alignright .ctrlGroup:nth-child(2) .btn:before {
+.header-alignright .ctrlGroup:nth-child(1) .btn:before {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
@@ -966,7 +974,7 @@ h6, .h6 {
   transform: rotate(30deg);  
 }
 
-.header-alignright .ctrlGroup:nth-child(3) {
+.header-alignright .ctrlGroup:nth-child(2) {
   position: relative;
   top: 12px;
 }
@@ -1804,6 +1812,7 @@ label.fieldItem {
 }
 
 #addressBar{
+  box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
   height: 32px;
   font-size: 1.3rem;
 }
@@ -3080,6 +3089,7 @@ div.chatSearchOut .chatSearchIcon {
 .btn.btn-togRight {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left: 16px;
 }
 
 .btn-toWrapper-discoverToggle .btn.btn-togLeft {
@@ -6679,13 +6689,13 @@ input[type=number]::-webkit-outer-spin-button {
 .header-alignleft{
   float: left;
   height: 100%;
-  width: 100%;
+  width: 60%;
 }
 
 .header-alignright{
   height: 100%;
   text-align: right;
-  width: 100%;
+  width: 40%;
 }
 
 /*========== left sidebar ==========*/
