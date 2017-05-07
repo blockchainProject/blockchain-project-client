@@ -10,11 +10,11 @@
       <% } %>
     </div>
     <h1 class="fancy-heading fontSize20 vCentered"><%= polyglot.t('Transactions') %></h1>
-    <a href="#userPage" class="btn btn-txt custCol-primary positionWrapper pull-right right10 marginTop9 marginLeft6">
+    <a href="#userPage" class="btn btn-txt positionWrapper pull-right right10 marginTop9 marginLeft6">
       <span class="ion-document-text fontSize11 marginRight2 textOpacity1"></span>
       <%= polyglot.t('GoToMyPage') %>
     </a>
-    <a href="#settings" class="btn btn-txt custCol-primary positionWrapper pull-right right10 marginTop9 marginLeft6">
+    <a href="#settings" class="btn btn-txt positionWrapper pull-right right10 marginTop9 marginLeft6">
       <span class="ion-toggle-filled fontSize11 marginRight2 textOpacity1"></span>
       <%= polyglot.t('nav.settings') %>
     </a>
@@ -46,11 +46,11 @@
   </div>
 </div>
 
-<div class="flexContainer custCol-primary minHeight650">
+<div class="flexContainer minHeight650">
 
       <div class="flexRow flex-border positionWrapper js-tabTarg js-purchases" id="transactionsPurchases">
         <div class="selectPill marginTop8">
-          <select class="custCol-secondary custCol-text js-transactionFilter">
+          <select class="custCol-secondary js-transactionFilter">
             <option value="all"><%= polyglot.t('transactions.sortByStatusAll') %></option>
             <option value="0"><%= polyglot.t('transactions.sortByStatus0') %></option>
             <option value="1"><%= polyglot.t('transactions.sortByStatus1') %></option>
@@ -95,7 +95,7 @@
 
       <div class="flexRow flex-border positionWrapper js-tabTarg js-sales hide" id="transactionsSales">
         <div class="selectPill marginTop8">
-          <select class="custCol-secondary custCol-text js-transactionFilter">
+          <select class="custCol-secondary js-transactionFilter">
             <option value="all"><%= polyglot.t('transactions.sortByStatusAll') %></option>
             <option value="0"><%= polyglot.t('transactions.sortByStatus0') %></option>
             <option value="1"><%= polyglot.t('transactions.sortByStatus1') %></option>
@@ -140,7 +140,7 @@
 
       <div class="flexRow flex-border positionWrapper hide js-tabTarg js-cases" id="transactionsCases">
         <div class="selectPill marginTop8">
-          <select class="custCol-secondary custCol-text js-transactionFilter">
+          <select class="custCol-secondary js-transactionFilter">
             <option value="dateNewest"><%= polyglot.t('transactions.sortByDateNewest') %></option>
             <option value="dateOldest"><%= polyglot.t('transactions.sortByDateOldest') %></option>
           </select>

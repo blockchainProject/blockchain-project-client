@@ -40,7 +40,7 @@
         </div>
       </div>
     <% } %>
-    <div class="flexContainer flex-border custCol-primary textOpacity1">
+    <div class="flexContainer flex-border textOpacity1">
       <div class="flexRow">
         <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background marginRight40 padding16 width100">
           <h2 class="item-description marginBottom8">Description</h2>
@@ -48,11 +48,11 @@
         </div>
       </div>
     </div>
-    <div class="flexContainer flex-border custCol-primary textOpacity1 minHeight300">
+    <div class="flexContainer flex-border textOpacity1 minHeight300">
       <div class="flexRow">
         <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background width100 marginRight40 padding16">
           <h2 class="item-description marginBottom8">Delivery</h2>
-            <div class="flexContainer flex-border custCol-primary minHeight300 textOpacity75 js-shipping js-tabTarg">
+            <div class="flexContainer flex-border minHeight300 textOpacity75 js-shipping js-tabTarg">
               <div class="flexRow">
               <% if(ob.vendor_offer.listing.shipping.shipping_regions.length || ob.vendor_offer.listing.policy.returns || ob.vendor_offer.listing.policy.terms_conditions) { %>
                 <div class="flexCol-6">
@@ -81,7 +81,7 @@
         </div>
       </div>
     </div>
-    <div class="flexContainer flex-border custCol-primary textOpacity1 minHeight300">
+    <div class="flexContainer flex-border textOpacity1 minHeight300">
       <div class="flexRow">
         <div class="fontSize16 lineHeight24 flexContainer editableContent marginLeft30 white-background width100 marginRight40 padding16">
           <h2 class="item-description">Extra Options</h2>
@@ -90,7 +90,7 @@
     </div>    
   </div>
   <div class="flexCol-4 pad24pxRight">
-    <div class="marginBottom12 clearfix custCol-primary borderBottom custCol-border white-background padding0816">
+    <div class="marginBottom12 clearfix borderBottom custCol-border white-background padding0816">
       <h2 class="page-contractTitle noOverflow textOpacity1 marginBottom8" title="<%= ob.vendor_offer.listing.item.title %>"><%= ob.vendor_offer.listing.item.title %></h2>
       <ul class="itemMeta">
         <li class="alignLeft">
@@ -114,7 +114,7 @@
       </ul>
     </div>
 
-    <div class="width100 custCol-text borderBottom paddingBottom16px paddingLeft6 custCol-border white-background">
+    <div class="width100 borderBottom paddingBottom16px paddingLeft6 custCol-border white-background">
       <div class="alignRight marginRight16px">
         <a href="#" class="greenOnWhiteButton js-message">Chat</a>
       </div>

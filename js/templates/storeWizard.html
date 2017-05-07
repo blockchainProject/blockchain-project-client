@@ -3,11 +3,11 @@ style="background-image: <% if(ob.headerURL) { %>url(<%= ob.headerURL %>),<% } %
 <div class="homeModal-accordion accordion js-storeWizardAccordion">
   <div class="accordion-window">
     <div class="accordion-child accordion-active">
-      <div class="bar barTxt h6 paddingLeft16px custCol-secondary  custCol-text">
+      <div class="bar barTxt h6 paddingLeft16px custCol-secondary ">
         <%= polyglot.t('CreateStore') %>
         <span class="textOpacity75 fontSize14 floatRight">1 <%= polyglot.t('of') %> 2</span>
       </div>
-      <form class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary customThemeScrollbar" id="storeWizardForm">
+      <form class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch scrollOverflow customThemeScrollbar" id="storeWizardForm">
         <input name="header" id="headerInput" type="text" class="hide" value="<%= ob.page.profile.header_hash %>" />
         <input name="location" id="locationSelect" type="text" class="hide"/>
 
@@ -70,7 +70,7 @@ style="background-image: <% if(ob.headerURL) { %>url(<%= ob.headerURL %>),<% } %
           </div>
         </div>
       </form>
-      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3  custCol-text">
+      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3 ">
         <a class="btn btn-bar btn-half js-closeStoreWizardModal custCol-secondary borderBottomLeftRaidus3 borderRight">
           <%= polyglot.t('Cancel') %>
         </a>
@@ -80,21 +80,21 @@ style="background-image: <% if(ob.headerURL) { %>url(<%= ob.headerURL %>),<% } %
         </a>
       </div>
     </div>
-    <div class="accordion-child accordion-inactive custCol-text">
+    <div class="accordion-child accordion-inactive">
       <div class="bar barTxt h6 custCol-secondary">
         <%= polyglot.t('StoreModeratorsOptional') %>
         <span class="textOpacity75 fontSize14 floatRight">2 <%= polyglot.t('of') %> 2</span>
       </div>
-      <div class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary customThemeScrollbar">
+      <div class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch scrollOverflow customThemeScrollbar">
         <div class="flexRow">
-          <div class="txtFieldWrapper txtFieldWrapper-bar searchWrapper custCol-primary custCol-border">
+          <div class="txtFieldWrapper txtFieldWrapper-bar searchWrapper custCol-border">
             <input type="text" class="txtField txtField-bar search" placeholder="<%= polyglot.t('Searchformoderators') %>" />
           </div>
         </div>
         <div class="flexRow js-storeWizardModeratorList">
         </div>
       </div>
-      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3  custCol-text">
+      <div class="bar barFlush custCol-secondary borderBottomLeftRaidus3 borderBottomRightRaidus3 ">
         <a class="btn btn-bar btn-half js-accordionPrev borderBottomLeftRaidus3 custCol-secondary borderRight">
           <span class="ion-chevron-left fontSize10 marginRight2 textOpacity50"></span>
           <%= polyglot.t('Back') %>

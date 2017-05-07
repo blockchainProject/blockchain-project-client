@@ -30,7 +30,7 @@ $.fn.randomize = function(selector){
 
 module.exports = baseModal.extend({
 
-  className: "buyView custCol-text insideApp",
+  className: "buyView insideApp",
 
   events: {
     'click .js-buyWizardModal': 'blockClicks',
@@ -84,7 +84,7 @@ module.exports = baseModal.extend({
 
     //create the country select list
     this.countryList = countries.get('countries');
-    this.countriesSelect = $('<select class="chosen custCol-text" id="buyWizardCountryInput" required></select>');
+    this.countriesSelect = $('<select class="chosen" id="buyWizardCountryInput" required></select>');
     __.each(this.countryList, function(countryFromList){
       var countryOption = $('<option value="'+countryFromList.dataName+'" data-name="'+countryFromList.name +'">'+window.polyglot.t(`countries.${countryFromList.dataName}`)+'</option>');
       countryOption.attr("selected", self.options.userModel.get('country') == countryFromList.dataName);
