@@ -979,14 +979,6 @@ h6, .h6 {
   top: 12px;
 }
 
-.header-alignright .ctrlGroup.nav-username {
-  color: #030303;
-  padding-left: 8px;
-  padding-right: 18px;
-  position: relative;
-  top: 2px;
-}
-
 .flexContainer {
   overflow: hidden;
 }
