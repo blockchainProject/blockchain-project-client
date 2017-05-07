@@ -140,6 +140,7 @@ UserPageVw = pageVw.extend({
     'click .js-unblock': 'unblockUserClick',
     'change .js-categories': 'categoryChanged',
     'click .backToTop': 'clickBackToTop',
+    'mouseover .tooltip': 'showAccountInfo'
   },
 
   initialize: function (options) {
@@ -447,6 +448,18 @@ UserPageVw = pageVw.extend({
         this.$backToTop.removeClass('slideUp');
       }
     });
+  },
+
+  showAccountInfo: function() {
+    new Clipboard('#copyButton');
+    $("#copyButton").on("click", function(){      
+      if(this.innerText == "Copy to Clipboard"){
+           this.innerText = "Copied";
+      }
+      else{
+              this.innerText = "Copy to Clipboard";
+      }
+    })
   },
 
   verifiedIconToggle: function(){
