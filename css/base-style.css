@@ -468,6 +468,30 @@ h6, .h6 {
   top:1px;
 }
 
+.blackOnWhiteButton {
+  background-color: #FFF;
+  border: none;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
+  cursor: pointer;
+  color: #030303;
+  font-size: 1.6rem;
+  padding: 5.5px 12px;
+  text-decoration: none;
+}
+
+.blackOnWhiteButton:hover {
+  border: none;
+  opacity: 0.8;
+}
+
+.blackOnWhiteButton:active {
+  position:relative;
+  top:1px;
+}
+
 .tagButton {
   background-color: #EEEEEE;
   -moz-border-radius: 6px;
@@ -956,16 +980,23 @@ h6, .h6 {
 }
 
 .header-alignright .ctrlGroup:nth-child(1) {
-  color: #030303;
-  position: relative;
-  top: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
-.header-alignright .ctrlGroup:nth-child(1) .badge {
+.header-alignright .ctrlGroup:nth-child(2) {
+  color: #030303;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 30px;
+}
+
+.header-alignright .ctrlGroup:nth-child(2) .badge {
   display: inline-block;
 }
 
-.header-alignright .ctrlGroup:nth-child(1) .btn:before {
+.header-alignright .ctrlGroup:nth-child(2) .btn:before {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
   -ms-transform: rotate(30deg);
@@ -973,11 +1004,11 @@ h6, .h6 {
   transform: rotate(30deg);  
 }
 
-.header-alignright .ctrlGroup:nth-child(2) {
+.header-alignright .ctrlGroup:nth-child(3) {
   cursor: pointer;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 16px;
+  position: relative;
+  top: -20px;
+  margin-left: 8px;
 }
 
 .flexContainer {
@@ -6699,6 +6730,13 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: 4px;  
 }
 
+.navPost{
+  background-image: url('../imgs/editIcon.svg');
+  background-position: 10px 9px;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  padding-left: 28px;
+}
 /*========== left sidebar ==========*/
 .leftSidebar-create{
   margin-left: 16px;
