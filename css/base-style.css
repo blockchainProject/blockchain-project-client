@@ -957,9 +957,8 @@ h6, .h6 {
 
 .header-alignright .ctrlGroup:nth-child(1) {
   color: #030303;
-  padding-left: 16px;
   position: relative;
-  top: 11px;
+  top: 8px;
 }
 
 .header-alignright .ctrlGroup:nth-child(1) .badge {
@@ -975,8 +974,10 @@ h6, .h6 {
 }
 
 .header-alignright .ctrlGroup:nth-child(2) {
-  position: relative;
-  top: 12px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 16px;
 }
 
 .flexContainer {
@@ -6688,6 +6689,14 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100%;
   text-align: right;
   width: 40%;
+}
+
+.header-alignright .ion-ios-arrow-down:before{
+  content: "\f3d0";
+  color: #9B9B9B;
+  margin-top: 8px;
+  margin-right: 6px;
+  margin-left: 4px;  
 }
 
 /*========== left sidebar ==========*/

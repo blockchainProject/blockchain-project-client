@@ -107,11 +107,11 @@
     </div>
     <div class="header-alignright">
       <div class="ctrlGroup">
-        <div class="btn btn-notifications ion-android-notifications-none fontSize20 js-navNotifications" data-popmenu=".popMenu-notifications">
+        <div class="btn btn-notifications ion-android-notifications-none fontSize30 js-navNotifications" data-popmenu=".popMenu-notifications">
           <div class="badge"></div>
         </div>
       </div>
-      <div class="ctrlGroup nav-profile">
+      <div class="ctrlGroup nav-profile ion-ios-arrow-down" data-popmenu=".popMenu-navBar">
         <div class="btn btn-profile js-navProfile" data-popmenu=".popMenu-navBar"
         <% if(ob.avatar_hash != "") { %>
         style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.avatar_hash %>), url(imgs/defaultUser.png);"
