@@ -10,10 +10,10 @@
         <%= polyglot.t('BecomeModerator') %>
         <% } %>
       </div>
-      <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
+      <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow">
         <div class="flexRow">
           <div class="flexRow border0">
-            <form id="moderatorSettingsForm" class="flex-border flexExpand custCol-primary">
+            <form id="moderatorSettingsForm" class="flex-border flexExpand">
               <div class="flexRow custCol-border">
                 <div class="flexCol-5 custCol-border">
                   <div class="fieldItem">
@@ -52,7 +52,7 @@
                          step="0.01"
                          name="moderation_fee"
                          maxlength="2"
-                         class="fieldItem custCol-text width72px floatLeft alignRight"
+                         class="fieldItem width72px floatLeft alignRight"
                          id="moderatorSettingsModalFeeInput"
                          value="<%= Number(ob.page.profile.moderation_fee).toFixed(2) %>" required/>
                   <label class="paddingLeft2 floatLeft fieldItem textOpacity75">%</label>

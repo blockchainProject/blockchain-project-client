@@ -63,7 +63,7 @@
     <div class="positionTop padding10 width100 custCol-secondary borderRadiusTop">
       <div class="clearfix">
       <% if(ob.status == 1 && ob.transactionType == "sales"){ %>
-        <a class="btn btn-txt custCol-primary pull-left borderRight textOpacity1 js-showConfirmForm custCol-border" style="border-top-right-radius: 0; border-bottom-right-radius: 0">
+        <a class="btn btn-txt pull-left borderRight textOpacity1 js-showConfirmForm custCol-border" style="border-top-right-radius: 0; border-bottom-right-radius: 0">
           <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
           <% if(ob.vendor_offer.listing.metadata.category == "digital good" || ob.vendor_offer.listing.metadata.category == "service") { %>
             <%= polyglot.t('transactions.ConfirmOrder') %>
@@ -71,7 +71,7 @@
             <%= polyglot.t('transactions.MarkAsShipped') %>
           <% } %>
         </a>
-        <a class="btn btn-txt custCol-primary pull-left textOpacity1 confirmable js-refundTransaction tooltip"
+        <a class="btn btn-txt pull-left textOpacity1 confirmable js-refundTransaction tooltip"
            data-tooltip="<%= polyglot.t('transactions.RefundOrderTooltip') %>"
            style="border-top-left-radius: 0; border-bottom-left-radius: 0">
           <span class="preSpacer">
@@ -88,18 +88,18 @@
           </span>
         </a>
       <% } else if(ob.transactionType == "purchases" && ob.status == 2){ %>
-        <a class="btn btn-txt custCol-primary pull-left js-showCompleteForm textOpacity1">
+        <a class="btn btn-txt pull-left js-showCompleteForm textOpacity1">
           <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
           <%= polyglot.t('transactions.CompleteOrder') %>
         </a>
       <% } else if(ob.transactionType == "sales" && ob.status == 2){ %>
-        <a class="btn btn-txt custCol-primary pull-left js-confirmOrderResend textOpacity1 tooltip tooltip-box"
+        <a class="btn btn-txt pull-left js-confirmOrderResend textOpacity1 tooltip tooltip-box"
            data-tooltip="<%= polyglot.t('transactions.ConfirmOrderResendTooltip') %>">
           <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
           <%= polyglot.t('transactions.ConfirmOrderResend') %>
         </a>
       <% } else if(ob.transactionType == "purchases" && !ob.resendComplete && ob.status == 3){ %>
-        <a class="btn btn-txt custCol-primary pull-left js-completeOrderResend textOpacity1 tooltip tooltip-box marginRight5"
+        <a class="btn btn-txt pull-left js-completeOrderResend textOpacity1 tooltip tooltip-box marginRight5"
            data-tooltip="<%= polyglot.t('transactions.CompleteOrderResendTooltip') %>">
           <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
           <%= polyglot.t('transactions.CompleteOrderResend') %>
@@ -110,24 +110,24 @@
                   ob.dispute_resolution &&
                   ob.dispute_resolution.resolution &&
                   ob.dispute_resolution.resolution.buyer_payout > ob.dispute_resolution.resolution.vendor_payout){ %>
-        <a class="btn btn-txt custCol-primary pull-left js-showCompleteForm textOpacity1">
+        <a class="btn btn-txt pull-left js-showCompleteForm textOpacity1">
           <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
           <%= polyglot.t('transactions.LeaveReview') %>
         </a>
       <% } else if(ob.status == 5 && ob.dispute_resolution && ob.transactionType != "cases"){ %>
-        <a class="btn btn-txt custCol-primary pull-left marginBottom8 js-acceptResolution">
+        <a class="btn btn-txt pull-left marginBottom8 js-acceptResolution">
           <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
           <%= polyglot.t('transactions.AcceptDisputeResolution') %>
         </a>
       <% } else if(ob.status == 7 && ob.transactionType == "sales"){ %>
-      <a class="btn btn-txt custCol-primary pull-left textOpacity1 js-refundTransactionResend tooltip tooltip-box"
+      <a class="btn btn-txt pull-left textOpacity1 js-refundTransactionResend tooltip tooltip-box"
          data-tooltip="<%= polyglot.t('transactions.RefundOrderResendTooltip') %>">
         <span class="ion-arrow-return-left fontSize11 marginRight2 textOpacity1"></span>
         <%= polyglot.t('transactions.RefundOrderResend') %>
       </a>
       <% } %>
       <% if(ob.status != 0){ %>
-      <a class="btn btn-txt custCol-primary pull-right js-transactionShowContract textOpacity1">
+      <a class="btn btn-txt pull-right js-transactionShowContract textOpacity1">
         <span class="fontSize12 ion-code"></span>
         <%= polyglot.t('transactions.ContractDetails') %>
       </a>
@@ -157,13 +157,13 @@
                 <span><%= polyglot.t('transactions.ConfirmOrder') %></span>
               </div>
               <div class="pull-right  textOpacity1 marginLeft4">
-                  <a class="btn btn-txt custCol-primary js-confirmOrder textOpacity1">
+                  <a class="btn btn-txt js-confirmOrder textOpacity1">
                     <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
                     <%= polyglot.t('Save') %>
                   </a>
               </div>         
               <div class="pull-right  textOpacity1">
-                  <a class="btn btn-txt custCol-primary  js-hideConfirmForm textOpacity1"><%= polyglot.t('Cancel') %></a>
+                  <a class="btn btn-txt  js-hideConfirmForm textOpacity1"><%= polyglot.t('Cancel') %></a>
               </div>  
             </div>
           </div>
@@ -178,7 +178,7 @@
                 <input name="payout_address"
                        id="inputReceivingAddress"
                        type="text"
-                       class="fieldItem custCol-text"
+                       class="fieldItem"
                        required
                        placeholder="<%= polyglot.t('transactions.RecievingAddressPlaceholder') %>"
                        pattern="<%= config.bitcoinValidationRegex %>"
@@ -203,7 +203,7 @@
                 <textarea name="comments"
                           rows="2"
                           maxlength="200"
-                          class="fieldItem-textarea custCol-text"
+                          class="fieldItem-textarea"
                           id="inputComments"
                           placeholder="<%= polyglot.t('transactions.CommentsPlaceHolder') %>"
                           required></textarea>
@@ -221,7 +221,7 @@
                 <input name="shipper"
                        id="inputShipper"
                        type="text"
-                       class="fieldItem custCol-text"
+                       class="fieldItem "
                        placeholder="<%= polyglot.t('transactions.ShipperPlaceholder') %>"
                        maxlength="80"
                 >
@@ -238,7 +238,7 @@
                 <input name="tracking_number"
                        id="inputTrackingNumber"
                        type="text"
-                       class="fieldItem custCol-text"
+                       class="fieldItem "
                        placeholder="<%= polyglot.t('transactions.TrackingNumberPlaceholder') %>"
                        maxlength="200"
                 >
@@ -255,7 +255,7 @@
                 <input name="est_delivery"
                        id="inputEstimatedDelivery"
                        type="text"
-                       class="fieldItem custCol-text"
+                       class="fieldItem "
                        placeholder="<%= polyglot.t('transactions.EstimatedDeliveryPlaceholder') %>"
                        maxlength="80"
                 >
@@ -274,7 +274,7 @@
                 <input name="url"
                        id="inputURL"
                        type="text"
-                       class="fieldItem custCol-text"
+                       class="fieldItem "
                        placeholder="<%= polyglot.t('transactions.URLPlaceholder') %>"
                        maxlength="200"
                 >
@@ -291,7 +291,7 @@
                 <input name="password"
                        id="inputPassword"
                        type="text"
-                       class="fieldItem custCol-text"
+                       class="fieldItem "
                        placeholder="<%= polyglot.t('transactions.PasswordPlaceholder') %>"
                        maxlength="20"
                 >
@@ -317,7 +317,7 @@
                 <span><%= polyglot.t('transactions.TransactionReview') %></span>
               </div>    
               <div class="pull-right textOpacity1">
-                  <a class="btn btn-txt custCol-primary js-hideFeedbackRating textOpacity1"><%= polyglot.t('Close') %></a>
+                  <a class="btn btn-txt js-hideFeedbackRating textOpacity1"><%= polyglot.t('Close') %></a>
               </div>  
             </div>
           </div>
@@ -388,13 +388,13 @@
             <span><%= polyglot.t('transactions.RateThisTransaction') %></span>
           </div>    
           <div class="pull-right textOpacity1 marginLeft4">
-            <a class="btn btn-txt custCol-primary js-completeOrder">
+            <a class="btn btn-txt js-completeOrder">
               <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
               <%= polyglot.t('Save') %>
             </a>
           </div>
           <div class="pull-right textOpacity1">
-            <a class="btn btn-txt custCol-primary js-completeOrderHide textOpacity1"><%= polyglot.t('Cancel') %></a>
+            <a class="btn btn-txt js-completeOrderHide textOpacity1"><%= polyglot.t('Cancel') %></a>
           </div> 
         </div>
       </div>        
@@ -520,7 +520,7 @@
             <textarea name="review"
                       rows="3"
                       maxlength="80"
-                      class="fieldItem-textarea custCol-text"
+                      class="fieldItem-textarea "
                       id="inputReview"
                       required></textarea>
           </div>
@@ -539,7 +539,7 @@
             <span><%= polyglot.t('transactions.ContractDetails') %></span>
           </div>    
           <div class="pull-right  textOpacity1">
-              <a class="btn btn-txt custCol-primary js-transactionHideContract textOpacity1 hide">
+              <a class="btn btn-txt  js-transactionHideContract textOpacity1 hide">
                 <%= polyglot.t('transactions.HideDetails') %>
               </a>
           </div>  
@@ -556,7 +556,7 @@
   </div>
 </div>
 
-<div class="custCol-primary positionRelative">
+<div class="positionRelative">
   <div class="bar barFlush height55 clearFix">
     <a class="btn btn-tab fontSize13 js-tab js-summaryTab active" data-tab="summary">
       <span class="ion-android-list fontSize12 marginRight2 textOpacity1"></span>
@@ -1030,7 +1030,7 @@
   <div class="js-main js-discussion transactionDiscussionTab" style="height:319px">
     <div class="scrollOverflowY js-discussionScroller customThemeScrollbar" style="height: 237px;">
       <div class="js-discussionWrapperEmpty textOpacity50 fontSize14 marginTop80 alignCenter"><%= polyglot.t('transactions.NoMessages') %></div>
-      <div class="custCol-text js-discussionWrapper">
+      <div class=" js-discussionWrapper">
       </div>
     </div>
     <div class="flexRow padding10pxTop width100 positionBottom custCol-secondary js-discussionForm border2 custCol-border-secondary">
@@ -1046,13 +1046,13 @@
       <form class="flexExpand" id="transactionDiscussionForm">
         <textarea name="claim"
                   rows="4"
-                  class=" custCol-text validatable border0 js-transactionDiscussionSendText"
+                  class="  validatable border0 js-transactionDiscussionSendText"
                   id="transactionDiscussionSendText"
                   required
                   placeholder="<%= polyglot.t('transactions.sendMessagePlaceholder') %>"></textarea>
       </form>
       <div class="pad8px" style="width:140px">
-        <a class="btn btn-txt btn-wide custCol-primary pull-left js-sendDiscussionMessage height36">
+        <a class="btn btn-txt btn-wide pull-left js-sendDiscussionMessage height36">
           <%= polyglot.t('transactions.SendMessage') %>
         </a>
 
@@ -1066,7 +1066,7 @@
         </div>
         <% } else if(ob.transactionType == "cases" && ob.status > 4){ %>
         <div>
-          <a class="btn btn-small marginTop4 marginBottom4 width100 custCol-primary tooltip tooltip-box tooltip-boxUp js-closeDisputeResend" data-tooltip="<%= polyglot.t('transactions.CloseDisputeResendTooltip') %>">
+          <a class="btn btn-small marginTop4 marginBottom4 width100 tooltip tooltip-box tooltip-boxUp js-closeDisputeResend" data-tooltip="<%= polyglot.t('transactions.CloseDisputeResendTooltip') %>">
             <%= polyglot.t('transactions.CloseDisputeResend') %>
           </a>
         </div>
@@ -1083,7 +1083,7 @@
           <% } %>
         <% } else if(ob.status == 4 && ob.dispute && ob.dispute.info.guid == ob.userGuid) {%>
         <div>
-          <a class="btn btn-small marginTop4 marginBottom4 width100 custCol-primary tooltip tooltip-box tooltip-boxUp js-startDisputeResend" data-tooltip="<%= polyglot.t('transactions.DisputeTransactionResendTooltip') %>">
+          <a class="btn btn-small marginTop4 marginBottom4 width100 tooltip tooltip-box tooltip-boxUp js-startDisputeResend" data-tooltip="<%= polyglot.t('transactions.DisputeTransactionResendTooltip') %>">
             <%= polyglot.t('transactions.DisputeTransactionResend') %>
           </a>
         </div>
@@ -1195,7 +1195,7 @@
               <textarea name="reason"
                         rows="6"
                         maxlength="200"
-                        class="fieldItem-textarea custCol-text"
+                        class="fieldItem-textarea "
                         id="inputReason"
                         placeholder="<%= polyglot.t('transactions.RefundReasonPlaceholder') %>"
                         required></textarea>

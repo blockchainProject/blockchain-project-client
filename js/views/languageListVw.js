@@ -22,7 +22,7 @@ module.exports = baseVw.extend({
       self.renderItem(item);
     }, this);
 
-    this.$el.append('<ul class="flexRow list homeModal-settings scrollOverflowY custCol-primary custCol-text customThemeScrollbar">'+ this.listContents.join('') +'</ul>');
+    this.$el.append('<ul class="flexRow list homeModal-settings scrollOverflowY customThemeScrollbar">'+ this.listContents.join('') +'</ul>');
 
     window.obEventBus.trigger("languageListRendered");
   },

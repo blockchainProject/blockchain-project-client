@@ -1,4 +1,4 @@
-<div class="flexRow custCol-primary custCol-border">
+<div class="flexRow custCol-border">
   <div class="rowItem padding10">
     <div class="textSize14px txt-fade padding10">
       <strong><%= polyglot.t('buyFlow.VendorShipsTo') %> </strong>
@@ -11,7 +11,7 @@
 <% _.each(ob.user.shipping_addresses, function(address, i){ %>
   <% if(address.city && address.country && address.displayCountry && address.name && address.postal_code && address.state && address.street) { %>
     <% if(ob.worldwide || ob.vendor_offer.listing.shipping.shipping_regions.indexOf(address.country) > -1){ %>
-    <div class="flexRow custCol-primary custCol-border js-buyWizardAddress pad8px">
+    <div class="flexRow custCol-border js-buyWizardAddress pad8px">
       <input type="radio"
              class="fieldItem js-buyWizardAddressRadio hide"
              name="address" id="buyWizardAddress<%= i %>"
@@ -55,7 +55,7 @@
 <% _.each(ob.user.shipping_addresses, function(address, i){ %>
   <% if(address.city && address.country && address.displayCountry && address.name && address.postal_code && address.state && address.street) { %>
     <% if(!ob.worldwide && ob.vendor_offer.listing.shipping.shipping_regions.indexOf(address.country) < 0){ %>
-    <div class="flexRow custCol-primary custCol-border js-buyWizardAddress disabled2 pad8px">
+    <div class="flexRow custCol-border js-buyWizardAddress disabled2 pad8px">
       <input type="radio" class="fieldItem" name="address" id="buyWizardAddressDisabled<%= i %>" value="<%= i %>" disabled/>
       <label for="buyWizardAddress<%= i %>" class="width100 textOpacity1 textSize13px paddingRight4">
         <div class="flexRow">

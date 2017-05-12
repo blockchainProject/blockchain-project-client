@@ -2,13 +2,13 @@
     <div class="js-mapSpinner txt-col1 ion-android-sync spinner spinner-slow icon-large icon-circle-background1 zIndex1 fullCentered" style="border: 1px solid #aaa;"></div>
     <div class="flexContainer mapWrap"></div>
   </div>
-  <div class="modal-hero modal-heroFullHeightNoButtons js-buyWizardSpinner hide white-background custCol-primary">
+  <div class="modal-hero modal-heroFullHeightNoButtons js-buyWizardSpinner hide white-background">
     <div class="width100 txt-center vCentered">
       <div class="txt-col1 ion-android-sync spinner spinner-slow icon-gigantic icon-circle-background1 marginTop48px marginBottom24"></div>
-      <h3 class="custCol-text padding32"><%= polyglot.t('CheckExchanges') %> </h3>
+      <h3 class="padding32"><%= polyglot.t('CheckExchanges') %> </h3>
     </div>
   </div>
-  <div class="modal-hero modal-heroFullHeightNoButtons padding32 js-buyWizardPay hide white-background custCol-primary colorBlack">
+  <div class="modal-hero modal-heroFullHeightNoButtons padding32 js-buyWizardPay hide white-background colorBlack">
     <div>
     <ul class="alignCenter">
       <li class="inlineBlock process-circle"></li>
@@ -24,7 +24,7 @@
       <%=
         polyglot.t('buyFlow.SendBTCtoAddress', {
           amount: '<span class="js-buyWizardDetailsTotalBTC"></span>',
-          recipient: '<a class="textSize16px js-buyWizardPayLink custCol-text"><span class="js-buyWizardPayURL blueHover"></span></a>'
+          recipient: '<a class="textSize16px js-buyWizardPayLink"><span class="js-buyWizardPayURL blueHover"></span></a>'
         })
       %><a class="btn js-buyWizardPayCopy blueHover marginTop12"><i class="ion-clipboard"></i></a>
     </div>    
@@ -34,11 +34,11 @@
     <div class="padding24px alignCenter">
       <div class="txt-center marginBottom8">
         <input type="checkbox" class="textSize11px fieldItem thin" id="BuyWizardQRDetailsInput">
-        <label for="BuyWizardQRDetailsInput" class="textSize12px  custCol-text"> <%= polyglot.t('AdditionalPaymentDataInfo') %></label>
+        <label for="BuyWizardQRDetailsInput" class="textSize12px "> <%= polyglot.t('AdditionalPaymentDataInfo') %></label>
       </div>
       <a class="btn js-buyWizardPayLink blueHover"><i class="ion-link"></i> <%= polyglot.t('buyFlow.OpenAddress') %></a>
-      <a class="btn-txt btn-wide js-buyWizardPayCheck custCol-secondary custCol-text"><i class="ion-refresh blue-color"></i> <%= polyglot.t('buyFlow.RefreshPayment') %></a>
-      <div class="marginTop8 txt-center note custCol-text">
+      <a class="btn-txt btn-wide js-buyWizardPayCheck custCol-secondary"><i class="ion-refresh blue-color"></i> <%= polyglot.t('buyFlow.RefreshPayment') %></a>
+      <div class="marginTop8 txt-center note">
         <%= polyglot.t('buyFlow.paymentNote') %>
       </div>
     </div>
@@ -67,7 +67,7 @@
         <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
           <%= polyglot.t('buyFlow.BitcoinWallet') %>
         </div>
-        <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary alignCenter">
+        <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow alignCenter">
           <h2 class="margin0 marginTop80"><%= polyglot.t('buyFlow.HaveWallet') %></h2>
           <p class="textOpacity75 fontSize15"><%= polyglot.t('buyFlow.QuickSetup') %></p>
         </div>
@@ -85,7 +85,7 @@
         <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
           <%= polyglot.t('buyFlow.CreateWallet') %>
         </div>
-        <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
+        <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow">
           <div class="flexRow custCol-border js-BuyWizardWallets">
           
             <!-- Airbitz -->
@@ -278,7 +278,7 @@
       <div class="bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
         <%= polyglot.t('PaymentType') %>
       </div>
-      <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
+      <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow">
         <div class="flexRow">
           <% if(ob.vendor_offer.listing.moderators && ob.vendor_offer.listing.moderators.length > 0){ %>
             <% if(ob.vendor_offer.listing.moderators.length != 1 || ob.vendor_offer.listing.moderators[0].guid != ob.user.guid){ %>
@@ -302,7 +302,7 @@
                   <div class="hide marginTop12 js-buyWizardModeratorList">
                     <div class="table padding8 border1 custCol-border borderBottom0">
                       <div class="floatLeft textOpacity75"><%= polyglot.t('Moderators') %></div>
-                      <div class="floatRight textOpacity75"><%= polyglot.t('buyFlow.DisputeFee') %> <span class="ion-help-circled fontSize12 custCol-text tooltip tooltip-left" data-tooltip="<%= polyglot.t('buyFlow.ModeratorFeeHelper') %>"></span></div>
+                      <div class="floatRight textOpacity75"><%= polyglot.t('buyFlow.DisputeFee') %> <span class="ion-help-circled fontSize12 tooltip tooltip-left" data-tooltip="<%= polyglot.t('buyFlow.ModeratorFeeHelper') %>"></span></div>
                     </div>
                     <% _.each(ob.vendor_offer.listing.moderators, function(moderator, i) { %>
                       <% if(moderator.guid != ob.user.guid){ %>
@@ -394,12 +394,12 @@
       <div class="bar barTxt h2 paddingLeft16px green-color alignCenter title-font allCaps">
         <%= polyglot.t('RefundAddress') %>
       </div>
-      <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow custCol-primary">
+      <div class="flexContainer flex-border customThemeScrollbar homeModal-settings homeModal-settings-noSearch scrollOverflow">
         <p class="padding16 textOpacity75 margin0 width80 margin0auto"><%= polyglot.t('RefundAddressInfo') %></p>
         <div class="flexRow">
           <form class="flexRow custCol-border borderTop" id="buyWizardBitcoinReturnForm">
             <div class="flexCol-12 custCol-border positionWrapper">
-              <input type="text" name="refund_address" class="fieldItem custCol-text" id="buyWizardBitcoinAddressInput"
+              <input type="text" name="refund_address" class="fieldItem" id="buyWizardBitcoinAddressInput"
                      placeholder="<%= polyglot.t('BitcoinReturnAddressPlaceholder') %>"
                      pattern="<%= config.bitcoinValidationRegex %>"
                      value="<%= ob.user.refund_address %>" required />
@@ -418,7 +418,7 @@
               <%= polyglot.t('buyFlow.CantFindAddress') %>
             </a><br/>
             <a href="https://rushwallet.com/" class="underline js-externalLink"><%= polyglot.t('buyFlow.NeedTempAddress') %></a>
-            <span class="ion-help-circled fontSize12 custCol-text tooltip tooltip-left" data-tooltip="<%= polyglot.t('buyFlow.NeedTempAddressHelper') %>"></span>
+            <span class="ion-help-circled fontSize12 tooltip tooltip-left" data-tooltip="<%= polyglot.t('buyFlow.NeedTempAddressHelper') %>"></span>
           </div>
         </div>
       </div>
@@ -437,18 +437,18 @@
       <div class="bar barTxt h6 paddingLeft16px custCol-secondary">
         <div class="js-buyWizardAddress">
           <%= polyglot.t('ShipTo') %>
-          <a class="btn btn-txt custCol-primary marginTop8 pull-right js-buyWizardNewAddressBtn"><%= polyglot.t('NewAddress') %></a>
+          <a class="btn btn-txt marginTop8 pull-right js-buyWizardNewAddressBtn"><%= polyglot.t('NewAddress') %></a>
         </div>
         <div class="js-buyWizardNewAddress hide">
           <%= polyglot.t('ShipTo') %>
         </div>
       </div>
-      <div class="flexContainer customThemeScrollbar homeModal-settings homeModal-settings-noSearch custCol-border scrollOverflow custCol-primary js-buyWizardAddressScroller">
+      <div class="flexContainer customThemeScrollbar homeModal-settings homeModal-settings-noSearch custCol-border scrollOverflow js-buyWizardAddressScroller">
         <div class="flexRow custCol-secondary">
           <div class="flex-border flexExpand js-buyWizardAddresses">
             <!--insert addresses-->
           </div>
-          <form id="buyWizardNewAddressForm" class="js-buyWizardNewAddress flex-border flexExpand custCol-primary hide">
+          <form id="buyWizardNewAddressForm" class="js-buyWizardNewAddress flex-border flexExpand hide">
             <div class="flexRow custCol-border borderTop">
               <div class="flexCol-5 custCol-border">
                 <div class="fieldItem">
@@ -456,7 +456,7 @@
                 </div>
               </div>
               <div class="flexCol-7 custCol-border">
-                <input type="text" name="new_ship_to_name" class="fieldItem custCol-text" id="buyWizardNameInput" required/>
+                <input type="text" name="new_ship_to_name" class="fieldItem" id="buyWizardNameInput" required/>
               </div>
             </div>
             <div class="flexRow">
@@ -466,7 +466,7 @@
                 </div>
               </div>
               <div class="flexCol-7 custCol-border">
-                <input type="text" name="new_ship_to_street" class="fieldItem custCol-text" id="buyWizardStreetInput" required/>
+                <input type="text" name="new_ship_to_street" class="fieldItem" id="buyWizardStreetInput" required/>
               </div>
             </div>
             <div class="flexRow">
@@ -476,7 +476,7 @@
                 </div>
               </div>
               <div class="flexCol-7 custCol-border">
-                <input type="text" name="new_ship_to_city" class="fieldItem custCol-text" id="buyWizardCityInput" required/>
+                <input type="text" name="new_ship_to_city" class="fieldItem" id="buyWizardCityInput" required/>
               </div>
             </div>
             <div class="flexRow">
@@ -486,7 +486,7 @@
                 </div>
               </div>
               <div class="flexCol-7 custCol-border">
-                <input type="text" name="new_ship_to_state" class="fieldItem custCol-text js-buyWizardStateInput" id="buyWizardStateInput" required/>
+                <input type="text" name="new_ship_to_state" class="fieldItem js-buyWizardStateInput" id="buyWizardStateInput" required/>
               </div>
             </div>
             <div class="flexRow">
@@ -496,7 +496,7 @@
                 </div>
               </div>
               <div class="flexCol-7 custCol-border">
-                <input type="text" name="new_ship_to_street" class="fieldItem custCol-text js-buyWizardPostalInput" id="buyWizardPostalInput" required/>
+                <input type="text" name="new_ship_to_street" class="fieldItem js-buyWizardPostalInput" id="buyWizardPostalInput" required/>
               </div>
             </div>
             <div class="flexRow">
@@ -545,7 +545,7 @@
         </div>
       </div>
       <div class="order-confirmation-image" style="background-image: url(<%= ob.serverUrl %>get_image?hash=<%= ob.vendor_offer.listing.item.image_hashes[0] %><%= ob.imageExtension %>), url(imgs/defaultBanner.png);"></div>
-      <div class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch js-buyWizardInsertDetails scrollOverflow custCol-primary customThemeScrollbar">
+      <div class="flexContainer flex-border homeModal-settings homeModal-settings-noSearch js-buyWizardInsertDetails scrollOverflow customThemeScrollbar">
       <!--inser details view-->
       </div>
       <div class="bar barFlush alignCenter white-background paddingTop24px">

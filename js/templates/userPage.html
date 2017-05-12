@@ -13,7 +13,7 @@
       <div class="padding24px marginTop24px width100"><h2 class="txt-center"><% polyglot.t('LoadingImage') %></h2></div>
     </div>
     <input type="range" class="cropit-image-zoom-input hCentered marginTop24px js-bannerRangeInput hide" />
-    <label for="headerImageInput" class="btn btn-c1 marginTop24px fullCentered js-pageCustomizationButtons btn-upload-cover-photo custCol-primary">
+    <label for="headerImageInput" class="btn btn-c1 marginTop24px fullCentered js-pageCustomizationButtons btn-upload-cover-photo">
       <span class="ion-qr-scanner fontSize11 marginRight2 textOpacity1"></span>
       <%= polyglot.t('UploadCoverPhoto') %> (866px x 320px)
     </label>
@@ -21,10 +21,10 @@
     <div class="bar navBar barFlush user-page-navigation positionBottom">
       <div class="navEnd pad8px">
         <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls marginRight16px hide">
-          <a class="btn custCol-primary js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
+          <a class="btn js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
         </div>
         <div class="ctrlGroup js-pageCustomizationButtons js-userPageControls marginRight16px hide">
-          <a class="btn custCol-primary js-saveCustomization">
+          <a class="btn js-saveCustomization">
             <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
             <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
           </a>
@@ -42,28 +42,28 @@
         <div class="widthAuto bar navBar barFlush user-page-navigation-buttons positionBottomRight backgroundTransparent">
           <div class="navEnd pad8px">
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="btn custCol-primary js-sellItem marginRight16px">
+              <a class="btn js-sellItem marginRight16px">
                 <span class="ion-ios-pricetag fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('nav.createListing') %>
               </a>
-              <a class="btn custCol-primary js-createStore marginRight16px">
+              <a class="btn js-createStore marginRight16px">
                 <span class="ion-ios-cart fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('CreateStore') %>
               </a>
             </div>
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="btn custCol-primary js-customize marginRight16px">
+              <a class="btn js-customize marginRight16px">
                 <span class="ion-paintbucket fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Customize') %>
               </a>
             </div>
             <% if(ob.page.profile.moderator && ob.user.vendor) { %>
 		          <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls">
-              <a class="btn custCol-primary hide js-addmoderator">
+              <a class="btn hide js-addmoderator">
                 <span class="ion-person-add fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('AddModerator') %>
               </a>
-              <a class="btn btn-txt custCol-primary hide confirmable js-removemoderator">
+              <a class="btn btn-txt hide confirmable js-removemoderator">
                 <span class="preSpacer">
                   <span class="ion-eye-disabled fontSize11 marginRight2 textOpacity1"></span>
                   <%= polyglot.t('RemoveModerator') %>
@@ -80,42 +80,42 @@
             </div>
           <% } %>
             <div class="ctrlGroup hide js-itemButtons js-userPageControls hide">
-              <a class="btn btn-txt custCol-primary js-editItem">
+              <a class="btn btn-txt js-editItem">
                 <span class="ion-compose fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Edit') %>
               </a>
             </div>
             <div class="ctrlGroup hide js-itemButtons js-userPageControls hide">
-              <a class="btn btn-txt custCol-primary js-cloneItem">
+              <a class="btn btn-txt js-cloneItem">
                 <span class="ion-compose fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Clone') %>
               </a>
             </div>
             <div class="ctrlGroup hide js-extraButtonsNotOwnPage js-userPageControls">
-              <a class="btn custCol-primary js-block <% if(ob.isBlocked){ %>hide<% } %>">
+              <a class="btn js-block <% if(ob.isBlocked){ %>hide<% } %>">
                 <span class="ion-android-remove-circle fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Block') %>
               </a>
-              <a class="btn btn-txt custCol-primary js-unblock <% if(!ob.isBlocked){ %>hide<% } %>">
+              <a class="btn btn-txt js-unblock <% if(!ob.isBlocked){ %>hide<% } %>">
                 <span class="ion-android-cancel fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('Unblock') %>
               </a>
             </div>
             <div class="ctrlGroup hide js-extraButtonsOwnPage js-userPageControls">
-              <a class="btn custCol-primary js-moderatorSettings">
+              <a class="btn js-moderatorSettings">
                 <span class="ion-ios-pricetag fontSize11 marginRight2 textOpacity1"></span>
                 <span class="js-userPageEditModerator <% if(!ob.page.profile.moderator){ %> hide <% } %>"><%= polyglot.t('EditModerator') %></span>
                 <span class="js-userPageBecomeModerator <% if(ob.page.profile.moderator){ %> hide <% } %>"><%= polyglot.t('BecomeModerator') %></span>
               </a>
             </div>
             <div class="ctrlGroup hide js-pageButtons js-userPageControls">
-              <a class="ion-more btn custCol-primary js-moreButtonsOwnPage width32px lineHeight32 padding0 fontSize18"></a>
+              <a class="ion-more btn js-moreButtonsOwnPage width32px lineHeight32 padding0 fontSize18"></a>
             </div>
             <div class="ctrlGroup hide js-notOwnPageButtons js-userPageControls">
-              <a class="ion-more btn custCol-primary js-moreButtonsNotOwnPage width32px lineHeight32 padding0 fontSize18"></a>
+              <a class="ion-more btn js-moreButtonsNotOwnPage width32px lineHeight32 padding0 fontSize18"></a>
             </div>
             <div class="ctrlGroup hide js-itemButtons js-userPageControls hide">
-              <a class="btn btn-txt custCol-primary confirmable js-deleteItem">
+              <a class="btn btn-txt confirmable js-deleteItem">
                 <span class="preSpacer">
                   <span class="ion-trash-b fontSize11 marginRight2 textOpacity1"></span>
                   <%= polyglot.t('Delete') %>
@@ -131,19 +131,19 @@
               </a>
             </div>
             <div class="ctrlGroup hide js-itemEditButtons js-userPageControls hide textOpacity1">
-              <a class="btn btn-txt custCol-primary js-cancelItem"><%= polyglot.t('Cancel') %></a>
+              <a class="btn btn-txt js-cancelItem"><%= polyglot.t('Cancel') %></a>
             </div>
             <div class="ctrlGroup hide js-itemCustomizationButtons js-userPageControls hide textOpacity1">
-              <a class="btn btn-txt custCol-primary js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
+              <a class="btn btn-txt js-cancelCustomization"><%= polyglot.t('Cancel') %></a>
             </div>
             <div class="ctrlGroup hide js-itemEditButtons js-userPageControls hide">
-              <a class="btn btn-txt custCol-primary js-saveItem">
+              <a class="btn btn-txt js-saveItem">
                 <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
               </a>
             </div>
             <div class="ctrlGroup hide js-itemCustomizationButtons js-userPageControls hide">
-              <a class="btn btn-txt custCol-primary js-saveCustomization">
+              <a class="btn btn-txt js-saveCustomization">
                 <span class="ion-checkmark fontSize11 marginRight2 textOpacity1"></span>
                 <%= polyglot.t('SaveChanges') %> (<%= config.keyShortcutPrefix + config.keyShortcuts.save.toUpperCase() %>)
               </a>
@@ -154,8 +154,8 @@
     </div>
   </div>
 
-  <div class="userPage-subViews custCol-primary minHeight650 js-userPageSubViews">         
-    <div class="flexContainer flex-border custCol-primary js-about js-tabTarg minHeight650">
+  <div class="userPage-subViews minHeight650 js-userPageSubViews">         
+    <div class="flexContainer flex-border js-about js-tabTarg minHeight650">
       <div class="flexRow minHeight650">
         <div class="flexCol-4 flex-border border0 userPageSocialAccounts overflowHidden">
           <div class="flexRow">
@@ -164,7 +164,7 @@
               <a class="blueOnWhiteButton hide js-follow">
                 <%= polyglot.t('Follow') %>
               </a>
-              <a class="whiteOnBlueButton btn custCol-primary hide confirmable js-unfollow">
+              <a class="whiteOnBlueButton btn hide confirmable js-unfollow">
                 <span class="preSpacer">
                   Following
                 </span>
@@ -351,7 +351,7 @@
             <% } %>
           </div>    
           <div class="storeReviewContent">
-            <div class="flexContainer flex-border custCol-primary js-store js-tabTarg minHeight650" id="searchStore">
+            <div class="flexContainer flex-border js-store js-tabTarg minHeight650" id="searchStore">
               <div class="flexRow positionWrapper">
                 <div class="flexRow custCol-border">
                   <div class="txtFieldWrapper searchWrapper searchWrapperWithPill">
@@ -359,7 +359,7 @@
                   </div>
                 </div>
                 <div class="selectPill positionAbsolute left0 top11">
-                  <select id="categories" class="custCol-secondary js-categories custCol-text">
+                  <select id="categories" class="custCol-secondary js-categories">
                     <option value="all" selected><%= polyglot.t('All') %></option>
                   </select>
                 </div>
@@ -370,7 +370,7 @@
                 </div>
               </div>
             </div>
-            <div class="flexContainer flex-border custCol-primary js-reviews js-tabTarg hide minHeight650">
+            <div class="flexContainer flex-border js-reviews js-tabTarg hide minHeight650">
               <div class="flexRow js-list6">
                 <div class="padding10 width100 alignCenter js-loadingMsg borderBottom">
                   <i class="ion-android-sync spinner textSize24px textOpacity50"></i>
@@ -397,7 +397,7 @@
         </a>
       <%}%>
     </div> 
-    <div class="flexContainer flex-border custCol-primary js-followers js-tabTarg hide minHeight650" id="searchFollowers">
+    <div class="flexContainer flex-border js-followers js-tabTarg hide minHeight650" id="searchFollowers">
       <div class="flexRow height54">
         <!--<div class="txtFieldWrapper searchWrapper searchWrapperWithPill borderBottom custCol-border">-->
         <div class="txtFieldWrapper searchWrapper borderBottom custCol-border">
@@ -405,7 +405,7 @@
         </div>
         <!--
         <div class="selectPill pull-up43">
-          <select class="custCol-secondary custcol-text">
+          <select class="custCol-secondary">
             <option value="all" selected><%= polyglot.t('filters.pagesAllTypes') %></option>
             <option value="stores"><%= polyglot.t('filters.pagesStores') %></option>
             <option value="moderators"><%= polyglot.t('filters.pagesMods') %></option>
@@ -421,7 +421,7 @@
         </div>
       </div>
     </div>
-    <div class="flexContainer flex-border custCol-primary js-following js-tabTarg hide minHeight650" id="searchFollowing">
+    <div class="flexContainer flex-border js-following js-tabTarg hide minHeight650" id="searchFollowing">
       <div class="flexRow height54">
         <!--<div class="txtFieldWrapper searchWrapper searchWrapperWithPill borderBottom custCol-border">-->
         <div class="txtFieldWrapper searchWrapper borderBottom custCol-border">
@@ -429,7 +429,7 @@
         </div>
         <!--
         <div class="selectPill pull-up43">
-          <select class="custCol-secondary custcol-text">
+          <select class="custCol-secondary">
             <option value="all" selected><%= polyglot.t('filters.pagesAllTypes') %></option>
             <option value="stores"><%= polyglot.t('filters.pagesStores') %></option>
             <option value="moderators"><%= polyglot.t('filters.pagesMods') %></option>
@@ -445,14 +445,14 @@
         </div>
       </div>
     </div>
-    <div class="flexContainer flex-border custCol-primary js-item js-tabTarg hide minHeight650">
+    <div class="flexContainer flex-border js-item js-tabTarg hide minHeight650">
       <div class="flexRow js-list4 minHeight650">
         <div class="padding10 width100 alignCenter js-loadingMsg borderBottom">
           <i class="ion-android-sync spinner textSize24px textOpacity50"></i>
         </div>
       </div>
     </div>
-    <div class="flexContainer flex-border custCol-primary js-itemEdit js-tabTarg hide minHeight650">
+    <div class="flexContainer flex-border js-itemEdit js-tabTarg hide minHeight650">
       <div class="flexRow itemEdit js-list5 minHeight650 positionWrapper"></div>
     </div>
   </div>

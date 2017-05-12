@@ -28,11 +28,13 @@ module.exports = baseVw.extend({
     'click .js-navMax': 'navMaxClick',    
     'click .js-navBack': 'navBackClick',
     'click .js-navFwd': 'navFwdClick',
+    'click .js-navHome': 'navHomeClick',
     'click .js-showSupportModal': 'showSupportModal',
     'click .js-navRefresh': 'navRefreshClick',
     //'click .js-navRestart': 'navRestartClick',
     'click .js-navAdminPanel': 'navAdminPanel',
-    'click .js-navProfileMenu a': 'closeNav',
+    'click .js-navProfileMenu a, .js-navPostMenu a': 'closeNav',
+    'click .js-postService': 'postService',
     'focus .js-navAddressBar': 'addressBarFocus',
     'keyup .js-navAddressBar': 'addressBarKeyup',
     'blur .js-navAddressBar': 'addressBarBlur',
@@ -567,6 +569,10 @@ module.exports = baseVw.extend({
     }
   },
 
+  postService: function() {
+    Backbone.history.navigate('#userPage/'+this.userModel.get('guid')+'/listingNew', {trigger: true});
+  },
+
   closeNav: function(e) {
     if (
       e &&
@@ -576,12 +582,14 @@ module.exports = baseVw.extend({
       )
     ) {
       return;
-    }    
+    }
 
     app.hideOverlay();
-    self.$('.js-navProfileMenu').removeClass('popMenu-opened');
-    clearTimeout(this.ServerSubmenuTimeout);
-    this.$serverSubmenu.removeClass('server-submenu-opened');    
+    self.$('.js-navProfileMenu, .js-navPostMenu').removeClass('popMenu-opened');
+    if ($('.popMenu').hasClass('js-navProfileMenu')) {
+      clearTimeout(this.ServerSubmenuTimeout);
+      this.$serverSubmenu.removeClass('server-submenu-opened');
+    }
   },
 
   navCloseClick: function(){   
@@ -617,6 +625,10 @@ module.exports = baseVw.extend({
   },
 
   navRefreshClick: function(){
+    app.router.refresh();
+  },
+  
+  navHomeClick: function(){
     app.router.refresh();
   },
   
