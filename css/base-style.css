@@ -795,25 +795,6 @@ h6, .h6 {
   top: 41px;
 }
 
-#leftSidebar{
-  position: fixed;
-  left: 0px;
-  top: 56px;
-  width: 13%;
-  background-color: #1F2129;
-  border-right: 0;
-  height: calc(100% - 56px);
-  z-index: 0;
-  transition: right 0.5s ease;
-  color: #FFF;
-  -webkit-app-region: no-drag;
-  box-sizing: border-box;  
-}
-
-#leftSidebar a{
-  display: block;
-}
-
 #sideBar {
   position: fixed;
   right: 0px;
@@ -6801,37 +6782,6 @@ input[type=number]::-webkit-outer-spin-button {
 .navPost{
   background-image: url('../imgs/editIcon.svg');
   background-position: 10px 9px;
-  background-repeat: no-repeat;
-  background-size: 13px;
-  padding-left: 28px;
-}
-/*========== left sidebar ==========*/
-.leftSidebar-create{
-  margin-left: 16px;
-  margin-top: 40px;
-}
-
-.leftSidebar-create h1{
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-.leftSidebar-create a{
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-
-.leftSidebar-create-create{
-  background-image: url('../imgs/createIcon.svg');
-  background-position: 4px 12px;
-  background-repeat: no-repeat;
-  background-size: 15px;
-  padding-left: 28px;
-}
-
-.leftSidebar-create-edit{
-  background-image: url('../imgs/editIcon.svg');
-  background-position: 6px 11px;
   background-repeat: no-repeat;
   background-size: 13px;
   padding-left: 28px;
