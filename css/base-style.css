@@ -726,9 +726,9 @@ h6, .h6 {
 
 #gjContainer {
   transition: width 0.5s ease;
-  width: 72%;
+  width: 85%;
   height: calc(100% - 50px);
-  margin: 0 13%;
+  margin-right: 13%;
   overflow-y: scroll;
   -webkit-app-region: no-drag;
   position: relative;
@@ -1150,7 +1150,7 @@ h6, .h6 {
   box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
   box-sizing: border-box;
   transition: opacity .5s cubic-bezier(0, 0, 0.2, 1);
-  width: 93%;
+  width: 94%;
   padding: 16px;
   margin-left: 16px;
 }
@@ -1532,9 +1532,7 @@ label.fieldItem {
   background-color: #FFF;
   box-shadow: 0px 1px 1px rgba(208, 209, 213, 0.5), -1px 1px 1px rgba(208, 209, 213, 0.5), 1px 1px 1px rgba(208, 209, 213, 0.5);
   position: fixed;
-  left: 166px;
-  top: 56px;
-  width: 72%;
+  width: 85%;
   transition: top 0.2s ease-in-out;
   z-index: 10;
 }
