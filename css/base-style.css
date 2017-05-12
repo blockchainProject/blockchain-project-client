@@ -42,7 +42,7 @@ p a {
 
 p {
   white-space: pre-line;
-  margin: 0 0 1em 0;
+  margin: 0;
 }
 
 p:last-child {
@@ -335,6 +335,15 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
+.verticalLine{
+  width: 1px;
+  border-style: none;  
+  height: 60px;
+  background-color: #FFF;
+  border-color: #FFF;
+  display: inline-block;
+}
+
 .noOverflow {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -549,9 +558,9 @@ h6, .h6 {
 .blueOnWhiteButton{
   background-color: #FFF;
   border:1px solid #009DC4;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
   display: inline-block;
   cursor: pointer;
   color: #009DC4;
@@ -3850,6 +3859,19 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   height: 30px;
 }
 
+.popMenu-post {
+  right: 148px;
+  width: 345px;
+  height: 111px;
+  pointer-events: none;
+  margin-top: -62px;
+}
+
+.popMenu-post.popMenu-opened #postPanel {
+  transform: translateY(0);
+  pointer-events: all;
+}
+
 .popMenu-notifications {
   top: 100%;
   right: 45px;
@@ -3938,7 +3960,7 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
 }
 
 .popMenu-navBarSubMenu {
-  background-color: #D5DCD8;
+  background-color: #E8E8E8;
   border-color: #030303;
   border-radius: 4px;
   color: #030303;
@@ -4005,12 +4027,54 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   width: 712px;
 }
 
+#postPanel {
+  background-color: #E8E8E8;
+  transform: translateY(-115%);
+  transition: transform 200ms;
+  border-radius: 8px;
+  color: #030303;
+  text-align: center;
+  width: 100%;
+  margin-top: 134px;
+  height: 100%;
+}
+
+#postPanel:before{
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 7%;
+  border: 8px solid transparent;
+  border-bottom: 16px solid #E8E8E8;
+}
+
+#postPanel li{
+  height: 100%;
+}
+
+#postPanel li:nth-child(1), #postPanel li:nth-child(3){
+  width: 160px;
+}
+
+#postPanel p{
+  font-size: 13px;
+}
+
+#postPanel li a{
+  position: relative;
+  top: 16px;
+}
+
+#postPanel li a span{
+  width: 96px;
+}
+
 #noNotifications {
   padding-top: 10px;
 }
 
 #notificationsPanel {
-  background-color: #D5DCD8;
+  background-color: #E8E8E8;
   font-size: 1.5rem;
   transform: translateY(-110%);
   transition: transform 200ms;
@@ -6233,6 +6297,10 @@ input[type="checkbox"].fieldItem:checked + label .togLabelOff {
   width: 360px;
 }
 
+#gj .width480 {
+  width: 480px;
+}
+
 #gj .width12px {
   width: 12px;
 }
@@ -6713,13 +6781,13 @@ input[type=number]::-webkit-outer-spin-button {
 .header-alignleft{
   float: left;
   height: 100%;
-  width: 60%;
+  width: 70%;
 }
 
 .header-alignright{
   height: 100%;
   text-align: right;
-  width: 40%;
+  width: 30%;
 }
 
 .header-alignright .ion-ios-arrow-down:before{
